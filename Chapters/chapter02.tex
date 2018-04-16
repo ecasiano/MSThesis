@@ -549,6 +549,86 @@ S_\alpha^{op}(x,L) = \frac{2(x-1)}{L} \ln{2} ; \text{ where } x = \min{\ell_A, \
 
 	\subsection{First order phase transition}
 	
+At $\frac{V}{t} = -2$, the $tV$-Model undergoes a first order phase transition from Luttinger Liquid to Phase Separated Solid. The operational entanglement at this interaction strength vanishes and then suddenly increases and converges to the previously derived limit ($\frac{N-1}{N}\ln{2}$) as the attraction gets stronger. In this section, it will be shown that the operational entanglement vanishes at the first order phase transition.
+
+At $\frac{V}{t}=-2$, and half-filling ($N=\frac{L}{2}$), the state of the system is a equiprobable superposition of all possible configurations. There are a total of ${L}\choose{N}$ possible configurations. Thus, the general state can be written as: 
+
+\begin{equation} 
+|\Psi \rangle = \frac{1}{\sqrt{{L}\choose{N}}} \sum_{i=1}^{{L}\choose{N}} | \phi_{i} \rangle
+\end{equation}
+
+where $|\phi_{i}\rangle$ denotes a distinct particle configuration and the pre-factor is a normalization constant. Now that the state at $\frac{V}{t}=-2$ is known, the full and, hence, reduced density matrices can be obtained. Up next, their resulting general structure will be discussed.
+
+For simplicity, let $\frac{1}{\sqrt{{L}\choose{N}}} \equiv C$. For particle sub-sectors of $n_A = 0$ and $n_A = N$, the projected reduced density matrices become:
+
+\begin{equation}
+\rho_{A,N} = \frac{1}{P_{N}} \begin{pmatrix}
+C & \dots & 0 \\ 
+\vdots & 0 & \vdots \\
+0 & \dots & 0 \\
+\end{pmatrix}
+\end{equation}
+
+with probability $P_{N} = C$. And, 
+
+\begin{equation}
+\rho_{A,0} = \frac{1}{P_{0}} \begin{pmatrix}
+0 & \dots & 0 \\ 
+\vdots & 0 & \vdots \\
+0 & \dots & C \\
+\end{pmatrix}
+\end{equation}
+
+also with probability $P_{0} = C$.
+
+For particle number sub-sectors of $1 \leq n \leq N-1$, the projected reduced density matrices become square matrices of size $NxN$ with all entries being $NC^2$:
+
+\begin{equation}
+\rho_{A,n} = \frac{1}{P_{n}} \begin{pmatrix}
+NC^2 & \dots & NC^2 \\ 
+\vdots & NC^2 & \vdots \\
+NC^2 & \dots & NC^2
+\end{pmatrix}
+\end{equation}
+
+with probabilities $P_{n}=N(NC^2)=N^2C^2$.
+
+In summary, the normalized projected reduced density matrices are:
+
+\[ \rho_{A,N} = \frac{1}{P_{N}} \begin{pmatrix}
+1 & \dots & 0 \\ 
+\vdots & 0 & \vdots \\
+0 & \dots & 0 \\
+\end{pmatrix}, P_{N}=C \]
+\[ \rho_{A,0} = \frac{1}{P_{N}} \begin{pmatrix}
+0 & \dots & 0 \\ 
+\vdots & 0 & \vdots \\
+0 & \dots & 1 \\
+\end{pmatrix}, P_{0}=C\]
+\[ \rho_{A,n} = \frac{1}{P_{n}} \begin{pmatrix}
+\frac{1}{N} & \dots & \frac{1}{N} \\ 
+\vdots & \frac{1}{N} & \vdots \\
+\frac{1}{N} & \dots & \frac{1}{N}
+\end{pmatrix}, P_{n}=N^2C^2 \]
+
+Recall the definition of the operational (R\'enyi) entanglement entropy:
+
+\[S_{\alpha}^{op}(\rho_{A}) = \sum_{n} P_{n}S(\rho_{A,n})\]
+
+where $S_{\alpha}(\rho_A) = \frac{1}{1-\alpha} \log{\Tr{(\rho_A^{\alpha})}}$
+
+Expanding the sum:
+
+\[ \begin{aligned} S_{\alpha}^{op}(\rho_{A}) &= P_{0} \log{\Tr{(\rho_{A,0}^{\alpha})}} + \sum_{n=1}^{N-1} P_{n} \log{\Tr{(\rho_{A,n}^{\alpha})}} + P_{N} \log{\Tr{(\rho_{A,N}^{\alpha})}} \\
+&= C \log{1} + N^2C^2 \sum_{n=1}^{N-1} \log{N(\frac{1}{N})} + C \log{1} \\
+&= N^2C^2 \sum_{n=1}^{N-1} \log{1} \\
+S_{\alpha}^{op}(\rho_{A}) &= 0 \\
+\end{aligned} \]
+
+Thus, the operational entanglement vanishes at the first order phase transition.
+
+
+	
 \section{Numerical Results}
 	\subsection{Operational entanglement as a function of interaction strength}
 		\includegraphics{operationalEntanglementEntropies}
