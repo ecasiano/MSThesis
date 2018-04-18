@@ -3,49 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: msThesis.aux
 The style file: apalike.bst
 Database file #1: References/references.bib
-Repeated entry---line 2362 of file References/references.bib
- : @article{PhysRevLett.91.097902
- :                               ,
-I'm skipping whatever remains of this entry
-You've used 1 entry,
+Warning--to sort, need author or key in repo
+Warning--to sort, need author or key in code
+Warning--empty year in repo
+Warning--empty year in code
+You've used 50 entries,
             1935 wiz_defined-function locations,
-            480 strings with 3889 characters,
-and the built_in function-call counts, 394 in all, are:
-= -- 37
-> -- 13
-< -- 1
-+ -- 4
-- -- 4
-* -- 32
-:= -- 73
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 7
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 14
-empty$ -- 29
-format.name$ -- 7
-if$ -- 75
-int.to.chr$ -- 1
+            804 strings with 11115 characters,
+and the built_in function-call counts, 18875 in all, are:
+= -- 1784
+> -- 743
+< -- 27
++ -- 248
+- -- 244
+* -- 1716
+:= -- 3337
+add.period$ -- 146
+call.type$ -- 50
+change.case$ -- 369
+chr.to.int$ -- 48
+cite$ -- 56
+duplicate$ -- 690
+empty$ -- 1377
+format.name$ -- 324
+if$ -- 3642
+int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 1
-newline$ -- 8
-num.names$ -- 3
-pop$ -- 4
+missing$ -- 49
+newline$ -- 249
+num.names$ -- 144
+pop$ -- 263
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 372
 quote$ -- 0
-skip$ -- 12
+skip$ -- 518
 stack$ -- 0
-substring$ -- 30
-swap$ -- 1
+substring$ -- 1345
+swap$ -- 48
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
-warning$ -- 0
-while$ -- 3
+type$ -- 298
+warning$ -- 4
+while$ -- 141
 width$ -- 0
-write$ -- 15
-(There was 1 error message)
+write$ -- 639
+(There were 4 warnings)

@@ -1,0 +1,334 @@
+\section{Evaluating the $n$-particle partition entanglement}
+
+In this appendix, we show that the $n$-RDM of spinless hardcore particles on
+a lattice can be written as a tensor product of two lower-rank matrices. This
+simplification significantly reduces the numerical cost for calculating $n$-RDM
+for such quantum systems. 
+
+In general, for a pure quantum state $\vert \Psi\rangle$ in some
+Hilbert space $\cal H$ that can be written as the tensor product space $A \otimes
+B$, we can write
+
+\begin{equation}
+ \vert \Psi\rangle = \sum_{i,j} C_{i,j} \vert \psi^A_i\rangle  \vert \psi^B_j\rangle
+\label{state_decomposition},
+\end{equation}
+where $\{\vert \psi^A_i\rangle\}$ and $\{\vert \psi^B_j\rangle\}$ are
+orthonormal bases in the two Hilbert spaces $A$ and $B$, respectively.
+Accordingly, the system degrees of freedom are bipartitioned between the two
+subsets  $\{\vert \psi^A_i\rangle\}$ and $\{\vert \psi^B_j\rangle\}$. Using the
+product basis $\{\vert \psi^A_i\rangle\vert  \psi^B_j\rangle\}$, the full
+density matrix can be written as \begin{equation}
+\rho=\vert \Psi\rangle\langle\Psi\vert = \sum_{i,j,i',j'}  \vert \psi^A_i\rangle  \vert \psi^B_j\rangle C_{i,j}C^*_{i',j'} \langle\psi^A_{i'}\vert \langle\psi^B_{j'}\vert 
+\label{full_density_matrix}.
+\end{equation}
+The reduced density matrix $\rho_A$ ($\rho_B$) of subspace $A$ ($B$) , is obtained from $\rho$ by tracing out the degrees of freedom of subspace $B$ ($A$), 
+\begin{equation}
+\rho_A=\sum_{m}\langle\psi^B_m\vert \rho \vert \psi^B_m\rangle= \sum_{i,j}  \vert \psi^A_i\rangle \left(\sum_{m}C_{i,m}C^*_{j,m}\right) \langle\psi^A_{j}\vert 
+\label{rho_1_full},
+\end{equation}
+\begin{equation}
+\rho_B=\sum_{m}\langle\psi^A_m\vert \rho \vert \psi^A_m\rangle= \sum_{i,j}  \vert \psi^B_i\rangle \left(\sum_{m}C_{m,i}C^*_{m,j}\right) \langle\psi^B_{j}\vert 
+\label{rho_2_full}.
+\end{equation}
+ Moreover,  the reduced density matrices can be generated using the linear maps $G_{AB}:S_B\rightarrow S_A$ as  $\rho_A=G_{AB}G_{AB}^\dagger$ and $\rho_B=(G_{AB}^\dagger G_{AB})^T$
+where
+\begin{equation}
+G_{AB}=\sum_{i,j}C_{i,j}\vert \psi^A_i\rangle\langle\psi^B_j\vert 
+\label{D_1}.
+\end{equation}
+Note that, in general, the matrix representing the linear maps $G_{AB}$ is
+rectangular since the dimensions of the Hilbert spaces $A$ and $B$ can differ.
+
+\subsection{Particle bipartition}
+\label{sec:Particle_bipartition}
+%(fermions, hardcore bosons or anyons)(Fock states)
+Let us now consider a quantum system of $N$ spinless hardcore particles in a
+state $\vert \Psi\rangle=\sum_i\chi_i \vert \psi^N_i\rangle$, where $\{\vert
+\psi^N_i\rangle\}$ are the $N$ particle second-quantization basis states, where
+each basis state corresponds to a single, possible, occupation number
+configuration (ONC). Now we recall that each ONC state is a linear combination
+of the distinguished particles states $\{\vert \psi^N_{i,j}\rangle\}$ as $\vert
+\psi^N_i\rangle=\sum_j\frac{f_j}{\sqrt{N!}}\vert \psi^N_{i,j}\rangle$, where
+$j$ runs over all  possible particle permutations (PPs) and $f_j=e^{-i\phi_j}$ is
+the corresponding phase factor. Accordingly, we can write 
+%
+\begin{equation}
+\vert \Psi\rangle=\sum_{i,j}\frac{\chi_if_j}{\sqrt{N!}}\vert \psi^N_{i,j}\rangle.
+\label{Psi_pprho_1and2_star}
+\end{equation}
+%
+%\subsection{Partitioning the particle}
+%\label{subsec:Partitioning_the_particle}
+
+Now we partition $N$ into two sets of particles: $n_A$ and the remainder 
+$n_B=N-n_A$.  The distinguished particles basis $\{\vert \psi^N_{i,j}\rangle\}$
+can be written as a tensor product of the two partitions basis 
+%
+\begin{equation}
+\vert \psi^N_{i,j}\rangle=\vert \psi^{n_A}_{i_A,j_A}\rangle\vert \psi^{n_B}_{i_B,j_B}\rangle
+\label{psiN_psin1n2},
+\end{equation}
+%
+where each ONC (labelled by $i$) of the $N$ particles corresponds to a unique pair of ONCs
+$i_A$ and $i_B$ of the $n_A$ and $n_B$ particles, respectively. Similarly, each
+PP $j$ of the N particles corresponds to a unique pair of PPs:  $j_A$ and $j_B$
+of the $n_A$ and $n_B$ particles.
+%
+\begin{equation}
+\vert \Psi\rangle=\sum_{i_A,i_B,j_A,j_B}C_{i_A,i_B,j_A,j_B}\vert \psi^{n_A}_{i_A,j_A}\rangle\vert \psi^{n_B}_{i_B,j_B}\rangle
+\label{Psi__1and2},
+\end{equation}
+with
+%
+\begin{equation}
+C_{i_A,i_B,j_A,j_B}=\frac{\chi_if_j}{\sqrt{N!}}
+\label{Ci1i2j1j2}.
+\end{equation}
+%
+The  $C_{i_A,i_B,j_A,j_B}$ depends on the indices $i$ and $j$ through the
+multiplication of $\chi_i$ and $f_j$, and without loss of generality, we can 
+take
+%
+\begin{equation}
+C_{i_A,i_B,j_A,j_B}=\tilde C_{i_A,i_B}\Phi_{j_A,j_B}
+\label{Ci1i2Phij1j2}.
+\end{equation}
+%
+Moreover, the dependence of $\Phi_{j_A,j_B}$ on the PP indices only guarantees that
+$\vert \Phi_{j_A,j_B}\vert ^2=constant$ that can be absorbed in $\tilde
+C_{i_A,i_B}$. Thus, we can set $\vert \Phi_{j_A,j_B}\vert ^2=1$. Based on the
+fact that applying a particle permutation two one group of particles results in an
+overall phase factor that does not depend on the permutation of the other group
+of particles, we write
+%
+\begin{equation}
+\Phi_{j_A,j_B}=F^{(A)}_{j_A}F^{(B)}_{j_B}
+\label{Phij1j2F1F2},
+\end{equation}
+%
+with $\vert F^{(A)}_{j_A}\vert ^2=\vert F^{(B)}_{j_B}\vert ^2=1$. Substituting
+in Eq.~(\ref{Psi__1and2}) we find
+%
+\begin{equation}
+\vert \Psi\rangle=\sum_{i_A,i_B,j_A,j_B}\tilde C_{i_A,i_B}F^{(A)}_{j_A}F^{(B)}_{j_B}\vert \psi^{n_A}_{i_A,j_A}\rangle\vert \psi^{n_B}_{i_B,j_B}\rangle
+\label{Psi__1and2r},
+\end{equation}
+%
+Let us now calculate the reduced density matrix of $\rho_A$ using   
+%
+\begin{equation}
+G_{n_An_B}=\sum_{i_A,i_B,j_A,j_B}\tilde C_{i_A,i_B}F^{(A)}_{j_A}F^{(B)}_{j_B}\vert \psi^{n_A}_{i_A,j_A}\rangle\langle\psi^{n_B}_{i_B,j_B}\vert 
+\label{C_1},
+\end{equation}
+%
+as
+%
+\begin{eqnarray}
+\rho_A &=& G_{n_An_B}G_{n_An_B}^\dagger\\ &=& \sum_{i^{}_A,j^{}_A,i^{\prime}_A,j^{\prime}_A}\vert \psi^{n_A}_{i^{}_A,j^{}_A}\rangle \sum_{i^{}_B}\left( \tilde C_{i^{}_A,i^{}_B}\tilde C^{*}_{i^{\prime}_A,i^{}_B}\right)F^{(A)}_{j^{}_A}{F}^{*(A)}_{j^{\prime}_A}\sum_{j^{}_B}\left\vert {F}^{(B)}_{j^{}_B}\right\vert ^2\langle\psi^{n_A}_{i^{\prime}_A,j^{\prime}_A}\vert \nonumber\\
+ &=&n_B!\sum_{i^{}_A,j^{}_A,i^{\prime}_A,j^{\prime}_A}\vert \psi^{n_A}_{i^{}_A,j^{}_A}\rangle D_{i^{}_A,i^{\prime}_A}\Phi_{j^{}_A,j^{\prime}_A}\langle\psi^{n_A}_{i^{\prime}_A,j^{\prime}_A}\vert 
+\label{rho_1_f},
+\end{eqnarray}
+%
+with $D_{i^{}_A,i^{\prime}_A}= \sum_{i^{}_B} \tilde C_{i^{}_A,i^{}_B}\tilde
+C^*_{i^{\prime}_A,i^{}_B}$ and
+$\Phi_{j^{}_A,j^{\prime}_A}=F^{(A)}_{j^{}_A}{F}^{*(A)}_{j^{\prime}_A}$.  From
+Eq.~(\ref{rho_1_f}) we see that $\rho_A$ is a Kronecker product (tensor
+product) of the lower-rank Hermitian matrices $D$ and $\Phi$.  where $D$ can be
+calculated considering a single PP for each particle partition and the
+elements of $\Phi$ are the product of the relative phases of the chosen
+partitions (\ref{Phij1j2F1F2}) 
+
+\subsection{Eigenvalues}
+\label{sec:Eigenvalues}
+
+Let $V_D$ and $V_{\Phi}$ be two unitary transformations that diagonalize the
+sub matrices $D$ and $\Phi$, respectively. Such that
+$V^{\dagger}_DDV^{}_D=\Lambda$ and $V^{\dagger}_{\Phi}\Phi V^{}_{\Phi}=W$,
+where $\Lambda$  and $W$ are diagonal matrices with eigenvalues $\{\lambda_k\}$
+and $\{w_l\}$.  If we construct the unitary transformation $U$ as
+%
+\begin{equation}
+U=V_D \otimes V_{\Phi}
+\label{U},
+\end{equation}
+%
+and calculate $U^\dagger(\rho_A/n_B!)U$ we find
+%
+\begin{equation}
+    U^\dagger\left(\frac{\rho_A}{n_B!}\right)U=\sum_{k,l}\vert \psi^{n_1}_{k,l}\rangle \lambda_k w_l\langle\psi^{n_1}_{k,l}\vert 
+\label{UdrhoU}.
+\end{equation}
+%
+Accordingly, the unitary transformation $U$ diagonalizes $\rho_A$ and the
+eigenvalues of $\rho_A$ are $n_B!\lambda_k w_l$. Moreover, $\Phi$ has the
+structure of a simple projection operator onto the non-normalized state $\vert
+F^{(A)}\rangle=\sum_j^{n_A!} F^{(A)}_j\vert j\rangle=\sum_j^{n_A!}
+e^{i\phi_j}\vert j\rangle$ as $\Phi=\vert F^{(A)}\rangle\langle F^{(A)}\vert$.
+The only eigenstate of $\Phi$ with a nonzero eigenvalue is $\vert
+F^{(A)}\rangle$, where $\Phi\vert F^{(A)}\rangle=\vert F^{(A)}\rangle\langle
+F^{(A)}\vert F^{(A)}\rangle=n_A!\vert F^{(A)}\rangle$. 
+
+Therefore, we conclude that the nonzero eigenvalues of $\rho_A$ are
+$n_A!n_B!\lambda_k$, where $\lambda_k$ are the eigenvalues of the matrix $D$
+that is constructed using only one PP of each of the sets $\{\vert
+\psi^{n_A}_{i_A,j_A}\rangle\}$ and $\{\vert \psi^{n_B}_{i_B,j_B}\rangle\}$.
+As the rank of $D$ is smaller than that of the $n$-RDM by a factor of
+$n_A!n_B!$ the numerical effort involved in calculating the
+eigenvalues of the $n$-RDM is enormously reduced.
+% ---------------------------------------------------------------------------------
+\section{$n$-particle partition entanglement in the $V/t \to \infty$ limit} 
+\label{appendixB}
+
+Here we calculate the $n$-particle partition entanglement of the
+one-dimensional fermionic $t-V$ model at half filling ($N=M/2$) in the infinite
+repulsion limit ($V/t \rightarrow \infty$). In this limit, the Hamiltonian of
+the model (Eq. (\ref{eq:H-tV})) is reduced to
+%
+\begin{equation}
+  H= V\sum_i n_i n_{i+1}\,
+  \label{eq:H-tV_infty}
+\end{equation}
+%
+which is diagonal in the occupation number representation with a two-fold
+degenerate ground state, where, at half filling, the fermions can avoid having
+any nearest neighbors by occupying sites with only odd indices
+($\vert\psi_{\rm{odd}}\rangle=\vert1010\cdots10\rangle$) or only even indices
+($\vert\psi_{\rm{even}}\rangle=\vert0101\cdots01\rangle$). Thus, one can write the
+ground state in this limit, as a superposition of
+$\vert\psi_{\rm{odd}}\rangle$ and $\vert\psi_{\rm{even}}\rangle$:
+%
+\begin{equation}
+\vert \Psi \rangle = \cos(\Theta)e^{i\delta}\vert\psi_{\rm{odd}}\rangle+\sin(\Theta)\vert\psi_{\rm{even}}\rangle,
+  \label{eq:gs_infty_deg}
+\end{equation}
+%
+where we parametrize the amplitudes and the relative phase of the odd/even 
+states using $\Theta$ and $\delta$. Note that for $\delta=0$ and
+$\Theta=\pi/4$ ($\Theta=3\pi/4$), the ground state $\vert\Psi\rangle$ is also
+an eigenstate of the inversion operator $P$ (Eq. (\ref{eq:inversion})) with
+eigenvalue $\pm 1$ where
+%
+\begin{equation}
+P\vert\Phi_{\pm}\rangle=\pm\vert\Phi_{\pm}\rangle =\pm\left(\frac{1}{\sqrt{2}}\vert\psi_{\rm{odd}}\rangle\pm\frac{1}{\sqrt{2}}\vert\psi_{\rm{even}}\rangle\right).
+\end{equation}
+%
+The degeneracy persists in the case of finite interaction $V/t$  for even/odd
+$N$ with PBC/APBC. The degeneracy is lifted for odd/even $N$ with APBC/PBC
+with the resulting ground state in the infinite repulsion limit approaching
+an eigenstate of $P$:
+%
+\begin{equation}
+\vert\Psi\rangle=\vert\Phi_+\rangle= \frac{1}{\sqrt{2}}\vert\psi_{\rm{odd}}\rangle+\frac{1}{\sqrt{2}}\vert\psi_{\rm{even}}\rangle.
+  \label{eq:gs_infty_NONdeg}
+\end{equation}
+
+
+We now consider the $n$-particle partition entanglement of the degenerate ground
+state $\vert\Psi\rangle$ defined in Eq. (\ref{eq:gs_infty_deg}), where we can
+write the corresponding full density matrix $\rho$ as 
+\begin{eqnarray}
+\rho &=\cos^2(\Theta)\vert\psi_{\rm{odd}}\rangle\langle\psi_{\rm{odd}}\vert+\sin^2(\Theta)\vert\psi_{\rm{even}}\rangle\langle\psi_{\rm{even}}\vert\nonumber\\
+&\quad+\sin(\Theta)\cos(\Theta)e^{i\delta}\vert\psi_{\rm{odd}}\rangle\langle\psi_{\rm{even}}\vert+\sin(\Theta)\cos(\Theta)e^{-i\delta}\vert\psi_{\rm{even}}\rangle\langle\psi_{\rm{odd}}\vert,
+\label{eq:gs_rho_deg}
+\end{eqnarray}
+If we partition the $N$ particles into two distinguishable sets 
+of $n_A=n$ and $n_B=N-n$ particles, we can write the states $\vert
+\psi_{odd}\rangle$ and $\vert \psi_{even}\rangle$ in terms of the
+first-quantized basis states of the two partitions as
+%
+\begin{equation}
+\vert \psi_{\rm{odd}}\rangle=\sum_{i_A,i_B,j_A,j_B} \frac{f_{i_A,i_B,j_A,j_B}^{\rm{odd}}}{\sqrt{N!}}\vert \psi^{n_A,\rm{odd}}_{i_A,j_A}\rangle\vert \psi^{n_B,\rm{odd}}_{i_B,j_B}\rangle
+\label{Psi_odd_AB},
+\end{equation}
+%
+\begin{equation}
+\vert \psi_{\rm{even}}\rangle=\sum_{i_A,i_B,j_A,j_B} \frac{f_{i_A,i_B,j_A,j_B}^{\rm{even}}}{\sqrt{N!}}\vert \psi^{n_A,\rm{even}}_{i_A,j_A}\rangle\vert \psi^{n_B,\rm{even}}_{i_B,j_B}\rangle
+\label{Psi_even_AB},
+\end{equation}
+%
+where the indices $i_A$ and $i_B$ label possible  occupation number
+configurations (ONCs) in both partitions $A$ and $B$ while $j_A$ and $j_B$
+label different particle permutations (PPs). Also, $f_{i_A,i_B,j_A,j_B}^{\rm{odd}}$ and
+$f_{i_A,i_B,j_A,j_B}^{\rm{even}}$ are overall phase factors, where the
+superscript odd (even) is to indicate that only sites with odd (even) indices
+are occupied.  We note that in this decomposition  the states
+$\vert\psi_{\rm{even}}\rangle$ and $\vert \psi_{\rm{odd}}\rangle$ 
+are constructed from non-overlapping subspaces (even/odd) of partition $B$.
+Similarly for partition $A$.
+By tracing out all degrees of freedom in $B$ from $\rho$ (Eq.
+(\ref{eq:gs_rho_deg})), we can write the reduced density matrix $\rho_A$ as
+%
+\begin{equation}
+    \rho_A = {\Tr}_{B}\,\rho= \cos^2(\Theta){\Tr}_{B}\,\vert\psi_{\rm{odd}}\rangle\langle\psi_{\rm{odd}}\vert+\sin^2(\Theta) {\Tr}_{B}\, \vert\psi_{\rm{even}}\rangle\langle\psi_{\rm{even}}\vert,
+\label{eq:rho_A_final}
+\end{equation}
+%
+where the trace of the mixed terms
+($\vert\psi_{\rm{odd}}\rangle\langle\psi_{\rm{even}}\vert$,
+$\vert\psi_{\rm{even}}\rangle\langle\psi_{\rm{odd}}\vert$) vanishes due to the
+non-sharing of $B$ basis states.  Moreover, 
+$\rho_A^{\rm odd}={\Tr}_{B}\,\vert\psi_{\rm{odd}}\rangle\langle\psi_{\rm{odd}}\vert$
+and $\rho_A^{\rm even}={\Tr}_{B}\,
+\vert\psi_{\rm{even}}\rangle\langle\psi_{\rm{even}}\vert$ contribute separately
+to the spectrum of $\rho_A$ due to the non-sharing of $A$ basis states.
+
+We now calculate the spectrum of $\rho_A^{\rm odd}$. Note that the state $\vert
+\psi_{\rm odd}\rangle$ represents a single ONC of the $N$ particles and as a
+result the ONC $i_A$ is uniquely determined by $i_B$ in the product states
+$\vert \psi^{n_A,\rm{odd}}_{i_A,j_A}\rangle\vert
+\psi^{n_B,\rm{odd}}_{i_B,j_B}\rangle$. Therefore, $\rho_A^{\rm odd}$ does not
+connect any pair of states, in the set $\{\vert
+\psi^{n_A,\rm{odd}}_{i_A,j_A}\rangle\}$, with different ONC $i_A$. This result,
+combined with the formalism presented in \ref{appendixA}, allows us to identify
+that the sector
+of $\rho_A^{\rm odd}$ that connects states in $\{\vert
+\psi^{n_A,\rm{odd}}_{i_A,j_A}\rangle\}$ with
+fixed PP $j_A$ is diagonal with $\binom{N}{n}$ equal non-zero elements of value
+$\frac{1}{N!}$.  $\binom{N}{n}$ is the number of possible ONCs in the
+partition $A$ with $n_A=n$ and we only consider the contribution of a single PP
+$j_B$ to ${\Tr}_{B}\,\vert\psi_{\rm{odd}}\rangle\langle\psi_{\rm{odd}}\vert$.
+It then follows from \ref{appendixA} that the non-zero eigenvalues of
+$\rho_A^{\rm odd}$  can be obtained by rescaling the above eigenvalues by a factor
+of $n_A!n_B!=n!(N-n)!$.  By an equivalent set of arguments 
+$\rho_A^{\rm even}$ has the same eigenvalues. Combining all the above and using
+Eq.~(\ref{eq:rho_A_final}), we find that $\rho_A$ has two sets of eigenvalues:
+$\binom{N}{n}$ eigenvalues of $\cos^2(\Theta)/{\binom{N}{n}}$ and
+$\binom{N}{n}$ eigenvalues of $\sin^2(\Theta)/{\binom{N}{n}}$. Therefore, 
+the \ren entanglement entropies are
+%
+\begin{equation}
+S_{\alpha}(n) = \ln
+\binom{N}{n}+
+\frac{1}{1-\alpha} \ln\left[\cos^{2\alpha}(\Theta)+\sin^{2\alpha}(\Theta)\right]
+\label{eq:S_alpha_deg},
+\end{equation}
+%
+and the von Neumann entropy ($\alpha = 1$) is
+%
+\begin{equation}
+S_1(n) = \ln \binom{N}{n}-\cos^2(\Theta)
+\ln\left[\cos^2(\Theta)\right]-\sin^2(\Theta)\ln\left[\sin^2(\Theta)\right].
+\label{eq:S1_deg}
+\end{equation}
+%
+According to Eqs.~(\ref{eq:S_alpha_deg}) and (\ref{eq:S1_deg}), the maximum
+entropy corresponds to $\Theta=\pi/4$ and $3\pi/4$ ($\vert\Psi\rangle=
+\frac{e^{i\delta}}{\sqrt{2}}\vert\psi_{\rm{odd}}\rangle+\frac{1}{\sqrt{2}}\vert\psi_{\rm{even}}\rangle$),
+where all the $2\binom{N}{n}$ eigenvalues of $\rho_A$ are equal and thus all
+the \ren entropies are equal to
+%
+\begin{equation}
+S_{\alpha}(n) = \ln \binom{N}{n}+\ln2.
+\label{eq:rho_A_final1}
+\end{equation}
+%
+For $\Theta=0$ and $\pi/2$,  $\vert\Psi\rangle= \vert\psi_{\rm{odd}}\rangle$ or
+$\vert\psi_{\rm{even}}\rangle$, only $\binom{N}{n}$ equal eigenvalues survive
+yielding a minimum entropy of
+%
+\begin{equation}
+S_{\alpha}(n) = \ln \binom{N}{n}.
+\label{eq:rho_A_final2}
+\end{equation}
+These limits can be seen in Fig.~\ref{fig:Sthetadep} for $V/t \gg 1$.

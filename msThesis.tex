@@ -2,6 +2,16 @@
 %\author{Emanuel Casiano-Diaz}
 %\date{July 24, 2017.}
 
+%\documentclass[12pt]{iopart}
+%\pdfoutput=1
+%\usepackage{iopams}
+
+
+%\expandafter\let\csname equation*\endcsname\relax
+%\expandafter\let\csname endequation*\endcsname\relax
+
+%\bibliographystyle{iopart-num}
+% \usepackage[square,sort&compress]{natbib}
 %Formatting Packages
 \documentclass[12pt, two sided]{report}
 \usepackage[utf8]{inputenc}
@@ -30,11 +40,6 @@
 %Adjust depth of table of contents
 \setcounter{tocdepth}{3}
 
-
-
-
-
-
 %References Packages
 %\usepackage{biblatex}
 %\addbibresource{references.bib}
@@ -45,6 +50,24 @@
     filecolor=magenta,      
     urlcolor=cyan,
 }
+
+%Commands and packages imported from particle entanglement paper
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+\newcommand{\ket}[1]{\vert #1 \rangle}
+\newcommand{\eket}[1]{\bigl \vert #1 \bigr \rangle}
+\newcommand{\R}{\boldsymbol{R}}
+\newcommand{\Rt}{\tilde{\R}}
+\newcommand{\bra}[1]{\langle #1 \vert}
+\newcommand{\ebra}[1]{\bigl \langle #1 \bigr \vert}
+\newcommand{\eexp}[1]{\bigl \langle #1 \bigr \rangle}
+\newcommand{\figref}[1]{Fig.~\ref{#1}}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
+\newcommand{\ren}{R\'{e}nyi~}
+\newcommand{\rnote}[1]{{\it \textcolor{red}{#1} }}
 
 \begin{document}
 
@@ -123,12 +146,11 @@ I want to thank ...........
 \chapter{Introduction}
 \input{Chapters/introduction}
 
-\chapter{Operational Entanglement Entropy in the $tV$ Model}
-\input{Chapters/chapter02}
-
 \chapter{Particle Partition Entanglement in the $tV$ Model}
 \input{Chapters/chapter03}
 
+\chapter{Operational Entanglement Entropy in the $tV$ Model}
+\input{Chapters/chapter02}
 
 \appendix
 \chapter{Appendix}
