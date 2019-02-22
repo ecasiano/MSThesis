@@ -3,7 +3,7 @@
 \subsection{The \ren Entanglement Entropy}
 \label{sec:accEntanglementIntro}
 
-The amount of entanglement that exists between some partition $A$ and its compliment $\bar{A}$ of a quantum many-body system in pure state $\ket{\Psi}$ can be quantified via the R\'{e}nyi entanglement entropy which depends on an index $\alpha$ :
+The amount of entanglement that exists between some partition $A$ and its compliment $B$ of a quantum many-body system in pure state $\ket{\Psi}$ can be quantified via the R\'{e}nyi entanglement entropy which depends on an index $\alpha$ :
 %
 \begin{equation}
 S_{\alpha} (\rho_A) = \frac{1}{1-\alpha}\ln \Tr\, \rho_A^{\alpha}
@@ -11,31 +11,31 @@ S_{\alpha} (\rho_A) = \frac{1}{1-\alpha}\ln \Tr\, \rho_A^{\alpha}
 \end{equation}
 %
 where $\rho_{A}$ is the reduced density matrix of partition $A$ obtained by
-tracing out all degrees of freedom in $\bar{A}$ from the full density matrix:
+tracing out all degrees of freedom in $B$ from the full density matrix:
 %
 \begin{equation}
-\rho_{A} = \Tr_{\bar{A}}\, \rho = \Tr_{\bar{A}} \ket{\Psi}\bra{\Psi}\,.
+\rho_{A} = \Tr_{B}\, \rho = \Tr_{B} \ket{\Psi}\bra{\Psi}\,.
 \end{equation}
 %
 The \ren entropy is a monotonically decreasing function of $\alpha$ for $\alpha
 > 1$ and is bounded from above by the von Neumann entropy, $S_1(\rho_A) = -\Tr \rho_A \ln \rho_A$.
 
-For a quantum many-body system subject to physical laws conserving some quantity (particle number, charge, spin, etc.), the set of local operations on the state $\ket{\Psi}$ are limited to those that don't violate the corresponding global superselection rule.  For the remainder of this paper, we will focus on our discussion on the case of fixed total $N$ and thus we are restricted to only those operators which locally preserve the particle number in $A$.  The effect this has on the amount of entanglement that can be transferred to a qubit register is apparent from the simple example (adapted from Ref.~\cite{Wiseman:2003vn} of one particle confined to two spatial modes $A$ and $\bar{A}$ corresponding to site occupations.  Then, for the state $\ket{\Psi} = \left(\ket{1}_A \otimes \ket{0}_{\bar{A}} + \ket{0}_A \otimes \ket{1}_{\bar{A}} \right)/\sqrt{2}$, Eq.~\eqref{eq:S_alpha} gives that $S_1 = \ln 2$. However, this entanglement cannot be transferred to a register prepared in initial state $\ket{0}_R$ via a $\texttt{SWAP}$ gate:
+For a quantum many-body system subject to physical laws conserving some quantity (particle number, charge, spin, etc.), the set of local operations on the state $\ket{\Psi}$ are limited to those that don't violate the corresponding global superselection rule.  For the remainder of this paper, we will focus on our discussion on the case of fixed total $N$ and thus we are restricted to only those operators which locally preserve the particle number in $A$.  The effect this has on the amount of entanglement that can be transferred to a qubit register is apparent from the simple example (adapted from Ref.~\cite{Wiseman:2003vn} of one particle confined to two spatial modes $A$ and $B$ corresponding to site occupations.  Then, for the state $\ket{\Psi} = \left(\ket{1}_A \otimes \ket{0}_{B} + \ket{0}_A \otimes \ket{1}_{B} \right)/\sqrt{2}$, Eq.~\eqref{eq:S_alpha} gives that $S_1 = \ln 2$. However, this entanglement cannot be transferred to a register prepared in initial state $\ket{0}_R$ via a $\texttt{SWAP}$ gate:
 \begin{align*}
     & \texttt{SWAP} \ket{0}_R\otimes\left(\ket{1}_A \otimes
-    \ket{0}_{\bar{A}} + \ket{0}_A \otimes \ket{1}_{\bar{A}} \right)/\sqrt{2} \\
+    \ket{0}_{B} + \ket{0}_A \otimes \ket{1}_{B} \right)/\sqrt{2} \\
     &= \frac{1}{\sqrt{2}}\left( \ket{0}_R \otimes \ket{0}_A \otimes
-        \ket{1}_{\bar{A}} + \ket{1}_R \otimes \ket{0}_A \otimes
-    \ket{0}_{\bar{A}} \right)
+        \ket{1}_{B} + \ket{1}_R \otimes \ket{0}_A \otimes
+    \ket{0}_{B} \right)
     % &= \frac{1}{\sqrt{2}}\ket{0}_R \otimes \ket{0}_A \otimes
-    %     \ket{1}_{\bar{A}}
+    %     \ket{1}_{B}
 \end{align*}
 where the last term is not physically allowed due to the restriction that the number of particles in the system is fixed to be 1. The post-swap result remains in a product state and the amount of transferable entanglement is identically zero.
 
 \subsection{von Neumann Accessible Entanglement: $\alpha = 1$}
 % ---------------------------------------------------------------------------
 
-Thus, Eq.~\eqref{eq:S_alpha}, which includes the effects of non-local number fluctuations between $A$ and $\bar{A}$, overcounts the amount of entanglement that can be accessed from the system.  To quantify the physical reduction, Wiseman and Vaccaro \cite{Wiseman:2003jx} suggested that for the case of $\alpha = 1$ a more appropriate measure should weight contributions to the entanglement coming from each superselection sector corresponding to the number of particles $n$ in $A$:
+Thus, Eq.~\eqref{eq:S_alpha}, which includes the effects of non-local number fluctuations between $A$ and $B$, overcounts the amount of entanglement that can be accessed from the system.  To quantify the physical reduction, Wiseman and Vaccaro \cite{Wiseman:2003jx} suggested that for the case of $\alpha = 1$ a more appropriate measure should weight contributions to the entanglement coming from each superselection sector corresponding to the number of particles $n$ in $A$:
 %
 \begin{equation}
     S_1^{\rm{acc}}(\rho_A)=\sum_{n=0}^{N} P_n S_1(\rho_{A_n})
@@ -50,7 +50,7 @@ Here $\rho_{A_{n}}$ is defined to be the reduced density matrix of $A$, projecte
 \end{equation}
 %
 accomplished via a projection operator ${\mathcal{P}}_{A_n}$ where
-${\mathcal{P}}_{A_n} \ket{\Psi} = \ket{n}_A\otimes\ket{N-n}_{\bar{A}}$.  
+${\mathcal{P}}_{A_n} \ket{\Psi} = \ket{n}_A\otimes\ket{N-n}_{B}$.  
 $P_n$ is the probability of measuring $n$ particles in $A$:
 %
 \begin{equation}
@@ -161,7 +161,7 @@ In this section, analytical values for the operationally accessible R\'enyi enta
  S_{\alpha}(\rho_{A}) = \frac{1}{1-\alpha} \log{\Tr{\rho_{A}^{\alpha}}} 
 \end{equation}
 
-Where $\alpha$ is the R\'enyi Index and $\rho_{A}$ is the density matrix of subregion $A$. This calculation is still required to get operational entanglement but, as shall be seen, a few extra steps have to be taken to make sure that local particle number conservation is being satisfied. The first of these extra steps will be to project $\rho_{A}$ to subspaces of local particle number. Projection operators can be written as diagonal matrices with ones on the entries corresponding to the subspace for which the projection is desired and zeros for the rest. Knowing this, the projection operators onto subspaces of fixed local particle numbers can be built rather simply. The projected reduced density matrix of  $A$ into the subspace of fixed local particle number $n$ is obtained by:
+Where $\alpha$ is the R\'enyi Index and $\rho_{A}$ is the density matrix of subregion $A$. This calculation is still required to get accessible entanglement but, as shall be seen, a few extra steps have to be taken to make sure that local particle number conservation is being satisfied. The first of these extra steps will be to project $\rho_{A}$ to subspaces of local particle number. Projection operators can be written as diagonal matrices with ones on the entries corresponding to the subspace for which the projection is desired and zeros for the rest. Knowing this, the projection operators onto subspaces of fixed local particle numbers can be built rather simply. The projected reduced density matrix of  $A$ into the subspace of fixed local particle number $n$ is obtained by:
 
 \begin{equation}
 \rho_{A_n} = \frac{1}{P_n} \mathcal{P}_{A_n} \rho_A \mathcal{P}_{A_n}
@@ -170,7 +170,7 @@ Where $\alpha$ is the R\'enyi Index and $\rho_{A}$ is the density matrix of subr
 
 Where $P_n$ is the probability of measuring an Alice state with $n$ particles and $\mathcal{P}_{A_n}$ is the projection operator onto the subspace of local particle number $n$.
 
-After all this preamble, the accessible entanglement can now be obtained. The operational entanglement is:
+After all this preamble, the accessible entanglement can now be obtained. The accessible entanglement is:
 
 \begin{equation}
 S_{\alpha}^{\mathrm{acc}}(\rho_A) = \sum_{n} P_n S(\rho_{A_n}) 
@@ -194,7 +194,7 @@ In the following section, analytical results of the accessible entanglement entr
 		\item $V/t = -2$
 	\end{enumerate}
 	
-	Starting from the known states at these regimes, analytical values for the operational entanglement were calculated. The results will be discussed in this section.
+	Starting from the known states at these regimes, analytical values for the accessible entanglement were calculated. The results will be discussed in this section.
 
 	\subsection{Infinitely repulsive interaction}
 		The state in this limit is known as a charged density wave (CDW). In the occupation number basis, the CDW state is:
@@ -255,21 +255,21 @@ Notice that some of the terms have vanished due to the orthonormality of the sta
 \end{aligned}
 \end{equation}
 
-For spatial entanglement, $\rho_{A}$ would suffice, but for operational entanglement, the matrix has to now be projected onto the various subspaces or sectors of fixed local particle number in $A$. In this case, both of the states share the same local particle number. That is, the states: $|1010...\rangle_{A}$ and $|0101...\rangle_{A}$ both have local particle number $n = \frac{N}{2}$. Since $\rho_{A}$ only contains entries corresponding to states with the same particle number, no projection is needed. In other words, for this state $\rho_{A} = \rho_{A_{\frac{N}{2}}}$. \\
+For spatial entanglement, $\rho_{A}$ would suffice, but for accessible entanglement, the matrix has to now be projected onto the various subspaces or sectors of fixed local particle number in $A$. In this case, both of the states share the same local particle number. That is, the states: $|1010...\rangle_{A}$ and $|0101...\rangle_{A}$ both have local particle number $n = \frac{N}{2}$. Since $\rho_{A}$ only contains entries corresponding to states with the same particle number, no projection is needed. In other words, for this state $\rho_{A} = \rho_{A_{\frac{N}{2}}}$. \\
 
 Taking the partial trace of $\rho_{A} = \rho_{A_{\frac{N}{2}}}$, the probability of measuring a state with local particle number $n = \frac{N}{2} $ is unity, $P_{\frac{N}{2}}=1$.
 
 The projected and normalized reduced density matrix of $A$ is now known and can be substituted into \ref{eq:accessibleEE} to calculate the accessible entanglement entropy:
 \begin {align} 
-S_{\alpha}^{\mathrm{acc}}(\rho_A) &= \sum_{n} P_n S_{\alpha}(\rho_{A,n}) \nonumber \\
-&=  \frac{1}{1-\alpha} P_{\frac{N}{2}} \log{\Tr{\rho_{A,\frac{N}{2}}^{\alpha}}} \nonumber \\
+S_{\alpha}^{\mathrm{acc}}(\rho_A) &= \sum_{n} P_n S_{\alpha}(\rho_{A_n}) \nonumber \\
+&=  \frac{1}{1-\alpha} P_{\frac{N}{2}} \log{\Tr{\rho_{A_{\frac{N}{2}}}^{\alpha}}} \nonumber \\
 &= \frac{1}{1-\alpha} (1) \log{\Tr{\begin{pmatrix}  (\frac{1}{2})^{\alpha} & 0 \\ 0 & (\frac{1}{2})^{\alpha}   \end{pmatrix}}} \nonumber \\
 &= \frac{1}{1-\alpha} \log({\frac{1}{2^{\alpha}} + \frac{1}{2^{\alpha}}}) \nonumber \\
 &= \frac{1}{1-\alpha} \log{2^{(1-\alpha)}} \nonumber \\
 S_{\alpha}^{\mathrm{acc}}(\rho_A) &= \log{2}
 \end {align}
 
-Thus, for even $N$ and $V/t \to + \infty$ , the operational entanglement converges to $\log{2} \approx 0.6931\dots$, independent of the Renyi Index. Up next, the result for odd $N$ will be derived.
+Thus, for even $N$ and $V/t \to + \infty$ , the accessible entanglement converges to $\log{2} \approx 0.6931\dots$, independent of the Renyi Index. Up next, the result for odd $N$ will be derived.
 
 	\subsubsection{Odd N}
 	
@@ -317,26 +317,26 @@ The simple projection operators onto $\frac{N+1}{2}$ and $\frac{N-1}{2}$ particl
 Applying these projections to $\rho_{A}$ and choosing the probability such that the trace of each matrix is unity (normalization), the projected reduced density matrices become:
 
 \begin{equation}
-\rho_{A,{\frac{N+1}{2}}} = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}  \text{ with probability } P_{\frac{N+1}{2}} = \frac{1}{2}
+\rho_{A_{\frac{N+1}{2}}} = \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix}  \text{ with probability } P_{\frac{N+1}{2}} = \frac{1}{2}
 \end{equation}
 
 and 
 
 \begin{equation}
-\rho_{A,{\frac{N-1}{2}}} = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}  \text{ with probability } P_{\frac{N-1}{2}} = \frac{1}{2}
+\rho_{A_{\frac{N-1}{2}}} = \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}  \text{ with probability } P_{\frac{N-1}{2}} = \frac{1}{2}
 \end{equation}
 
 Substituting into the accessible entanglement equation (\ref{eq:accessibleEE}):
 
 \begin {align} 
-S_{\alpha}^{acc}(\rho_A) &= \sum_{n} P_n S_{\alpha}(\rho_{A,n}) \nonumber \\
-&= (\frac{1}{2})\frac{1}{1-\alpha} \log{\Tr{\rho_{A,\frac{N+1}{2}}^{\alpha}}} + (\frac{1}{2})\frac{1}{1-\alpha} \log{\Tr{\rho_{A,\frac{N-1}{2}}^{\alpha}}} \nonumber \\
+S_{\alpha}^{acc}(\rho_A) &= \sum_{n} P_n S_{\alpha}(\rho_{A_n}) \nonumber \\
+&= (\frac{1}{2})\frac{1}{1-\alpha} \log{\Tr{\rho_{A_{\frac{N+1}{2}}}^{\alpha}}} + (\frac{1}{2})\frac{1}{1-\alpha} \log{\Tr{\rho_{A_{\frac{N-1}{2}}}^{\alpha}}} \nonumber \\
 &=\frac{1}{2-2\alpha}[ \log{\Tr{\begin{pmatrix}  1^{\alpha} & 0 \\ 0 & 0   \end{pmatrix}}} + \log{\Tr{\begin{pmatrix}  0 & 0 \\ 0 & 1^{\alpha}   \end{pmatrix}}}] \nonumber \\
 &=  \frac{1}{2-2\alpha}[ \underbrace{\log{1} + \log{1}}_{=0} ] \nonumber \\
 S_{\alpha}^{acc}(\rho_A) &= 0
 \end {align}
 
-Therefore, the operational entanglement vanishes in the infinite repulsion limit ($V/t \to + \infty$) with odd number of total particles in the system.
+Therefore, the accessible entanglement vanishes in the infinite repulsion limit ($V/t \to + \infty$) with odd number of total particles in the system.
 
 The results for the accessible entanglement in the infinitely repulsive limit can then be summarized as:
 
@@ -483,8 +483,8 @@ Notice from the form of the projection operators that the projected reduced dens
 
 \begin{equation}
 \begin{aligned}
-\rho_{A,N-1} &= \frac{1}{P_{N-1}} \hat{\Pi}_{N-1} \rho_{A} \hat{\Pi}_{N-1} \\
-\rho_{A,N-1} &= \frac{1}{P_{N-1}} \begin{pmatrix} 
+\rho_{A_{N-1}} &= \frac{1}{P_{N-1}} \hat{\Pi}_{N-1} \rho_{A} \hat{\Pi}_{N-1} \\
+\rho_{A_{N-1}} &= \frac{1}{P_{N-1}} \begin{pmatrix} 
 0 \\
 & 0 \\
 & & \frac{1}{L} \\
@@ -501,13 +501,13 @@ Notice from the form of the projection operators that the projected reduced dens
 The probability of measuring a state with local particle number $N-1$ can be obtained from normalization:
 
 \begin{equation}
-\Tr{\rho_{A,N-1}} = 1 \implies \frac{1}{P_{N-1}}\frac{2}{L} = 1 \implies P_{N-1} = \frac{2}{L}
+\Tr{\rho_{A_{N-1}}} = 1 \implies \frac{1}{P_{N-1}}\frac{2}{L} = 1 \implies P_{N-1} = \frac{2}{L}
 \end{equation}
 
 Thus, the normalized projection onto $n=N-1$ of $\rho_{A}$ is:
 
 \begin{equation}
-\rho_{A,N-1} = \begin{pmatrix} 
+\rho_{A_{N-1}} = \begin{pmatrix} 
 0 \\
 & 0 \\
 & & \frac{1}{2} \\
@@ -522,7 +522,7 @@ Thus, the normalized projection onto $n=N-1$ of $\rho_{A}$ is:
 
 For $n = N-2$:
 \begin{equation}
- \rho_{A,N-2} = \begin{pmatrix} 
+ \rho_{A_{N-2}} = \begin{pmatrix} 
 0 \\
 & 0 \\
 & & 0  \\
@@ -537,9 +537,9 @@ For $n = N-2$:
 
 and so on and so forth. \\
 \\
-Similarly, $\rho_{A,N}$ and $\rho_{A,0}$ become:
+Similarly, $\rho_{A_N}$ and $\rho_{A_0}$ become:
 \begin{equation}
-\rho_{A,N} = \begin{pmatrix} 
+\rho_{A_N} = \begin{pmatrix} 
 1 \\
 & 0 \\
 & & 0  \\
@@ -550,7 +550,7 @@ Similarly, $\rho_{A,N}$ and $\rho_{A,0}$ become:
 & & & & & & &  0 \\
 & & & & & & & &  0 \\
 \end{pmatrix} ,
-\rho_{A,0} = \begin{pmatrix} 
+\rho_{A_0} = \begin{pmatrix} 
 0 \\
 & 1 \\
 & & 0  \\
@@ -568,9 +568,9 @@ with probabilities $P_{N} = P_{0} = \frac{1}{L}$ \\
 Finally, the accessible entanglement is:
 
 \begin{align} 
-S_{\alpha}^{acc}(\rho_A) &= \sum_{n} P_n S_{\alpha}(\rho_{A,n}) \nonumber \\
-&= \frac{1}{1-\alpha}[\frac{1}{L} \log{\Tr{\rho_{A,N}^\alpha}} + \frac{1}{L} \log{\Tr{\rho_{A,0}^\alpha}} + \frac{2}{L} \log{\Tr{\rho_{A,N-1}^\alpha}} \nonumber \\
-&+ \frac{2}{L} \log{\Tr{\rho_{A,N-2}^\alpha}} + \dots +\frac{2}{L} \log{\Tr{\rho_{A,2}^\alpha}} + \frac{2}{L} \log{\Tr{\rho_{A,1}^\alpha}} ] \nonumber \\
+S_{\alpha}^{acc}(\rho_A) &= \sum_{n} P_n S_{\alpha}(\rho_{A_n}) \nonumber \\
+&= \frac{1}{1-\alpha}[\frac{1}{L} \log{\Tr{\rho_{A_N}^\alpha}} + \frac{1}{L} \log{\Tr{\rho_{A_0}^\alpha}} + \frac{2}{L} \log{\Tr{\rho_{A_{N-1}}^\alpha}} \nonumber \\
+&+ \frac{2}{L} \log{\Tr{\rho_{A_{N-2}}^\alpha}} + \dots +\frac{2}{L} \log{\Tr{\rho_{A_2}^\alpha}} + \frac{2}{L} \log{\Tr{\rho_{A_1}^\alpha}} ] \nonumber \\
 &= \frac{1}{L-L\alpha}[ \underbrace{\log{1}}_{=0} +  \underbrace{\log{1}}_{=0} + 2 \log({\frac{1}{2^\alpha}+\frac{1}{2^\alpha}}) \nonumber \\
 &+ 2 \log({\frac{1}{2^\alpha}+\frac{1}{2^\alpha}})+ \dots + 2 \log({\frac{1}{2^\alpha}+\frac{1}{2^\alpha}}) + 2 \log({\frac{1}{2^\alpha}+\frac{1}{2^\alpha}}) ] \nonumber \\
 &= \frac{2}{L-L\alpha}\underbrace{[\log{2^{(1-\alpha)}} + \log{2^{(1-\alpha)}} + \dots + \log{2^{(1-\alpha)}} + \log{2^{(1-\alpha)}}}_{N - 1 \text{ or } \frac{L}{2}-1\text{ total terms }}] \nonumber \\
@@ -581,7 +581,7 @@ S_{\alpha}^{acc}(\rho_A) &= \frac{N-1}{N}\log{2}
 
 \subsubsection{Analytical result for any filling fraction and partition size}
 
-The analytical result obtained above for the accessible entanglement entropy in the infinitely attractive regime corresponds to the special case of half-filling ($N = \frac{L}{2}$) and equal spatial bipartitions ($\ell_{A} = \ell_{B} = \frac{L}{2}$). Nevertheless, a generalized result can be obtained for any filling fraction and partition size by counting the number of projected reduced density matrices ($\rho_{A,n}$) that will contribute to the accessible entanglement. As it will be shown, the number of contributing matrices will depend on how the quantities $\ell_{A}, \ell_{B}, N \text{ } \&  \text{ }N^{c} = L-N$ relate to each other. Demonstration of the following cases will suffice to get the general result:
+The analytical result obtained above for the accessible entanglement entropy in the infinitely attractive regime corresponds to the special case of half-filling ($N = \frac{L}{2}$) and equal spatial bipartitions ($\ell_{A} = \ell_{B} = \frac{L}{2}$). Nevertheless, a generalized result can be obtained for any filling fraction and partition size by counting the number of projected reduced density matrices ($\rho_{A_n}$) that will contribute to the accessible entanglement. As it will be shown, the number of contributing matrices will depend on how the quantities $\ell_{A}, \ell_{B}, N \text{ } \&  \text{ }N^{c} = L-N$ relate to each other. Demonstration of the following cases will suffice to get the general result:
 
 \begin{align}
 &i) \ell_{A} < N < \ell_{B} \nonumber \\
@@ -594,10 +594,10 @@ These four cases actually imply other cases and, in the end, all possible relati
 
 Case $i)$ $\ell_{A} < N < \ell_{B}$:
 
-The condition here is that the size of the subregion $A$ should be less than the total number of particles $N$ and the size of the subregion $B$ should be greater than both of these quantities. Under such conditions, particle configurations in which $B$ is empty are not possible, since $A$ is too small too fit them all. Two other configurations that will not contribute to the operational entanglement are when $A$ is full ($n_{A} = \ell_{A}$) and when it is empty ($n_{A} = 0$). There is only one possible way of distributing the particles in partition $A$ if it is full and likewise if it is empty. As it was seen in the previous section, then the corresponding projected reduced density matrices $\rho_{A,\ell_{A}}$ and $\rho_{A,0}$ have only one nonzero eigenvalue which, after normalization, becomes 1. Thus, $\ln \rho_{A,\ell_{A}}^{\alpha} = \ln \rho_{A,0}^{\alpha} = 0$. There are a total of $\ell_{A}+1$ possible local particle numbers ($n_{A}$) and since $n_{A} = \ell_{A}$ and $n_{A} = 0$ do not contribute, there are actually $\ell_{A}-1$ contributing projected reduced density matrices. All such projected density matrix will have the form:
+The condition here is that the size of the subregion $A$ should be less than the total number of particles $N$ and the size of the subregion $B$ should be greater than both of these quantities. Under such conditions, particle configurations in which $B$ is empty are not possible, since $A$ is too small too fit them all. Two other configurations that will not contribute to the accessible entanglement are when $A$ is full ($n_{A} = \ell_{A}$) and when it is empty ($n_{A} = 0$). There is only one possible way of distributing the particles in partition $A$ if it is full and likewise if it is empty. As it was seen in the previous section, then the corresponding projected reduced density matrices $\rho_{A_{\ell_{A}}}$ and $\rho_{A_0}$ have only one nonzero eigenvalue which, after normalization, becomes 1. Thus, $\ln \rho_{A_{\ell_{A}}}^{\alpha} = \ln \rho_{A_0}^{\alpha} = 0$. There are a total of $\ell_{A}+1$ possible local particle numbers ($n_{A}$) and since $n_{A} = \ell_{A}$ and $n_{A} = 0$ do not contribute, there are actually $\ell_{A}-1$ contributing projected reduced density matrices. All such projected density matrix will have the form:
 
 \begin{equation}
-\rho_{A,n} = \begin{pmatrix} 
+\rho_{A_n} = \begin{pmatrix} 
 
 \frac{1}{L} & 0 \\
 0 & \frac{1}{L} \\
@@ -608,7 +608,7 @@ The condition here is that the size of the subregion $A$ should be less than the
 The two diagonal elements come from the two configurations that have the same local particle number $n$. Technically, these projected reduced density matrices are larger, since the basis includes configurations with all possible local particle numbers. Nevertheless, rows and columns that only have zero entries have been thrown out for compactness. Normalizing, the reduced density matrices become:
 
 \begin{equation}
-\rho_{A,n} = \frac{1}{P_n} \begin{pmatrix} 
+\rho_{A_n} = \frac{1}{P_n} \begin{pmatrix} 
 
 \frac{1}{2} & 0 \\
 0 & \frac{1}{2} \\
@@ -627,15 +627,15 @@ Case $ii)$ $\ell_{B} < N < \ell_{A}$:
 This time, partition $B$ is the one that can never be empty. Barring that, the argument is exactly the same as $i)$ and thus:
 
 \begin{equation}
-S_{\alpha}^{op} (\ell_{B}, L) = (\ell_{B} - 1) \frac{2}{L} \ln{2}
+S_{\alpha}^{\rm acc} (\ell_{B}, L) = (\ell_{B} - 1) \frac{2}{L} \ln{2}
 \end{equation}
 
 Case $iii)$ $N < \ell_{A} < \ell_{B}$:
 
-In contrast to $i)$ and $ii)$, now the particles may all be in $A$ or all in $B$. Nevertheless, in such instances, there is only a single possible configuration of the other partition, that in which it's empty. Thus, the projected reduced density matrices $\rho_{A,N}$ and $\rho_{A,0}$ have only one nonzero eigenvalue and, thus, do not contribute to the operational entanglement since this eigenvalue will reduce to unity after normalization. Barring these two, there are then $N-1$ projected reduced density matrices that do contribute. They all have the same form as the ones of $i)$ and $ii)$, that is, $2x2$ diagonal matrices (after throwing out all unnecessary zeroes) with 2 eigenvalues equal to $\frac{1}{2}$ (after normalizing) and probabilities $P_n = \frac{2}{L}$. Thus:
+In contrast to $i)$ and $ii)$, now the particles may all be in $A$ or all in $B$. Nevertheless, in such instances, there is only a single possible configuration of the other partition, that in which it's empty. Thus, the projected reduced density matrices $\rho_{A_N}$ and $\rho_{A_0}$ have only one nonzero eigenvalue and, thus, do not contribute to the accessible entanglement since this eigenvalue will reduce to unity after normalization. Barring these two, there are then $N-1$ projected reduced density matrices that do contribute. They all have the same form as the ones of $i)$ and $ii)$, that is, $2x2$ diagonal matrices (after throwing out all unnecessary zeroes) with 2 eigenvalues equal to $\frac{1}{2}$ (after normalizing) and probabilities $P_n = \frac{2}{L}$. Thus:
 
 \begin{equation}
-S_{\alpha}^{op} (N, L) = (N - 1) \frac{2}{L} \ln{2}
+S_{\alpha}^{\rm acc} (N, L) = (N - 1) \frac{2}{L} \ln{2}
 \end{equation}
 
 Case $iv)$ $\ell_{A} < \ell_{B} < N$:
@@ -692,7 +692,7 @@ S_\alpha^{acc}(x,L) = \frac{2(x-1)}{L} \ln{2} ; \text{ where } x = \min{\ell_A, 
 
 	\subsection{First order phase transition}
 	
-At $\frac{V}{t} = -2$, the $tV$-Model undergoes a first order phase transition from Luttinger Liquid to Phase Separated Solid. The operational entanglement at this interaction strength vanishes and then suddenly increases and converges to the previously derived limit ($\frac{N-1}{N}\ln{2}$) as the attraction gets stronger. In this section, it will be shown that the operational entanglement vanishes at the first order phase transition.
+At $\frac{V}{t} = -2$, the $tV$-Model undergoes a first order phase transition from Luttinger Liquid to Phase Separated Solid. The accessible entanglement at this interaction strength vanishes and then suddenly increases and converges to the previously derived limit ($\frac{N-1}{N}\ln{2}$) as the attraction gets stronger. In this section, it will be shown that the accessible entanglement vanishes at the first order phase transition.
 
 At $\frac{V}{t}=-2$ and half-filling ($N=\frac{L}{2}$), the state of the system is an equiprobable superposition of all possible configurations. There are a total of ${L}\choose{N}$ possible configurations. Thus, the general state can be written as: 
 
@@ -705,7 +705,7 @@ where $|\phi_{i}\rangle$ is the set of all configurations of $N$ fermions on $L$
 For simplicity, let $\frac{1}{\sqrt{{L}\choose{N}}} \equiv C$. For particle sub-sectors of $n_A = 0$ and $n_A = N$, the projected reduced density matrices become:
 
 \begin{equation}
-\rho_{A,N} = \frac{1}{P_{N}} \begin{pmatrix}
+\rho_{A_N} = \frac{1}{P_{N}} \begin{pmatrix}
 C & \dots & 0 \\ 
 \vdots & 0 & \vdots \\
 0 & \dots & 0 \\
@@ -715,7 +715,7 @@ C & \dots & 0 \\
 with probability $P_{N} = C$. And, 
 
 \begin{equation}
-\rho_{A,0} = \frac{1}{P_{0}} \begin{pmatrix}
+\rho_{A_0} = \frac{1}{P_{0}} \begin{pmatrix}
 0 & \dots & 0 \\ 
 \vdots & 0 & \vdots \\
 0 & \dots & C \\
@@ -727,7 +727,7 @@ also with probability $P_{0} = C$.
 For particle number sub-sectors of $1 \leq n \leq N-1$, the projected reduced density matrices become square matrices of size $NxN$ with all entries being $NC^2$:
 
 \begin{equation}
-\rho_{A,n} = \frac{1}{P_{n}} \begin{pmatrix}
+\rho_{A_n} = \frac{1}{P_{n}} \begin{pmatrix}
 NC^2 & \dots & NC^2 \\ 
 \vdots & NC^2 & \vdots \\
 NC^2 & \dots & NC^2
@@ -739,21 +739,21 @@ with probabilities $P_{n}=N(NC^2)=N^2C^2$.
 In summary, the normalized projected reduced density matrices are:
 
 \begin{equation}
-\rho_{A,N} = \frac{1}{P_{N}} \begin{pmatrix}
+\rho_{A_N} = \frac{1}{P_{N}} \begin{pmatrix}
 1 & \dots & 0 \\ 
 \vdots & 0 & \vdots \\
 0 & \dots & 0 \\
 \end{pmatrix}, P_{N}=C 
 \end{equation}
 \begin{equation}
- \rho_{A,0} = \frac{1}{P_{N}} \begin{pmatrix}
+ \rho_{A_0} = \frac{1}{P_{N}} \begin{pmatrix}
 0 & \dots & 0 \\ 
 \vdots & 0 & \vdots \\
 0 & \dots & 1 \\
 \end{pmatrix}, P_{0}=C 
 \end{equation}
 \begin{equation}
-\rho_{A,n} = \frac{1}{P_{n}} \begin{pmatrix}
+\rho_{A_n} = \frac{1}{P_{n}} \begin{pmatrix}
 \frac{1}{N} & \dots & \frac{1}{N} \\ 
 \vdots & \frac{1}{N} & \vdots \\
 \frac{1}{N} & \dots & \frac{1}{N}
@@ -762,14 +762,14 @@ In summary, the normalized projected reduced density matrices are:
 
 Recall the definition of the accessible (R\'enyi) entanglement entropy:
 
-\[S_{\alpha}^{acc}(\rho_{A}) = \sum_{n} P_{n}S(\rho_{A,n})\]
+\[S_{\alpha}^{acc}(\rho_{A}) = \sum_{n} P_{n}S(\rho_{A_n})\]
 
 where $S_{\alpha}(\rho_A) = \frac{1}{1-\alpha} \log{\Tr{(\rho_A^{\alpha})}}$
 \\
 
 Expanding the sum:
 \begin{align}
-S_{\alpha}^{acc}(\rho_{A}) &= P_{0} \log{\Tr{(\rho_{A,0}^{\alpha})}} + P_{N} \log{\Tr{(\rho_{A,N}^{\alpha})}} + \sum_{n=1}^{N-1} P_{n} \log{\Tr{(\rho_{A,n}^{\alpha})}} \nonumber \\
+S_{\alpha}^{acc}(\rho_{A}) &= P_{0} \log{\Tr{(\rho_{A_0}^{\alpha})}} + P_{N} \log{\Tr{(\rho_{A_N}^{\alpha})}} + \sum_{n=1}^{N-1} P_{n} \log{\Tr{(\rho_{A_n}^{\alpha})}} \nonumber \\
 &= C \log{1} + C \log{1} + N^2C^2 \sum_{n=1}^{N-1} \log{N(\frac{1}{N})}  \nonumber \\
 &= N^2C^2 \sum_{n=1}^{N-1} \log{1} \nonumber \\
 S_{\alpha}^{acc}(\rho_{A}) &= 0 
@@ -820,7 +820,7 @@ Analytical results have now been obtained in three regimes of the $tV$ Model, na
 \begin{center}
 \includegraphics[width=1.0\textwidth]{phaseDiagramTV.pdf}
 \end{center}
-\caption{Phase diagram of the $t-V$ model accompanied by pictures of candidate ground states for $N=2$ fermions on a $L=4$ site lattice. For the purposes of measuring accessible entanglement, the lattice has been bipartitioned into spatial subregions $A$ (blue) and $\bar{A}$ (red), each of size $\ell = 2$. We assume periodic boundary conditions. In the limit of strong attractive interactions where $V/t \ll -2$, the particles cluster together and there are $L$ equally probable configurations corresponding to all translations of the cluster.  At the first order phase transition where $V/t = -2$, all ${L}\choose{N}$ configurations are equally probable resulting in a flat state. In the TLL phase with $|V/t| < 2$,  particles are delocalized and we have included a characteristic state corresponding to free fermions $(V=0)$. In the limit of strong repulsive interactions where $V/t \gg 2$, fermions maximize their distance from each other resulting in a charge density wave (CDW) phase. The open and closed circles on the $V/t$ axis denote a first order and continuous phase transition, respectively.}
+\caption{Phase diagram of the $t-V$ model accompanied by pictures of candidate ground states for $N=2$ fermions on a $L=4$ site lattice. For the purposes of measuring accessible entanglement, the lattice has been bipartitioned into spatial subregions $A$ (blue) and $B$ (red), each of size $\ell = 2$. We assume periodic boundary conditions. In the limit of strong attractive interactions where $V/t \ll -2$, the particles cluster together and there are $L$ equally probable configurations corresponding to all translations of the cluster.  At the first order phase transition where $V/t = -2$, all ${L}\choose{N}$ configurations are equally probable resulting in a flat state. In the TLL phase with $|V/t| < 2$,  particles are delocalized and we have included a characteristic state corresponding to free fermions $(V=0)$. In the limit of strong repulsive interactions where $V/t \gg 2$, fermions maximize their distance from each other resulting in a charge density wave (CDW) phase. The open and closed circles on the $V/t$ axis denote a first order and continuous phase transition, respectively.}
 \label{fig:phaseDiagram}
 \end{figure*}
 %%%%%%%%%%%%%%%%%

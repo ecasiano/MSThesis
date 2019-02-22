@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 FEB 2019 09:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 FEB 2019 11:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2676,10 +2676,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 25584 strings out of 493014
- 480264 string characters out of 6133351
- 539902 words of memory out of 5000000
- 28370 multiletter control sequences out of 15000+600000
+ 25583 strings out of 493014
+ 480233 string characters out of 6133351
+ 539344 words of memory out of 5000000
+ 28369 multiletter control sequences out of 15000+600000
  33139 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,87p,10384b,898s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2712,7 +2712,7 @@ pe1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
 public/cm-super/sfti1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
 blic/cm-super/sftt1200.pfb>
-Output written on msThesis.pdf (62 pages, 2155207 bytes).
+Output written on msThesis.pdf (62 pages, 2155107 bytes).
 PDF statistics:
  1750 PDF objects out of 2073 (max. 8388607)
  1436 compressed objects within 15 object streams
