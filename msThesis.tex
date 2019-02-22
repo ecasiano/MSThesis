@@ -23,6 +23,10 @@
 \usepackage{bm}
 \DeclareMathOperator{\Tr}{Tr}
 
+%Physics Package
+\usepackage{physics}
+
+
 %Allow accentuation marks
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -57,17 +61,31 @@
 \usepackage{graphicx}
 \usepackage{amssymb}
 
-\newcommand{\ket}[1]{\vert #1 \rangle}
+%\newcommand{\ket}[1]{\vert #1 \rangle}
 \newcommand{\eket}[1]{\bigl \vert #1 \bigr \rangle}
 \newcommand{\R}{\boldsymbol{R}}
 \newcommand{\Rt}{\tilde{\R}}
-\newcommand{\bra}[1]{\langle #1 \vert}
+%\newcommand{\bra}[1]{\langle #1 \vert}
 \newcommand{\ebra}[1]{\bigl \langle #1 \bigr \vert}
 \newcommand{\eexp}[1]{\bigl \langle #1 \bigr \rangle}
 \newcommand{\figref}[1]{Fig.~\ref{#1}}
 \renewcommand{\vec}[1]{\boldsymbol{#1}}
 \newcommand{\ren}{R\'{e}nyi~}
 \newcommand{\rnote}[1]{{\it \textcolor{red}{#1} }}
+\newcommand{\Eqref}[1]{Eq.~\eqref{#1}}
+
+%Copied from paper
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage[color=green!60]{todonotes}
+\usepackage{physics}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{placeins}
+\usepackage{booktabs}
+\usepackage{dsfont}
 
 \begin{document}
 
@@ -108,14 +126,14 @@
 			
 		\vspace{0.75cm}
 		
-		April 30th, 2018 or before (Writing Complete)
+		February 1st, 2019 or before (Writing Complete)
 		
 	\end{center}
 	
 	\vspace{0.5cm}
 	
 	\begin{flushright}
-		Defense Date: May 30th, 2018 \\
+		Defense Date: March 22nd, 2019. \\
 		Thesis Examination Commitee:
 		
 		\vspace{0.5cm}
@@ -147,10 +165,10 @@ I want to thank ...........
 \input{Chapters/introduction}
 
 \chapter{Particle Partition Entanglement in the $tV$ Model}
-\input{Chapters/chapter03}
-
-\chapter{Operational Entanglement Entropy in the $tV$ Model}
 \input{Chapters/chapter02}
+
+\chapter{Operationally Accessible Entanglement Entropy in the $tV$ Model}
+\input{Chapters/chapter03}
 
 \appendix
 \chapter{Appendix}

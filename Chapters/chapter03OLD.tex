@@ -1,156 +1,9 @@
-\section{Operationally Accessible Entanglement Entropy}
+\section{The accessible entanglement}
 
-\subsection{The \ren Entanglement Entropy}
-\label{sec:accEntanglementIntro}
+Consider an $N$-particle quantum state, with the $N$ particles shared between spatial subregions $A$ and $B$, or Alice and Bob, if you will. If Alice's and Bob's particles are entangled, this entanglement could be used as a resource for real world applications. Nevertheless, by using the traditional Von Neumann or R\'enyi Entanglement entanglement entropy, an overestimated measure of the physically available entanglement is obtained. This happens because for applications that rely on quantum entanglement, the particle number has to be conserved and these traditional measures do not account for this so called Super Selection Rule (SSR). To address the issue, Wiseman and Vaccaro \cite{PhysRevLett.91.097902} proposed a measure that will be referred to here as Accessible Entanglement (originally called Entanglement of Modes by the authors). The accessible entanglement takes into account that the local particle number in $A$ and $B$ has to be conserved, giving a more physically accurate measure of entanglement. A recent generalization of the Renyi Accessible Entanglement Entropy \cite{PhysRevLett.121.150501} allows this entropy to be measured in an experimental setting for arbitrary Renyi Index.\\
 
-The amount of entanglement that exists between some partition $A$ and its compliment $\bar{A}$ of a quantum many-body system in pure state $\ket{\Psi}$ can be quantified via the R\'{e}nyi entanglement entropy which depends on an index $\alpha$ :
-%
-\begin{equation}
-S_{\alpha} (\rho_A) = \frac{1}{1-\alpha}\ln \Tr\, \rho_A^{\alpha}
-\label{eq:S_alpha}
-\end{equation}
-%
-where $\rho_{A}$ is the reduced density matrix of partition $A$ obtained by
-tracing out all degrees of freedom in $\bar{A}$ from the full density matrix:
-%
-\begin{equation}
-\rho_{A} = \Tr_{\bar{A}}\, \rho = \Tr_{\bar{A}} \ket{\Psi}\bra{\Psi}\,.
-\end{equation}
-%
-The \ren entropy is a monotonically decreasing function of $\alpha$ for $\alpha
-> 1$ and is bounded from above by the von Neumann entropy, $S_1(\rho_A) = -\Tr \rho_A \ln \rho_A$.
-
-For a quantum many-body system subject to physical laws conserving some quantity (particle number, charge, spin, etc.), the set of local operations on the state $\ket{\Psi}$ are limited to those that don't violate the corresponding global superselection rule.  For the remainder of this paper, we will focus on our discussion on the case of fixed total $N$ and thus we are restricted to only those operators which locally preserve the particle number in $A$.  The effect this has on the amount of entanglement that can be transferred to a qubit register is apparent from the simple example (adapted from Ref.~\cite{Wiseman:2003vn} of one particle confined to two spatial modes $A$ and $\bar{A}$ corresponding to site occupations.  Then, for the state $\ket{\Psi} = \left(\ket{1}_A \otimes \ket{0}_{\bar{A}} + \ket{0}_A \otimes \ket{1}_{\bar{A}} \right)/\sqrt{2}$, Eq.~\eqref{eq:S_alpha} gives that $S_1 = \ln 2$. However, this entanglement cannot be transferred to a register prepared in initial state $\ket{0}_R$ via a $\texttt{SWAP}$ gate:
-\begin{align*}
-    & \texttt{SWAP} \ket{0}_R\otimes\left(\ket{1}_A \otimes
-    \ket{0}_{\bar{A}} + \ket{0}_A \otimes \ket{1}_{\bar{A}} \right)/\sqrt{2} \\
-    &= \frac{1}{\sqrt{2}}\left( \ket{0}_R \otimes \ket{0}_A \otimes
-        \ket{1}_{\bar{A}} + \ket{1}_R \otimes \ket{0}_A \otimes
-    \ket{0}_{\bar{A}} \right)
-    % &= \frac{1}{\sqrt{2}}\ket{0}_R \otimes \ket{0}_A \otimes
-    %     \ket{1}_{\bar{A}}
-\end{align*}
-where the last term is not physically allowed due to the restriction that the number of particles in the system is fixed to be 1. The post-swap result remains in a product state and the amount of transferable entanglement is identically zero.
-
-\subsection{von Neumann Accessible Entanglement: $\alpha = 1$}
-% ---------------------------------------------------------------------------
-
-Thus, Eq.~\eqref{eq:S_alpha}, which includes the effects of non-local number fluctuations between $A$ and $\bar{A}$, overcounts the amount of entanglement that can be accessed from the system.  To quantify the physical reduction, Wiseman and Vaccaro \cite{Wiseman:2003jx} suggested that for the case of $\alpha = 1$ a more appropriate measure should weight contributions to the entanglement coming from each superselection sector corresponding to the number of particles $n$ in $A$:
-%
-\begin{equation}
-    S_1^{\rm{acc}}(\rho_A)=\sum_{n=0}^{N} P_n S_1(\rho_{A_n})
-\label{eq:S1acc}.
-\end{equation}
-%
-Here $\rho_{A_{n}}$ is defined to be the reduced density matrix of $A$, projected onto the subspace of fixed local particle number $n$ 
-%
-\begin{equation}
-    \rho_{A_n} = \frac{1}{P_n}{\mathcal{P}}_{A_n} \rho_{A} {\mathcal{P}}_{A_n}
-\label{eq:rhoAn}
-\end{equation}
-%
-accomplished via a projection operator ${\mathcal{P}}_{A_n}$ where
-${\mathcal{P}}_{A_n} \ket{\Psi} = \ket{n}_A\otimes\ket{N-n}_{\bar{A}}$.  
-$P_n$ is the probability of measuring $n$ particles in $A$:
-%
-\begin{equation}
-    P_n = \mathrm{Tr}\, {\mathcal{P}}_{A_n} \rho_A{\mathcal{P}}_{A_n}
-    = \expval{{\mathcal{P}}_{A_n}}{\Psi}.
-    \label{eq:Pn}
-\end{equation}
-%
-As the projection constitutes a local operation which can only decrease
-entanglement,  it is clear that $S_1^{\rm acc}(\rho_A) \le S_1(\rho_A)$. 
-Moreover, the difference 
-%
-\begin{equation}
-    \Delta S_1 (\rho_A) \equiv S_1(\rho_A) - S_1^{\rm acc}(\rho_A)
-    \label{eq:DeltaS1}
-\end{equation}
-%
-can be determined  by noting that the superselection rule guarantees that $[\rho_A,\hat{n}]=0$ where $\hat{n}$ is the number operator acting in partition $A$. Thus $\rho_A$ is block-diagonal in $n$ and it can be shown \cite{Klich:2008se} that 
-%
-\begin{equation}
-    \Delta S_1 (\rho_A) =  H_1(\{P_n\})
-\label{eq:DS1H1}
-\end{equation}
-%
-where
-%
-\begin{equation}
-    H_1(\{P_n\}) = -\sum_{n=0}^N P_n \ln P_n.
-\label{eq:H1}
-\end{equation}
-%
-is the Shannon entropy of the number probability distribution.  It is instructive to consider \Eqref{eq:DS1H1} for the special case of a discrete Gaussian distribution, $P_n \propto e^{-(n-\expval{n})^2/2\sigma^2}$ where $H_1 = \ln\left(2\pi e \sigma^2 + \tfrac{1}{12}\right)$ depends only on the variance of $P_n$
-%
-\begin{equation}
-    \sigma^2 \equiv \expval{n^2}-\expval{n}^2 = \sum_{n=0}^N n^2 P_n  - \left(\sum_{n=0}^N n P_n\right)^2\,.
-\label{eq:sigma2}
-\end{equation}
-%
-Thus, when the number fluctuations are Gaussian, the von Neumann accessible entanglement is completely determined by the variance.
-
-% ---------------------------------------------------------------------------
-\subsection{\ren Accessible Entanglement: $\alpha \ne 1$}
-% ---------------------------------------------------------------------------
-
-Computing the accessible entanglement for a many-body system is a difficult task for $\alpha=1$, as full state tomography is required to reconstruct the density matrix $\rho$. However, for integer values with $\alpha > 1$ a replica trick can be used to recast $\mathrm{Tr} \rho_A^\alpha$ as the expectation value of some local operator \cite{Calabrese:2004hl}. This advance has led to a boon of new entanglement results using both computational \cite{Hastings:2010dc, Humeniuk:2012cq, McMinis:2013dp, Herdman:2014ey, Drut:2015fs} and experimental \cite{Daley:2012bd, Islam:2015cm, Kaufman:2016ep, Pichler:2016ec, Linke:2017tf, Lukin:2018wg} methods.  Motivated by this progress, \cite{PhysRevLett.121.150501} generalized the accessible entanglement to the case of \ren entropies with $\alpha \ne 1$ and found that:
-%
-\begin{equation}
-S_{\alpha}^{{\rm acc}} (\rho_A) = \frac{\alpha}{1-\alpha}\ln\left[ \sum_{n} P_n \mathrm{e}^{\frac{1-\alpha}{\alpha} S_{\alpha}(\rho_{A_n})}\right]
-\label{eq:S_alpha_acc}
-\end{equation} 
-%
-% which reproduces Eq.~\eqref{eq:S1acc} in the limit $\alpha \to 1$. While not physically transparent in this form, the modification from the $\alpha=1$ case results from replacing the geometric mean in Eq.~\eqref{eq:S1acc} with a general power mean whose form is constrained by the physical requirement that $0 \le \Delta S_\alpha \le \ln (N+1)$.  It can also be interpreted as the quantum generalization of the conditional classical \ren entropy \cite{Cachin97entropymeasures,GolshaniPashaYari:2009,Hayashi:2011,SKORIC:2011el,FehrBerens2014} subject to physical constraints \cite{Barghathi:2018oe}. The arguments leading to Eq.~\eqref{eq:DS1H1} can also be generalized leading to 
-which reproduces Eq.~\eqref{eq:S1acc} in the limit $\alpha \to 1$. While not physically transparent in this form, the modification from the $\alpha=1$ case results from replacing the geometric mean in Eq.~\eqref{eq:S1acc} with a general power mean whose form is constrained by the physical requirement that
-%
-\begin{equation}
- 0 \le \Delta S_\alpha \le \ln (N+1)
-\label{eq:DeltaS_alpha_inq}
-\end{equation}
-%
-where the upper bound is equal to the support of $P_n$. \Eqref{eq:S_alpha_acc} can also be interpreted as the quantum generalization of the conditional classical \ren entropy \cite{Cachin97entropymeasures,GolshaniPashaYari:2009,Hayashi:2011,SKORIC:2011el,FehrBerens2014}, subject to physical constraints \cite{Barghathi:2018oe}. The arguments leading to Eq.~\eqref{eq:DS1H1} can then be generalized (see the supplemental material of Ref.~[\cite{Barghathi:2018oe}]) leading to 
-%
-\begin{equation}
-    \Delta S_{\alpha}\equiv  S_{\alpha} - S_{\alpha}^{{\rm acc}} = H_{{1}/{\alpha}}\left(\{P_{n,\alpha}\}\right)
-\label{eq:S_alpha_acc5}
-\end{equation}
-%
-where we introduce the classical \ren entropy of $P_n$
-%
-\begin{equation}
-    H_{\alpha}\left(\{P_n\}\right)=\frac{1}{1-\alpha}\ln\sum_n P_n^{\alpha} 
-\label{eq:Halpha}
-\end{equation}
-%
-and
-%
-\begin{equation}
-    P_{n,\alpha}=\frac{\Tr\, \left[{\mathcal{P}}_{A_{n}} \rho_A^{\alpha} {\mathcal{P}}_{A_{n}}\right]}{\Tr\, \rho_A^{\alpha}}=\frac{ P_n^\alpha\Tr\, \rho_{A_n}^{\alpha}}{\Tr\, \rho_A^{\alpha}}
-\label{eq:Pna}
-\end{equation}
-%
-can be interpreted as a normalization of partial traces of $\rho_A^{\alpha}$, where the SSR fixing the total particle number leads to $\Tr\, \rho_A^{\alpha}=\sum_n \Tr\, \left[{\mathcal{P}}_{A_{n}} \rho_A^{\alpha} {\mathcal{P}}_{A_{n}}\right]$ and thus guarantees the normalization of $P_{n,\alpha}$. Note that we have defined $P_{n,1} \equiv P_n$ for notational consistency. For brevity, let $H_{\alpha}(\{P_n\}) \equiv H_{\alpha}$ from here onwards. 
-
-Writing the difference $\Delta S_{\alpha}$ as the classical \ren entropy of the fictitious probability distribution $P_{n,\alpha}$, simplifies the calculation of $\Delta S_{\alpha}$ and clarifies its properties, e.g., the fact that $H_{\alpha}$  is positive and bounded from above by $ H_{0}=\ln(N+1)$ guarantees that $\Delta S_{\alpha}$ satisfies the physical requirement in \Eqref{eq:DeltaS_alpha_inq}. \cite{Barghathi:2018oe} In addition, $P_{n,\alpha}$ is fully determined by $P_n$ and the full and the projected traces of $\rho_A^{\alpha}$, i.e.~$\Tr\, \rho_{A}^{\alpha}$ and $\Tr\, \rho_{A_n}^{\alpha}$, which can be measured using the experimental and numerical methods mentioned above.    
-
-In the next section, analytical $S_{\alpha}^{\rm acc}(\rho_A)$ values will be derived in various special cases of the $tV$ Model.
-
-\section{Analytical predictions in the $tV$ Model}
-
-The $tV$ Model describes fermions itinerant on a one dimensional lattice under periodic boundary conditions:
-
-\begin{equation}
-\mathcal{H} = -t \sum_{\langle i,j \rangle} (c_{i}^{\dag}c_{j} + c_{i}c_{j}^{\dag}) + V \sum_{i} n_{i}
-\label{eq:tVModel}
-\end{equation}
-
-where $c^{\dag}_i(c_{i})$ creates(annihilates) a fermion on site $i$, $n_i$ counts the number of fermions on site $i$ and $t,V$ are tunable parameters that characterize the tunneling or hopping rate and the interaction strength, respectively. The first sum is carried over all pairs of neighboring lattice sites. It is customary to make $\mathcal{H}$ dimensionless by dividing $t$ throughout and thus having the interaction strength $V/t$ be the only tunable parameter.
-
-There are three phases that occur in the $tV$ Model. The Phase Separated Solid (PSS) occurs at $V/t \ll -2$. Here, the attractive interaction leads to fermions clustering into large groups of particles that occupy adjacent lattice sites. On the contrary, at $V/t \gg 2$, the repulsive interaction leads to fermions trying to get as far as possible from each other, forming an alternating pattern on fermion-vacancy-fermion-vacancy $\dots$ This phase is known as a Charged Density Wave (CDW). The remaining phase in this model is the Tomonaga Luttinger-Liquid (TLL), which occurs for $-2 < V/t < 2$. Here, the fermions could be in any possible configuration but the probability amplitudes for each of these will depend on the value of the interaction strength. The PSS-TLL transition is a first order transition while the TLL-CDW transition is continuous.
-
-In this section, analytical values for the operationally accessible R\'enyi entanglement entropy, $S_{\alpha}^{\rm acc}(\rho_A)$ will be derived in all of the phases of the $tV$ Model and also at the first order phase transition. The derivations will be done first based on the traditional formulation of the accessible R\'enyi entropy. That is, combining Eqs: \ref{eq:S_alpha} and \ref{eq:S1acc}. The derivation of the analytical results for the generalization in Eq. \ref{eq:S_alpha_acc} will follow the same logic so only the results will be shown for comparison.
+In this chapter, analytical results for the accessible entanglement entropy will be presented. 
+First, the results will be derived based on the original formulation of the accessible entanglement entropy. After thoroughly going over these derivations, the generalized R\'enyi Accessible Entanglement Entropy will be introduced and analytical results based on this new formulation will also be shown. Finally, numerical results obtained from Exact Diagonalization will be discussed.
 
 	\subsection{Projecting onto subspaces of fixed local particle number}
 	
@@ -684,10 +537,10 @@ where $x$ could be  $\ell_A, \ell_B, N$ or $N^c$. But how to determine which of 
 & iv) \ell_{A} < \ell_{B} < N \implies \ell_{B} > \ell_{A} > N^c \implies N^c \text{ is the smallest} \nonumber 
 \end{align}
 
-From the above set of inequalities, note that the smallest between the four variables in each case, also happens to be the variable that is substituted for $x$. Thus, in a more compact form, the generalized operationally accessible entanglement at the infinitely attractive regime is:
+From the above set of inequalities, note that the smallest between the four variables in each case, also happens to be the variable that is substituted for $x$. Thus, in a more compact form, the generalized operational entanglement at the infinitely attractive regime is:
 
 \begin{equation}
-S_\alpha^{acc}(x,L) = \frac{2(x-1)}{L} \ln{2} ; \text{ where } x = \min{\ell_A, \ell_B, N, N^c}
+S_\alpha^{op}(x,L) = \frac{2(x-1)}{L} \ln{2} ; \text{ where } x = \min{\ell_A, \ell_B, N, N^c}
 \end{equation}
 
 	\subsection{First order phase transition}
@@ -766,8 +619,8 @@ Recall the definition of the accessible (R\'enyi) entanglement entropy:
 
 where $S_{\alpha}(\rho_A) = \frac{1}{1-\alpha} \log{\Tr{(\rho_A^{\alpha})}}$
 \\
-
 Expanding the sum:
+
 \begin{align}
 S_{\alpha}^{acc}(\rho_{A}) &= P_{0} \log{\Tr{(\rho_{A,0}^{\alpha})}} + P_{N} \log{\Tr{(\rho_{A,N}^{\alpha})}} + \sum_{n=1}^{N-1} P_{n} \log{\Tr{(\rho_{A,n}^{\alpha})}} \nonumber \\
 &= C \log{1} + C \log{1} + N^2C^2 \sum_{n=1}^{N-1} \log{N(\frac{1}{N})}  \nonumber \\
@@ -777,211 +630,78 @@ S_{\alpha}^{acc}(\rho_{A}) &= 0
 
 Thus, the accessible entanglement vanishes at the first order phase transition. \\
 
-\section{Comparison between the generalized and the traditional R\'enyi entanglement entropies}
+Analytical results have been obtained in three regimes of the $tV$ Model, namely: $V/t \to + \infty$, $V/t \to - \infty$ and $V/t = -2$. In the next section a generalization of the R\'enyi Accessible Entanglement Entropy will be discussed and the analytical results at the aforementioned limits will be shown.
 
-Recall the generalized form of the R\'enyi Accessible Entanglement Entropy:
+\section{Generalized R\'enyi Accessible Entanglement Entropy}
 
+Computing the accessible entanglement for a many-body system is a difficult task for $\alpha=1$, as full state tomography is required to reconstruct the density matrix $\rho$. However, for integer values with $\alpha > 1$ a replica trick can be used to recast $\mathrm{Tr} \rho_A^\alpha$ as the expectation value of some local operator \cite{Calabrese:2004hl}. This advance has led to a boon of new entanglement results using both computational \cite{Hastings:2010dc, Humeniuk:2012cq, McMinis:2013dp, Herdman:2014ey, Drut:2015fs} and experimental \cite{Daley:2012bd, Islam:2015cm, Kaufman:2016ep, Pichler:2016ec, Linke:2017tf, Lukin:2018wg} methods.  Motivated by this progress, two of us recently generalized the accessible entanglement to the case of \ren entropies with $\alpha \ne 1$ and found that \cite{Barghathi:2018oe}:
+%
 \begin{equation}
 S_{\alpha}^{{\rm acc}} (\rho_A) = \frac{\alpha}{1-\alpha}\ln\left[ \sum_{n} P_n \mathrm{e}^{\frac{1-\alpha}{\alpha} S_{\alpha}(\rho_{A_n})}\right]
 \label{eq:S_alpha_acc}
 \end{equation} 
-
-In the previous section, the accessible entanglement was calculated for $V/t \to -\infty, V/t \to +\infty$ and $V/t = -2$ using the traditional definition of the accessible R\'enyi entropy. Analogous derivations can be done for the generalized entropy Eq. \ref{eq:S_alpha_acc}. Here, the results for the generalized and the traditional accessible entanglement measures are summarized (Table \ref{tab:Limits}).
-
-%In this section we derive a number of exact and asymptotic results for the accessible entanglement entropy of the $t-V$ model using insights gained from the structure of the ground states depicted in Fig.~\ref{fig:phaseDiagram}. Results for the von Neumann accessible entanglement are summarized in Table
-
-%HI!!!!! ~\ref{tab:Limits}. 
-
 %
-\begin{table}[htp]
-\begin{center}
-   \renewcommand{\arraystretch}{1.8}
-   \setlength\tabcolsep{8pt}
- \begin{tabular}{@{}lll@{}} 
-  \toprule
-    Interaction	& $\frac{\alpha}{1-\alpha}\ln\left[ \sum_{n} P_n \mathrm{e}^{\frac{1-\alpha}{\alpha} S_{\alpha}(\rho_{A_n})}\right]$ & $ \sum_{n} P_n S_{\alpha}(\rho_{A_n})$ \\ 
-   \midrule
-   $V/t \to -\infty$ & $ \frac{\alpha}{1-\alpha} \left[ \frac{2(x-1)}{L} 2^{\frac{1-\alpha}{\alpha}} + 1 - \frac{2(x-1)}{L} \right]$ & $\frac{2(x-1)}{L} \ln{2}$ \\
-   $V/t \to +\infty$ & $\ln{2}$ if $N$ even, $0$ if $N$ odd &  $\ln{2}$ if $N$ even, $0$ if $N$ odd \\
-   $V/t = -2$ & $0$ & $0$\\
-    \bottomrule
-    \end{tabular}
-\end{center}
-\caption{\label{tab:Limits} 
-Analytical results for the accessible entanglement in the ground state of the $tV$ model with $N$ fermions on $L$ sites under a spatial bipartition consisting of $\ell=L/2$ contiguous sites. From left to right, the columns indicate the interaction strength, the value of the generalized R\'enyi accessible entanglement, and the value of the traditional entanglement, respectively. The $x$ in the first row is the minimum value between $ \{ N, \ell, L-\ell, L-N \} $.}
-\end{table}
-%
-
-Analytical results have now been obtained in three regimes of the $tV$ Model, namely: $V/t \to + \infty$, $V/t \to - \infty$ and $V/t = -2$ for both the traditional and the generalized accessible entanglement. In the next section, numerical results obtained from exact diagonalization are presented.
-
-\section{Numerical Results}
-
-
-%In this section, numerical results obtained using exact diagonalization are shown. First, the finite size scaling of $S_{\alpha}^{\rm acc}(\rho_{A})$ will be illustrated. Following, the results correp
-
-
-\subsection{Finite size scaling of the accessible entanglement}
-\begin{figure*}[thp]
-\begin{center}
-\includegraphics[width=1.0\textwidth]{phaseDiagramTV.pdf}
-\end{center}
-\caption{Phase diagram of the $t-V$ model accompanied by pictures of candidate ground states for $N=2$ fermions on a $L=4$ site lattice. For the purposes of measuring accessible entanglement, the lattice has been bipartitioned into spatial subregions $A$ (blue) and $\bar{A}$ (red), each of size $\ell = 2$. We assume periodic boundary conditions. In the limit of strong attractive interactions where $V/t \ll -2$, the particles cluster together and there are $L$ equally probable configurations corresponding to all translations of the cluster.  At the first order phase transition where $V/t = -2$, all ${L}\choose{N}$ configurations are equally probable resulting in a flat state. In the TLL phase with $|V/t| < 2$,  particles are delocalized and we have included a characteristic state corresponding to free fermions $(V=0)$. In the limit of strong repulsive interactions where $V/t \gg 2$, fermions maximize their distance from each other resulting in a charge density wave (CDW) phase. The open and closed circles on the $V/t$ axis denote a first order and continuous phase transition, respectively.}
-\label{fig:phaseDiagram}
-\end{figure*}
-
-%
-%%%%%%%%%%
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=1.0\columnwidth]{operationalEntanglementEntropies_SOP5.pdf}
-\end{center}
-\caption{Accessible entanglement entropy $S_{\alpha}^{\mathrm{acc}}(\ell)$ for $\alpha = 1, 2$ in the ground state of the $t-V$ model as a function of interaction strength $V/t$. The top panel shows the results for an odd number of total particles: $N=11,13,15$ and the bottom, for even: $N=12,14,16$. The gray vertical lines indicate the locations of the known phase transitions for the model, $V/t = \pm 2$. For $N=15,16$ the asymptotic results computed in Section~\ref{tab:Iimits} in the limits $V/t \to \pm \infty$ for $S_{1}^{\mathrm{acc}}$ are shown. \todo[inline]{EC: switch to a dashed line for the 1st order phase transition in all figures.}}
-\label{fig:OEE}
- \end{figure}
-%%%%%%%%%%
-
-Figure \ref{fig:OEE} shows the accessible R\'enyi entanglement entropy values at interaction strengths in the interval $V/t: \left( -100,100 \right)$. This interval spans the three phases of the $tV$ model. For large negative interaction strengths, there is agreement between the values at which $S_{\alpha}^{\rm acc}(\rho_A)$ converges and the predicted value from \ref{tab:Limits} for all system sizes and $\alpha$. For large positive interaction strengths, the predicted effect of total particle number parity is observed. For $N$ odd, the accessible entanglement vanishes, whereas it converges to $\ln{2} \approx 0.6931 \dots$ for $N$ even, independent of system size and $\alpha$. At the first order phase transition $V/t=-2$, $S_{\alpha}^{\rm acc}(\rho_A)$, as expected. Thus, the asymptotic predictions for the accessible entanglement entropy in the $tV$ model have been confirmed via exact diagonalization. Increasing the magnitude of both the attractive and repulsive interactions will result in even more agreement between simulation and theory.
-
-Recall that the accessible entanglement should be a monotonically decreasing function of $\alpha$. Figure $\ref{fig:OEE}$ supports this inverse relation since it is seen that $S_{1} \geq S_{2}$ $\forall$ $V/t \in \left( -100,100 \right)$.
-
-Another interesting feature is the peak seen near the continuous phase transition $V/t=2$. Results seem to indicate that the peak is slightly shifting to the left, closer to $V/t=2$ as the number of particles $N$ increases. In an effort to find how the location of this peak scales with particle number, $V/t\vert_{Max}$ was obtained for various system sizes, where $V/t\vert_{Max}$ is the interaction strength at which the accessible entanglement peak occurs. Figure \ref{fig:peakScalingOddN} shows a plot of $V/t\vert_{Max}$ vs $N^{-0.3066}$. The exponent comes from a linear fitting of $\left( V/t\vert_{Max} - 2 \right)$ vs $N$ data. The observed inverse power law scaling is promising as all points fall on a line with $y$ intercept of $V/t\vert_{Max} = 2$, which is the exact value of the continuous phase transition in the asymptotic limit of $N \to \infty$ total particles.
-
-%%%%%%%%%%
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=1.0\columnwidth]{peakScalingOddN.pdf}
-\end{center}
-\caption{Interaction strength at which the maximum $S_{1}^{\mathrm{acc}}$ occurs as a function of the total number of particles $N$. The exponent of $N$ was obtained from a linear fitting of $\ln N$ vs. $\ln{(V/t - 2)}$.  Although very few points are plotted due to memory limitations, they agree with the hypothesis that for $N \to \infty$, the peak of Von Neumann accessible entanglement occurs at the phase transition $V/t = 2$. Inset: $S_{1}^{\mathrm{acc}}$ as a function of interaction strength $V/t$ for various $N$ around the neighborhood of the peak.}
-\label{fig:peakScalingOddN}
-\end{figure}
-%%%%%%%%%%
-
-\subsection{Entanglement of local particle number fluctuations}
-
-Recall from section \ref{sec:accEntanglementIntro} that the difference between the full and the operationally accessible entanglement Von Neumann entropies $\left( \alpha = 1 \right)$ should equal the Shannon Entropy of the local particle number probability distribution $P_n$:
-
+% which reproduces Eq.~\eqref{eq:S1acc} in the limit $\alpha \to 1$. While not physically transparent in this form, the modification from the $\alpha=1$ case results from replacing the geometric mean in Eq.~\eqref{eq:S1acc} with a general power mean whose form is constrained by the physical requirement that $0 \le \Delta S_\alpha \le \ln (N+1)$.  It can also be interpreted as the quantum generalization of the conditional classical \ren entropy \cite{Cachin97entropymeasures,GolshaniPashaYari:2009,Hayashi:2011,SKORIC:2011el,FehrBerens2014} subject to physical constraints \cite{Barghathi:2018oe}. The arguments leading to Eq.~\eqref{eq:DS1H1} can also be generalized leading to 
+which reproduces Eq.~\eqref{eq:S1acc} in the limit $\alpha \to 1$. While not physically transparent in this form, the modification from the $\alpha=1$ case results from replacing the geometric mean in Eq.~\eqref{eq:S1acc} with a general power mean whose form is constrained by the physical requirement that
 %
 \begin{equation}
-    \Delta S_1 (\rho_A) \equiv S_1(\rho_A) - S_1^{\rm acc}(\rho_A) = H_1(\{P_n\})
-    \label{eq:DeltaS1}
+ 0 \le \Delta S_\alpha \le \ln (N+1)
+\label{eq:DeltaS_alpha_inq}
 \end{equation}
 %
-
-where
-
+where the upper bound is equal to the support of $P_n$. \Eqref{eq:S_alpha_acc} can also be interpreted as the quantum generalization of the conditional classical \ren entropy \cite{Cachin97entropymeasures,GolshaniPashaYari:2009,Hayashi:2011,SKORIC:2011el,FehrBerens2014}, subject to physical constraints \cite{Barghathi:2018oe}. The arguments leading to Eq.~\eqref{eq:DS1H1} can then be generalized (see the supplemental material of Ref.~[\onlinecite{Barghathi:2018oe}]) leading to 
 %
 \begin{equation}
-    H_1(\{P_n\}) = -\sum_{n=0}^N P_n \ln P_n.
-\label{eq:H1}
+    \Delta S_{\alpha}\equiv  S_{\alpha} - S_{\alpha}^{{\rm acc}} = H_{{1}/{\alpha}}\left(\{P_{n,\alpha}\}\right)
+\label{eq:S_alpha_acc5}
 \end{equation}
-
-is the Shannon Entropy of the probability distribution of the local particle number $P_n$.
-
-In this section, a comparison is done between the Shannon Entropy of the local particle number distribution and the difference between full and accessible entanglement. First, numerical results for this difference will be shown for the case of $\alpha=1$ and compared to the exact value of the Shannon Entropy of normally distributed local particle numbers. Then, higher values of $\alpha$ will be studied and the difference will be compared with the Shannon Entropy of the corresponding probability distribution of local particle number.
 %
-Figure \ref{fig:deltaS1} shows the difference between the full and accessible Von Neumann entanglement entropies as a function of interaction strength. From exact diagonalization, the full ($S_1$), accessible ($S_{1}^{\rm acc}$) Von Neumann entanglement entropies and the variance of local particle number $n$ ($\sigma$) were obtained. Expecting that local particle number fluctuations are normally distributed in the TLL phase ($-2 < V/t < 2$) of the $tV$ model, these variances were inserted into the expression for the Shannon entropy of a Normal Distribution $\frac{1}{2}\ln{\left( 2\pi e \sigma^2 \right)}$. Additionally, the Shannon Entropy was calculated using the variance of local particle number predicted by Tomonaga-Luttinger Liquid theory $\sigma \equiv K\sigma_{FF}$ where $\sigma_{FF}$ is the variance of free-fermions $V/t = 0$ and $K$ is the Luttinger Parameter $K = \pi/(\cos^{-1}\left( -V/2t \right))$. The figure shows agreement between the three expressions in the TLL phase.
-
-At R\'enyi indices higher than $\alpha = 1$, the difference between the full and accessible entanglement entropies should be bounded from below by the classical R\'enyi entropy of the local particle number probability distribution $H_{\alpha}\left(\{P_n\}\right) = \ln{ \sum_{n} P_{n}^{\alpha}}/(1-\alpha)$. Figure \ref{fig:deltaS_alpha} shows $\Delta S_{\alpha}$ and $H_{\alpha}\left(\{P_n\}\right)$ as a function of interaction strength for R\'enyi indices $\alpha=2$ and $\alpha=10$. Not only in all cases is $H_{\alpha}\left(\{P_n\}\right) \leq \Delta S_{\alpha}$, but also the values corresponding to $\alpha=10$ are lower than the ones corresponding to $\alpha=2$, satisfying the condition that the difference in full and accessible entanglement should be a monotonically decreasing function of $\alpha$.
-
-Recall the distribution defined in section \ref{sec:accEntanglementIntro}:
+where we introduce the classical \ren entropy of $P_n$
 %
 \begin{equation}
-P_{n,\alpha} = \frac{P_{n,\alpha}}{\Tr\rho_{A}^{\alpha}}
+    H_{\alpha}\left(\{P_n\}\right)=\frac{1}{1-\alpha}\ln\sum_n P_n^{\alpha} 
+\label{eq:Halpha}
+\end{equation}
+%
+and
+%
+\begin{equation}
+    P_{n,\alpha}=\frac{\Tr\, \left[{\mathcal{P}}_{A_{n}} \rho_A^{\alpha} {\mathcal{P}}_{A_{n}}\right]}{\Tr\, \rho_A^{\alpha}}=\frac{ P_n^\alpha\Tr\, \rho_{A_n}^{\alpha}}{\Tr\, \rho_A^{\alpha}}
 \label{eq:Pna}
 \end{equation}
- %
- 
-which in the TLL phase of the $tV$ model ($-2 < V/t < 2$) can be approximated as:
 %
-\begin{equation}
-P_{n,\alpha} \approx \sqrt{\frac{\pi\alpha}{2K\ln{\ell}}} e^{\frac{-\alpha \pi^2 (n - \langle n \rangle^2 )}{2K\ln{\ell}}} 
-\label{eq:Pna_TLL}
-\end{equation}
- %
- 
-Notice that raising Eq. \ref{eq:Pna_TLL} to either $1/\alpha$ or $K$ on both sides should get rid of the $\alpha$ or $K$ dependence of the exponential factor, respectively, within the TLL regime. The square root factor will still pick up the dependence on either of the exponents. In other words, raising by $1/\alpha$ or $K$ should give:
- 
- \begin{equation}
- P_{n,\alpha}^{1/\alpha} \approx \sqrt{\frac{\pi\alpha}{2K\ln{\ell}}}^{1/\alpha} e^{\frac{- \pi^2 (n - \langle n \rangle^2 )}{2K\ln{\ell}}} 
- \label{eq:Pna_to_alphaInv}
- \end{equation}
- 
- and
- 
- \begin{equation}
- P_{n,\alpha}^{K} \approx \sqrt{\frac{\pi\alpha}{2K\ln{\ell}}}^K e^{\frac{- \alpha \pi^2 (n - \langle n \rangle^2 )}{2\ln{\ell}}} 
- \label{eq:Pna_to_K}
- \end{equation}
- 
- Figure \ref{fig:alpha_collapse} shows the distribution $A_{\alpha} P_{n,\alpha}^{1/\alpha}$ for various interaction strengths $V/t$ and, thus, $K$. The constant $A_{\alpha}$ is the inverse of the square root factor in Eq. \ref{eq:Pna_to_alphaInv}. Cancelling the square root factor allows for a direct comparison of the exponential factor for each of the $\alpha$ values used. The middle plots confirm that this exponential factor indeed is independent of $\alpha$, illustrated by the fact that the distributions become the same for $\alpha=\{1,2,5,10\}$, when inside the TLL regime of $-2 < V/t < 2$.
- 
-Figure \ref{fig:K_collapse} shows the distribution $A_{\alpha} P_{n,\alpha}^{K}$ with the R\'enyi index fixed at $\alpha=2$ and at various interaction strengths $V/t$ and corresponding Luttinger parameters $K$. In this case, the factor $A_{\alpha}$ is the inverse of the square root factor in Eq. \ref{eq:Pna_to_K}. All of the interaction strengths fall within the TLL regime and as such, all the distributions should become the same for the various $V/t$ and, thus, $K$ values. This collapse of the distributions at various $K$ is evident from looking at regions near the middle of the graph. Although it may not be apparent at first glance due to the scale, the tails of the distribution are all essentially zero.
+can be interpreted as a normalization of partial traces of $\rho_A^{\alpha}$, where the SSR fixing the total particle number leads to $\Tr\, \rho_A^{\alpha}=\sum_n \Tr\, \left[{\mathcal{P}}_{A_{n}} \rho_A^{\alpha} {\mathcal{P}}_{A_{n}}\right]$ and thus guarantees the normalization of $P_{n,\alpha}$. Note that we have defined $P_{n,1} \equiv P_n$ for notational consistency. For brevity, let $H_{\alpha}(\{P_n\}) \equiv H_{\alpha}$ from here onwards. 
 
-\section{Conclusion}
-In this chapter, the operationally accessible R\'enyi entanglement entropy was introduced in both it's original and generalized form. Analytical values of the entanglement entropy were obtained at various special cases of the $tV$ model and then confirmed via exact diagonalization. A maximum value in accessible entanglement was observed and evidence seems to support that it follows an inverse power law scaling in total particle number with scaling exponent of $-0.3066$. 
+Writing the difference $\Delta S_{\alpha}$ as the classical \ren entropy of the fictitious probability distribution $P_{n,\alpha}$, simplifies the calculation of $\Delta S_{\alpha}$ and clarifies its properties, e.g., the fact that $H_{\alpha}$  is positive and bounded from above by $ H_{0}=\ln(N+1)$ guarantees that $\Delta S_{\alpha}$ satisfies the physical requirement in \Eqref{eq:DeltaS_alpha_inq}. \cite{Barghathi:2018oe} In addition, $P_{n,\alpha}$ is fully determined by $P_n$ and the full and the projected traces of $\rho_A^{\alpha}$, i.e.~$\Tr\, \rho_{A}^{\alpha}$ and $\Tr\, \rho_{A_n}^{\alpha}$, which can be measured using the experimental and numerical methods mentioned above.
 
-The difference in full and accessible entanglement entropies was also computationally determined and it was confirmed that in the TLL phase of the $tV$ model, it is equal to the the R\'enyi entropy of a Normal Distribution of local particle number. Finally, it was then proposed theoretically and confirmed computationally, that getting rid of the R\'enyi index and Luttinger parameter dependence, the exponential part of these Normal Distributions depend exclusively on local particle number fluctuations.
+\section{Numerical Results}
+	\subsection{Operational entanglement as a function of interaction strength}
+		\includegraphics{operationalEntanglementEntropies_SOP5}
+		
+	\subsection{}
+		\includegraphics{peakScalingOddN.pdf}
+		
+	\subsection{}
+		\includegraphics{deltaS1_N15N16}
+		
+	\subsection{}
+		\includegraphics{higherAlphaDeltaS_N15N16.pdf}
 
- %%%%%%%%%%
-\begin{figure}[htp]
-\begin{center}
-\includegraphics[width=1.0\columnwidth]{deltaS1_N15N16.pdf}
-\end{center}
-\caption{Difference between the von Neumann and accessible entanglement entropies $S_{1}-S_{1}^{acc}$ and $\frac{1}{2} \ln 2 \pi e \sigma^2$ as functions of interaction strength $V/t$. The latter expression is the well known differential entropy of a Gaussian distribution. In TLL phase ($-2 < V/t < 2$), the probability distribution is Gaussian, as can be seen from the agreement between the two results. The solid lines use the theoretical variance of particle number in $A$ inside the $LL$ phase, $K \sigma^2_{FF}$, where $K$ is the Luttinger parameter and is a function of $V/t$ and $\sigma^2_{FF}$ is the exact variance for free-fermions ($V/t = 0$).}
-\label{fig:deltaS1}
-\end{figure}
-%%%%%%%%%%
+	\subsection{}
+		\includegraphics{alphaCollapse}
 
-%%%%%%%%%%
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=1.0\columnwidth]{Halpha.pdf}
-\end{center}
-\caption{For $N=15$, $\sigma^2=0.758$ and for $N=16$, $\sigma^2=0.772$.}
-\label{fig:Halpha}
- \end{figure}
-%%%%%%%%%%
-
-%%%%%%%%%%
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=1.0\columnwidth]{higherAlphaDeltaS_N15N16.pdf}
-\end{center}
-\caption{Difference between the \ren and accessible entanglement entropy $S_{\alpha} - S_{\alpha}^{\mathrm{acc}}$ and $H_{\alpha}$ as functions of interaction strength $V/t$ for $\alpha=2,10$. In general, $H_{\alpha}$ should provide a lower bound for $\Delta S_{\alpha}$ (i.e, $H_{\alpha} \leq S_{\alpha}$). Also, $S_{\alpha}^{\mathrm{acc}}$ should be non-increasing in $\alpha$. It can be seen that both relations hold in all phases of the $t-V$ model.}
-\label{fig:deltaS_alpha}
-\end{figure}
-%%%%%%%%%%
-
-%%%%%%%%%%
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=1.0\columnwidth]{alphaCollapse.pdf}
-\end{center}
-\caption{Probabilities of measuring a state with $n$ particles in subregion $A$, as  a function of $n$. The probabilities in the $TLL$ regime are known to be Gaussian, as seen from Eq.6. Here, they have been raised to $1/\alpha$ in order to cancel out the $\alpha$ dependence of the exponential part. For the middle plot, the interaction strength lies in the $TLL$ regime and, consequently, the probabilities collapse to the same values in all the range after the $\alpha$ dependence has been cancelled. The top and bottom plots show results outside of the $TLL$ regime, where the probabilities are not Gaussian.}
-\label{fig:alpha_collapse}
-\end{figure}
-%%%%%%%%%%
-
-%%%%%%%%%%
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=1.0\columnwidth]{TLLCollapse.pdf}
-\end{center}
-\caption{Probabilities of measuring a state with $n$ particles in subregion $A$, as  a function of $n$. This time, the probabilities have been raised to the Luttinger Parameter $K$, after calculating for several $K$ values. The probabilities seem to collapse nearly to the same value near the middle of the distribution. The inset plot shows the $K$ dependence of the probability for fixed particle number in $A$, $n=8$. This helps illustrate that the probabilities are proportional to $K$ near the middle, as opposed to inversely proportional at the ends.}
-\label{fig:K_collapse}
-\end{figure}
-%%%%%%%%%%
-
-\subsection{Filling fraction dependence}
-%Figure 8
-%%%%%%%%%%
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=1.0\columnwidth]{fillingFractionDependence.pdf}
-\end{center}
-\caption{Accessible entanglement entropies $S_{\alpha}^{\mathrm{acc}}(\ell)$ for $\alpha = 1,2$ as a function of filling fraction $N/L$. The lattice size was kept fixed at $L=28$ sites and the total number of particles were $N=1,2,3...14$. For the left column, the spatial partition $\ell$ was kept fixed at half the lattice size, $\ell = L/2$. For the right column, it was set to equal the total number of particles $N$. The interaction strengths $V/t$ are indicated in each of the plots and correspond to values from each of the three phases of the $t-V$ model.}
-\label{fig:fillingFractionDependence}
-\end{figure}
-%%%%%%%%%%
+	\subsection{}
+		\includegraphics{TLLCollapse}
+				
+	\subsection{}
+		\includegraphics{fillingFractionDependence}
+				
+	\subsection{}		
+		\includegraphics{phaseDiagramTV}
+				
 
 
+
+
+
+	
