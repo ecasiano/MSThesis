@@ -12,7 +12,7 @@
 \contentsline {chapter}{\numberline {2}Particle Partition Entanglement in the $tV$ Model}{6}{chapter.2}
 \contentsline {section}{\numberline {2.1}Abstract}{6}{section.2.1}
 \contentsline {section}{\numberline {2.2}Introduction}{6}{section.2.2}
-\contentsline {section}{\numberline {2.3}Particle Partition Entanglement}{7}{section.2.3}
+\contentsline {section}{\numberline {2.3}Particle Partition Entanglement}{8}{section.2.3}
 \contentsline {section}{\numberline {2.4}One-particle entanglement in fermionic Tomonaga-Luttinger liquids}{9}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Non-interacting spinless fermions}{10}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Effects of boundary conditions}{11}{subsection.2.4.2}
@@ -38,18 +38,17 @@
 \contentsline {section}{\numberline {3.5}Numerical Results}{35}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Finite size scaling of the accessible entanglement}{35}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Entanglement of local particle number fluctuations}{37}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Conclusion}{39}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Filling fraction dependence}{39}{subsection.3.6.1}
-\contentsline {chapter}{\numberline {A}Appendix}{48}{appendix.A}
-\contentsline {section}{\numberline {A.1}Lanczos Algorithm}{48}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Introduction}{48}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Tridiagonalization of the original matrix}{48}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}Algorithm}{50}{subsection.A.1.3}
-\contentsline {subsection}{\numberline {A.1.4}Code}{50}{subsection.A.1.4}
-\contentsline {subsection}{\numberline {A.1.5}Results}{51}{subsection.A.1.5}
-\contentsline {chapter}{\numberline {B}Appendix}{54}{appendix.B}
-\contentsline {section}{\numberline {B.1}Evaluating the $n$-particle partition entanglement}{54}{section.B.1}
-\contentsline {subsection}{\numberline {B.1.1}Particle bipartition}{55}{subsection.B.1.1}
-\contentsline {subsection}{\numberline {B.1.2}Eigenvalues}{56}{subsection.B.1.2}
-\contentsline {section}{\numberline {B.2}$n$-particle partition entanglement in the $V/t \to \infty $ limit}{56}{section.B.2}
-\contentsline {chapter}{References}{58}{section*.6}
+\contentsline {section}{\numberline {3.6}Conclusion}{43}{section.3.6}
+\contentsline {chapter}{\numberline {A}Appendix}{46}{appendix.A}
+\contentsline {section}{\numberline {A.1}Lanczos Algorithm}{46}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Introduction}{46}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Tridiagonalization of the original matrix}{46}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Algorithm}{48}{subsection.A.1.3}
+\contentsline {subsection}{\numberline {A.1.4}Code}{48}{subsection.A.1.4}
+\contentsline {subsection}{\numberline {A.1.5}Results}{49}{subsection.A.1.5}
+\contentsline {chapter}{\numberline {B}Appendix}{52}{appendix.B}
+\contentsline {section}{\numberline {B.1}Evaluating the $n$-particle partition entanglement}{52}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}Particle bipartition}{53}{subsection.B.1.1}
+\contentsline {subsection}{\numberline {B.1.2}Eigenvalues}{54}{subsection.B.1.2}
+\contentsline {section}{\numberline {B.2}$n$-particle partition entanglement in the $V/t \to \infty $ limit}{54}{section.B.2}
+\contentsline {chapter}{References}{56}{section*.6}

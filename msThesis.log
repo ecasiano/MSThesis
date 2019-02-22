@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 FEB 2019 07:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 FEB 2019 09:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2153,130 +2153,33 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 167.
 
 (./Chapters/chapter02.tex
-
-LaTeX Warning: Citation `Zanardi:2001ec' on page 6 undefined on input line 25.
-
-
-LaTeX Warning: Citation `Shi:2003jj' on page 6 undefined on input line 25.
+Overfull \hbox (77.79631pt too wide) in paragraph at lines 21--50
+[]\T1/cmr/m/n/12 , [], [], [],
+ []
 
 
-LaTeX Warning: Citation `Shi:2004fw' on page 6 undefined on input line 25.
-
-
-LaTeX Warning: Citation `Ghirardi:2004dl' on page 6 undefined on input line 44.
-
-
-
-LaTeX Warning: Citation `Barnum:2004bm' on page 6 undefined on input line 44.
-
-
-LaTeX Warning: Citation `Dunningham:2005fu' on page 6 undefined on input line 4
-4.
-
-
-LaTeX Warning: Citation `Wiseman:2003vn' on page 6 undefined on input line 44.
-
-
-LaTeX Warning: Citation `Wiseman:2003jx' on page 6 undefined on input line 44.
-
-
-LaTeX Warning: Citation `Benatti:2012cy' on page 6 undefined on input line 44.
-
-
-LaTeX Warning: Citation `Balachandran:2013en' on page 6 undefined on input line
- 44.
-
-
-LaTeX Warning: Citation `Dalton:2017qe' on page 6 undefined on input line 44.
-
-
-LaTeX Warning: Citation `Simon:2002it' on page 6 undefined on input line 46.
-
-
-LaTeX Warning: Citation `Ding:2009gq' on page 6 undefined on input line 46.
-
-
-LaTeX Warning: Citation `Schliemann:2001ea' on page 6 undefined on input line 4
-7.
-
-
-LaTeX Warning: Citation `Zanardi:2002jw' on page 6 undefined on input line 47.
-
-
-LaTeX Warning: Citation `Zanardi:2002gs' on page 6 undefined on input line 47.
+Overfull \hbox (48.66742pt too wide) in paragraph at lines 21--50
+\T1/cmr/m/n/12 free itin-er-ant bosons [[], []] or fermions [[],
+ []
 
 [6
 
 ]
-
-LaTeX Warning: Citation `Ghirardi:2004dl' on page 7 undefined on input line 58.
-
-
-
-LaTeX Warning: Citation `Tichy:2011je' on page 7 undefined on input line 58.
+Overfull \hbox (5.6251pt too wide) in paragraph at lines 51--77
+\T1/cmr/m/n/12 Sutherland [[]], any-onic hard-core [[]]
+ []
 
 
-LaTeX Warning: Citation `Balachandran:2013en' on page 7 undefined on input line
- 58.
+Overfull \hbox (4.12834pt too wide) in paragraph at lines 51--77
+\T1/cmr/m/n/12 mod-els as well as ro-tat-ing bose and fermi gases in two di-men
+-sions [[]].
+ []
 
 
-LaTeX Warning: Citation `Killoran:2014gu' on page 7 undefined on input line 60.
-
-
-
-LaTeX Warning: Citation `Zozulya:2007jw' on page 7 undefined on input line 62.
-
-
-LaTeX Warning: Citation `Haque:2007il' on page 7 undefined on input line 62.
-
-
-LaTeX Warning: Citation `Zozulya:2008kb' on page 7 undefined on input line 64.
-
-
-LaTeX Warning: Citation `Haque:2009df' on page 7 undefined on input line 64.
-
-
-LaTeX Warning: Citation `Katsura:2007hc' on page 7 undefined on input line 66.
-
-
-LaTeX Warning: Citation `Santachiara:2007il' on page 7 undefined on input line 
-67.
-
-
-LaTeX Warning: Citation `Herdman:2014jq' on page 7 undefined on input line 68.
-
-
-LaTeX Warning: Citation `Herdman:2015gx' on page 7 undefined on input line 68.
-
-
-LaTeX Warning: Citation `Liu:2010pe' on page 7 undefined on input line 70.
-
-
-LaTeX Warning: Citation `Calabrese:2004hl' on page 7 undefined on input line 73
-.
-
-
-LaTeX Warning: Citation `Calabrese:2011fj' on page 7 undefined on input line 73
-.
-
-
-LaTeX Warning: Citation `Calabrese:2011ji' on page 7 undefined on input line 73
-.
-
-
-LaTeX Warning: Citation `Zozulya:2008kb' on page 7 undefined on input line 75.
-
-
-LaTeX Warning: Citation `Zozulya:2008kb' on page 7 undefined on input line 81.
-
-
-LaTeX Warning: Citation `Tomonaga1951' on page 7 undefined on input line 82.
-
-
-LaTeX Warning: Citation `Haldane1981' on page 7 undefined on input line 82.
-
-
-LaTeX Warning: Citation `repo' on page 7 undefined on input line 98.
+Overfull \hbox (43.09386pt too wide) in paragraph at lines 51--77
+\T1/cmr/m/n/12 one di-men-sional quan-tum gases un-der a spa-tial mode bi-par-t
+i-tion [[],
+ []
 
 [7]
 Overfull \hbox (4.01808pt too wide) in paragraph at lines 116--120
@@ -2286,7 +2189,7 @@ Rényi en-tropy is equiv-a-lent to the von Neu-mann en-tropy: $\OMS/cmsy/m/n/12
  []
 
 
-<Chapters/particle_entanglement_boundary_conditions.pdf, id=335, 332.44202pt x 
+<Chapters/particle_entanglement_boundary_conditions.pdf, id=397, 332.44202pt x 
 67.94424pt>
 File: Chapters/particle_entanglement_boundary_conditions.pdf Graphic file (type
  pdf)
@@ -2295,87 +2198,18 @@ Package pdftex.def Info: Chapters/particle_entanglement_boundary_conditions.pdf
  used on input line 131.
 (pdftex.def)             Requested size: 298.75262pt x 61.05904pt.
 
-
-LaTeX Warning: Citation `Simon:2002it' on page 8 undefined on input line 160.
-
-
-LaTeX Warning: Citation `Ding:2009gq' on page 8 undefined on input line 160.
-
-
-LaTeX Warning: Citation `Zanardi:2002jw' on page 8 undefined on input line 162.
-
-
-
-LaTeX Warning: Citation `Zozulya:2008kb' on page 8 undefined on input line 168.
-
-
-
-LaTeX Warning: Citation `Haque:2009df' on page 8 undefined on input line 179.
-
-
-LaTeX Warning: Citation `Zozulya:2007jw' on page 8 undefined on input line 180.
-
-
-
-LaTeX Warning: Citation `Herdman:2015gx' on page 8 undefined on input line 184.
-
-
 [8 <./Chapters/particle_entanglement_boundary_conditions.pdf>]
+Overfull \hbox (14.11871pt too wide) in paragraph at lines 182--190
+\T1/cmr/m/n/12 ter-act-ing bosons in the spa-tial con-tin-uum with $\OML/cmm/m/
+it/12 n \OT1/cmr/m/n/12 = 1$ \T1/cmr/m/n/12 [[]]
+ []
+
+
 Overfull \hbox (23.25958pt too wide) in paragraph at lines 194--194
 []\T1/cmr/bx/n/17.28 One-particle en-tan-gle-ment in fermionic Tomonaga-
  []
 
-
-LaTeX Warning: Citation `Hastings:2010dc' on page 9 undefined on input line 202
-.
-
-
-LaTeX Warning: Citation `Grover:2013cs' on page 9 undefined on input line 202.
-
-
-LaTeX Warning: Citation `McMinis:2013dp' on page 9 undefined on input line 202.
-
-
-
-LaTeX Warning: Citation `Drut:2015fs' on page 9 undefined on input line 202.
-
-
-LaTeX Warning: Citation `Islam:2015cm' on page 9 undefined on input line 203.
-
-
-LaTeX Warning: Citation `Melko:2016bo' on page 9 undefined on input line 203.
-
-
-LaTeX Warning: Citation `Tomonaga1951' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `Haldane1981' on page 9 undefined on input line 207.
-
-
-LaTeX Warning: Citation `giamarchi:2004qu' on page 9 undefined on input line 21
-0.
-
-
-LaTeX Warning: Citation `Dzyaloshinskii:1974un' on page 9 undefined on input li
-ne 210.
-
-[9]
-
-LaTeX Warning: Citation `Zozulya:2008kb' on page 10 undefined on input line 291
-.
-
-
-LaTeX Warning: Citation `Haque:2009df' on page 10 undefined on input line 291.
-
-
-LaTeX Warning: Citation `Zozulya:2008kb' on page 10 undefined on input line 304
-.
-
-
-LaTeX Warning: Citation `Cazalilla:2004' on page 10 undefined on input line 342
-.
-
-[10]
+[9] [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 383.
@@ -2383,34 +2217,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 383.
-
-
-LaTeX Warning: Citation `Cazalilla:2004' on page 11 undefined on input line 403
-.
-
-
-LaTeX Warning: Citation `Jordan:1928' on page 11 undefined on input line 407.
-
-
-LaTeX Warning: Citation `DesCloizeaux:1966' on page 11 undefined on input line 
-408.
-
-
-LaTeX Warning: Citation `DesCloizeauxGaudin:1966' on page 11 undefined on input
- line 408.
-
-
-LaTeX Warning: Citation `Zozulya:2008kb' on page 11 undefined on input line 426
-.
 
 [11]
 
 LaTeX Warning: Reference `appendixA' on page 12 undefined on input line 439.
 
-
-LaTeX Warning: Citation `Haque:2009df' on page 12 undefined on input line 441.
-
-<Chapters/EntropiesFigure.pdf, id=412, 307.01836pt x 374.59816pt>
+<Chapters/EntropiesFigure.pdf, id=513, 307.01836pt x 374.59816pt>
 File: Chapters/EntropiesFigure.pdf Graphic file (type pdf)
 
 <use Chapters/EntropiesFigure.pdf>
@@ -2418,20 +2230,10 @@ Package pdftex.def Info: Chapters/EntropiesFigure.pdf used on input line 446.
 (pdftex.def)             Requested size: 298.75262pt x 364.53154pt.
 
 
-LaTeX Warning: Citation `Zozulya:2008kb' on page 12 undefined on input line 470
-.
-
-
-LaTeX Warning: Citation `Haque:2009df' on page 12 undefined on input line 470.
-
-
-LaTeX Warning: Citation `Zozulya:2008kb' on page 12 undefined on input line 473
-.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Chapters/Scaling_of_PPE_In_TLL_phase.pdf, id=422, 302.51619pt x 198.18497pt>
+[12]
+<Chapters/Scaling_of_PPE_In_TLL_phase.pdf, id=537, 302.51619pt x 198.18497pt>
 File: Chapters/Scaling_of_PPE_In_TLL_phase.pdf Graphic file (type pdf)
 
 <use Chapters/Scaling_of_PPE_In_TLL_phase.pdf>
@@ -2440,17 +2242,9 @@ Package pdftex.def Info: Chapters/Scaling_of_PPE_In_TLL_phase.pdf used on input
 (pdftex.def)             Requested size: 298.75262pt x 195.72893pt.
 
 
-LaTeX Warning: Citation `Zozulya:2007jw' on page 12 undefined on input line 511
-.
-
-
-LaTeX Warning: Citation `Zozulya:2007jw' on page 12 undefined on input line 511
-.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Chapters/PPE_interaction_dependence.pdf, id=427, 316.40514pt x 202.62941pt>
+<Chapters/PPE_interaction_dependence.pdf, id=544, 316.40514pt x 202.62941pt>
 File: Chapters/PPE_interaction_dependence.pdf Graphic file (type pdf)
 
 <use Chapters/PPE_interaction_dependence.pdf>
@@ -2459,40 +2253,24 @@ line 536.
 (pdftex.def)             Requested size: 298.75262pt x 191.34047pt.
 
 
-LaTeX Warning: Citation `Dzyaloshinskii:1974un' on page 12 undefined on input l
-ine 559.
-
-
-LaTeX Warning: Citation `Herdman:2015gx' on page 12 undefined on input line 561
-.
-
-[12]
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation `giamarchi:2004qu' on page 13 undefined on input line 5
-69.
-
-<Chapters/SvsN_choose_N.pdf, id=442, 302.08884pt x 212.64037pt>
+<Chapters/SvsN_choose_N.pdf, id=553, 302.08884pt x 212.64037pt>
 File: Chapters/SvsN_choose_N.pdf Graphic file (type pdf)
 
 <use Chapters/SvsN_choose_N.pdf>
 Package pdftex.def Info: Chapters/SvsN_choose_N.pdf used on input line 580.
 (pdftex.def)             Requested size: 298.75262pt x 210.30695pt.
 
-
-LaTeX Warning: Citation `Zozulya:2008kb' on page 13 undefined on input line 591
-.
+Overfull \hbox (12.62822pt too wide) in paragraph at lines 566--597
+\OML/cmm/m/it/12 n > \OT1/cmr/m/n/12 1$\T1/cmr/m/n/12 . While this can be done 
+in prin-ci-ple us-ing stan-dard tech-niques [[]],
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: Citation `KampfSekania:2003' on page 13 undefined on input line 
-601.
-
-<Chapters/PPE_degenerate_state.pdf, id=446, 303.18323pt x 196.91504pt>
+[13] <Chapters/PPE_degenerate_state.pdf, id=566, 303.18323pt x 196.91504pt>
 File: Chapters/PPE_degenerate_state.pdf Graphic file (type pdf)
 
 <use Chapters/PPE_degenerate_state.pdf>
@@ -2503,42 +2281,13 @@ Package pdftex.def Info: Chapters/PPE_degenerate_state.pdf used on input line 6
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13]
+[14]
+Overfull \hbox (15.08405pt too wide) in paragraph at lines 698--707
+\T1/cmr/m/n/12 Carlo meth-ods [[], [], []]. 
+ []
 
-LaTeX Warning: Citation `Zozulya:2007jw' on page 14 undefined on input line 668
-.
-
-
-LaTeX Warning: Citation `Herdman:2015gx' on page 14 undefined on input line 676
-.
-
-
-LaTeX Warning: Citation `Santachiara:2007il' on page 14 undefined on input line
- 687.
-
-
-LaTeX Warning: Citation `Calabrese:2004hl' on page 14 undefined on input line 6
-91.
-
-
-LaTeX Warning: Citation `Killoran:2014gu' on page 14 undefined on input line 69
-5.
-
-
-LaTeX Warning: Citation `Drut:2015fs' on page 14 undefined on input line 706.
-
-
-LaTeX Warning: Citation `Drut:2016el' on page 14 undefined on input line 706.
-
-
-LaTeX Warning: Citation `Porter:2016ft' on page 14 undefined on input line 706.
-
-
-
-LaTeX Warning: Citation `code' on page 14 undefined on input line 715.
-
-) [14] [15] [16 <./Chapters/EntropiesFigure.pdf>] [17 <./Chapters/Scaling_of_PP
-E_In_TLL_phase.pdf> <./Chapters/PPE_interaction_dependence.pdf
+) [15] [16 <./Chapters/EntropiesFigure.pdf>] [17 <./Chapters/Scaling_of_PPE_In_
+TLL_phase.pdf> <./Chapters/PPE_interaction_dependence.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Chapters/PPE_interaction_d
 ependence.pdf): PDF inclusion: multiple pdfs with page group included in a sing
@@ -2563,10 +2312,6 @@ Overfull \hbox (1.22351pt too wide) in paragraph at lines 1--1
 []\T1/cmr/bx/n/17.28 Operationally Ac-ces-si-ble En-tan-gle-ment En-tropy 
  []
 
-
-LaTeX Warning: Citation `Wiseman:2003vn' on page 19 undefined on input line 23.
-
-
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 23.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -2586,11 +2331,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 35.
 
 
-LaTeX Warning: Citation `Wiseman:2003jx' on page 20 undefined on input line 38.
-
-
-
-LaTeX Warning: Citation `Klich:2008se' on page 20 undefined on input line 71.
+Overfull \hbox (45.38298pt too wide) in paragraph at lines 38--40
+\T1/cmr/m/n/12 tem. To quan-tify the phys-i-cal re-duc-tion, Wise-man and Vac-c
+aro [[]]
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2609,83 +2353,31 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 95.
 
 
-LaTeX Warning: Citation `Calabrese:2004hl' on page 20 undefined on input line 9
-8.
+Overfull \hbox (0.50008pt too wide) in paragraph at lines 98--100
+[]\T1/cmr/m/n/12 , []] and ex-per-i-men-tal [[],
+ []
 
 
-LaTeX Warning: Citation `Hastings:2010dc' on page 20 undefined on input line 98
-.
-
-
-LaTeX Warning: Citation `Humeniuk:2012cq' on page 20 undefined on input line 98
-.
-
-
-LaTeX Warning: Citation `McMinis:2013dp' on page 20 undefined on input line 98.
-
-
-
-LaTeX Warning: Citation `Herdman:2014ey' on page 20 undefined on input line 98.
-
-
-
-LaTeX Warning: Citation `Drut:2015fs' on page 20 undefined on input line 98.
-
-
-LaTeX Warning: Citation `Daley:2012bd' on page 20 undefined on input line 98.
-
-
-LaTeX Warning: Citation `Islam:2015cm' on page 20 undefined on input line 98.
-
-
-LaTeX Warning: Citation `Kaufman:2016ep' on page 20 undefined on input line 98.
-
-
-
-LaTeX Warning: Citation `Pichler:2016ec' on page 20 undefined on input line 98.
-
-
-
-LaTeX Warning: Citation `Linke:2017tf' on page 20 undefined on input line 98.
-
-
-LaTeX Warning: Citation `Lukin:2018wg' on page 20 undefined on input line 98.
-
-
-LaTeX Warning: Citation `PhysRevLett.121.150501' on page 20 undefined on input 
-line 98.
+Overfull \hbox (72.34897pt too wide) in paragraph at lines 98--100
+[]\T1/cmr/m/n/12 , [], [], [], []]
+ []
 
 [20]
-
-LaTeX Warning: Citation `Cachin97entropymeasures' on page 21 undefined on input
- line 113.
-
-
-LaTeX Warning: Citation `GolshaniPashaYari:2009' on page 21 undefined on input 
-line 113.
+Overfull \hbox (56.74028pt too wide) in paragraph at lines 111--115
+\T1/cmr/m/n/12 [[], [], [], [], []],
+ []
 
 
-LaTeX Warning: Citation `Hayashi:2011' on page 21 undefined on input line 113.
+Overfull \hbox (67.85455pt too wide) in paragraph at lines 111--115
+\T1/cmr/m/n/12 Eq. [] can then be gen-er-al-ized (see the sup-ple-men-tal ma-te
+-rial of Ref. [[[]]])
+ []
 
 
-LaTeX Warning: Citation `SKORIC:2011el' on page 21 undefined on input line 113.
-
-
-
-LaTeX Warning: Citation `FehrBerens2014' on page 21 undefined on input line 113
-.
-
-
-LaTeX Warning: Citation `Barghathi:2018oe' on page 21 undefined on input line 1
-13.
-
-
-LaTeX Warning: Citation `Barghathi:2018oe' on page 21 undefined on input line 1
-13.
-
-
-LaTeX Warning: Citation `Barghathi:2018oe' on page 21 undefined on input line 1
-36.
+Overfull \hbox (9.50662pt too wide) in paragraph at lines 136--137
+\T1/cmr/m/n/12 tees that $\OT1/cmr/m/n/12 ^^A\OML/cmm/m/it/12 S[]$ \T1/cmr/m/n/
+12 sat-is-fies the phys-i-cal re-quire-ment in Eq. []. [[]]
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2783,83 +2475,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 778--779
 
  []
 
-<phaseDiagramTV.pdf, id=822, 663.95827pt x 161.28148pt>
-File: phaseDiagramTV.pdf Graphic file (type pdf)
 
-<use phaseDiagramTV.pdf>
-Package pdftex.def Info: phaseDiagramTV.pdf used on input line 826.
-(pdftex.def)             Requested size: 426.79134pt x 103.6726pt.
-
-<operationalEntanglementEntropies_SOP5.pdf, id=823, 308.35823pt x 356.45938pt>
+<operationalEntanglementEntropies_SOP5.pdf, id=989, 308.35823pt x 356.45938pt>
 File: operationalEntanglementEntropies_SOP5.pdf Graphic file (type pdf)
 
 <use operationalEntanglementEntropies_SOP5.pdf>
 Package pdftex.def Info: operationalEntanglementEntropies_SOP5.pdf used on inpu
-t line 836.
+t line 841.
 (pdftex.def)             Requested size: 426.79134pt x 493.38846pt.
 
 
-LaTeX Warning: Reference `tab:Iimits' on page 35 undefined on input line 838.
+LaTeX Warning: Reference `tab:Iimits' on page 35 undefined on input line 843.
 
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 838.
+ine 843.
 
-LaTeX Warning: Reference `tab:Iimits' on page 35 undefined on input line 838.
+LaTeX Warning: Reference `tab:Iimits' on page 35 undefined on input line 843.
 
-[35] [36 <./phaseDiagramTV.pdf>]
-<peakScalingOddN.pdf, id=850, 301.51244pt x 193.04286pt>
+[35] [36 <./operationalEntanglementEntropies_SOP5.pdf>]
+<peakScalingOddN.pdf, id=1071, 301.51244pt x 193.04286pt>
 File: peakScalingOddN.pdf Graphic file (type pdf)
 
 <use peakScalingOddN.pdf>
-Package pdftex.def Info: peakScalingOddN.pdf used on input line 852.
+Package pdftex.def Info: peakScalingOddN.pdf used on input line 857.
 (pdftex.def)             Requested size: 426.79134pt x 273.26265pt.
- [37] [38]
-<deltaS1_N15N16.pdf, id=879, 299.24704pt x 356.45938pt>
+ [37] [38 <./peakScalingOddN.pdf>]
+<deltaS1_N15N16.pdf, id=1106, 299.24704pt x 356.45938pt>
 File: deltaS1_N15N16.pdf Graphic file (type pdf)
 
 <use deltaS1_N15N16.pdf>
-Package pdftex.def Info: deltaS1_N15N16.pdf used on input line 928.
+Package pdftex.def Info: deltaS1_N15N16.pdf used on input line 890.
 (pdftex.def)             Requested size: 426.79134pt x 508.43307pt.
- <Halpha.pdf, id=880, 300.17908pt x 359.35478pt>
-File: Halpha.pdf Graphic file (type pdf)
 
-<use Halpha.pdf>
-Package pdftex.def Info: Halpha.pdf used on input line 938.
-(pdftex.def)             Requested size: 426.79134pt x 510.96179pt.
-
-<higherAlphaDeltaS_N15N16.pdf, id=881, 307.17216pt x 350.59908pt>
+<higherAlphaDeltaS_N15N16.pdf, id=1108, 307.17216pt x 350.59908pt>
 File: higherAlphaDeltaS_N15N16.pdf Graphic file (type pdf)
 
 <use higherAlphaDeltaS_N15N16.pdf>
-Package pdftex.def Info: higherAlphaDeltaS_N15N16.pdf used on input line 948.
+Package pdftex.def Info: higherAlphaDeltaS_N15N16.pdf used on input line 904.
 (pdftex.def)             Requested size: 426.79134pt x 487.14941pt.
 
-<alphaCollapse.pdf, id=882, 310.17796pt x 355.47325pt>
+<Halpha.pdf, id=1112, 300.17908pt x 359.35478pt>
+File: Halpha.pdf Graphic file (type pdf)
+ <use Halpha.pdf>
+Package pdftex.def Info: Halpha.pdf used on input line 916.
+(pdftex.def)             Requested size: 426.79134pt x 510.96179pt.
+ [39] [40 <./deltaS1_N15N16.pdf>] [41 <./higherAlphaDeltaS_N15N16.pdf>] [42 <./
+Halpha.pdf>]
+<alphaCollapse.pdf, id=1277, 310.17796pt x 355.47325pt>
 File: alphaCollapse.pdf Graphic file (type pdf)
- <use alphaCollapse.pdf>
-Package pdftex.def Info: alphaCollapse.pdf used on input line 958.
-(pdftex.def)             Requested size: 426.79134pt x 489.14336pt.
 
-<TLLCollapse.pdf, id=883, 318.11998pt x 355.47325pt>
+<use alphaCollapse.pdf>
+Package pdftex.def Info: alphaCollapse.pdf used on input line 956.
+(pdftex.def)             Requested size: 426.79134pt x 489.14336pt.
+ <TLLCollapse.pdf, id=1280, 318.11998pt x 355.47325pt>
 File: TLLCollapse.pdf Graphic file (type pdf)
- <use TLLCollapse.pdf>
+
+<use TLLCollapse.pdf>
 Package pdftex.def Info: TLLCollapse.pdf used on input line 968.
 (pdftex.def)             Requested size: 426.79134pt x 476.93918pt.
-
-<fillingFractionDependence.pdf, id=884, 306.92064pt x 355.126pt>
-File: fillingFractionDependence.pdf Graphic file (type pdf)
-
-<use fillingFractionDependence.pdf>
-Package pdftex.def Info: fillingFractionDependence.pdf used on input line 980.
-(pdftex.def)             Requested size: 426.79134pt x 493.84047pt.
-) [39] [40 <./operationalEntanglementEntropies_SOP5.pdf>] [41 <./peakScalingOdd
-N.pdf>] [42 <./deltaS1_N15N16.pdf>] [43 <./Halpha.pdf>] [44 <./higherAlphaDelta
-S_N15N16.pdf>] [45 <./alphaCollapse.pdf>]
-[46 <./TLLCollapse.pdf>] [47 <./fillingFractionDependence.pdf>]
+) [43] [44 <./alphaCollapse.pdf>] [45 <./TLLCollapse.pdf>]
 Appendix A.
-(./Chapters/appendix01.tex [48
+(./Chapters/appendix01.tex [46
 
-] [49]
+] [47]
 Underfull \hbox (badness 10000) in paragraph at lines 116--124
 
  []
@@ -2886,14 +2564,14 @@ be found in: https://github.com/ecasiano/LanczosEigensolvers/blob/master/lanczo
 sEigensolver.py.
  []
 
-[50] <Images/Lanczos/A.pdf, id=1304, 462.52798pt x 346.89601pt>
+[48] <Images/Lanczos/A.pdf, id=1415, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/A.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/A.pdf>
 Package pdftex.def Info: Images/Lanczos/A.pdf used on input line 143.
 (pdftex.def)             Requested size: 298.75262pt x 224.07703pt.
 
-<Images/Lanczos/T_noReortho.pdf, id=1305, 462.52798pt x 346.89601pt>
+<Images/Lanczos/T_noReortho.pdf, id=1416, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/T_noReortho.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/T_noReortho.pdf>
@@ -2901,7 +2579,7 @@ Package pdftex.def Info: Images/Lanczos/T_noReortho.pdf used on input line 154.
 
 (pdftex.def)             Requested size: 298.75262pt x 224.07703pt.
 
-<Images/Lanczos/T_yesReortho.pdf, id=1306, 462.52798pt x 346.89601pt>
+<Images/Lanczos/T_yesReortho.pdf, id=1417, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/T_yesReortho.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/T_yesReortho.pdf>
@@ -2909,19 +2587,19 @@ Package pdftex.def Info: Images/Lanczos/T_yesReortho.pdf used on input line 164
 .
 (pdftex.def)             Requested size: 298.75262pt x 224.07703pt.
 
-<Images/Lanczos/eigenvaluesComparison.pdf, id=1307, 462.52798pt x 346.89601pt>
+<Images/Lanczos/eigenvaluesComparison.pdf, id=1418, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/eigenvaluesComparison.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/eigenvaluesComparison.pdf>
 Package pdftex.def Info: Images/Lanczos/eigenvaluesComparison.pdf used on input
  line 176.
 (pdftex.def)             Requested size: 298.75262pt x 224.07703pt.
-) [51 <./Images/Lanczos/A.pdf>]
-[52 <./Images/Lanczos/T_noReortho.pdf> <./Images/Lanczos/T_yesReortho.pdf
+) [49 <./Images/Lanczos/A.pdf>]
+[50 <./Images/Lanczos/T_noReortho.pdf> <./Images/Lanczos/T_yesReortho.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Images/Lanczos/T_yesReorth
 o.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [53 <./Images/Lanczos/eigenvaluesComparison.pdf>]
+>] [51 <./Images/Lanczos/eigenvaluesComparison.pdf>]
 Appendix B.
 (./Chapters/appendix02.tex
 Overfull \hbox (8.40895pt too wide) in paragraph at lines 1--1
@@ -2937,7 +2615,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-[54
+[52
 
 ]
 Overfull \hbox (2.96205pt too wide) in paragraph at lines 96--105
@@ -2946,7 +2624,7 @@ n/12 on the PP in-dices only guar-an-tees that $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/
 12 ^^H[]\OMS/cmsy/m/n/12 j[] \OT1/cmr/m/n/12 =
  []
 
-[55]
+[53]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 180.
@@ -2971,23 +2649,23 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 180.
 
-[56]
+[54]
 
-LaTeX Warning: Reference `appendixA' on page 57 undefined on input line 283.
+LaTeX Warning: Reference `appendixA' on page 55 undefined on input line 283.
 
 
-LaTeX Warning: Reference `appendixA' on page 57 undefined on input line 291.
+LaTeX Warning: Reference `appendixA' on page 55 undefined on input line 291.
 
-[57])
-No file msThesis.bbl.
-[58]
+[55]) (./msThesis.bbl [56] [57
+
+] [58] [59] [60]) [61]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  (./msThesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `msThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 2DBD5A2793FE3EFFD449AA3CA2BF10CF;4363.
+(rerunfilecheck)             Checksum: 409D130A7105761919F769F440D66DA3;4282.
 
 
 LaTeX Warning: There were undefined references.
@@ -2998,10 +2676,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 25529 strings out of 493014
- 479335 string characters out of 6133351
- 540825 words of memory out of 5000000
- 28380 multiletter control sequences out of 15000+600000
+ 25584 strings out of 493014
+ 480264 string characters out of 6133351
+ 539902 words of memory out of 5000000
+ 28370 multiletter control sequences out of 15000+600000
  33139 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,87p,10384b,898s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3034,10 +2712,10 @@ pe1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2016/texmf-dist/fonts/type
 1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
 public/cm-super/sfti1200.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
 blic/cm-super/sftt1200.pfb>
-Output written on msThesis.pdf (59 pages, 2154027 bytes).
+Output written on msThesis.pdf (62 pages, 2155207 bytes).
 PDF statistics:
- 1601 PDF objects out of 1728 (max. 8388607)
- 1277 compressed objects within 13 object streams
- 271 named destinations out of 1000 (max. 500000)
- 548 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1750 PDF objects out of 2073 (max. 8388607)
+ 1436 compressed objects within 15 object streams
+ 336 named destinations out of 1000 (max. 500000)
+ 530 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -39,17 +39,16 @@
 \BOOKMARK [2][-]{subsection.3.5.1}{Finite size scaling of the accessible entanglement}{section.3.5}% 39
 \BOOKMARK [2][-]{subsection.3.5.2}{Entanglement of local particle number fluctuations}{section.3.5}% 40
 \BOOKMARK [1][-]{section.3.6}{Conclusion}{chapter.3}% 41
-\BOOKMARK [2][-]{subsection.3.6.1}{Filling fraction dependence}{section.3.6}% 42
-\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 43
-\BOOKMARK [1][-]{section.A.1}{Lanczos Algorithm}{appendix.A}% 44
-\BOOKMARK [2][-]{subsection.A.1.1}{Introduction}{section.A.1}% 45
-\BOOKMARK [2][-]{subsection.A.1.2}{Tridiagonalization of the original matrix}{section.A.1}% 46
-\BOOKMARK [2][-]{subsection.A.1.3}{Algorithm}{section.A.1}% 47
-\BOOKMARK [2][-]{subsection.A.1.4}{Code}{section.A.1}% 48
-\BOOKMARK [2][-]{subsection.A.1.5}{Results}{section.A.1}% 49
-\BOOKMARK [0][-]{appendix.B}{Appendix}{}% 50
-\BOOKMARK [1][-]{section.B.1}{Evaluating the n-particle partition entanglement}{appendix.B}% 51
-\BOOKMARK [2][-]{subsection.B.1.1}{Particle bipartition}{section.B.1}% 52
-\BOOKMARK [2][-]{subsection.B.1.2}{Eigenvalues}{section.B.1}% 53
-\BOOKMARK [1][-]{section.B.2}{n-particle partition entanglement in the V/t \040limit}{appendix.B}% 54
-\BOOKMARK [0][-]{section*.6}{References}{}% 55
+\BOOKMARK [0][-]{appendix.A}{Appendix}{}% 42
+\BOOKMARK [1][-]{section.A.1}{Lanczos Algorithm}{appendix.A}% 43
+\BOOKMARK [2][-]{subsection.A.1.1}{Introduction}{section.A.1}% 44
+\BOOKMARK [2][-]{subsection.A.1.2}{Tridiagonalization of the original matrix}{section.A.1}% 45
+\BOOKMARK [2][-]{subsection.A.1.3}{Algorithm}{section.A.1}% 46
+\BOOKMARK [2][-]{subsection.A.1.4}{Code}{section.A.1}% 47
+\BOOKMARK [2][-]{subsection.A.1.5}{Results}{section.A.1}% 48
+\BOOKMARK [0][-]{appendix.B}{Appendix}{}% 49
+\BOOKMARK [1][-]{section.B.1}{Evaluating the n-particle partition entanglement}{appendix.B}% 50
+\BOOKMARK [2][-]{subsection.B.1.1}{Particle bipartition}{section.B.1}% 51
+\BOOKMARK [2][-]{subsection.B.1.2}{Eigenvalues}{section.B.1}% 52
+\BOOKMARK [1][-]{section.B.2}{n-particle partition entanglement in the V/t \040limit}{appendix.B}% 53
+\BOOKMARK [0][-]{section*.6}{References}{}% 54

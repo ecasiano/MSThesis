@@ -814,13 +814,8 @@ Analytical results for the accessible entanglement in the ground state of the $t
 
 Analytical results have now been obtained in three regimes of the $tV$ Model, namely: $V/t \to + \infty$, $V/t \to - \infty$ and $V/t = -2$ for both the traditional and the generalized accessible entanglement. In the next section, numerical results obtained from exact diagonalization are presented.
 
-\section{Numerical Results}
-
-
-%In this section, numerical results obtained using exact diagonalization are shown. First, the finite size scaling of $S_{\alpha}^{\rm acc}(\rho_{A})$ will be illustrated. Following, the results correp
-
-
-\subsection{Finite size scaling of the accessible entanglement}
+%%%%%%%%%%%%%%%%%%%
+\iffalse
 \begin{figure*}[thp]
 \begin{center}
 \includegraphics[width=1.0\textwidth]{phaseDiagramTV.pdf}
@@ -828,10 +823,20 @@ Analytical results have now been obtained in three regimes of the $tV$ Model, na
 \caption{Phase diagram of the $t-V$ model accompanied by pictures of candidate ground states for $N=2$ fermions on a $L=4$ site lattice. For the purposes of measuring accessible entanglement, the lattice has been bipartitioned into spatial subregions $A$ (blue) and $\bar{A}$ (red), each of size $\ell = 2$. We assume periodic boundary conditions. In the limit of strong attractive interactions where $V/t \ll -2$, the particles cluster together and there are $L$ equally probable configurations corresponding to all translations of the cluster.  At the first order phase transition where $V/t = -2$, all ${L}\choose{N}$ configurations are equally probable resulting in a flat state. In the TLL phase with $|V/t| < 2$,  particles are delocalized and we have included a characteristic state corresponding to free fermions $(V=0)$. In the limit of strong repulsive interactions where $V/t \gg 2$, fermions maximize their distance from each other resulting in a charge density wave (CDW) phase. The open and closed circles on the $V/t$ axis denote a first order and continuous phase transition, respectively.}
 \label{fig:phaseDiagram}
 \end{figure*}
+%%%%%%%%%%%%%%%%%
+\fi
+
+\section{Numerical Results}
+
+
+%In this section, numerical results obtained using exact diagonalization are shown. First, the finite size scaling of $S_{\alpha}^{\rm acc}(\rho_{A})$ will be illustrated. Following, the results correp
+
+\subsection{Finite size scaling of the accessible entanglement}
+
 
 %
 %%%%%%%%%%
-\begin{figure}[t]
+\begin{figure}[htp]
 \begin{center}
 \includegraphics[width=1.0\columnwidth]{operationalEntanglementEntropies_SOP5.pdf}
 \end{center}
@@ -847,7 +852,7 @@ Recall that the accessible entanglement should be a monotonically decreasing fun
 Another interesting feature is the peak seen near the continuous phase transition $V/t=2$. Results seem to indicate that the peak is slightly shifting to the left, closer to $V/t=2$ as the number of particles $N$ increases. In an effort to find how the location of this peak scales with particle number, $V/t\vert_{Max}$ was obtained for various system sizes, where $V/t\vert_{Max}$ is the interaction strength at which the accessible entanglement peak occurs. Figure \ref{fig:peakScalingOddN} shows a plot of $V/t\vert_{Max}$ vs $N^{-0.3066}$. The exponent comes from a linear fitting of $\left( V/t\vert_{Max} - 2 \right)$ vs $N$ data. The observed inverse power law scaling is promising as all points fall on a line with $y$ intercept of $V/t\vert_{Max} = 2$, which is the exact value of the continuous phase transition in the asymptotic limit of $N \to \infty$ total particles.
 
 %%%%%%%%%%
-\begin{figure}[t]
+\begin{figure}[htp]
 \begin{center}
 \includegraphics[width=1.0\columnwidth]{peakScalingOddN.pdf}
 \end{center}
@@ -878,20 +883,52 @@ where
 is the Shannon Entropy of the probability distribution of the local particle number $P_n$.
 
 In this section, a comparison is done between the Shannon Entropy of the local particle number distribution and the difference between full and accessible entanglement. First, numerical results for this difference will be shown for the case of $\alpha=1$ and compared to the exact value of the Shannon Entropy of normally distributed local particle numbers. Then, higher values of $\alpha$ will be studied and the difference will be compared with the Shannon Entropy of the corresponding probability distribution of local particle number.
+
+ %%%%%%%%%%
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width=1.0\columnwidth]{deltaS1_N15N16.pdf}
+\end{center}
+\caption{Difference between the von Neumann and accessible entanglement entropies $S_{1}-S_{1}^{acc}$ and $\frac{1}{2} \ln 2 \pi e \sigma^2$ as functions of interaction strength $V/t$. The latter expression is the well known differential entropy of a Gaussian distribution. In TLL phase ($-2 < V/t < 2$), the probability distribution is Gaussian, as can be seen from the agreement between the two results. The solid lines use the theoretical variance of particle number in $A$ inside the $LL$ phase, $K \sigma^2_{FF}$, where $K$ is the Luttinger parameter and is a function of $V/t$ and $\sigma^2_{FF}$ is the exact variance for free-fermions ($V/t = 0$).}
+\label{fig:deltaS1}
+\end{figure}
+%%%%%%%%%%
+
 %
 Figure \ref{fig:deltaS1} shows the difference between the full and accessible Von Neumann entanglement entropies as a function of interaction strength. From exact diagonalization, the full ($S_1$), accessible ($S_{1}^{\rm acc}$) Von Neumann entanglement entropies and the variance of local particle number $n$ ($\sigma$) were obtained. Expecting that local particle number fluctuations are normally distributed in the TLL phase ($-2 < V/t < 2$) of the $tV$ model, these variances were inserted into the expression for the Shannon entropy of a Normal Distribution $\frac{1}{2}\ln{\left( 2\pi e \sigma^2 \right)}$. Additionally, the Shannon Entropy was calculated using the variance of local particle number predicted by Tomonaga-Luttinger Liquid theory $\sigma \equiv K\sigma_{FF}$ where $\sigma_{FF}$ is the variance of free-fermions $V/t = 0$ and $K$ is the Luttinger Parameter $K = \pi/(\cos^{-1}\left( -V/2t \right))$. The figure shows agreement between the three expressions in the TLL phase.
 
-At R\'enyi indices higher than $\alpha = 1$, the difference between the full and accessible entanglement entropies should be bounded from below by the classical R\'enyi entropy of the local particle number probability distribution $H_{\alpha}\left(\{P_n\}\right) = \ln{ \sum_{n} P_{n}^{\alpha}}/(1-\alpha)$. Figure \ref{fig:deltaS_alpha} shows $\Delta S_{\alpha}$ and $H_{\alpha}\left(\{P_n\}\right)$ as a function of interaction strength for R\'enyi indices $\alpha=2$ and $\alpha=10$. Not only in all cases is $H_{\alpha}\left(\{P_n\}\right) \leq \Delta S_{\alpha}$, but also the values corresponding to $\alpha=10$ are lower than the ones corresponding to $\alpha=2$, satisfying the condition that the difference in full and accessible entanglement should be a monotonically decreasing function of $\alpha$.
+
+%%%%%%%%%%
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width=1.0\columnwidth]{higherAlphaDeltaS_N15N16.pdf}
+\end{center}
+\caption{Difference between the \ren and accessible entanglement entropy $S_{\alpha} - S_{\alpha}^{\mathrm{acc}}$ and $H_{\alpha}$ as functions of interaction strength $V/t$ for $\alpha=2,10$. In general, $H_{\alpha}$ should provide a lower bound for $\Delta S_{\alpha}$ (i.e, $H_{\alpha} \leq S_{\alpha}$). Also, $S_{\alpha}^{\mathrm{acc}}$ should be non-increasing in $\alpha$. It can be seen that both relations hold in all phases of the $t-V$ model.}
+\label{fig:deltaS_alpha}
+\end{figure}
+%%%%%%%%%%
+
+At R\'enyi indices higher than $\alpha = 1$, the difference between the full and accessible entanglement entropies should be bounded from below by the classical R\'enyi entropy of the local particle number probability distribution $H_{\alpha}\left(\{P_n\}\right) = \ln{ \sum_{n} P_{n}^{\alpha}}/(1-\alpha)$. Figure \ref{fig:deltaS_alpha} shows $\Delta S_{\alpha}$ and $H_{\alpha}\left(\{P_n\}\right)$ as a function of interaction strength for R\'enyi indices $\alpha=2$ and $\alpha=10$. Not only in all cases is $H_{\alpha}\left(\{P_n\}\right) \leq \Delta S_{\alpha}$, but also the values corresponding to $\alpha=10$ are lower than the ones corresponding to $\alpha=2$, satisfying the condition that the difference in full and accessible entanglement should be a monotonically decreasing function of $\alpha$. The fact there's such good agreement for the $\alpha=2$ and $\alpha=10$ is rather astounding. Taking a look at Figure $\ref{fig:Halpha}$ reveals that the difference between the computationally determined R\'enyi entropy of $P_n$ and the theoretical value is proportional to the R\'enyi index. For $\alpha=10$, this difference is large enough that the agreement in the TLL phase in Figure \ref{fig:deltaS_alpha} is surprising. Up next, it will be shown that this agreement is a result of the proportionality between $P_{n,\alpha}$ and $P_n^{\alpha}$.
+
+%%%%%%%%%%
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width=1.0\columnwidth]{Halpha.pdf}
+\end{center}
+\caption{For $N=15$, $\sigma^2=0.758$ and for $N=16$, $\sigma^2=0.772$.}
+\label{fig:Halpha}
+ \end{figure}
+%%%%%%%%%%
 
 Recall the distribution defined in section \ref{sec:accEntanglementIntro}:
 %
 \begin{equation}
-P_{n,\alpha} = \frac{P_{n,\alpha}}{\Tr\rho_{A}^{\alpha}}
+P_{n,\alpha} = \frac{P_{n}}{\Tr\rho_{A}^{\alpha}}
 \label{eq:Pna}
 \end{equation}
  %
  
-which in the TLL phase of the $tV$ model ($-2 < V/t < 2$) can be approximated as:
+which due to a normal distribution of local particle numbers  in the TLL phase of the $tV$ model ($-2 < V/t < 2$) can be approximated as:
 %
 \begin{equation}
 P_{n,\alpha} \approx \sqrt{\frac{\pi\alpha}{2K\ln{\ell}}} e^{\frac{-\alpha \pi^2 (n - \langle n \rangle^2 )}{2K\ln{\ell}}} 
@@ -913,47 +950,8 @@ Notice that raising Eq. \ref{eq:Pna_TLL} to either $1/\alpha$ or $K$ on both sid
  \label{eq:Pna_to_K}
  \end{equation}
  
- Figure \ref{fig:alpha_collapse} shows the distribution $A_{\alpha} P_{n,\alpha}^{1/\alpha}$ for various interaction strengths $V/t$ and, thus, $K$. The constant $A_{\alpha}$ is the inverse of the square root factor in Eq. \ref{eq:Pna_to_alphaInv}. Cancelling the square root factor allows for a direct comparison of the exponential factor for each of the $\alpha$ values used. The middle plots confirm that this exponential factor indeed is independent of $\alpha$, illustrated by the fact that the distributions become the same for $\alpha=\{1,2,5,10\}$, when inside the TLL regime of $-2 < V/t < 2$.
- 
-Figure \ref{fig:K_collapse} shows the distribution $A_{\alpha} P_{n,\alpha}^{K}$ with the R\'enyi index fixed at $\alpha=2$ and at various interaction strengths $V/t$ and corresponding Luttinger parameters $K$. In this case, the factor $A_{\alpha}$ is the inverse of the square root factor in Eq. \ref{eq:Pna_to_K}. All of the interaction strengths fall within the TLL regime and as such, all the distributions should become the same for the various $V/t$ and, thus, $K$ values. This collapse of the distributions at various $K$ is evident from looking at regions near the middle of the graph. Although it may not be apparent at first glance due to the scale, the tails of the distribution are all essentially zero.
-
-\section{Conclusion}
-In this chapter, the operationally accessible R\'enyi entanglement entropy was introduced in both it's original and generalized form. Analytical values of the entanglement entropy were obtained at various special cases of the $tV$ model and then confirmed via exact diagonalization. A maximum value in accessible entanglement was observed and evidence seems to support that it follows an inverse power law scaling in total particle number with scaling exponent of $-0.3066$. 
-
-The difference in full and accessible entanglement entropies was also computationally determined and it was confirmed that in the TLL phase of the $tV$ model, it is equal to the the R\'enyi entropy of a Normal Distribution of local particle number. Finally, it was then proposed theoretically and confirmed computationally, that getting rid of the R\'enyi index and Luttinger parameter dependence, the exponential part of these Normal Distributions depend exclusively on local particle number fluctuations.
-
  %%%%%%%%%%
 \begin{figure}[htp]
-\begin{center}
-\includegraphics[width=1.0\columnwidth]{deltaS1_N15N16.pdf}
-\end{center}
-\caption{Difference between the von Neumann and accessible entanglement entropies $S_{1}-S_{1}^{acc}$ and $\frac{1}{2} \ln 2 \pi e \sigma^2$ as functions of interaction strength $V/t$. The latter expression is the well known differential entropy of a Gaussian distribution. In TLL phase ($-2 < V/t < 2$), the probability distribution is Gaussian, as can be seen from the agreement between the two results. The solid lines use the theoretical variance of particle number in $A$ inside the $LL$ phase, $K \sigma^2_{FF}$, where $K$ is the Luttinger parameter and is a function of $V/t$ and $\sigma^2_{FF}$ is the exact variance for free-fermions ($V/t = 0$).}
-\label{fig:deltaS1}
-\end{figure}
-%%%%%%%%%%
-
-%%%%%%%%%%
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=1.0\columnwidth]{Halpha.pdf}
-\end{center}
-\caption{For $N=15$, $\sigma^2=0.758$ and for $N=16$, $\sigma^2=0.772$.}
-\label{fig:Halpha}
- \end{figure}
-%%%%%%%%%%
-
-%%%%%%%%%%
-\begin{figure}[t]
-\begin{center}
-\includegraphics[width=1.0\columnwidth]{higherAlphaDeltaS_N15N16.pdf}
-\end{center}
-\caption{Difference between the \ren and accessible entanglement entropy $S_{\alpha} - S_{\alpha}^{\mathrm{acc}}$ and $H_{\alpha}$ as functions of interaction strength $V/t$ for $\alpha=2,10$. In general, $H_{\alpha}$ should provide a lower bound for $\Delta S_{\alpha}$ (i.e, $H_{\alpha} \leq S_{\alpha}$). Also, $S_{\alpha}^{\mathrm{acc}}$ should be non-increasing in $\alpha$. It can be seen that both relations hold in all phases of the $t-V$ model.}
-\label{fig:deltaS_alpha}
-\end{figure}
-%%%%%%%%%%
-
-%%%%%%%%%%
-\begin{figure}[t]
 \begin{center}
 \includegraphics[width=1.0\columnwidth]{alphaCollapse.pdf}
 \end{center}
@@ -961,9 +959,11 @@ The difference in full and accessible entanglement entropies was also computatio
 \label{fig:alpha_collapse}
 \end{figure}
 %%%%%%%%%%
-
+ 
+ Figure \ref{fig:alpha_collapse} shows the distribution $A_{\alpha} P_{n,\alpha}^{1/\alpha}$ for various interaction strengths $V/t$ and, thus, $K$. The constant $A_{\alpha}$ is the inverse of the square root factor in Eq. \ref{eq:Pna_to_alphaInv}. Cancelling the square root factor allows for a direct comparison of the exponential factor for each of the $\alpha$ values used. The middle plots confirm that this exponential factor indeed is independent of $\alpha$, illustrated by the fact that the distributions become the same for $\alpha=\{1,2,5,10\}$, when inside the TLL regime of $-2 < V/t < 2$.
+ 
 %%%%%%%%%%
-\begin{figure}[t]
+\begin{figure}[htp]
 \begin{center}
 \includegraphics[width=1.0\columnwidth]{TLLCollapse.pdf}
 \end{center}
@@ -971,11 +971,18 @@ The difference in full and accessible entanglement entropies was also computatio
 \label{fig:K_collapse}
 \end{figure}
 %%%%%%%%%%
+ 
+Figure \ref{fig:K_collapse} shows the distribution $A_{\alpha} P_{n,\alpha}^{K}$ with the R\'enyi index fixed at $\alpha=2$ and at various interaction strengths $V/t$ and corresponding Luttinger parameters $K$. In this case, the factor $A_{\alpha}$ is the inverse of the square root factor in Eq. \ref{eq:Pna_to_K}. All of the interaction strengths fall within the TLL regime and as such, all the distributions should become the same for the various $V/t$ and, thus, $K$ values. This collapse of the distributions at various $K$ is evident from looking at regions near the middle of the graph. Although it may not be apparent at first glance due to the scale, the tails of the distribution are all essentially zero.
 
-\subsection{Filling fraction dependence}
+\section{Conclusion}
+In this chapter, the operationally accessible R\'enyi entanglement entropy was introduced in both it's original and generalized form. Analytical values of the entanglement entropy were obtained at various special cases of the $tV$ model and then confirmed via exact diagonalization. A maximum value in accessible entanglement was observed and evidence seems to support that it follows an inverse power law scaling in total particle number with scaling exponent of $-0.3066$. 
+
+The difference in full and accessible entanglement entropies was also computationally determined and it was confirmed that in the TLL phase of the $tV$ model, it is equal to the the R\'enyi entropy of a Normal Distribution of local particle number. Finally, it was then proposed theoretically and confirmed computationally, that getting rid of its R\'enyi index and Luttinger parameter dependence, the exponential part of these Normal Distributions depend exclusively on local particle number fluctuations.
+
+\iffalse
 %Figure 8
 %%%%%%%%%%
-\begin{figure}[t]
+\begin{figure}[htp]
 \begin{center}
 \includegraphics[width=1.0\columnwidth]{fillingFractionDependence.pdf}
 \end{center}
@@ -983,5 +990,6 @@ The difference in full and accessible entanglement entropies was also computatio
 \label{fig:fillingFractionDependence}
 \end{figure}
 %%%%%%%%%%
+\fi
 
 
