@@ -158,7 +158,7 @@ In this section, analytical values for the operationally accessible R\'enyi enta
 	
 	
 \begin{equation}
- S_{\alpha}(\rho_{A}) = \frac{1}{1-\alpha} \log{\Tr{\rho_{A}^{\alpha}}} 
+ S_{\alpha}(\rho_{A}) = \frac{1}{1-\alpha} \ln{\Tr{\rho_{A}^{\alpha}}} 
 \end{equation}
 
 Where $\alpha$ is the R\'enyi Index and $\rho_{A}$ is the density matrix of subregion $A$. This calculation is still required to get accessible entanglement but, as shall be seen, a few extra steps have to be taken to make sure that local particle number conservation is being satisfied. The first of these extra steps will be to project $\rho_{A}$ to subspaces of local particle number. Projection operators can be written as diagonal matrices with ones on the entries corresponding to the subspace for which the projection is desired and zeros for the rest. Knowing this, the projection operators onto subspaces of fixed local particle numbers can be built rather simply. The projected reduced density matrix of  $A$ into the subspace of fixed local particle number $n$ is obtained by:
@@ -262,14 +262,14 @@ Taking the partial trace of $\rho_{A} = \rho_{A_{\frac{N}{2}}}$, the probability
 The projected and normalized reduced density matrix of $A$ is now known and can be substituted into \ref{eq:accessibleEE} to calculate the accessible entanglement entropy:
 \begin {align} 
 S_{\alpha}^{\mathrm{acc}}(\rho_A) &= \sum_{n} P_n S_{\alpha}(\rho_{A_n}) \nonumber \\
-&=  \frac{1}{1-\alpha} P_{\frac{N}{2}} \log{\Tr{\rho_{A_{\frac{N}{2}}}^{\alpha}}} \nonumber \\
-&= \frac{1}{1-\alpha} (1) \log{\Tr{\begin{pmatrix}  (\frac{1}{2})^{\alpha} & 0 \\ 0 & (\frac{1}{2})^{\alpha}   \end{pmatrix}}} \nonumber \\
+&=  \frac{1}{1-\alpha} P_{\frac{N}{2}} \ln{\Tr{\rho_{A_{\frac{N}{2}}}^{\alpha}}} \nonumber \\
+&= \frac{1}{1-\alpha} (1) \ln{\Tr{\begin{pmatrix}  (\frac{1}{2})^{\alpha} & 0 \\ 0 & (\frac{1}{2})^{\alpha}   \end{pmatrix}}} \nonumber \\
 &= \frac{1}{1-\alpha} \log({\frac{1}{2^{\alpha}} + \frac{1}{2^{\alpha}}}) \nonumber \\
-&= \frac{1}{1-\alpha} \log{2^{(1-\alpha)}} \nonumber \\
-S_{\alpha}^{\mathrm{acc}}(\rho_A) &= \log{2}
+&= \frac{1}{1-\alpha} \ln{2^{(1-\alpha)}} \nonumber \\
+S_{\alpha}^{\mathrm{acc}}(\rho_A) &= \ln{2}
 \end {align}
 
-Thus, for even $N$ and $V/t \to + \infty$ , the accessible entanglement converges to $\log{2} \approx 0.6931\dots$, independent of the Renyi Index. Up next, the result for odd $N$ will be derived.
+Thus, for even $N$ and $V/t \to + \infty$ , the accessible entanglement converges to $\ln{2} \approx 0.6931\dots$, independent of the R\'enyi Index. Up next, the result for odd $N$ will be derived.
 
 	\subsubsection{Odd N}
 	
@@ -330,9 +330,9 @@ Substituting into the accessible entanglement equation (\ref{eq:accessibleEE}):
 
 \begin {align} 
 S_{\alpha}^{acc}(\rho_A) &= \sum_{n} P_n S_{\alpha}(\rho_{A_n}) \nonumber \\
-&= (\frac{1}{2})\frac{1}{1-\alpha} \log{\Tr{\rho_{A_{\frac{N+1}{2}}}^{\alpha}}} + (\frac{1}{2})\frac{1}{1-\alpha} \log{\Tr{\rho_{A_{\frac{N-1}{2}}}^{\alpha}}} \nonumber \\
-&=\frac{1}{2-2\alpha}[ \log{\Tr{\begin{pmatrix}  1^{\alpha} & 0 \\ 0 & 0   \end{pmatrix}}} + \log{\Tr{\begin{pmatrix}  0 & 0 \\ 0 & 1^{\alpha}   \end{pmatrix}}}] \nonumber \\
-&=  \frac{1}{2-2\alpha}[ \underbrace{\log{1} + \log{1}}_{=0} ] \nonumber \\
+&= (\frac{1}{2})\frac{1}{1-\alpha} \ln{\Tr{\rho_{A_{\frac{N+1}{2}}}^{\alpha}}} + (\frac{1}{2})\frac{1}{1-\alpha} \ln{\Tr{\rho_{A_{\frac{N-1}{2}}}^{\alpha}}} \nonumber \\
+&=\frac{1}{2-2\alpha}[ \ln{\Tr{\begin{pmatrix}  1^{\alpha} & 0 \\ 0 & 0   \end{pmatrix}}} + \ln{\Tr{\begin{pmatrix}  0 & 0 \\ 0 & 1^{\alpha}   \end{pmatrix}}}] \nonumber \\
+&=  \frac{1}{2-2\alpha}[ \underbrace{\ln{1} + \ln{1}}_{=0} ] \nonumber \\
 S_{\alpha}^{acc}(\rho_A) &= 0
 \end {align}
 
@@ -343,7 +343,7 @@ The results for the accessible entanglement in the infinitely repulsive limit ca
 \begin{equation}
 \lim_{V \to + \infty} S_{\alpha}^{acc} =
 \begin{cases}
-\log{2}  & \text{if }N\text{ is even} \\
+\ln{2}  & \text{if }N\text{ is even} \\
 0 & \text{if }N\text{ is odd}
 \end{cases}
 \end{equation}
@@ -483,7 +483,7 @@ Notice from the form of the projection operators that the projected reduced dens
 
 \begin{equation}
 \begin{aligned}
-\rho_{A_{N-1}} &= \frac{1}{P_{N-1}} \hat{\Pi}_{N-1} \rho_{A} \hat{\Pi}_{N-1} \\
+\rho_{A_{N-1}} &= \frac{1}{P_{N-1}} \hat{\mathcal{P}}_{N-1} \rho_{A} \hat{\mathcal{P}}_{N-1} \\
 \rho_{A_{N-1}} &= \frac{1}{P_{N-1}} \begin{pmatrix} 
 0 \\
 & 0 \\
@@ -569,14 +569,14 @@ Finally, the accessible entanglement is:
 
 \begin{align} 
 S_{\alpha}^{acc}(\rho_A) &= \sum_{n} P_n S_{\alpha}(\rho_{A_n}) \nonumber \\
-&= \frac{1}{1-\alpha}[\frac{1}{L} \log{\Tr{\rho_{A_N}^\alpha}} + \frac{1}{L} \log{\Tr{\rho_{A_0}^\alpha}} + \frac{2}{L} \log{\Tr{\rho_{A_{N-1}}^\alpha}} \nonumber \\
-&+ \frac{2}{L} \log{\Tr{\rho_{A_{N-2}}^\alpha}} + \dots +\frac{2}{L} \log{\Tr{\rho_{A_2}^\alpha}} + \frac{2}{L} \log{\Tr{\rho_{A_1}^\alpha}} ] \nonumber \\
-&= \frac{1}{L-L\alpha}[ \underbrace{\log{1}}_{=0} +  \underbrace{\log{1}}_{=0} + 2 \log({\frac{1}{2^\alpha}+\frac{1}{2^\alpha}}) \nonumber \\
+&= \frac{1}{1-\alpha}[\frac{1}{L} \ln{\Tr{\rho_{A_N}^\alpha}} + \frac{1}{L} \ln{\Tr{\rho_{A_0}^\alpha}} + \frac{2}{L} \ln{\Tr{\rho_{A_{N-1}}^\alpha}} \nonumber \\
+&+ \frac{2}{L} \ln{\Tr{\rho_{A_{N-2}}^\alpha}} + \dots +\frac{2}{L} \ln{\Tr{\rho_{A_2}^\alpha}} + \frac{2}{L} \ln{\Tr{\rho_{A_1}^\alpha}} ] \nonumber \\
+&= \frac{1}{L-L\alpha}[ \underbrace{\ln{1}}_{=0} +  \underbrace{\ln{1}}_{=0} + 2 \log({\frac{1}{2^\alpha}+\frac{1}{2^\alpha}}) \nonumber \\
 &+ 2 \log({\frac{1}{2^\alpha}+\frac{1}{2^\alpha}})+ \dots + 2 \log({\frac{1}{2^\alpha}+\frac{1}{2^\alpha}}) + 2 \log({\frac{1}{2^\alpha}+\frac{1}{2^\alpha}}) ] \nonumber \\
-&= \frac{2}{L-L\alpha}\underbrace{[\log{2^{(1-\alpha)}} + \log{2^{(1-\alpha)}} + \dots + \log{2^{(1-\alpha)}} + \log{2^{(1-\alpha)}}}_{N - 1 \text{ or } \frac{L}{2}-1\text{ total terms }}] \nonumber \\
-&= (\frac{L}{2}-1)(\frac{2}{L})\log{2^\frac{1-\alpha}{1-\alpha}} \nonumber \\
-&= (\frac{L-2}{2})(\frac{2}{L})\log{2} ; \text{ recall that } L = 2N \nonumber \\
-S_{\alpha}^{acc}(\rho_A) &= \frac{N-1}{N}\log{2}
+&= \frac{2}{L-L\alpha}\underbrace{[\ln{2^{(1-\alpha)}} + \ln{2^{(1-\alpha)}} + \dots + \ln{2^{(1-\alpha)}} + \ln{2^{(1-\alpha)}}}_{N - 1 \text{ or } \frac{L}{2}-1\text{ total terms }}] \nonumber \\
+&= (\frac{L}{2}-1)(\frac{2}{L})\ln{2^\frac{1-\alpha}{1-\alpha}} \nonumber \\
+&= (\frac{L-2}{2})(\frac{2}{L})\ln{2} ; \text{ recall that } L = 2N \nonumber \\
+S_{\alpha}^{acc}(\rho_A) &= \frac{N-1}{N}\ln{2}
 \end{align}
 
 \subsubsection{Analytical result for any filling fraction and partition size}
@@ -764,14 +764,14 @@ Recall the definition of the accessible (R\'enyi) entanglement entropy:
 
 \[S_{\alpha}^{acc}(\rho_{A}) = \sum_{n} P_{n}S(\rho_{A_n})\]
 
-where $S_{\alpha}(\rho_A) = \frac{1}{1-\alpha} \log{\Tr{(\rho_A^{\alpha})}}$
+where $S_{\alpha}(\rho_A) = \frac{1}{1-\alpha} \ln{\Tr{(\rho_A^{\alpha})}}$
 \\
 
 Expanding the sum:
 \begin{align}
-S_{\alpha}^{acc}(\rho_{A}) &= P_{0} \log{\Tr{(\rho_{A_0}^{\alpha})}} + P_{N} \log{\Tr{(\rho_{A_N}^{\alpha})}} + \sum_{n=1}^{N-1} P_{n} \log{\Tr{(\rho_{A_n}^{\alpha})}} \nonumber \\
-&= C \log{1} + C \log{1} + N^2C^2 \sum_{n=1}^{N-1} \log{N(\frac{1}{N})}  \nonumber \\
-&= N^2C^2 \sum_{n=1}^{N-1} \log{1} \nonumber \\
+S_{\alpha}^{acc}(\rho_{A}) &= P_{0} \ln{\Tr{(\rho_{A_0}^{\alpha})}} + P_{N} \ln{\Tr{(\rho_{A_N}^{\alpha})}} + \sum_{n=1}^{N-1} P_{n} \ln{\Tr{(\rho_{A_n}^{\alpha})}} \nonumber \\
+&= C \ln{1} + C \ln{1} + N^2C^2 \sum_{n=1}^{N-1} \ln{N(\frac{1}{N})}  \nonumber \\
+&= N^2C^2 \sum_{n=1}^{N-1} \ln{1} \nonumber \\
 S_{\alpha}^{acc}(\rho_{A}) &= 0 
 \end{align}
 
@@ -856,14 +856,14 @@ Another interesting feature is the peak seen near the continuous phase transitio
 \begin{center}
 \includegraphics[width=1.0\columnwidth]{peakScalingOddN.pdf}
 \end{center}
-\caption{Interaction strength at which the maximum $S_{1}^{\mathrm{acc}}$ occurs as a function of the total number of particles $N$. The exponent of $N$ was obtained from a linear fitting of $\ln N$ vs. $\ln{(V/t - 2)}$.  Although very few points are plotted due to memory limitations, they agree with the hypothesis that for $N \to \infty$, the peak of Von Neumann accessible entanglement occurs at the phase transition $V/t = 2$. Inset: $S_{1}^{\mathrm{acc}}$ as a function of interaction strength $V/t$ for various $N$ around the neighborhood of the peak.}
+\caption{Interaction strength at which the maximum $S_{1}^{\mathrm{acc}}$ occurs as a function of the total number of particles $N$. The exponent of $N$ was obtained from a linear fitting of $\ln N$ vs. $\ln{(V/t - 2)}$.  Although very few points are plotted due to memory limitations, they agree with the hypothesis that for $N \to \infty$, the peak of von Neumann accessible entanglement occurs at the phase transition $V/t = 2$. Inset: $S_{1}^{\mathrm{acc}}$ as a function of interaction strength $V/t$ for various $N$ around the neighborhood of the peak.}
 \label{fig:peakScalingOddN}
 \end{figure}
 %%%%%%%%%%
 
 \subsection{Entanglement of local particle number fluctuations}
 
-Recall from section \ref{sec:accEntanglementIntro} that the difference between the full and the operationally accessible entanglement Von Neumann entropies $\left( \alpha = 1 \right)$ should equal the Shannon Entropy of the local particle number probability distribution $P_n$:
+Recall from section \ref{sec:accEntanglementIntro} that the difference between the full and the operationally accessible entanglement von Neumann entropies $\left( \alpha = 1 \right)$ should equal the Shannon Entropy of the local particle number probability distribution $P_n$:
 
 %
 \begin{equation}
@@ -895,7 +895,7 @@ In this section, a comparison is done between the Shannon Entropy of the local p
 %%%%%%%%%%
 
 %
-Figure \ref{fig:deltaS1} shows the difference between the full and accessible Von Neumann entanglement entropies as a function of interaction strength. From exact diagonalization, the full ($S_1$), accessible ($S_{1}^{\rm acc}$) Von Neumann entanglement entropies and the variance of local particle number $n$ ($\sigma$) were obtained. Expecting that local particle number fluctuations are normally distributed in the TLL phase ($-2 < V/t < 2$) of the $tV$ model, these variances were inserted into the expression for the Shannon entropy of a Normal Distribution $\frac{1}{2}\ln{\left( 2\pi e \sigma^2 \right)}$. Additionally, the Shannon Entropy was calculated using the variance of local particle number predicted by Tomonaga-Luttinger Liquid theory $\sigma \equiv K\sigma_{FF}$ where $\sigma_{FF}$ is the variance of free-fermions $V/t = 0$ and $K$ is the Luttinger Parameter $K = \pi/(\cos^{-1}\left( -V/2t \right))$. The figure shows agreement between the three expressions in the TLL phase.
+Figure \ref{fig:deltaS1} shows the difference between the full and accessible von Neumann entanglement entropies as a function of interaction strength. From exact diagonalization, the full ($S_1$), accessible ($S_{1}^{\rm acc}$) von Neumann entanglement entropies and the variance of local particle number $n$ ($\sigma$) were obtained. Expecting that local particle number fluctuations are normally distributed in the TLL phase ($-2 < V/t < 2$) of the $tV$ model, these variances were inserted into the expression for the Shannon entropy of a Normal Distribution $\frac{1}{2}\ln{\left( 2\pi e \sigma^2 \right)}$. Additionally, the Shannon Entropy was calculated using the variance of local particle number predicted by Tomonaga-Luttinger Liquid theory $\sigma \equiv K\sigma_{FF}$ where $\sigma_{FF}$ is the variance of free-fermions $V/t = 0$ and $K$ is the Luttinger Parameter $K = \pi/(\cos^{-1}\left( -V/2t \right))$. The figure shows agreement between the three expressions in the TLL phase.
 
 
 %%%%%%%%%%

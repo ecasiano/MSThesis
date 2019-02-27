@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: msThesis.aux
-The style file: apalike.bst
+The style file: nsf_new_url.bst
 Database file #1: References/references.bib
 Repeated entry---line 4454 of file References/references.bib
  : @misc{code
@@ -215,52 +215,48 @@ Repeated entry---line 7437 of file References/references.bib
  : @article{Jordan:1928
  :                     ,
 I'm skipping whatever remains of this entry
-Warning--to sort, need author or key in repo
-Warning--to sort, need author or key in code
-Warning--empty year in repo
-Warning--empty year in code
 Warning--empty journal in Klich:2008se
 Warning--empty journal in Linke:2017tf
 Warning--empty journal in Lukin:2018wg
 You've used 64 entries,
-            1935 wiz_defined-function locations,
-            893 strings with 13980 characters,
-and the built_in function-call counts, 24676 in all, are:
-= -- 2315
-> -- 1058
-< -- 32
-+ -- 359
-- -- 354
-* -- 2249
-:= -- 4384
-add.period$ -- 187
+            2447 wiz_defined-function locations,
+            1427 strings with 19974 characters,
+and the built_in function-call counts, 22210 in all, are:
+= -- 1440
+> -- 644
+< -- 1
++ -- 241
+- -- 177
+* -- 1423
+:= -- 2620
+add.period$ -- 246
 call.type$ -- 64
-change.case$ -- 493
-chr.to.int$ -- 61
-cite$ -- 73
-duplicate$ -- 894
-empty$ -- 1740
-format.name$ -- 452
-if$ -- 4742
-int.to.chr$ -- 4
-int.to.str$ -- 0
-missing$ -- 62
-newline$ -- 317
-num.names$ -- 186
-pop$ -- 370
+change.case$ -- 63
+chr.to.int$ -- 0
+cite$ -- 131
+duplicate$ -- 2160
+empty$ -- 2124
+format.name$ -- 226
+if$ -- 4932
+int.to.chr$ -- 0
+int.to.str$ -- 64
+missing$ -- 616
+newline$ -- 402
+num.names$ -- 62
+pop$ -- 720
 preamble$ -- 1
-purify$ -- 497
+purify$ -- 0
 quote$ -- 0
-skip$ -- 672
+skip$ -- 575
 stack$ -- 0
-substring$ -- 1655
-swap$ -- 68
+substring$ -- 929
+swap$ -- 1391
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 382
-warning$ -- 7
-while$ -- 180
-width$ -- 0
-write$ -- 817
+type$ -- 0
+warning$ -- 3
+while$ -- 118
+width$ -- 66
+write$ -- 770
 (There were 53 error messages)

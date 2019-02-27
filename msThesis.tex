@@ -6,12 +6,11 @@
 %\pdfoutput=1
 %\usepackage{iopams}
 
-
 %\expandafter\let\csname equation*\endcsname\relax
 %\expandafter\let\csname endequation*\endcsname\relax
 
 %\bibliographystyle{iopart-num}
-% \usepackage[square,sort&compress]{natbib}
+ %\usepackage[square,sort&compress]{natbib}
 %Formatting Packages
 \documentclass[12pt, two sided]{report}
 \usepackage[utf8]{inputenc}
@@ -47,7 +46,7 @@
 %References Packages
 %\usepackage{biblatex}
 %\addbibresource{references.bib}
-\usepackage{hyperref}
+\usepackage[bookmarks=true]{hyperref}
 \hypersetup{
     hidelinks=true,
     linkcolor=blue,
@@ -86,6 +85,11 @@
 \usepackage{placeins}
 \usepackage{booktabs}
 \usepackage{dsfont}
+
+%For reference formatting
+ \usepackage[numbers,sort&compress]{natbib}
+ \bibliographystyle{nsf_new_url}
+
 
 \begin{document}
 
@@ -126,14 +130,14 @@
 			
 		\vspace{0.75cm}
 		
-		February 1st, 2019 or before (Writing Complete)
+		March 1st, 2019.
 		
 	\end{center}
 	
 	\vspace{0.5cm}
 	
 	\begin{flushright}
-		Defense Date: March 22nd, 2019. \\
+		Defense Date: March 18nd, 2019. \\
 		Thesis Examination Commitee:
 		
 		\vspace{0.5cm}
@@ -152,9 +156,8 @@
 
 %%%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \chapter*{Abstract}
-Quantum Entanglement.....
+\input{Chapters/abstract}
 
 \chapter*{Acknowledgements}
 I want to thank ...........
@@ -162,7 +165,7 @@ I want to thank ...........
 \tableofcontents
 
 \chapter{Introduction}
-\input{Chapters/introduction}
+\input{Chapters/chapter01}
 
 \chapter{Particle Partition Entanglement in the $tV$ Model}
 \input{Chapters/chapter02}
@@ -177,9 +180,12 @@ I want to thank ...........
 \chapter{Appendix}
 \input{Chapters/appendix02}
 
+\chapter{Appendix}
+\input{Chapters/appendix03}
+
 \phantomsection 
 \addcontentsline{toc}{chapter}{References} 
-\bibliographystyle{apalike} %acm, ieetr, apalike...
+%\bibliographystyle{apalike} %acm, ieetr, apalike...
 \bibliography{References/references}
 
 \end{document}
