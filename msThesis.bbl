@@ -17,6 +17,20 @@ H.~Barghathi, C.~M. Herdman, and A.~Del~Maestro.
 \bibAnnoteFile{PhysRevLett.121.150501}
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.121.150501}
 
+\bibitem{Hastings:2010dc}
+M.~B. Hastings, I.~Gonz{\'a}lez, A.~B. Kallin, and R.~G. Melko.
+\newblock \enquote{{Measuring Renyi Entanglement Entropy in Quantum Monte~Carlo
+  Simulations}.}
+\newblock Phys. Rev. Lett. \textbf{104}, 157201 (2010).
+\bibAnnoteFile{Hastings:2010dc}
+
+\bibitem{Islam:2015cm}
+R.~Islam, R.~Ma, P.~M. Preiss, M.~E. Tai, A.~Lukin, M.~Rispoli, and M.~Greiner.
+\newblock \enquote{{Measuring entanglement entropy in a quantum many-body
+  system}.}
+\newblock Nature \textbf{528}, 77 (2015).
+\bibAnnoteFile{Islam:2015cm}
+
 \bibitem{Zanardi:2001ec}
 P.~Zanardi.
 \newblock \enquote{{Virtual Quantum Subsystems}.}
@@ -233,13 +247,6 @@ F.~D.~M. Haldane.
   \url{https://github.com/DelMaestroGroup/PartEntFermions} }.
 \bibAnnoteFile{repo}
 
-\bibitem{Hastings:2010dc}
-M.~B. Hastings, I.~Gonz{\'a}lez, A.~B. Kallin, and R.~G. Melko.
-\newblock \enquote{{Measuring Renyi Entanglement Entropy in Quantum Monte~Carlo
-  Simulations}.}
-\newblock Phys. Rev. Lett. \textbf{104}, 157201 (2010).
-\bibAnnoteFile{Hastings:2010dc}
-
 \bibitem{Grover:2013cs}
 T.~Grover.
 \newblock \enquote{{Entanglement of Interacting Fermions in Quantum Monte~Carlo
@@ -261,13 +268,6 @@ J.~E. Drut and W.~J. Porter.
 \newblock Phys. Rev. B \textbf{92}, 125126 (2015).
 \bibAnnoteFile{Drut:2015fs}
 \newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevB.92.125126}
-
-\bibitem{Islam:2015cm}
-R.~Islam, R.~Ma, P.~M. Preiss, M.~E. Tai, A.~Lukin, M.~Rispoli, and M.~Greiner.
-\newblock \enquote{{Measuring entanglement entropy in a quantum many-body
-  system}.}
-\newblock Nature \textbf{528}, 77 (2015).
-\bibAnnoteFile{Islam:2015cm}
 
 \bibitem{Melko:2016bo}
 R.~G. Melko, C.~M. Herdman, D.~Iouchtchenko, P.~N. Roy, and A.~Del~Maestro.
