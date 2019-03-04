@@ -1,135 +1,52 @@
-\section{Operationally Accessible Entanglement Entropy}
+\section{Chapter 4}
 
-\subsection{The \ren Entanglement Entropy}
+	In this chapter, future projects are discussed. Some of these projects stem from unanswered questions in previous work, while some of them will be completely new.
+	
+	\subsection{Power law scaling of entanglement peak in the $tV$ model}
+	
+	%%%%%%%%%%
+	\begin{figure}[htp]
+	\begin{center}
+	\includegraphics[width=1.0\columnwidth]{operationalEntanglementEntropies_SOP5_withPeakCircles.pdf}
+	\end{center}
+	\caption{Accessible entanglement entropies as a function of interaction strength in the $t-V$ model. The circles enclose a region where both the von Neumann and R\'enyi entanglement entropies attain a maximum value. As the total number of particles $N$ increases, this maximum seems to be shifting to the left, closer to the phase transition $V/t=2$.}
+	\label{fig:OEE_circledPeaks}
+	\end{figure}
+	%%%%%%%%%%
+	
+	In the $t-V$ model, there are two known phase transitions, a first order one at $V/t=-2$, and a continuous one at $V/t=2$. From Figure~{\ref{fig:OEE_circledPeaks}}, it can be seen that the accessible entanglement entropies are sensitive to both types of transition. Interestingly, this sensitivity to the transition in $V/t=2$ expresses itself as a peak of entanglement. Moreover, the interaction strength at which this peak of entanglement occurs moves closer to the exact value of the continuous phase transition as the number of particles in the system increases.  
 
-The amount of entanglement that exists between some partition $A$ and its compliment $\bar{A}$ of a quantum many-body system in pure state $\ket{\Psi}$ can be quantified via the R\'{e}nyi entanglement entropy which depends on an index $\alpha$ :
-%
-\begin{equation}
-S_{\alpha} (\rho_A) = \frac{1}{1-\alpha}\ln \Tr\, \rho_A^{\alpha}
-\label{eq:S_alpha}
-\end{equation}
-%
-where $\rho_{A}$ is the reduced density matrix of partition $A$ obtained by
-tracing out all degrees of freedom in $\bar{A}$ from the full density matrix:
-%
-\begin{equation}
-\rho_{A} = \Tr_{\bar{A}}\, \rho = \Tr_{\bar{A}} \ket{\Psi}\bra{\Psi}\,.
-\end{equation}
-%
-The \ren entropy is a monotonically decreasing function of $\alpha$ for $\alpha
-> 1$ and is bounded from above by the von Neumann entropy, $S_1(\rho_A) = -\Tr \rho_A \ln \rho_A$.
-
-For a quantum many-body system subject to physical laws conserving some quantity (particle number, charge, spin, etc.), the set of local operations on the state $\ket{\Psi}$ are limited to those that don't violate the corresponding global superselection rule.  For the remainder of this paper, we will focus on our discussion on the case of fixed total $N$ and thus we are restricted to only those operators which locally preserve the particle number in $A$.  The effect this has on the amount of entanglement that can be transferred to a qubit register is apparent from the simple example (adapted from Ref.~\onlinecite{Wiseman:2003vn} of one particle confined to two spatial modes $A$ and $\bar{A}$ corresponding to site occupations.  Then, for the state $\ket{\Psi} = \left(\ket{1}_A \otimes \ket{0}_{\bar{A}} + \ket{0}_A \otimes \ket{1}_{\bar{A}} \right)/\sqrt{2}$, Eq.~\eqref{eq:S_alpha} gives that $S_1 = \ln 2$. However, this entanglement cannot be transferred to a register prepared in initial state $\ket{0}_R$ via a $\texttt{SWAP}$ gate:
-\begin{align*}
-    & \texttt{SWAP} \ket{0}_R\otimes\left(\ket{1}_A \otimes
-    \ket{0}_{\bar{A}} + \ket{0}_A \otimes \ket{1}_{\bar{A}} \right)/\sqrt{2} \\
-    &= \frac{1}{\sqrt{2}}\left( \ket{0}_R \otimes \ket{0}_A \otimes
-        \ket{1}_{\bar{A}} + \ket{1}_R \otimes \ket{0}_A \otimes
-    \ket{0}_{\bar{A}} \right)
-    % &= \frac{1}{\sqrt{2}}\ket{0}_R \otimes \ket{0}_A \otimes
-    %     \ket{1}_{\bar{A}}
-\end{align*}
-where the last term is not physically allowed due to the restriction that the number of particles in the system is fixed to be 1. The post-swap result remains in a product state and the amount of transferable entanglement is identically zero.
-
-\subsection{von Neumann Accessible Entanglement: $\alpha = 1$}
-% ---------------------------------------------------------------------------
-
-Thus, Eq.~\eqref{eq:S_alpha}, which includes the effects of non-local number fluctuations between $A$ and $\bar{A}$, overcounts the amount of entanglement that can be accessed from the system.  To quantify the physical reduction, Wiseman and Vaccaro \cite{Wiseman:2003jx} suggested that for the case of $\alpha = 1$ a more appropriate measure should weight contributions to the entanglement coming from each superselection sector corresponding to the number of particles $n$ in $A$:
-%
-\begin{equation}
-    S_1^{\rm{acc}}(\rho_A)=\sum_{n=0}^{N} P_n S_1(\rho_{A_n})
-\label{eq:S1acc}.
-\end{equation}
-%
-Here $\rho_{A_{n}}$ is defined to be the reduced density matrix of $A$, projected onto the subspace of fixed local particle number $n$ 
-%
-\begin{equation}
-    \rho_{A_n} = \frac{1}{P_n}{\mathcal{P}}_{A_n} \rho_{A} {\mathcal{P}}_{A_n}
-\label{eq:rhoAn}
-\end{equation}
-%
-accomplished via a projection operator ${\mathcal{P}}_{A_n}$ where
-${\mathcal{P}}_{A_n} \ket{\Psi} = \ket{n}_A\otimes\ket{N-n}_{\bar{A}}$.  
-$P_n$ is the probability of measuring $n$ particles in $A$:
-%
-\begin{equation}
-    P_n = \mathrm{Tr}\, {\mathcal{P}}_{A_n} \rho_A{\mathcal{P}}_{A_n}
-    = \expval{{\mathcal{P}}_{A_n}}{\Psi}.
-    \label{eq:Pn}
-\end{equation}
-%
-As the projection constitutes a local operation which can only decrease
-entanglement,  it is clear that $S_1^{\rm acc}(\rho_A) \le S_1(\rho_A)$. 
-Moreover, the difference 
-%
-\begin{equation}
-    \Delta S_1 (\rho_A) \equiv S_1(\rho_A) - S_1^{\rm acc}(\rho_A)
-    \label{eq:DeltaS1}
-\end{equation}
-%
-can be determined  by noting that the superselection rule guarantees that $[\rho_A,\hat{n}]=0$ where $\hat{n}$ is the number operator acting in partition $A$. Thus $\rho_A$ is block-diagonal in $n$ and it can be shown \cite{Klich:2008se} that 
-%
-\begin{equation}
-    \Delta S_1 (\rho_A) =  H_1(\{P_n\})
-\label{eq:DS1H1}
-\end{equation}
-%
-where
-%
-\begin{equation}
-    H_1(\{P_n\}) = -\sum_{n=0}^N P_n \ln P_n.
-\label{eq:H1}
-\end{equation}
-%
-is the Shannon entropy of the number probability distribution.  It is instructive to consider \Eqref{eq:DS1H1} for the special case of a discrete Gaussian distribution, $P_n \propto e^{-(n-\expval{n})^2/2\sigma^2}$ where $H_1 = \ln\left(2\pi e \sigma^2 + \tfrac{1}{12}\right)$ depends only on the variance of $P_n$
-%
-\begin{equation}
-    \sigma^2 \equiv \expval{n^2}-\expval{n}^2 = \sum_{n=0}^N n^2 P_n  - \left(\sum_{n=0}^N n P_n\right)^2\,.
-\label{eq:sigma2}
-\end{equation}
-%
-Thus, when the number fluctuations are Gaussian, the von Neumann accessible entanglement is completely determined by the variance.
-
-% ---------------------------------------------------------------------------
-\subsection{\ren Accessible Entanglement: $\alpha \ne 1$}
-% ---------------------------------------------------------------------------
-
-Computing the accessible entanglement for a many-body system is a difficult task for $\alpha=1$, as full state tomography is required to reconstruct the density matrix $\rho$. However, for integer values with $\alpha > 1$ a replica trick can be used to recast $\mathrm{Tr} \rho_A^\alpha$ as the expectation value of some local operator \cite{Calabrese:2004hl}. This advance has led to a boon of new entanglement results using both computational \cite{Hastings:2010dc, Humeniuk:2012cq, McMinis:2013dp, Herdman:2014ey, Drut:2015fs} and experimental \cite{Daley:2012bd, Islam:2015cm, Kaufman:2016ep, Pichler:2016ec, Linke:2017tf, Lukin:2018wg} methods.  Motivated by this progress, two of us recently generalized the accessible entanglement to the case of \ren entropies with $\alpha \ne 1$ and found that \cite{Barghathi:2018oe}:
-%
-\begin{equation}
-S_{\alpha}^{{\rm acc}} (\rho_A) = \frac{\alpha}{1-\alpha}\ln\left[ \sum_{n} P_n \mathrm{e}^{\frac{1-\alpha}{\alpha} S_{\alpha}(\rho_{A_n})}\right]
-\label{eq:S_alpha_acc}
-\end{equation} 
-%
-% which reproduces Eq.~\eqref{eq:S1acc} in the limit $\alpha \to 1$. While not physically transparent in this form, the modification from the $\alpha=1$ case results from replacing the geometric mean in Eq.~\eqref{eq:S1acc} with a general power mean whose form is constrained by the physical requirement that $0 \le \Delta S_\alpha \le \ln (N+1)$.  It can also be interpreted as the quantum generalization of the conditional classical \ren entropy \cite{Cachin97entropymeasures,GolshaniPashaYari:2009,Hayashi:2011,SKORIC:2011el,FehrBerens2014} subject to physical constraints \cite{Barghathi:2018oe}. The arguments leading to Eq.~\eqref{eq:DS1H1} can also be generalized leading to 
-which reproduces Eq.~\eqref{eq:S1acc} in the limit $\alpha \to 1$. While not physically transparent in this form, the modification from the $\alpha=1$ case results from replacing the geometric mean in Eq.~\eqref{eq:S1acc} with a general power mean whose form is constrained by the physical requirement that
-%
-\begin{equation}
- 0 \le \Delta S_\alpha \le \ln (N+1)
-\label{eq:DeltaS_alpha_inq}
-\end{equation}
-%
-where the upper bound is equal to the support of $P_n$. \Eqref{eq:S_alpha_acc} can also be interpreted as the quantum generalization of the conditional classical \ren entropy \cite{Cachin97entropymeasures,GolshaniPashaYari:2009,Hayashi:2011,SKORIC:2011el,FehrBerens2014}, subject to physical constraints \cite{Barghathi:2018oe}. The arguments leading to Eq.~\eqref{eq:DS1H1} can then be generalized (see the supplemental material of Ref.~[\onlinecite{Barghathi:2018oe}]) leading to 
-%
-\begin{equation}
-    \Delta S_{\alpha}\equiv  S_{\alpha} - S_{\alpha}^{{\rm acc}} = H_{{1}/{\alpha}}\left(\{P_{n,\alpha}\}\right)
-\label{eq:S_alpha_acc5}
-\end{equation}
-%
-where we introduce the classical \ren entropy of $P_n$
-%
-\begin{equation}
-    H_{\alpha}\left(\{P_n\}\right)=\frac{1}{1-\alpha}\ln\sum_n P_n^{\alpha} 
-\label{eq:Halpha}
-\end{equation}
-%
-and
-%
-\begin{equation}
-    P_{n,\alpha}=\frac{\Tr\, \left[{\mathcal{P}}_{A_{n}} \rho_A^{\alpha} {\mathcal{P}}_{A_{n}}\right]}{\Tr\, \rho_A^{\alpha}}=\frac{ P_n^\alpha\Tr\, \rho_{A_n}^{\alpha}}{\Tr\, \rho_A^{\alpha}}
-\label{eq:Pna}
-\end{equation}
-%
-can be interpreted as a normalization of partial traces of $\rho_A^{\alpha}$, where the SSR fixing the total particle number leads to $\Tr\, \rho_A^{\alpha}=\sum_n \Tr\, \left[{\mathcal{P}}_{A_{n}} \rho_A^{\alpha} {\mathcal{P}}_{A_{n}}\right]$ and thus guarantees the normalization of $P_{n,\alpha}$. Note that we have defined $P_{n,1} \equiv P_n$ for notational consistency. For brevity, let $H_{\alpha}(\{P_n\}) \equiv H_{\alpha}$ from here onwards. 
-
-Writing the difference $\Delta S_{\alpha}$ as the classical \ren entropy of the fictitious probability distribution $P_{n,\alpha}$, simplifies the calculation of $\Delta S_{\alpha}$ and clarifies its properties, e.g., the fact that $H_{\alpha}$  is positive and bounded from above by $ H_{0}=\ln(N+1)$ guarantees that $\Delta S_{\alpha}$ satisfies the physical requirement in \Eqref{eq:DeltaS_alpha_inq}. \cite{Barghathi:2018oe} In addition, $P_{n,\alpha}$ is fully determined by $P_n$ and the full and the projected traces of $\rho_A^{\alpha}$, i.e.~$\Tr\, \rho_{A}^{\alpha}$ and $\Tr\, \rho_{A_n}^{\alpha}$, which can be measured using the experimental and numerical methods mentioned above.    
+	%%%%%%%%%%
+	\begin{figure}[htp]
+	\begin{center}
+	\includegraphics[width=1.0\columnwidth]{peakScalingOddN.pdf}
+	\end{center}
+	\caption{Interaction strength at which the maximum $S_{1}^{\mathrm{acc}}$ occurs as a 	function of the total number of particles $N$. The exponent of $N$ was obtained from a l	inear fitting of $\ln N$ vs. $\ln{(V/t - 2)}$.  Although very few points are plotted due to 	memory limitations, they agree with the hypothesis that for $N \to \infty$, the peak of 	von Neumann accessible entanglement occurs at the phase transition $V/t = 2$. Inset: 	$S_{1}^{\mathrm{acc}}$ as a function of interaction strength $V/t$ for various $N$ 		around the neighborhood of the peak.}
+	\label{fig:peakScalingOddN}
+	\end{figure}
+	%%%%%%%%%%
+	
+	Figure~{\ref{fig:peakScalingOddN}} shows the value where the entanglement peak occurs for various system sizes. The fact that all the points lie on a line that intercepts the vertical axis at $V/t_{Max}=2$ is very promising. Nevertheless, the current scaling exponent of $-0.2545$ should not be taken for granted due to how small the systems currently are. Indeed, the continuous phase transition should occur in the $t-V$ model at $V/t=2$, but this is for a system where $N \to \infty$. More data points, corresponding to large systems are still be needed to get closer to this intercept and confirm the power law scaling.
+	
+	\subsection{Filling fraction dependence of entanglement}
+	
+	The $t-V$ model results presented in this thesis were focused on the special case of half filling. That is, only half of the lattice sites were had particles in them ($N = L/2$). For this case, the exact results for the phase transitions are mapped from the XXZ spin-$1/2$ model. For other filling fraction, a theory has yet to be developed. Figure~{\ref{fig:fillingFractionDependence}} shows the accessible entanglement entropies for various filling fractions ranging from $1/14$ to $1/2$. 
+	
+	%Figure 8
+	%%%%%%%%%%
+	\begin{figure}[htp]
+	\begin{center}
+	\includegraphics[width=1.0\columnwidth]{fillingFractionDependence.pdf}
+	\end{center}
+	\caption{Accessible entanglement entropies $S_{\alpha}^{\mathrm{acc}}(\ell)$ for $		\alpha = 1,2$ as a function of filling fraction $N/L$. The lattice size was kept fixed at 		$L=28$ sites and the total number of particles were $N=1,2,3...14$. For the left column, 	the spatial partition $\ell$ was kept fixed at half the lattice size, $\ell = L/2$. For the right 	column, it was set to equal the total number of particles $N$. The interaction strengths 	$V/t$ are indicated in each of the plots and correspond to values from each of the three 	phases of the $t-V$ model.}
+	\label{fig:fillingFractionDependence}
+	\end{figure}
+	%%%%%%%%%%
+	
+	\subsection{Accessible entanglement via quantum gates}
+	
+	The endgame for the study of accessible entanglement entropies is to exploit the entanglement of a system as a resource. Motivated by this, we are currently working on building a quantum circuit that reproduces the accessible entanglement measurement process. After coming up with the appropriate quantum circuit, the results will be tested on IBM's quantum computer \cite{IBMQuantumExp:2018:Online}.
+	
+	\subsection{Entanglement in the Bose-Hubbard model}
+	
+	Another project in the works is calculating accessible entanglement entropies in the Bose-Hubbard (BH) model. In the study of fermionic systems, such as the $t-V$ model, methods like exact diagonalization and density matrix renormalization group must be used to due to the infamous sign problem. The high memory cost of these methods restricts simulations to only relatively small system sizes. Nevertheless, the sign problem non-existent in bosonic models and thus quantum Monte Carlo (QMC) methods can be used. QMC will allow the study of much larger systems than the ones presented here.

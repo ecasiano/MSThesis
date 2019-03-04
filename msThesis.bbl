@@ -1,0 +1,429 @@
+\begin{thebibliography}{10}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{}
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+
+\bibitem{PhysRevLett.121.150501}
+H.~Barghathi, C.~M. Herdman, and A.~Del~Maestro.
+\newblock \enquote{R\'enyi generalization of the accessible entanglement
+  entropy.}
+\newblock Phys. Rev. Lett. \textbf{121}, 150501 (2018).
+\bibAnnoteFile{PhysRevLett.121.150501}
+\newline\urlprefix\url{https://link.aps.org/doi/10.1103/PhysRevLett.121.150501}
+
+\bibitem{Hastings:2010dc}
+M.~B. Hastings, I.~Gonz{\'a}lez, A.~B. Kallin, and R.~G. Melko.
+\newblock \enquote{{Measuring Renyi Entanglement Entropy in Quantum Monte~Carlo
+  Simulations}.}
+\newblock Phys. Rev. Lett. \textbf{104}, 157201 (2010).
+\bibAnnoteFile{Hastings:2010dc}
+
+\bibitem{Islam:2015cm}
+R.~Islam, R.~Ma, P.~M. Preiss, M.~E. Tai, A.~Lukin, M.~Rispoli, and M.~Greiner.
+\newblock \enquote{{Measuring entanglement entropy in a quantum many-body
+  system}.}
+\newblock Nature \textbf{528}, 77 (2015).
+\bibAnnoteFile{Islam:2015cm}
+
+\bibitem{Wiseman:2003jx}
+H.~M. Wiseman and J.~A. Vaccaro.
+\newblock \enquote{{Entanglement of Indistinguishable Particles Shared between
+  Two Parties}.}
+\newblock Phys. Rev. Lett. \textbf{91}, 097902 (2003).
+\bibAnnoteFile{Wiseman:2003jx}
+
+\bibitem{Barghathi:2018oe}
+H.~Barghathi, C.~M. Herdman, and A.~Del~Maestro.
+\newblock \enquote{{R}\'enyi {G}eneralization of the {A}ccessible
+  {E}ntanglement {E}ntropy.}
+\newblock Phys. Rev. Lett. \textbf{121} (2018).
+\bibAnnoteFile{Barghathi:2018oe}
+\newline\urlprefix\url{http://dx.doi.org/10.1103/PhysRevLett.121.150501}
+
+\bibitem{Zanardi:2001ec}
+P.~Zanardi.
+\newblock \enquote{{Virtual Quantum Subsystems}.}
+\newblock Phys. Rev. Lett. \textbf{87}, 077901 (2001).
+\bibAnnoteFile{Zanardi:2001ec}
+
+\bibitem{Shi:2003jj}
+Y.~Shi.
+\newblock \enquote{{Quantum entanglement of identical particles}.}
+\newblock Phys. Rev. A \textbf{67}, 024301 (2003).
+\bibAnnoteFile{Shi:2003jj}
+
+\bibitem{Shi:2004fw}
+Y.~Shi.
+\newblock \enquote{{Quantum entanglement in second-quantized condensed matter
+  systems}.}
+\newblock J. Phys. A: Math. Gen \textbf{37}, 6807 (2004).
+\bibAnnoteFile{Shi:2004fw}
+
+\bibitem{Ghirardi:2004dl}
+G.~Ghirardi and L.~Marinatto.
+\newblock \enquote{{General criterion for the entanglement of two
+  indistinguishable particles}.}
+\newblock Phys. Rev. A \textbf{70}, 012109 (2004).
+\bibAnnoteFile{Ghirardi:2004dl}
+
+\bibitem{Dunningham:2005fu}
+J.~Dunningham, A.~Rau, and K.~Burnett.
+\newblock \enquote{{From Pedigree Cats to Fluffy-Bunnies}.}
+\newblock Science \textbf{307}, 872 (2005).
+\bibAnnoteFile{Dunningham:2005fu}
+
+\bibitem{Benatti:2012cy}
+F.~Benatti, R.~Floreanini, and U.~Marzolino.
+\newblock \enquote{{Entanglement robustness and geometry in systems of
+  identical particles}.}
+\newblock Phys. Rev. A \textbf{85}, 042329 (2012).
+\bibAnnoteFile{Benatti:2012cy}
+
+\bibitem{Balachandran:2013en}
+A.~P. Balachandran, T.~R. Govindarajan, A.~R. de~Queiroz, and A.~F. Reyes-Lega.
+\newblock \enquote{{Entanglement and Particle Identity: A Unifying Approach}.}
+\newblock Phys. Rev. Lett. \textbf{110}, 080503 (2013).
+\bibAnnoteFile{Balachandran:2013en}
+
+\bibitem{Dalton:2017qe}
+B.~J. Dalton, J.~Goold, B.~M. Garraway, and M.~D. Reid.
+\newblock \enquote{Quantum entanglement for systems of identical bosons: I.
+  general features.}
+\newblock Phys. Scrip. \textbf{92}, 023004 (2017).
+\bibAnnoteFile{Dalton:2017qe}
+
+\bibitem{Simon:2002it}
+C.~Simon.
+\newblock \enquote{{Natural entanglement in Bose-Einstein condensates}.}
+\newblock Phys. Rev. A \textbf{66}, 052323 (2002).
+\bibAnnoteFile{Simon:2002it}
+
+\bibitem{Ding:2009gq}
+W.~Ding and K.~Yang.
+\newblock \enquote{{Entanglement entropy and mutual information in
+  Bose-Einstein condensates}.}
+\newblock Phys. Rev. A \textbf{80}, 012329 (2009).
+\bibAnnoteFile{Ding:2009gq}
+
+\bibitem{Schliemann:2001ea}
+J.~Schliemann, J.~I. Cirac, M.~Ku{\'{s}}, M.~Lewenstein, and D.~Loss.
+\newblock \enquote{{Quantum correlations in two-fermion systems}.}
+\newblock Phys. Rev. A \textbf{64}, 022303 (2001).
+\bibAnnoteFile{Schliemann:2001ea}
+
+\bibitem{Zanardi:2002jw}
+P.~Zanardi.
+\newblock \enquote{{Quantum entanglement in fermionic lattices}.}
+\newblock Phys. Rev. A \textbf{65}, 042101 (2002).
+\bibAnnoteFile{Zanardi:2002jw}
+
+\bibitem{Zanardi:2002gs}
+P.~Zanardi and X.~Wang.
+\newblock \enquote{{Fermionic entanglement in itinerant systems}.}
+\newblock J. Phys. A: Math. and Gen. \textbf{35}, 7947 (2002).
+\bibAnnoteFile{Zanardi:2002gs}
+
+\bibitem{Tichy:2011je}
+M.~C. Tichy, F.~Mintert, and A.~Buchleitner.
+\newblock \enquote{{Essential entanglement for atomic and molecular physics}.}
+\newblock J. Phys. B: Atom., Mol. and Opt. Phys. \textbf{44}, 192001 (2011).
+\bibAnnoteFile{Tichy:2011je}
+
+\bibitem{Killoran:2014gu}
+N.~Killoran, M.~Cramer, and M.~B. Plenio.
+\newblock \enquote{{Extracting entanglement from identical particles}.}
+\newblock Phys. Rev. Lett. \textbf{112}, 150501 (2014).
+\bibAnnoteFile{Killoran:2014gu}
+
+\bibitem{Zozulya:2007jw}
+O.~S. Zozulya, M.~Haque, K.~Schoutens, and E.~H. Rezayi.
+\newblock \enquote{{Bipartite entanglement entropy in fractional quantum Hall
+  states}.}
+\newblock Phys. Rev. B \textbf{76}, 125310 (2007).
+\bibAnnoteFile{Zozulya:2007jw}
+
+\bibitem{Haque:2007il}
+M.~Haque, O.~Zozulya, and K.~Schoutens.
+\newblock \enquote{{Entanglement Entropy in Fermionic Laughlin States}.}
+\newblock Phys. Rev. Lett. \textbf{98}, 060401 (2007).
+\bibAnnoteFile{Haque:2007il}
+
+\bibitem{Zozulya:2008kb}
+O.~Zozulya, M.~Haque, and K.~Schoutens.
+\newblock \enquote{{Particle partitioning entanglement in itinerant
+  many-particle systems}.}
+\newblock Phys. Rev. A \textbf{78}, 042326 (2008).
+\bibAnnoteFile{Zozulya:2008kb}
+
+\bibitem{Haque:2009df}
+M.~Haque, O.~S. Zozulya, and K.~Schoutens.
+\newblock \enquote{{Entanglement between particle partitions in itinerant
+  many-particle states}.}
+\newblock J. Phys. A: Math. Theor. \textbf{42}, 504012 (2009).
+\bibAnnoteFile{Haque:2009df}
+
+\bibitem{Katsura:2007hc}
+H.~Katsura and Y.~Hatsuda.
+\newblock \enquote{{Entanglement entropy in the Calogero-Sutherland model}.}
+\newblock J. Phys. A: Math. Theor. \textbf{40}, 13931 (2007).
+\bibAnnoteFile{Katsura:2007hc}
+
+\bibitem{Santachiara:2007il}
+R.~Santachiara, F.~Stauffer, and D.~C. Cabra.
+\newblock \enquote{{Entanglement properties and momentum distributions of
+  hard-core anyons on a ring}.}
+\newblock J. Stat. Mech.: Theor. Exp. \textbf{2007}, L05003 (2007).
+\bibAnnoteFile{Santachiara:2007il}
+
+\bibitem{Herdman:2014jq}
+C.~M. Herdman, P.~N. Roy, R.~G. Melko, and A.~Del~Maestro.
+\newblock \enquote{{Particle entanglement in continuum many-body systems via
+  quantum Monte Carlo}.}
+\newblock Phys. Rev. B \textbf{89}, 140501 (2014).
+\bibAnnoteFile{Herdman:2014jq}
+
+\bibitem{Herdman:2015gx}
+C.~M. Herdman and A.~Del~Maestro.
+\newblock \enquote{{Particle partition entanglement of bosonic Luttinger
+  liquids}.}
+\newblock Phys. Rev. B \textbf{91}, 184507 (2015).
+\bibAnnoteFile{Herdman:2015gx}
+
+\bibitem{Liu:2010pe}
+Z.~Liu and H.~Fan.
+\newblock \enquote{Particle entanglement in rotating gases.}
+\newblock Phys. Rev. A \textbf{81}, 062302 (2010).
+\bibAnnoteFile{Liu:2010pe}
+
+\bibitem{Calabrese:2004hl}
+P.~Calabrese and J.~Cardy.
+\newblock \enquote{{Entanglement entropy and quantum field theory}.}
+\newblock J. Stat. Mech.: Theor. Exp. \textbf{2004}, P06002 (2004).
+\bibAnnoteFile{Calabrese:2004hl}
+
+\bibitem{Calabrese:2011fj}
+P.~Calabrese, M.~Mintchev, and E.~Vicari.
+\newblock \enquote{{Entanglement Entropy of One-Dimensional Gases}.}
+\newblock Phys. Rev. Lett. \textbf{107} (2011).
+\bibAnnoteFile{Calabrese:2011fj}
+
+\bibitem{Calabrese:2011ji}
+P.~Calabrese, M.~Mintchev, and E.~Vicari.
+\newblock \enquote{{The entanglement entropy of one-dimensional systems in
+  continuous and homogeneous space}.}
+\newblock J. Stat. Mech. Theor. Exp. \textbf{2011}, P09028 (2011).
+\bibAnnoteFile{Calabrese:2011ji}
+
+\bibitem{Tomonaga1951}
+S.-I. Tomonaga.
+\newblock \enquote{{Remarks on Bloch's Method of Sound Waves applied to
+  Many-Fermion Problems}.}
+\newblock Prog. Theor. Phys. \textbf{5}, 544 (1951).
+\bibAnnoteFile{Tomonaga1951}
+
+\bibitem{Haldane1981}
+F.~D.~M. Haldane.
+\newblock \enquote{{Effective Harmonic-Fluid Approach to Low-Energy Properties
+  of One-Dimensional Quantum Fluids}.}
+\newblock Phys. Rev. Lett. \textbf{47}, 1840 (1981).
+\bibAnnoteFile{Haldane1981}
+
+\bibitem{repo}
+{Barghathi, H and Casiano-Diaz, E and Del Maestro, A, 2017 GitHub Repository,
+  \url{https://github.com/DelMaestroGroup/PartEntFermions} }.
+\bibAnnoteFile{repo}
+
+\bibitem{Grover:2013cs}
+T.~Grover.
+\newblock \enquote{{Entanglement of Interacting Fermions in Quantum Monte~Carlo
+  Calculations}.}
+\newblock Phys. Rev. Lett. \textbf{111}, 130402 (2013).
+\bibAnnoteFile{Grover:2013cs}
+
+\bibitem{McMinis:2013dp}
+J.~McMinis and N.~M. Tubman.
+\newblock \enquote{{Renyi entropy of the interacting Fermi liquid}.}
+\newblock Phys. Rev. B \textbf{87}, 081108 (2013).
+\bibAnnoteFile{McMinis:2013dp}
+
+\bibitem{Drut:2015fs}
+J.~E. Drut and W.~J. Porter.
+\newblock \enquote{{Hybrid Monte Carlo approach to the entanglement entropy of
+  interacting fermions}.}
+\newblock Phys. Rev. B \textbf{92}, 125126 (2015).
+\bibAnnoteFile{Drut:2015fs}
+
+\bibitem{Melko:2016bo}
+R.~G. Melko, C.~M. Herdman, D.~Iouchtchenko, P.~N. Roy, and A.~Del~Maestro.
+\newblock \enquote{{Entangling qubit registers via many-body states of
+  ultracold atoms}.}
+\newblock Phys. Rev. A \textbf{93}, 042336 (2016).
+\bibAnnoteFile{Melko:2016bo}
+
+\bibitem{giamarchi:2004qu}
+T.~Giamarchi.
+\newblock \emph{Quantum Physics in One Dimension} (Oxford University Press,
+  Oxford, U.K., 2004).
+\bibAnnoteFile{giamarchi:2004qu}
+
+\bibitem{Dzyaloshinskii:1974un}
+I.~E. Dzyaloshinskii and A.~I. Larkin.
+\newblock \enquote{{Correlation functions for a one-dimensional Fermi system
+  with long-range interaction (Tomonaga model)}.}
+\newblock Sov. Phys. JETP \textbf{38}, 202 (1974).
+\bibAnnoteFile{Dzyaloshinskii:1974un}
+
+\bibitem{Cazalilla:2004}
+M.~A. Cazalilla.
+\newblock \enquote{Bosonizing one-dimensional cold atomic gases.}
+\newblock J. Phys. B: At. Mol. Opt. Phys. \textbf{37}, S1 (2004).
+\bibAnnoteFile{Cazalilla:2004}
+
+\bibitem{Jordan:1928}
+P.~Jordan and E.~Wigner.
+\newblock \enquote{{\"U}ber das paulische {\"a}quivalenzverbot.}
+\newblock Zeitschrift f{\"u}r Physik \textbf{47}, 631 (1928).
+\bibAnnoteFile{Jordan:1928}
+
+\bibitem{DesCloizeaux:1966}
+J.~D. Cloizeaux.
+\newblock \enquote{A soluble fermi‐gas model. validity of transformations of
+  the bogoliubov type.}
+\newblock J. Math. Phys. \textbf{7}, 2136 (1966).
+\bibAnnoteFile{DesCloizeaux:1966}
+
+\bibitem{DesCloizeauxGaudin:1966}
+J.~D. Cloizeaux and M.~Gaudin.
+\newblock \enquote{Anisotropic linear magnetic chain.}
+\newblock J. Math. Phys. \textbf{7}, 1384 (1966).
+\bibAnnoteFile{DesCloizeauxGaudin:1966}
+
+\bibitem{KampfSekania:2003}
+A.~P. Kampf, M.~Sekania, G.~I. Japaridze, and P.~Brune.
+\newblock \enquote{Nature of the insulating phases in the half-filled ionic
+  hubbard model.}
+\newblock J. Phys. Condens. Matter \textbf{15}, 5895 (2003).
+\bibAnnoteFile{KampfSekania:2003}
+
+\bibitem{Drut:2016el}
+J.~E. Drut and W.~J. Porter.
+\newblock \enquote{{Entanglement, noise, and the cumulant expansion}.}
+\newblock Phys. Rev. E \textbf{93}, 043301 (2016).
+\bibAnnoteFile{Drut:2016el}
+
+\bibitem{Porter:2016ft}
+W.~J. Porter and J.~E. Drut.
+\newblock \enquote{{Entanglement spectrum and R{\'e}nyi entropies of
+  nonrelativistic conformal fermions}.}
+\newblock Phys. Rev. B \textbf{94}, 165112 (2016).
+\bibAnnoteFile{Porter:2016ft}
+
+\bibitem{Klich:2008se}
+I.~Klich and L.~S. Levitov.
+\newblock \enquote{{Scaling of entanglement entropy and superselection rules}.}
+   (2008).
+\bibAnnoteFile{Klich:2008se}
+
+\bibitem{Humeniuk:2012cq}
+S.~Humeniuk and T.~Roscilde.
+\newblock \enquote{{Q}uantum {M}onte {C}arlo calculation of entanglement
+  {R}{\'e}nyi entropies for generic quantum systems.}
+\newblock Phys. Rev. B \textbf{86}, 235116 (2012).
+\bibAnnoteFile{Humeniuk:2012cq}
+\newline\urlprefix\url{http://link.aps.org/doi/10.1103/PhysRevB.86.235116}
+
+\bibitem{Herdman:2014ey}
+C.~M. Herdman, S.~Inglis, P.~N. Roy, R.~G. Melko, and A.~Del~Maestro.
+\newblock \enquote{{Path-integral Monte Carlo method for R{\'e}nyi entanglement
+  entropies}.}
+\newblock Phys. Rev. E \textbf{90}, 013308 (2014).
+\bibAnnoteFile{Herdman:2014ey}
+
+\bibitem{Daley:2012bd}
+A.~J. Daley, H.~Pichler, J.~Schachenmayer, and P.~Zoller.
+\newblock \enquote{{Measuring Entanglement Growth in Quench Dynamics of Bosons
+  in an Optical Lattice}.}
+\newblock Phys. Rev. Lett. \textbf{109}, 020505 (2012).
+\bibAnnoteFile{Daley:2012bd}
+
+\bibitem{Kaufman:2016ep}
+A.~M. Kaufman, M.~E. Tai, A.~Lukin, M.~Rispoli, R.~Schittko, P.~M. Preiss, and
+  M.~Greiner.
+\newblock \enquote{{Q}uantum thermalization through entanglement in an isolated
+  many-body system.}
+\newblock Science \textbf{353}, 794 (2016).
+\bibAnnoteFile{Kaufman:2016ep}
+\newline\urlprefix\url{http://www.sciencemag.org/cgi/doi/10.1126/science.aaf6725}
+
+\bibitem{Pichler:2016ec}
+H.~Pichler, G.~Zhu, A.~Seif, P.~Zoller, and M.~Hafezi.
+\newblock \enquote{{Measurement Protocol for the Entanglement Spectrum of Cold
+  Atoms}.}
+\newblock Phys. Rev. X \textbf{6}, 041033 (2016).
+\bibAnnoteFile{Pichler:2016ec}
+
+\bibitem{Linke:2017tf}
+N.~M. {Linke}, S.~{Johri}, C.~{Figgatt}, K.~A. {Landsman}, A.~Y. {Matsuura},
+  and C.~{Monroe}.
+\newblock \enquote{{Measuring the Renyi entropy of a two-site Fermi-Hubbard
+  model on a trapped ion quantum computer}.}  (2017).
+\bibAnnoteFile{Linke:2017tf}
+\newline\urlprefix\url{https://arxiv.org/abs/1712.08581}
+
+\bibitem{Lukin:2018wg}
+A.~{Lukin}, M.~{Rispoli}, R.~{Schittko}, M.~E. {Tai}, A.~M. {Kaufman},
+  S.~{Choi}, V.~{Khemani}, J.~{L{\'e}onard}, and M.~{Greiner}.
+\newblock \enquote{{Probing entanglement in a many-body-localized system}.}
+  (2018).
+\bibAnnoteFile{Lukin:2018wg}
+\newline\urlprefix\url{https://arxiv.org/abs/1805.09819}
+
+\bibitem{Cachin97entropymeasures}
+C.~Cachin.
+\newblock \emph{Entropy Measures and Unconditional Security in Cryptography}.
+\newblock Ph.D. thesis, Swiss Federal Inst. Technol. (1997).
+\bibAnnoteFile{Cachin97entropymeasures}
+
+\bibitem{GolshaniPashaYari:2009}
+L.~Golshani, E.~Pasha, and G.~Yari.
+\newblock \enquote{Some properties of r{\'e}nyi entropy and r{\'e}nyi entropy
+  rate.}
+\newblock Inform. Sciences \textbf{179}, 2426 (2009).
+\newblock Including Special Section -- Linguistic Decision Making.
+\bibAnnoteFile{GolshaniPashaYari:2009}
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0020025509001145}
+
+\bibitem{Hayashi:2011}
+M.~Hayashi.
+\newblock \enquote{Exponential decreasing rate of leaked information in
+  universal random privacy amplification.}
+\newblock IEEE T. Inform. Theory \textbf{57}, 3989 (2011).
+\bibAnnoteFile{Hayashi:2011}
+
+\bibitem{SKORIC:2011el}
+B.~{\v S}kori{\'c}, C.~Obi, E.~Verbitskiy, and B.~Schoenmakers.
+\newblock \enquote{Sharp lower bounds on the extractable randomness from
+  non-uniform sources.}
+\newblock Inform. Comput. \textbf{209}, 1184 (2011).
+\bibAnnoteFile{SKORIC:2011el}
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0890540111000927}
+
+\bibitem{FehrBerens2014}
+S.~Fehr and S.~Berens.
+\newblock \enquote{{On the Conditional R{\'e}nyi Entropy}.}
+\newblock IEEE T. Inform. Theory \textbf{60}, 6801 (2014).
+\bibAnnoteFile{FehrBerens2014}
+
+\bibitem{IBMQuantumExp:2018:Online}
+IBM.
+\newblock \enquote{Ibm quantum experience.} (2018).
+\bibAnnoteFile{IBMQuantumExp:2018:Online}
+\newline\urlprefix\url{https://quantumexperience.ng.bluemix.net/qx/experience}
+
+\end{thebibliography}

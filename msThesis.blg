@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: msThesis.aux
+The style file: nsf_new_url.bst
+Database file #1: References/references.bib
+Warning--entry type for "IBMQuantumExp:2018:Online" isn't style-file defined
+--line 11 of file References/references.bib
+Warning--string name "march" is undefined
+--line 15 of file References/references.bib
+Warning--I didn't find a database entry for "Barnum:2004bm"
+Warning--I didn't find a database entry for "Wiseman:2003vn"
+Warning--empty journal in Klich:2008se
+Warning--empty journal in Linke:2017tf
+Warning--empty journal in Lukin:2018wg
+You've used 62 entries,
+            2447 wiz_defined-function locations,
+            1415 strings with 19266 characters,
+and the built_in function-call counts, 21269 in all, are:
+= -- 1379
+> -- 619
+< -- 0
++ -- 232
+- -- 170
+* -- 1356
+:= -- 2532
+add.period$ -- 239
+call.type$ -- 62
+change.case$ -- 60
+chr.to.int$ -- 0
+cite$ -- 127
+duplicate$ -- 2069
+empty$ -- 2031
+format.name$ -- 217
+if$ -- 4716
+int.to.chr$ -- 0
+int.to.str$ -- 62
+missing$ -- 591
+newline$ -- 387
+num.names$ -- 61
+pop$ -- 682
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 541
+stack$ -- 0
+substring$ -- 879
+swap$ -- 1330
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 114
+width$ -- 64
+write$ -- 745
+(There were 7 warnings)

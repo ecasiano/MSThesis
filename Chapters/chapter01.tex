@@ -125,7 +125,19 @@ Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two differen
 %
 	Since the average information gained about $B$ when measuring $A$ can be quantified via von Neumann and R\'enyi entanglement entropies, these can be used as indication of how entangled the two subsystems are with each other. A system is highly entangled if its state possesses a large entanglement entropy.
 	
-	The subsystems in which a system is partitioned can represent subsets of particles or quantum modes. The modes can represent spatial subregions, momenta, spins, etc... Since the case of entanglement in the $t-V$ model under a spatial bipartition was studied in this work, from here onwards, the mode partition shall be referred to as a spatial partition. Up next, an overview of particle-partitioned and spatially-partitioned entanglement is given
+	%%%%%%%%%%%%%%%%%%%
+\begin{figure*}[thp]
+\begin{center}
+\includegraphics[width=1.0\textwidth]{spatialParticle.pdf}
+\end{center}
+\caption{Schematic of a one-dimensional lattice of $L=7$ sites and $N=3$ particles under two types of bipartitions. The top lattice is bipartitioned into two spatial subregions $A$ (red) and $B$ (blue). The size of subregion is $\ell_A = 4$ sites, while $\ell_B = L - \ell_A = 3$. The bottom lattice is bipartitioned into two subsets of identical particles. Subset $A$ consists of only of $n_A=1$ particle, while $B$ consists of $n_B = N - n = 2$.}
+\label{fig:spatialParticle}
+\end{figure*}
+	%%%%%%%%%%%%%%%%%%%
+
+	
+	The subsystems in which a system is partitioned can represent subsets of particles or quantum modes. The modes can represent spatial subregions, momenta, spins, etc... Since the case of entanglement in the $t-V$ model under a spatial bipartition was studied in this work, from here onwards, the mode partition shall be referred to as a spatial partition. Up next, an overview of particle-partitioned and spatially-partitioned entanglement is given.
+
 	
 	A many-body system can be partitioned into subsets of particles. In the case of a particle bipartition, one of the subsets will have $n$ particles and its complementary subset, $N-n$ particles, where $N$ is the total number of particles in the system. To quantify entanglement between the subsets of particles, the $n-$body reduced density matrix ($n-RDM$) is used:
 	%
@@ -136,15 +148,6 @@ Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two differen
 	%
 	where $\vert\Psi\rangle$ is the first quantized wavefunction of a system of $N$ identical particles and it properly anti-symmetrized or symmetrized for fermions and bosons, respectively.  The entanglement of a system under a particle bipartition allows to measure non-local effects, complementing the study of spatial entanglement. 
 	In measuring spatial entanglement, a system is bipartitioned into a spatial subregion of size $\ell_{A}$ and a complementary region size $L - \ell_A \equiv \ell_B$. Under this type of partition, states are represented in second quantization. In other words, a state $\vert\Psi\rangle = \vert n_1 \rangle \otimes \vert n_2 \rangle \dots \otimes \vert n_N \rangle$ is characterized by the set of occupation numbers on each site. Figure \ref{fig:spatialParticle} illustrates schematically a $1D$ lattice of size $L = 7$ and $N = 3$ under a spatial and then a particle bipartition.
-	%%%%%%%%%%%%%%%%%%%
-\begin{figure*}[thp]
-\begin{center}
-\includegraphics[width=1.0\textwidth]{spatialParticle.pdf}
-\end{center}
-\caption{Schematic of a one-dimensional lattice of $L=7$ sites and $N=3$ particles under two types of bipartitions. The top lattice is bipartitioned into two spatial subregions $A$ (red) and $B$ (blue). The size of subregion is $\ell_A = 4$ sites, while $\ell_B = L - \ell_A = 3$. The bottom lattice is bipartitioned into two subsets of identical particles. Subset $A$ consists of only of $n_A=1$ particle, while $B$ consists of $n_B = N - n = 2$.}
-\label{fig:spatialParticle}
-\end{figure*}
-%%%%%%%%%%%%%%%%%	
 	
 	\subsection{Accessible Entanglement}
 	Whether it's under a particle or spatial bipartition, the goal is to use the entanglement present in a system as a resource. The von Neumann and R\'enyi entropies give a good mathematical understanding of the entanglement of a system. Nevertheless, for physical applications, conservation laws, such as total particle number and spin must be considered. In Ref.~\cite{Wiseman:2003jx}, a new formulation for the entanglement was proposed that takes such conservation laws, or super selection rules (SSR) into account. 
