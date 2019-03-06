@@ -14,45 +14,47 @@
 \contentsline {subsection}{\numberline {2.4.1}Non-interacting spinless fermions}{19}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Effects of boundary conditions}{20}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}Exact diagonalization of the $t-V$ chain of spinless fermions}{21}{section.2.5}
-\contentsline {section}{\numberline {2.6}Conclusions}{25}{section.2.6}
-\contentsline {chapter}{\numberline {3}Operationally Accessible Entanglement Entropy in the $tV$ Model}{31}{chapter.3}
-\contentsline {section}{\numberline {3.1}Operationally Accessible Entanglement Entropy}{31}{section.3.1}
+\contentsline {section}{\numberline {2.6}Conclusions}{28}{section.2.6}
+\contentsline {chapter}{\numberline {3}Operationally Accessible Entanglement Entropy in the $tV$ Model}{30}{chapter.3}
+\contentsline {section}{\numberline {3.1}Operationally Accessible Entanglement Entropy}{30}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}The R\'{e}nyi\nobreakspace {}Entanglement Entropy}{31}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}von Neumann Accessible Entanglement: $\alpha = 1$}{32}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}R\'{e}nyi\nobreakspace {}Accessible Entanglement: $\alpha \not =1$}{34}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Analytical predictions in the $tV$ Model}{35}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Projecting onto subspaces of fixed local particle number}{37}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Analytical results at various regimes of the $tV$ model}{38}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Infinitely repulsive interaction}{38}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Even N}{39}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Odd N}{41}{subsubsection.3.3.1.2}
-\contentsline {subsection}{\numberline {3.3.2}Infinitely attractive interaction}{44}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Half-filling}{44}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Analytical result for any filling fraction and partition size}{50}{subsubsection.3.3.2.2}
-\contentsline {subsection}{\numberline {3.3.3}First order phase transition}{55}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Comparison between the generalized and the traditional R\'enyi entanglement entropies}{57}{section.3.4}
-\contentsline {section}{\numberline {3.5}Numerical Results}{58}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Finite size scaling of the accessible entanglement}{58}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Entanglement of local particle number fluctuations}{60}{subsection.3.5.2}
-\contentsline {section}{\numberline {3.6}Conclusion}{69}{section.3.6}
-\contentsline {chapter}{\numberline {4}Future Work}{70}{chapter.4}
-\contentsline {section}{\numberline {4.1}Chapter 4}{70}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Power law scaling of entanglement peak in the $tV$ model}{70}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Filling fraction dependence of entanglement}{73}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Accessible entanglement via quantum gates}{73}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Entanglement in the Bose-Hubbard model}{73}{subsection.4.1.4}
-\contentsline {chapter}{\numberline {A}Appendix}{76}{appendix.A}
-\contentsline {section}{\numberline {A.1}Lanczos Algorithm}{76}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Introduction}{76}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Tridiagonalization of the original matrix}{77}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}Algorithm}{79}{subsection.A.1.3}
-\contentsline {subsection}{\numberline {A.1.4}Code}{81}{subsection.A.1.4}
-\contentsline {subsection}{\numberline {A.1.5}Results}{81}{subsection.A.1.5}
-\contentsline {chapter}{\numberline {B}Appendix}{84}{appendix.B}
-\contentsline {section}{\numberline {B.1}Evaluating the $n$-particle partition entanglement}{84}{section.B.1}
-\contentsline {subsection}{\numberline {B.1.1}Particle bipartition}{85}{subsection.B.1.1}
-\contentsline {subsection}{\numberline {B.1.2}Eigenvalues}{87}{subsection.B.1.2}
-\contentsline {section}{\numberline {B.2}$n$-particle partition entanglement in the $V/t \to \infty $ limit}{88}{section.B.2}
-\contentsline {chapter}{\numberline {C}Appendix}{92}{appendix.C}
-\contentsline {section}{\numberline {C.1}Site to momentum basis mapping of kinetic operator}{92}{section.C.1}
-\contentsline {chapter}{References}{94}{section*.6}
+\contentsline {subsection}{\numberline {3.1.4}Projecting onto subspaces of fixed local particle number}{35}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Analytical predictions in the $t-V$ Model}{36}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Infinitely repulsive interaction}{37}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Even N}{38}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Odd N}{40}{subsubsection.3.2.1.2}
+\contentsline {subsection}{\numberline {3.2.2}Infinitely attractive interaction}{42}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Half-filling}{42}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Analytical result for any filling fraction and partition size}{48}{subsubsection.3.2.2.2}
+\contentsline {subsection}{\numberline {3.2.3}First order phase transition}{53}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Comparison between the generalized and the traditional R\'enyi entanglement entropies}{55}{section.3.3}
+\contentsline {section}{\numberline {3.4}Numerical Results}{56}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Finite size scaling of the accessible entanglement}{56}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Entanglement of local particle number fluctuations}{58}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Conclusion}{65}{section.3.5}
+\contentsline {chapter}{\numberline {4}Future Work}{66}{chapter.4}
+\contentsline {section}{\numberline {4.1}Chapter 4}{66}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Power law scaling of entanglement peak in the $tV$ model}{66}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Filling fraction dependence of entanglement}{68}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Accessible entanglement via quantum gates}{68}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Entanglement in the Bose-Hubbard model}{68}{subsection.4.1.4}
+\contentsline {chapter}{\numberline {A}Appendix}{70}{appendix.A}
+\contentsline {section}{\numberline {A.1}Lanczos Algorithm}{70}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Introduction}{70}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Tridiagonalization of the original matrix}{71}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Algorithm}{73}{subsection.A.1.3}
+\contentsline {subsection}{\numberline {A.1.4}Code}{75}{subsection.A.1.4}
+\contentsline {subsection}{\numberline {A.1.5}Results}{75}{subsection.A.1.5}
+\contentsline {chapter}{\numberline {B}Appendix}{78}{appendix.B}
+\contentsline {section}{\numberline {B.1}Evaluating the $n$-particle partition entanglement}{78}{section.B.1}
+\contentsline {subsection}{\numberline {B.1.1}Particle bipartition}{79}{subsection.B.1.1}
+\contentsline {subsection}{\numberline {B.1.2}Eigenvalues}{81}{subsection.B.1.2}
+\contentsline {section}{\numberline {B.2}$n$-particle partition entanglement in the $V/t \to \infty $ limit}{82}{section.B.2}
+\contentsline {chapter}{\numberline {C}Appendix}{86}{appendix.C}
+\contentsline {section}{\numberline {C.1}Site to momentum basis mapping of kinetic operator}{86}{section.C.1}
+\contentsline {chapter}{\numberline {D}Appendix}{89}{appendix.D}
+\contentsline {section}{\numberline {D.1}Ground state of the $t-V$ model for $V/t = -2$}{89}{section.D.1}
+\contentsline {subsection}{\numberline {D.1.1}Fermion occupation basis}{89}{subsection.D.1.1}
+\contentsline {subsection}{\numberline {D.1.2}The Flat State}{91}{subsection.D.1.2}

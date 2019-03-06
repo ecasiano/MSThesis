@@ -1,0 +1,154 @@
+\section{Ground state of the $t-V$ model for $V/t = -2$}
+\label{Appendix:flatState}
+Consider the Hamiltonian of the $t-V$ model given in Eq.~\eqref{eq:H-tV} at the special interaction strength $V=-2t$ corresponding to the first order phase transition:
+%
+\begin{equation}
+    H = -t \sum_{i=1}^L (c_{i}^\dagger c_{i+1}^{\phantom{\dagger}} + c_{i+1}^\dagger c_{i}^{\phantom{\dagger}}) -2t \sum_{i=1}^L n_i n_{i+1}
+\end{equation}
+%
+where we assume periodic boundary conditions for $N$ even and anti-periodic
+boundary conditions for $N$ odd.  
+
+\subsection{Fermion occupation basis}
+
+We study the effect of $H$ in the $N$ fermion occupation basis $\{\ket{\psi_a}\}$, where the index $a$ runs over all of the $L\choose N$ possible configurations.  For example, for $N=2$ and $L=4$ there are six such states: $\ket{\psi_a} \in \{\ket{1100}, \ket{1010}, \ket{1001}, \ket{0110}, \ket{0101}, \ket{0011}\}$. 
+
+Starting with the potential operator $\mathcal{V} \equiv -2t \sum_{i=1}^L n_i n_{i+1}$ which is diagonal in this basis, we have
+%
+\begin{equation}
+    \mathcal{V}\ket{\psi_a} =-2t\, n^{(11)}_a\ket{\psi_a}\, ,
+    \label{eq:Vpsia}
+\end{equation}
+%
+where $ n^{(11)}_a$ counts the number of bonds connecting two occupied sites in the state $\ket{\psi_a}$. The hopping operator $\mathcal{T} \equiv -t \sum_{i=1}^L (c_{i}^\dagger c_{i+1}^{\phantom{\dagger}} + c_{i+1}^\dagger c_{i}^{\phantom{\dagger}})$ turns $\ket{\psi_a}$ into a superposition of all the states $\ket{\psi_b}$ connected to $\ket{\psi_a}$ by moving one particle to a neighboring empty site. We can write: 
+%
+\begin{equation}
+    \mathcal{T}\ket{\psi_a} =-t \sum_{b \in \mathsf{S}_a}\ket{\psi_b}\, ,
+    \label{eq:Tpsia}
+\end{equation}
+%
+where $\mathsf{S}_a$ is the resulting index set of occupation states $\ket{\psi_b}$,
+i.e. $b \in \mathsf{S}_a \iff \matrixel{\psi_b}{\mathcal{T}}{\psi_a} \ne 0$.  
+The cardinality of $\mathsf{S}_a$ is
+%
+\begin{align}
+    \mathrm{card}(\mathsf{S}_a) &\equiv \sum_{b \in \mathsf{S}_a} 1\nonumber \\
+    &= n^{(10)}_a+n^{(01)}_a \nonumber \\
+    &= 2N - 2n_a^{(11)}, 
+\label{eq:cardSa}
+\end{align}
+where $n^{(10)}_a$ ($n^{(01)}_a$) counts the number of occupied-empty
+(empty-occupied) bonds in $\ket{\psi_a}$ and in the last line we have used the fact
+that the total number of particles on a ring is (independent of the index $a$)
+%
+\begin{equation}
+ N=n^{(11)}_a+(n^{(10)}_a+n^{(01)}_a)/2 .
+\label{eq:Nring}
+\end{equation}
+%
+A general matrix element in the fermion occupation basis is given by:
+%
+\begin{equation}
+    \matrixel{\psi_c}{\mathcal{T}}{\psi_a} = -t
+    \begin{cases}
+        1 & c \in \mathsf{S}_a \\
+        0 & \text{otherwise}
+    \end{cases}
+\label{eq:Tmatrixelemnts}
+\end{equation}
+%
+which is guaranteed to be real, thus 
+%
+\begin{equation}
+\matrixel{\psi_c}{\mathcal{T}}{\psi_a} = 
+\matrixel{\psi_a}{\mathcal{T}}{\psi_c} \Rightarrow c \in \mathsf{S}_a \iff a \in
+    \mathsf{S}_c.
+\label{eq:setSwitch}
+\end{equation}
+%
+This is a useful result that can be used to swap the order of restricted and
+un-restricted summations.
+
+Let us know consider the action of $\mathcal{T}$ 
+    on a general state $\ket{\Psi} = \sum_a \mathcal{C}_a \ket{\psi_a}$ where $\mathcal{C}_a \in \mathds{C}$:
+%
+\begin{align}
+    \mathcal{T}\ket{\Psi} &= -t \sum_a \mathcal{C}_a \sum_{b \in \mathsf{S}_a} \ket{\psi_b} \nonumber \\
+                          &= -t \sum_c \ket{\psi_c} \sum_a \mathcal{C}_a
+                          \sum_{b \in \mathsf{S}_a} \braket{\psi_c}{\psi_b} \nonumber  \\ 
+                          &= -t \sum_c \ket{\psi_c}\left[ \sum_a \mathcal{C}_a
+                          \sum_{b \in \mathsf{S}_a} \delta_{c,b}\right] 
+    \label{eq:TPsi1}
+\end{align}
+%
+where we have inserted a resolution of the identity operator $\sum_c
+\ket{\psi_c}\bra{\psi_c} = \mathds{1}$ into the second line. Now, $\sum_{b \in
+\mathsf{S}_a}\delta_{c,b} \ne 0 \iff c \in \mathsf{S}_a$ and using
+\Eqref{eq:setSwitch} we can write
+%
+\begin{equation}
+    \sum_a \mathcal{C}_a \sum_{b \in \mathsf{S}_a} \delta_{c,b} = \sum_{a \in S_c}
+    \mathcal{C}_a \, .
+\end{equation}
+%
+Substituting into \Eqref{eq:TPsi1} above and relabelling $a \leftrightarrow c$
+leads to the general result:
+\begin{equation}
+    \mathcal{T}\ket{\Psi} = -t \sum_a \sum_{c \in \mathsf{S}_a} \mathcal{C}_c  \ket{\psi_a}.
+    \label{eq:TPsi2}
+\end{equation}
+%
+Written in this form, we can combine \Eqref{eq:TPsi2} with
+Eqs.~(\ref{eq:Vpsia}) and (\ref{eq:cardSa}) to compute the action of the full Hamiltonian at $V=-2t$ on $\ket{\Psi}$:
+%
+\begin{align}
+    H \ket{\Psi} &= -t \sum_a \left[\sum_{c \in \mathsf{S}_a} \mathcal{C}_c + 2
+    n^{(11)}_a \mathcal{C}_a \right] \ket{\psi_a} \nonumber \\ 
+                 &= -2t N \ket{\Psi} - t \sum_a \sum_{c \in \mathsf{S}_a}
+                 \qty(\mathcal{C}_c - \mathcal{C}_a)\ket{\psi_a}\, .
+\label{eq:HPsi}
+\end{align}
+%
+
+\subsection{The Flat State}
+
+From \Eqref{eq:HPsi} it is immediately apparent that the flat state
+\begin{equation}
+\ket{\Psi_0} = \frac{1}{\sqrt{{L}\choose{N}}} \sum_a \ket{\psi_a}
+    \label{eq:Psiflat}
+\end{equation}
+is an eigenstate of $H$ with energy $-2 t N$. To prove that $\ket{\Psi_0}$ is
+indeed the ground state, we consider matrix elements of the shifted operator $H' = H +
+2 t N$ for a general state $\ket{\Psi}$ expanded in the fermion occupation
+basis:
+%
+\begin{align}
+    \expval{H'}{\Psi} &= -t \sum_{a,b} \sum_{c \in \mathsf{S}_a}
+    \qty(\mathcal{C}_c - \mathcal{C}_a) \braket{\psi_b}{\psi_a}
+    \mathcal{C}^\ast_b \nonumber \\
+                      &= t \sum_a \sum_{c \in \mathsf{S}_a}\qty(
+                      \qty|\mathcal{C}_a|^2 - \mathcal{C}_a^\ast \mathcal{C}_c)
+                      \nonumber \\
+                      &= t \sum_a \sum_{c \in \mathsf{S}_a}\qty(
+                      \qty|\mathcal{C}_c|^2 - \mathcal{C}_c^\ast \mathcal{C}_a)
+\label{eq:HpExpValue}
+\end{align}
+%
+where we have swapped the summations (and relabelled) in the last line making
+use of \Eqref{eq:setSwitch}. Now, we can rewrite the matrix element as:
+%
+\begin{align}
+    \expval{H'}{\Psi} &= \frac{t}{2} \sum_a \sum_{c \in \mathsf{S}_a} \qty(
+                      \qty|\mathcal{C}_a|^2 - \mathcal{C}_a^\ast \mathcal{C}_c
++ \qty|\mathcal{C}_c|^2 - \mathcal{C}_c^\ast \mathcal{C}_a) \nonumber \\
+                      &= \frac{t}{2} \sum_a \sum_{c \in \mathsf{S}_a}
+                      \qty|\mathcal{C}_a - \mathcal{C}_c|^2 \ge 0. 
+\label{eq:HpExpValue2}
+\end{align}
+%
+Thus $H'$ is a positive operator and the flat state $\ket{\Psi_0}$ is the
+ground state of $H$ at $V = -2t$ for fixed $N$.
+
+\FloatBarrier
+
+\end{document}

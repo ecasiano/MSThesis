@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 MAR 2019 09:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 MAR 2019 19:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2117,7 +2117,7 @@ LaTeX Info: Redefining \nameref on input line 96.
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] (./Chapters/abstract.tex
+(./Chapters/abstract.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
  []
@@ -2163,41 +2163,68 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.10 \begin{equation}
+l.13 \begin{equation}
                       [1
 
 ]
-<phaseDiagramtV.pdf, id=343, 663.95827pt x 161.28148pt>
+<phaseDiagramtV.pdf, id=350, 663.95827pt x 161.28148pt>
 File: phaseDiagramtV.pdf Graphic file (type pdf)
 
 <use phaseDiagramtV.pdf>
-Package pdftex.def Info: phaseDiagramtV.pdf used on input line 22.
+Package pdftex.def Info: phaseDiagramtV.pdf used on input line 23.
 (pdftex.def)             Requested size: 402.378pt x 97.7417pt.
 
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 24.
+(amsmath)                 on input line 25.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.30 
-      [2] [3 <./phaseDiagramtV.pdf>] [4] [5] [6] [7]
-<spatialParticle.pdf, id=399, 669.60031pt x 206.9177pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `PhysRevLett.121.150501' on page 2 undefined o
+n input line 30.
+
+[2] [3 <./phaseDiagramtV.pdf>] [4] [5]
+
+Package natbib Warning: Citation `Hastings:2010dc' on page 6 undefined on input
+ line 100.
+
+
+Package natbib Warning: Citation `Islam:2015cm' on page 6 undefined on input li
+ne 100.
+
+[6] [7] <spatialParticle.pdf, id=400, 669.60031pt x 206.9177pt>
 File: spatialParticle.pdf Graphic file (type pdf)
 
 <use spatialParticle.pdf>
-Package pdftex.def Info: spatialParticle.pdf used on input line 131.
+Package pdftex.def Info: spatialParticle.pdf used on input line 132.
 (pdftex.def)             Requested size: 402.378pt x 124.341pt.
- [8] [9 <./spatialParticle.pdf>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 155.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8]
+
+Package natbib Warning: Citation `Wiseman:2003jx' on page 9 undefined on input 
+line 154.
+
+[9 <./spatialParticle.pdf>]
+
+Package natbib Warning: Citation `Wiseman:2003jx' on page 10 undefined on input
+ line 156.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 156.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [10]) [11]
+) [10]
+
+Package natbib Warning: Citation `Barghathi:2018oe' on page 11 undefined on inp
+ut line 175.
+
+) [11]
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2209,17 +2236,158 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 (./Chapters/chapter02.tex
 
+Package natbib Warning: Citation `Zanardi:2001ec' on page 12 undefined on input
+ line 23.
+
+
+Package natbib Warning: Citation `Shi:2003jj' on page 12 undefined on input lin
+e 23.
+
+
+Package natbib Warning: Citation `Shi:2004fw' on page 12 undefined on input lin
+e 23.
+
+
+Package natbib Warning: Citation `Ghirardi:2004dl' on page 12 undefined on inpu
+t line 42.
+
+
 Package natbib Warning: Citation `Barnum:2004bm' on page 12 undefined on input 
 line 42.
+
+
+Package natbib Warning: Citation `Dunningham:2005fu' on page 12 undefined on in
+put line 42.
 
 
 Package natbib Warning: Citation `Wiseman:2003vn' on page 12 undefined on input
  line 42.
 
+
+Package natbib Warning: Citation `Wiseman:2003jx' on page 12 undefined on input
+ line 42.
+
+
+Package natbib Warning: Citation `Benatti:2012cy' on page 12 undefined on input
+ line 42.
+
+
+Package natbib Warning: Citation `Balachandran:2013en' on page 12 undefined on 
+input line 42.
+
+
+Package natbib Warning: Citation `Dalton:2017qe' on page 12 undefined on input 
+line 42.
+
+
+Package natbib Warning: Citation `Simon:2002it' on page 12 undefined on input l
+ine 44.
+
+
+Package natbib Warning: Citation `Ding:2009gq' on page 12 undefined on input li
+ne 44.
+
+
+Package natbib Warning: Citation `Schliemann:2001ea' on page 12 undefined on in
+put line 45.
+
+
+Package natbib Warning: Citation `Zanardi:2002jw' on page 12 undefined on input
+ line 45.
+
+
+Package natbib Warning: Citation `Zanardi:2002gs' on page 12 undefined on input
+ line 45.
+
 [12
 
-] [13] [14]
-<Chapters/particle_entanglement_boundary_conditions.pdf, id=500, 332.44202pt x 
+]
+
+Package natbib Warning: Citation `Ghirardi:2004dl' on page 13 undefined on inpu
+t line 56.
+
+
+Package natbib Warning: Citation `Tichy:2011je' on page 13 undefined on input l
+ine 56.
+
+
+Package natbib Warning: Citation `Balachandran:2013en' on page 13 undefined on 
+input line 56.
+
+
+Package natbib Warning: Citation `Killoran:2014gu' on page 13 undefined on inpu
+t line 58.
+
+
+Package natbib Warning: Citation `Zozulya:2007jw' on page 13 undefined on input
+ line 60.
+
+
+Package natbib Warning: Citation `Haque:2007il' on page 13 undefined on input l
+ine 60.
+
+
+Package natbib Warning: Citation `Zozulya:2008kb' on page 13 undefined on input
+ line 62.
+
+
+Package natbib Warning: Citation `Haque:2009df' on page 13 undefined on input l
+ine 62.
+
+
+Package natbib Warning: Citation `Katsura:2007hc' on page 13 undefined on input
+ line 64.
+
+
+Package natbib Warning: Citation `Santachiara:2007il' on page 13 undefined on i
+nput line 65.
+
+
+Package natbib Warning: Citation `Herdman:2014jq' on page 13 undefined on input
+ line 66.
+
+
+Package natbib Warning: Citation `Herdman:2015gx' on page 13 undefined on input
+ line 66.
+
+
+Package natbib Warning: Citation `Liu:2010pe' on page 13 undefined on input lin
+e 68.
+
+
+Package natbib Warning: Citation `Calabrese:2004hl' on page 13 undefined on inp
+ut line 71.
+
+
+Package natbib Warning: Citation `Calabrese:2011fj' on page 13 undefined on inp
+ut line 71.
+
+
+Package natbib Warning: Citation `Calabrese:2011ji' on page 13 undefined on inp
+ut line 71.
+
+
+Package natbib Warning: Citation `Zozulya:2008kb' on page 13 undefined on input
+ line 73.
+
+[13]
+
+Package natbib Warning: Citation `Zozulya:2008kb' on page 14 undefined on input
+ line 79.
+
+
+Package natbib Warning: Citation `Tomonaga1951' on page 14 undefined on input l
+ine 80.
+
+
+Package natbib Warning: Citation `Haldane1981' on page 14 undefined on input li
+ne 80.
+
+
+Package natbib Warning: Citation `repo' on page 14 undefined on input line 96.
+
+[14]
+<Chapters/particle_entanglement_boundary_conditions.pdf, id=443, 332.44202pt x 
 67.94424pt>
 File: Chapters/particle_entanglement_boundary_conditions.pdf Graphic file (type
  pdf)
@@ -2228,12 +2396,98 @@ Package pdftex.def Info: Chapters/particle_entanglement_boundary_conditions.pdf
  used on input line 129.
 (pdftex.def)             Requested size: 281.66338pt x 57.56624pt.
 
-[15] [16 <./Chapters/particle_entanglement_boundary_conditions.pdf>]
+
+Package natbib Warning: Citation `Simon:2002it' on page 15 undefined on input l
+ine 158.
+
+
+Package natbib Warning: Citation `Ding:2009gq' on page 15 undefined on input li
+ne 158.
+
+
+Package natbib Warning: Citation `Zanardi:2002jw' on page 15 undefined on input
+ line 160.
+
+[15]
+
+Package natbib Warning: Citation `Zozulya:2008kb' on page 16 undefined on input
+ line 166.
+
+
+Package natbib Warning: Citation `Haque:2009df' on page 16 undefined on input l
+ine 177.
+
+
+Package natbib Warning: Citation `Zozulya:2007jw' on page 16 undefined on input
+ line 178.
+
+
+Package natbib Warning: Citation `Herdman:2015gx' on page 16 undefined on input
+ line 182.
+
+[16 <./Chapters/particle_entanglement_boundary_conditions.pdf>]
 Overfull \hbox (47.67291pt too wide) in paragraph at lines 192--192
 []\T1/cmr/bx/n/17.28 One-particle en-tan-gle-ment in fermionic Tomonaga-
  []
 
-[17] [18] [19]
+
+Package natbib Warning: Citation `Hastings:2010dc' on page 17 undefined on inpu
+t line 200.
+
+
+Package natbib Warning: Citation `Grover:2013cs' on page 17 undefined on input 
+line 200.
+
+
+Package natbib Warning: Citation `McMinis:2013dp' on page 17 undefined on input
+ line 200.
+
+
+Package natbib Warning: Citation `Drut:2015fs' on page 17 undefined on input li
+ne 200.
+
+
+Package natbib Warning: Citation `Islam:2015cm' on page 17 undefined on input l
+ine 201.
+
+
+Package natbib Warning: Citation `Melko:2016bo' on page 17 undefined on input l
+ine 201.
+
+
+Package natbib Warning: Citation `Tomonaga1951' on page 17 undefined on input l
+ine 205.
+
+
+Package natbib Warning: Citation `Haldane1981' on page 17 undefined on input li
+ne 205.
+
+
+Package natbib Warning: Citation `giamarchi:2004qu' on page 17 undefined on inp
+ut line 208.
+
+
+Package natbib Warning: Citation `Dzyaloshinskii:1974un' on page 17 undefined o
+n input line 208.
+
+[17] [18]
+
+Package natbib Warning: Citation `Zozulya:2008kb' on page 19 undefined on input
+ line 289.
+
+
+Package natbib Warning: Citation `Haque:2009df' on page 19 undefined on input l
+ine 289.
+
+
+Package natbib Warning: Citation `Zozulya:2008kb' on page 19 undefined on input
+ line 302.
+
+[19]
+
+Package natbib Warning: Citation `Cazalilla:2004' on page 20 undefined on input
+ line 340.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 381.
@@ -2242,22 +2496,59 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 381.
 
-[20] [21]
+[20]
+
+Package natbib Warning: Citation `Cazalilla:2004' on page 21 undefined on input
+ line 401.
+
+
+Package natbib Warning: Citation `Jordan:1928' on page 21 undefined on input li
+ne 405.
+
+
+Package natbib Warning: Citation `DesCloizeaux:1966' on page 21 undefined on in
+put line 406.
+
+
+Package natbib Warning: Citation `DesCloizeauxGaudin:1966' on page 21 undefined
+ on input line 406.
+
+
+Package natbib Warning: Citation `Zozulya:2008kb' on page 21 undefined on input
+ line 424.
+
+[21]
 
 LaTeX Warning: Reference `appendixA' on page 22 undefined on input line 437.
 
-<Chapters/EntropiesFigure.pdf, id=627, 307.01836pt x 374.59816pt>
+
+Package natbib Warning: Citation `Haque:2009df' on page 22 undefined on input l
+ine 439.
+
+<Chapters/EntropiesFigure.pdf, id=533, 307.01836pt x 374.59816pt>
 File: Chapters/EntropiesFigure.pdf Graphic file (type pdf)
 
 <use Chapters/EntropiesFigure.pdf>
 Package pdftex.def Info: Chapters/EntropiesFigure.pdf used on input line 444.
-(pdftex.def)             Requested size: 281.66338pt x 343.67993pt.
+(pdftex.def)             Requested size: 307.0176pt x 374.59724pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package natbib Warning: Citation `Zozulya:2008kb' on page 22 undefined on input
+ line 468.
+
+
+Package natbib Warning: Citation `Haque:2009df' on page 22 undefined on input l
+ine 468.
+
+
+Package natbib Warning: Citation `Zozulya:2008kb' on page 22 undefined on input
+ line 471.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [22]
-<Chapters/Scaling_of_PPE_In_TLL_phase.pdf, id=646, 302.51619pt x 198.18497pt>
+<Chapters/Scaling_of_PPE_In_TLL_phase.pdf, id=549, 302.51619pt x 198.18497pt>
 File: Chapters/Scaling_of_PPE_In_TLL_phase.pdf Graphic file (type pdf)
 
 <use Chapters/Scaling_of_PPE_In_TLL_phase.pdf>
@@ -2266,9 +2557,15 @@ Package pdftex.def Info: Chapters/Scaling_of_PPE_In_TLL_phase.pdf used on input
 (pdftex.def)             Requested size: 281.66338pt x 184.53085pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package natbib Warning: Citation `Zozulya:2007jw' on page 23 undefined on input
+ line 509.
 
-<Chapters/PPE_interaction_dependence.pdf, id=653, 316.40514pt x 202.62941pt>
+
+Package natbib Warning: Citation `Zozulya:2007jw' on page 23 undefined on input
+ line 509.
+
+[23 <./Chapters/EntropiesFigure.pdf>]
+<Chapters/PPE_interaction_dependence.pdf, id=627, 316.40514pt x 202.62941pt>
 File: Chapters/PPE_interaction_dependence.pdf Graphic file (type pdf)
 
 <use Chapters/PPE_interaction_dependence.pdf>
@@ -2276,15 +2573,27 @@ Package pdftex.def Info: Chapters/PPE_interaction_dependence.pdf used on input
 line 534.
 (pdftex.def)             Requested size: 281.66338pt x 180.39525pt.
 
+
+Package natbib Warning: Citation `Dzyaloshinskii:1974un' on page 24 undefined o
+n input line 557.
+
+
+Package natbib Warning: Citation `Herdman:2015gx' on page 24 undefined on input
+ line 559.
+
+
 Overfull \hbox (7.16629pt too wide) in paragraph at lines 515--563
 []\T1/cmr/m/n/12 Having un-der-stood the asymp-totic scal-ing of the 1-particle
  par-ti-tion Rényi EE
  []
 
+[24 <./Chapters/Scaling_of_PPE_In_TLL_phase.pdf>] [25 <./Chapters/PPE_interacti
+on_dependence.pdf>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package natbib Warning: Citation `giamarchi:2004qu' on page 26 undefined on inp
+ut line 567.
 
-[23] <Chapters/SvsN_choose_N.pdf, id=669, 302.08884pt x 212.64037pt>
+<Chapters/SvsN_choose_N.pdf, id=711, 302.08884pt x 212.64037pt>
 File: Chapters/SvsN_choose_N.pdf Graphic file (type pdf)
 
 <use Chapters/SvsN_choose_N.pdf>
@@ -2292,9 +2601,15 @@ Package pdftex.def Info: Chapters/SvsN_choose_N.pdf used on input line 578.
 (pdftex.def)             Requested size: 281.66338pt x 198.27913pt.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Package natbib Warning: Citation `Zozulya:2008kb' on page 26 undefined on input
+ line 589.
 
-[24] <Chapters/PPE_degenerate_state.pdf, id=680, 303.18323pt x 196.91504pt>
+[26 <./Chapters/SvsN_choose_N.pdf>]
+
+Package natbib Warning: Citation `KampfSekania:2003' on page 27 undefined on in
+put line 599.
+
+<Chapters/PPE_degenerate_state.pdf, id=745, 303.18323pt x 196.91504pt>
 File: Chapters/PPE_degenerate_state.pdf Graphic file (type pdf)
 
 <use Chapters/PPE_degenerate_state.pdf>
@@ -2305,18 +2620,41 @@ Package pdftex.def Info: Chapters/PPE_degenerate_state.pdf used on input line 6
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25] [26]) [27] [28 <./Chapters/EntropiesFigure.pdf>] [29 <./Chapters/Scaling_o
-f_PPE_In_TLL_phase.pdf> <./Chapters/PPE_interaction_dependence.pdf
+[27]
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Chapters/PPE_interaction_d
-ependence.pdf): PDF inclusion: multiple pdfs with page group included in a sing
-le page
->] [30 <./Chapters/SvsN_choose_N.pdf> <./Chapters/PPE_degenerate_state.pdf
+Package natbib Warning: Citation `Zozulya:2007jw' on page 28 undefined on input
+ line 666.
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Chapters/PPE_degenerate_st
-ate.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
-e
->]
+
+Package natbib Warning: Citation `Herdman:2015gx' on page 28 undefined on input
+ line 674.
+
+[28 <./Chapters/PPE_degenerate_state.pdf>]
+
+Package natbib Warning: Citation `Santachiara:2007il' on page 29 undefined on i
+nput line 685.
+
+
+Package natbib Warning: Citation `Calabrese:2004hl' on page 29 undefined on inp
+ut line 689.
+
+
+Package natbib Warning: Citation `Killoran:2014gu' on page 29 undefined on inpu
+t line 693.
+
+
+Package natbib Warning: Citation `Drut:2015fs' on page 29 undefined on input li
+ne 704.
+
+
+Package natbib Warning: Citation `Drut:2016el' on page 29 undefined on input li
+ne 704.
+
+
+Package natbib Warning: Citation `Porter:2016ft' on page 29 undefined on input 
+line 704.
+
+) [29]
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2326,89 +2664,170 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 183.
 
-(./Chapters/chapter03.tex [31
+(./Chapters/chapter03.tex [30
 
 ]
 
-Package natbib Warning: Citation `Wiseman:2003vn' on page 32 undefined on input
- line 23.
+Package natbib Warning: Citation `Wiseman:2003vn' on page 31 undefined on input
+ line 27.
+
+[31]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 40.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 35.
+(hyperref)                removing `\alpha' on input line 40.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 35.
+(hyperref)                removing `math shift' on input line 40.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 35.
+Package natbib Warning: Citation `Wiseman:2003jx' on page 32 undefined on input
+ line 43.
 
 [32]
-Overfull \hbox (7.81508pt too wide) in paragraph at lines 69--73
+
+Package natbib Warning: Citation `Klich:2008se' on page 33 undefined on input l
+ine 76.
+
+
+Overfull \hbox (7.81508pt too wide) in paragraph at lines 74--78
 \T1/cmr/m/n/12 can be de-ter-mined by not-ing that the su-per-s-e-lec-tion rule
  guar-an-tees that $\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 ^^Z[]; []\OT1/cmr/m/n/12 
 ] =
  []
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\alpha' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\not' on input line 100.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 100.
+
+
+Package natbib Warning: Citation `Calabrese:2004hl' on page 33 undefined on inp
+ut line 103.
+
+
+Package natbib Warning: Citation `Hastings:2010dc' on page 33 undefined on inpu
+t line 103.
+
+
+Package natbib Warning: Citation `Humeniuk:2012cq' on page 33 undefined on inpu
+t line 103.
+
+
+Package natbib Warning: Citation `McMinis:2013dp' on page 33 undefined on input
+ line 103.
+
+
+Package natbib Warning: Citation `Herdman:2014ey' on page 33 undefined on input
+ line 103.
+
+
+Package natbib Warning: Citation `Drut:2015fs' on page 33 undefined on input li
+ne 103.
+
+
+Package natbib Warning: Citation `Daley:2012bd' on page 33 undefined on input l
+ine 103.
+
+
+Package natbib Warning: Citation `Islam:2015cm' on page 33 undefined on input l
+ine 103.
+
+
+Package natbib Warning: Citation `Kaufman:2016ep' on page 33 undefined on input
+ line 103.
+
+
+Package natbib Warning: Citation `Pichler:2016ec' on page 33 undefined on input
+ line 103.
+
+
+Package natbib Warning: Citation `Linke:2017tf' on page 33 undefined on input l
+ine 103.
+
+
+Package natbib Warning: Citation `Lukin:2018wg' on page 33 undefined on input l
+ine 103.
+
+
+Package natbib Warning: Citation `PhysRevLett.121.150501' on page 33 undefined 
+on input line 103.
+
 [33]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 95.
+Package natbib Warning: Citation `Cachin97entropymeasures' on page 34 undefined
+ on input line 118.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 95.
+Package natbib Warning: Citation `GolshaniPashaYari:2009' on page 34 undefined 
+on input line 118.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\not' on input line 95.
+Package natbib Warning: Citation `Hayashi:2011' on page 34 undefined on input l
+ine 118.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 95.
+Package natbib Warning: Citation `SKORIC:2011el' on page 34 undefined on input 
+line 118.
+
+
+Package natbib Warning: Citation `FehrBerens2014' on page 34 undefined on input
+ line 118.
+
+
+Package natbib Warning: Citation `Barghathi:2018oe' on page 34 undefined on inp
+ut line 118.
+
+
+Package natbib Warning: Citation `Barghathi:2018oe' on page 34 undefined on inp
+ut line 118.
 
 [34]
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 140.
+Package natbib Warning: Citation `Barghathi:2018oe' on page 35 undefined on inp
+ut line 141.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 140.
-
-[35]
-Overfull \hbox (6.67407pt too wide) in paragraph at lines 155--155
+Overfull \hbox (6.67407pt too wide) in paragraph at lines 143--143
 []\T1/cmr/bx/n/14.4 Projecting onto sub-spaces of fixed lo-cal par-ti-cle num-
  []
 
+[35]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 171.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 171.
+
 [36] [37]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 184.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 184.
-
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 258--259
-
- []
-
-[40] [41] [42] [43]
-Overfull \hbox (15.51013pt too wide) detected at line 364
+[38] [39] [40] [41] [42]
+Overfull \hbox (15.51013pt too wide) detected at line 344
 [][] []
  []
 
-[44]
-Overfull \hbox (63.75056pt too wide) detected at line 386
+
+Overfull \hbox (63.75056pt too wide) detected at line 366
 []\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 	\OMS/cmsy/m/n/12 i[] \OT1/cmr/m/n/12 = [][
 \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 N; \OT1/cmr/m/n/12 0\OMS/cmsy/m/n/12 i \OT1/
 cmr/m/n/12 + \OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 N \OMS/cmsy/m/
@@ -2424,122 +2843,116 @@ ML/cmm/m/it/12 N \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 ; \O
 T1/cmr/m/n/12 1[]\OMS/cmsy/m/n/12 i\OT1/cmr/m/n/12 ]
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 401--404
+[43]
+Underfull \hbox (badness 10000) in paragraph at lines 379--385
 
  []
 
-[45] [46]
-Overfull \hbox (0.47743pt too wide) detected at line 479
+[44]
+Overfull \hbox (0.47743pt too wide) detected at line 457
 []\OMS/cmsy/m/n/12 P[] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12
  P[] \OT1/cmr/m/n/12 = []
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--481
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--481
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 457--462
 
  []
 
-[47pdfTeX warning (ext4): destination with the same identifier (name{equation.3
-.3.40}) has been already used, duplicate ignored
+[46pdfTeX warning (ext4): destination with the same identifier (name{equation.3
+.2.42}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.499 \end{equation}
-                    ] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 538--541
+l.483 \end{equation}
+                    ]
+Underfull \hbox (badness 10000) in paragraph at lines 515--521
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 566--567
-
- []
-
-[49] [50]
-Underfull \hbox (badness 10000) in paragraph at lines 593--594
+[47] [48]
+Underfull \hbox (badness 10000) in paragraph at lines 569--570
 
  []
 
-[51] [52] [53] [54] [55]
-Underfull \hbox (badness 10000) in paragraph at lines 767--769
-
- []
-
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 778--779
-
- []
-
-
-Overfull \hbox (1.85068pt too wide) in paragraph at lines 789--790
-[]\T1/cmr/m/n/12 In the pre-vi-ous sec-tion, the ac-ces-si-ble en-tan-gle-ment 
-was cal-cu-lated for $\OML/cmm/m/it/12 V=t \OMS/cmsy/m/n/12 !
- []
-
-[57]
-<operationalEntanglementEntropies_SOP5.pdf, id=1138, 308.35823pt x 356.45938pt>
+[49] [50] [51] [52] [53] [54]
+<operationalEntanglementEntropies_SOP5.pdf, id=987, 308.35823pt x 356.45938pt>
 File: operationalEntanglementEntropies_SOP5.pdf Graphic file (type pdf)
+
 <use operationalEntanglementEntropies_SOP5.pdf>
 Package pdftex.def Info: operationalEntanglementEntropies_SOP5.pdf used on inpu
-t line 841.
-(pdftex.def)             Requested size: 402.378pt x 465.16484pt.
+t line 815.
+(pdftex.def)             Requested size: 308.35747pt x 356.4585pt.
 
 
-LaTeX Warning: Reference `tab:Iimits' on page 58 undefined on input line 843.
+LaTeX Warning: Reference `tab:Iimits' on page 55 undefined on input line 817.
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 843.
 
-LaTeX Warning: Reference `tab:Iimits' on page 58 undefined on input line 843.
+LaTeX Warning: Reference `tab:Iimits' on page 55 undefined on input line 817.
 
-[58] [59 <./operationalEntanglementEntropies_SOP5.pdf>]
-<peakScalingOddN.pdf, id=1216, 307.75404pt x 195.97299pt>
+[55pdfTeX warning (ext4): destination with the same identifier (name{equation.3
+.2.69}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.819  \end{figure}
+                   ]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[56] [57 <./operationalEntanglementEntropies_SOP5.pdf>]
+<peakScalingOddN.pdf, id=1071, 307.75404pt x 195.97299pt>
 File: peakScalingOddN.pdf Graphic file (type pdf)
 
 <use peakScalingOddN.pdf>
-Package pdftex.def Info: peakScalingOddN.pdf used on input line 857.
-(pdftex.def)             Requested size: 402.378pt x 256.23009pt.
- [60] [61 <./peakScalingOddN.pdf>]
-<deltaS1_N15N16.pdf, id=1255, 299.24704pt x 356.45938pt>
+Package pdftex.def Info: peakScalingOddN.pdf used on input line 831.
+(pdftex.def)             Requested size: 384.69159pt x 244.96562pt.
+ [58 <./peakScalingOddN.pdf>]
+<deltaS1_N15N16.pdf, id=1103, 299.24704pt x 356.45938pt>
 File: deltaS1_N15N16.pdf Graphic file (type pdf)
 
 <use deltaS1_N15N16.pdf>
-Package pdftex.def Info: deltaS1_N15N16.pdf used on input line 890.
-(pdftex.def)             Requested size: 402.378pt x 479.35008pt.
+Package pdftex.def Info: deltaS1_N15N16.pdf used on input line 861.
+(pdftex.def)             Requested size: 299.2463pt x 356.4585pt.
 
-<higherAlphaDeltaS_N15N16.pdf, id=1257, 307.17216pt x 350.59908pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<higherAlphaDeltaS_N15N16.pdf, id=1105, 307.02486pt x 356.45938pt>
 File: higherAlphaDeltaS_N15N16.pdf Graphic file (type pdf)
 
 <use higherAlphaDeltaS_N15N16.pdf>
-Package pdftex.def Info: higherAlphaDeltaS_N15N16.pdf used on input line 904.
-(pdftex.def)             Requested size: 402.378pt x 459.2828pt.
- [62] [63 <./deltaS1_N15N16.pdf>] [64 <./higherAlphaDeltaS_N15N16.pdf>] <Halpha
-.pdf, id=1375, 300.17908pt x 359.35478pt>
-File: Halpha.pdf Graphic file (type pdf)
+Package pdftex.def Info: higherAlphaDeltaS_N15N16.pdf used on input line 875.
+(pdftex.def)             Requested size: 307.0241pt x 356.4585pt.
 
-<use Halpha.pdf>
-Package pdftex.def Info: Halpha.pdf used on input line 916.
-(pdftex.def)             Requested size: 402.378pt x 481.73578pt.
- [65 <./Halpha.pdf>]
-<alphaCollapse.pdf, id=1422, 310.17796pt x 355.47325pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[59] [60 <./deltaS1_N15N16.pdf>]
+<Halpha.pdf, id=1169, 300.17908pt x 359.35478pt>
+File: Halpha.pdf Graphic file (type pdf)
+ <use Halpha.pdf>
+Package pdftex.def Info: Halpha.pdf used on input line 887.
+(pdftex.def)             Requested size: 300.17834pt x 359.3539pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[61 <./higherAlphaDeltaS_N15N16.pdf>] [62 <./Halpha.pdf>]
+<alphaCollapse.pdf, id=1274, 310.17796pt x 355.47325pt>
 File: alphaCollapse.pdf Graphic file (type pdf)
 
 <use alphaCollapse.pdf>
-Package pdftex.def Info: alphaCollapse.pdf used on input line 956.
-(pdftex.def)             Requested size: 402.378pt x 461.16595pt.
- <TLLCollapse.pdf, id=1425, 318.11998pt x 355.47325pt>
+Package pdftex.def Info: alphaCollapse.pdf used on input line 927.
+(pdftex.def)             Requested size: 341.19681pt x 391.02177pt.
+ [63 <./alphaCollapse.pdf>]
+<TLLCollapse.pdf, id=1341, 318.11998pt x 355.47325pt>
 File: TLLCollapse.pdf Graphic file (type pdf)
+ <use TLLCollapse.pdf>
+Package pdftex.def Info: TLLCollapse.pdf used on input line 939.
+(pdftex.def)             Requested size: 318.11919pt x 355.47238pt.
 
-<use TLLCollapse.pdf>
-Package pdftex.def Info: TLLCollapse.pdf used on input line 968.
-(pdftex.def)             Requested size: 402.378pt x 449.65607pt.
- [66] [67 <./alphaCollapse.pdf>] [68 <./TLLCollapse.pdf>]) [69]
+[64 <./TLLCollapse.pdf>]) [65]
 Chapter 4.
 (./Chapters/chapter04.tex
 
@@ -2551,7 +2964,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 5.
 
 
-<operationalEntanglementEntropies_SOP5_withPeakCircles.pdf, id=1548, 301.36516p
+<operationalEntanglementEntropies_SOP5_withPeakCircles.pdf, id=1393, 301.36516p
 t x 188.41748pt>
 File: operationalEntanglementEntropies_SOP5_withPeakCircles.pdf Graphic file (t
 ype pdf)
@@ -2559,94 +2972,111 @@ ype pdf)
 <use operationalEntanglementEntropies_SOP5_withPeakCircles.pdf>
 Package pdftex.def Info: operationalEntanglementEntropies_SOP5_withPeakCircles.
 pdf used on input line 10.
-(pdftex.def)             Requested size: 402.378pt x 251.58684pt.
-File: peakScalingOddN.pdf Graphic file (type pdf)
+(pdftex.def)             Requested size: 301.36441pt x 188.417pt.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: peakScalingOddN.pdf Graphic file (type pdf)
 <use peakScalingOddN.pdf>
 Package pdftex.def Info: peakScalingOddN.pdf used on input line 22.
-(pdftex.def)             Requested size: 402.378pt x 256.23009pt.
- [70
+(pdftex.def)             Requested size: 307.75328pt x 195.9725pt.
 
-] [71 <./operationalEntanglementEntropies_SOP5_withPeakCircles.pdf>] [72]
-<fillingFractionDependence.pdf, id=1603, 306.92064pt x 355.126pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[66
+
+] [67 <./operationalEntanglementEntropies_SOP5_withPeakCircles.pdf>]
+<fillingFractionDependence.pdf, id=1444, 306.92064pt x 355.126pt>
 File: fillingFractionDependence.pdf Graphic file (type pdf)
 
 <use fillingFractionDependence.pdf>
-Package pdftex.def Info: fillingFractionDependence.pdf used on input line 39.
-(pdftex.def)             Requested size: 402.378pt x 465.59238pt.
-) [73] [74 <./fillingFractionDependence.pdf>] [75]
+Package pdftex.def Info: fillingFractionDependence.pdf used on input line 40.
+(pdftex.def)             Requested size: 306.91988pt x 355.12514pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package natbib Warning: Citation `IBMQuantumExp:2018:Online' on page 68 undefin
+ed on input line 49.
+
+) [68] [69 <./fillingFractionDependence.pdf>]
 Appendix A.
-(./Chapters/appendix01.tex [76
+(./Chapters/appendix01.tex [70
 
-] [77] [78]
-Underfull \hbox (badness 10000) in paragraph at lines 117--125
-
- []
-
-[79]
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+] [71] [72]
+Underfull \hbox (badness 10000) in paragraph at lines 128--136
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
+[73]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 
-Overfull \hbox (41.42854pt too wide) in paragraph at lines 136--137
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+
+Overfull \hbox (41.42854pt too wide) in paragraph at lines 147--148
 \T1/cmr/m/n/12 https://github.com/ecasiano/LanczosEigensolvers/blob/master/lanc
 zosEigensolver.py.
  []
 
 
-Overfull \hbox (8.91814pt too wide) in paragraph at lines 136--137
+Overfull \hbox (8.91814pt too wide) in paragraph at lines 147--148
 \T1/cmr/m/n/12 tion. A black-box func-tion, part of the numpy.linalg pack-age, 
 numpy.linalg.eigsh(),
  []
 
-[80] <Images/Lanczos/A.pdf, id=1685, 462.52798pt x 346.89601pt>
+[74] <Images/Lanczos/A.pdf, id=1528, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/A.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/A.pdf>
-Package pdftex.def Info: Images/Lanczos/A.pdf used on input line 144.
+Package pdftex.def Info: Images/Lanczos/A.pdf used on input line 155.
 (pdftex.def)             Requested size: 281.66338pt x 211.2569pt.
 
-<Images/Lanczos/T_noReortho.pdf, id=1686, 462.52798pt x 346.89601pt>
+<Images/Lanczos/T_noReortho.pdf, id=1529, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/T_noReortho.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/T_noReortho.pdf>
-Package pdftex.def Info: Images/Lanczos/T_noReortho.pdf used on input line 155.
+Package pdftex.def Info: Images/Lanczos/T_noReortho.pdf used on input line 166.
 
 (pdftex.def)             Requested size: 281.66338pt x 211.2569pt.
- [81 <./Images/Lanczos/A.pdf>]
-<Images/Lanczos/T_yesReortho.pdf, id=1710, 462.52798pt x 346.89601pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[75 <./Images/Lanczos/A.pdf>]
+<Images/Lanczos/T_yesReortho.pdf, id=1553, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/T_yesReortho.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/T_yesReortho.pdf>
-Package pdftex.def Info: Images/Lanczos/T_yesReortho.pdf used on input line 165
+Package pdftex.def Info: Images/Lanczos/T_yesReortho.pdf used on input line 176
 .
 (pdftex.def)             Requested size: 281.66338pt x 211.2569pt.
+ [76 <./Images/Lanczos/T_noReortho.pdf> <./Images/Lanczos/T_yesReortho.pdf
 
-<Images/Lanczos/eigenvaluesComparison.pdf, id=1711, 462.52798pt x 346.89601pt>
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Images/Lanczos/T_yesReorth
+o.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+<Images/Lanczos/eigenvaluesComparison.pdf, id=1595, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/eigenvaluesComparison.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/eigenvaluesComparison.pdf>
 Package pdftex.def Info: Images/Lanczos/eigenvaluesComparison.pdf used on input
- line 177.
+ line 188.
 (pdftex.def)             Requested size: 281.66338pt x 211.2569pt.
-) [82 <./Images/Lanczos/T_noReortho.pdf>] [83 <./Images/Lanczos/T_yesReortho.pd
-f> <./Images/Lanczos/eigenvaluesComparison.pdf
-
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Images/Lanczos/eigenvalues
-Comparison.pdf): PDF inclusion: multiple pdfs with page group included in a sin
-gle page
->]
+) [77 <./Images/Lanczos/eigenvaluesComparison.pdf>]
 Appendix B.
 (./Chapters/appendix02.tex
 
@@ -2657,9 +3087,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-[84
+[78
 
-] [85]
+] [79]
 Overfull \hbox (0.36574pt too wide) in paragraph at lines 96--105
 \OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 ^^H[]\OMS/cmsy/m/n/12 j[] \OT1/cmr/m/n/12 = \
 OML/cmm/m/it/12 constant$ \T1/cmr/m/n/12 that can be ab-sorbed in $[]$. Thus, w
@@ -2667,7 +3097,7 @@ e can set $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 ^^H[]\OMS/cmsy/m/n/12 j[] \OT1/cmr
 /m/n/12 =
  []
 
-[86] [87]
+[80] [81]
 Overfull \hbox (13.57431pt too wide) in paragraph at lines 180--180
 []$\OML/cmm/m/it/17.28 n$\T1/cmr/bx/n/17.28 -particle par-ti-tion en-tan-gle-me
 nt in the $\OML/cmm/m/it/17.28 V=t \OMS/cmsy/m/n/17.28 !
@@ -2697,49 +3127,62 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 180.
 
-[88] [89]
+[82] [83]
 
-LaTeX Warning: Reference `appendixA' on page 90 undefined on input line 283.
+LaTeX Warning: Reference `appendixA' on page 84 undefined on input line 283.
 
 
-LaTeX Warning: Reference `appendixA' on page 90 undefined on input line 291.
+LaTeX Warning: Reference `appendixA' on page 84 undefined on input line 291.
 
-[90]) [91]
+[84]) [85]
 Appendix C.
-(./Chapters/appendix03.tex [92
+(./Chapters/appendix03.tex [86
 
-] [93]) (./msThesis.bbl [94] [95
+] [87]) [88]
+Appendix D.
+(./Chapters/appendix04.tex
 
-] [96] [97]
-Underfull \hbox (badness 2698) in paragraph at lines 243--248
-[]\T1/cmr/m/n/12 T. Grover.  ``En-tan-gle-ment of In-ter-act-ing Fermions in Qu
-an-tum
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Overfull \hbox (53.56094pt too wide) in paragraph at lines 14--15
+\T1/cmr/m/n/12 and $\OML/cmm/m/it/12 L \OT1/cmr/m/n/12 = 4$ \T1/cmr/m/n/12 ther
+e are six such states: $[] \OMS/cmsy/m/n/12 2 f[] \OML/cmm/m/it/12 ; [] ; [] ; 
+[] ; [] ; []\OMS/cmsy/m/n/12 g$\T1/cmr/m/n/12 . 
  []
 
-[98] [99] [100]
-Underfull \hbox (badness 10000) in paragraph at lines 394--401
-[]$\T1/cmtt/m/n/12 http : / / www . sciencedirect . com / science / article / p
-ii /
- []
+[89
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 410--416
-[]$\T1/cmtt/m/n/12 http : / / www . sciencedirect . com / science / article / p
-ii /
- []
-
+]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 73.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
+[90] [91]
 
 Package natbib Warning: There were undefined citations.
 
-[101]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
+[92]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
  (./msThesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 204.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 204.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
 Package rerunfilecheck Info: File `msThesis.out' has not changed.
-(rerunfilecheck)             Checksum: C93FF550FFA695EB73ABFD8F49C23A0A;4589.
+(rerunfilecheck)             Checksum: 7190614B78501F0F260F7BB3C5E7E8D8;4724.
 
 
 LaTeX Warning: There were undefined references.
@@ -2747,20 +3190,20 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 204.
- )
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 154.
+ ) )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 94 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 26238 strings out of 493014
- 490529 string characters out of 6133351
- 547508 words of memory out of 5000000
- 28878 multiletter control sequences out of 15000+600000
- 33139 words of font info for 102 fonts, out of 8000000 for 9000
+ 25989 strings out of 493014
+ 484879 string characters out of 6133351
+ 543967 words of memory out of 5000000
+ 28729 multiletter control sequences out of 15000+600000
+ 34334 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,18n,87p,10384b,1774s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,18n,56p,10384b,1255s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm
 -super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
@@ -2772,29 +3215,33 @@ cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 mi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
 9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
 pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2016
-/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on msThesis.pdf (107 pages, 2282782 bytes).
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/doublestroke/dsrom12.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2016/tex
+mf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on msThesis.pdf (97 pages, 2267645 bytes).
 PDF statistics:
- 2088 PDF objects out of 2487 (max. 8388607)
- 1696 compressed objects within 17 object streams
- 396 named destinations out of 1000 (max. 500000)
- 582 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1926 PDF objects out of 2073 (max. 8388607)
+ 1542 compressed objects within 16 object streams
+ 351 named destinations out of 1000 (max. 500000)
+ 598 words of extra memory for PDF output out of 10000 (max. 10000000)
 

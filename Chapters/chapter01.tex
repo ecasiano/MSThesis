@@ -1,6 +1,9 @@
 \section{The $t-V$ Model}
 \label{sec:t-VIntro}
 
+test Eq.~(\ref{eq:t-VHamiltonian})
+test Eq.~\eqref{eq:t-VHamiltonian}
+
 So called "toy models" are ubiquitous in condensed matter physics. These describe a complex system in simple terms so that attention can be given to an underlying mechanism of such system. The Ising model, in it simplest form, can describe how a system spontaneously becomes a ferromagnet by considering interactions between quantum spins and tuning an external temperature. Similarly, the Hubbard model considers the interaction strength of electrons on a lattice and a hopping rate to describe the transition between conductor and insulator. The fact that the two aforementioned examples mention phase transitions is not mere coincidence. 
 
 Near a phase transition, evidence seems to point out to the fact that the behavior of a system is determine by a small set of parameters, a phenomenon known as universality. The size of a lattice could be one of these parameters, perhaps it could be the number of elements, or maybe even symmetry properties. Different systems having the same value for such universality parameters are said to fall under the same universality class. 
@@ -14,10 +17,8 @@ H = -t \sum_{i} \left ( c_{i}^{\dag} c_{i+1} + c_{i+1}^{\dag} c_{i} \right )+ V 
 %
 where $c_{i}^{\dag}$ ($c_{i}$) creates (annihilates) a fermion on site $i$ and $n_{i}$ counts the number of fermions on site $i$. In the case that there exists a fermion on site $i$ already, then $c_{i}^{\dag} = 0$ in order to satisfy Pauli's Exclusion Principle. The interaction term can then be understood conceptually as adding to the potential energy of the system if there are multiple particles in neighboring sites. Conceptually, the first term may be more difficult to understand in its current representation, due to this operator being non-diagonal. Nevertheless, expressing it in the momentum basis, which is diagonal, will illustrate that how contributions to the kinetic energy will come from all particles with nonzero momentum (which will be all of them unless $t=0$). A detailed mapping of the kinetic energy operator from lattice site to momentum basis can be seen in Appendix \ref{appendix:kineticMapping}.
 
-test Eq.~(\ref{eq:t-VHamiltonian})
-
 %%%%%%%%%%%%%%%%%%%
-\begin{figure*}[thp]
+\begin{figure*}[h]
 \begin{center}
 \includegraphics[width=1.0\textwidth]{phaseDiagramtV.pdf}
 \end{center}
@@ -46,7 +47,7 @@ Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two differen
 	\label{eq:shannonEntropy}
 	\end{equation}
 	%
-	where the sum is carried over all entries in the data set and $p_i$ is the probability of measuring entry $i$. The base $b$ can be chosen arbitrarily depending on the context. The base will be chosen as the number $e$ such that $\log_b \to \ln$ for the remainder of this work. Up next, a common day example will be presented in order to give some intuition about how information gain can be estimated with Eq.~\eqref{eq:shannonEntropy}
+	where the sum is carried over all entries in the data set and $p_i$ is the probability of measuring entry $i$. The base $b$ can be chosen arbitrarily depending on the context. The base will be chosen as the number $e$ such that $\log_b \to \ln$ for the remainder of this work. Up next, a common day example will be presented in order to give some intuition about how information gain can be estimated with Eq.~(\ref{eq:shannonEntropy})
 	
 	Consider a regular coin flip. Disregarding all physical effects that can somehow bias the outcome, it is expected that either heads or tails will randomly be with equal probability $1/2$. Then, since there is no bias towards any of the two possible outcomes of the coin flip, the information gain should be at a maximum. The Shannon entropy for this case is:
 	%
@@ -126,7 +127,7 @@ Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two differen
 	Since the average information gained about $B$ when measuring $A$ can be quantified via von Neumann and R\'enyi entanglement entropies, these can be used as indication of how entangled the two subsystems are with each other. A system is highly entangled if its state possesses a large entanglement entropy.
 	
 	%%%%%%%%%%%%%%%%%%%
-\begin{figure*}[thp]
+\begin{figure*}[h]
 \begin{center}
 \includegraphics[width=1.0\textwidth]{spatialParticle.pdf}
 \end{center}

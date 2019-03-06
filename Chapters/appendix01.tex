@@ -10,14 +10,16 @@ In the following section, the Lanczos Algorithm will be derived. Next, some meth
 \subsection{Tridiagonalization of the original matrix}
 
 Let $A$ be a Hermitian matrix of size $nxn$. An orthonormal transform matrix $Q$ is needed such that:
-
-\[ T = Q^{T}AQ \]
-
+%
+\begin{equation}
+T = Q^{T}AQ 
+\end{equation}
+%
 where $T$ is a tridiagonal and Hermitian matrix similar to A.
 
 The idea is to obtain a recursive relation, starting from the known fact that $T$ is tridiagonal and that the columns of the transform $Q$ are mutually orthonormal. The matrix $T$ has the form:
-
-\[
+%
+\begin{equation}
 T = \begin{pmatrix}
     \alpha_1 & \beta_1    &                &               &                         &                      & 0              \\
     \beta_1  & \alpha_2  & \beta_2   &               &                         &                      &                  \\
@@ -28,14 +30,16 @@ T = \begin{pmatrix}
              0  &                 &           &                     &                         & \beta_{n-1}   & \alpha_n      \\
  
   \end{pmatrix}
-\]
-
+\end{equation}
+%
 Operating $Q$ on both sides of the similarity relation above from the left: 
-
-\[ QT = QQ^{T}AQ = IAQ= AQ \]
-
+%
+\begin{equation}
+QT = QQ^{T}AQ = IAQ= AQ
+\end{equation}
+%
 Let $\lbrace q_1, q_2, q_3, ... , q_k \rbrace $ be represent the mutually orthonormal columns of $Q$ and $\lbrace t_1,t_2,t_3,...,t_k \rbrace$, those of $T$.  Then, at the $k$-th step of the Lanczos iteration:
-
+%
 \begin{align}
 A q_k &= Q t_k \\
 &= \begin{pmatrix} 
@@ -54,10 +58,10 @@ A q_k &= Q t_k \\
 \vdots \\
 \end{pmatrix}
 \end{align}
-
+%
 The column vector only has three nonzero components. Namely, $\beta_{k-1}$, $\alpha_{k}$ and $\beta_{k}$. Thus, the product of this matrix-vector multiplication becomes:
-
-\[ \begin{aligned}
+%
+ \begin{align}
 A q_k &= \begin{pmatrix}
 q_{1,k-1} \\
 q_{2,k-1} \\
@@ -76,38 +80,45 @@ q_{2,k+1} \\
 \vdots \\
 q_{n,k+1} \\
 \end{pmatrix} \beta_{k} \\
-\end{aligned}\]
-
+\end{align}
+%
 Or, more compactly:
-
+%
 \begin{equation}
 A q_{k} = \beta_{k-1} q_{k-1} + \alpha_{k} q_{k} + \beta_{k} q_{k+1}
 \end{equation}
-
+%
 From this three-term recursion relation, $Q$ can be built by finding equations for the nonzero elements of the set of columns $\lbrace q_i \rbrace_{i=1}^{n}$ (i.e the $\alpha$'s and $\beta$'s). First, the $\alpha_k$ equation will be derived. Multiplying both sides of the three-term recursion relation by $q_{k}^{T}$ from the left:
-
-\[ q_{k}^{T} A q_{k} = \beta_{k-1} q_{k}^{T}q_{k-1} + \alpha_{k} q_{k}^{T} q_{k} + \beta_{k} q_{k}^{T} q_{k+1}  \]
-
+%
+\begin{equation} 
+q_{k}^{T} A q_{k} = \beta_{k-1} q_{k}^{T}q_{k-1} + \alpha_{k} q_{k}^{T} q_{k} + \beta_{k} q_{k}^{T} q_{k+1}
+\end{equation}
+%
 Since the columns of $Q$ are mutually orthonormal, $q_{k}^{T}q_{k'} = \delta_{kk'}$. In other words, the first and third term will vanish and the second one survives. The equation for $\alpha_{k}$ is then:
-
+%
 \begin{equation} 
 \alpha_{k} = q_{k}^{T} A q_{k}
 \end{equation}
-
+%
 To obtain the $\beta_{k}$ equation, first the recursion relation is solved for $\beta_{k}q_{k+1}$, which gives:
-
-\[ \beta_{k} q_{k+1} = A q_{k} - \alpha_k q_k + \beta_{k-1} q_{k-1} = (A-\alpha_k I) q_k - \beta_{k-1} q_{k-1} \]
+%
+\begin{equation}
+\beta_{k} q_{k+1} = A q_{k} - \alpha_k q_k + \beta_{k-1} q_{k-1} = (A-\alpha_k I) q_k - \beta_{k-1} q_{k-1}
+\end{equation}
+%
 
 Setting $r_k \equiv (A-\alpha_k I) q_k - \beta_{k-1} q_{k-1}$:
-
-\[ \beta_{k} q_{k+1} = r_{k} \]
-
+%
+\begin{equation}
+\beta_{k} q_{k+1} = r_{k}
+\end{equation}
+%
 Or
-
+%
  \begin{equation}
 q_{k+1} = \frac{r_k}{\beta_{k}}
 \end{equation}
-
+%
 where $\beta_{k} \neq 0$ and, since $q_{k+1}$ is an orthonormal vector, $\beta_{k} = || r_k ||_2$, such that $q_{k+1}$ is normalized.
 
 Note that the $\alpha_k$ and $\beta_k$ terms of the three-term recursion relation have been accounted for. As for the $\beta_{k-1}$, a "bottom rung" for the recursion has to be set. The tridiagonal matrix $T$ does not have a $\beta_{k-1}$ term. Thus, for $k=1$, the $\beta_{k-1} q_{k-1}$ term is set to $\beta_{0} q_{0} = 0$. Now the columns of $Q$ can be built by iterating from $k=1$ to $k=n$.
@@ -139,7 +150,7 @@ An implementation of the Lanczos Algorithm in Python can be found in: https://gi
 
 The following colormap represents a sparse and hermitian matrix of dimensions $n x n$ that was fed to the linked Lanczos code. 
 
-\begin{figure}[t]
+\begin{figure}[h]
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{Images/Lanczos/A.pdf}
 \end{center}
@@ -150,7 +161,7 @@ The following colormap represents a sparse and hermitian matrix of dimensions $n
 The Lanczos iterations were carried from $k=1$ to $k=n=100$. First, Lanczos was ran without reorthonormalizing the columns of the transform matrix $Q$.
 
 
-\begin{figure}[t]
+\begin{figure}[h]
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{Images/Lanczos/T_noReortho.pdf}
 \end{center}
@@ -160,7 +171,7 @@ The Lanczos iterations were carried from $k=1$ to $k=n=100$. First, Lanczos was 
 
 Observe how the matrix starts to look tridiagonal, but has some large nonzero entries far away from the diagonal. This is the result of finite precision error. Via the Grahm-Schmidt Procedure, a full reorthonormalization was then done at each Lanczos step. The colormap below shows the result.
 
-\begin{figure}[t]
+\begin{figure}[h]
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{Images/Lanczos/T_yesReortho.pdf}
 \end{center}
@@ -172,7 +183,7 @@ Barring some small nonzero entries in the bottom right, most likely due also to 
 
 The following scatter plot shows the eigenvalues obtained using the Lanczos code linked and those obtained using numpy.linalg.eigsh(). These eigenvalues correspond to the same matrix generated for the plots in the previous section.
 
-\begin{figure}[t]
+\begin{figure}[h]
 \begin{center}
 \includegraphics[width=0.7\columnwidth]{Images/Lanczos/eigenvaluesComparison.pdf}
 \end{center}
