@@ -670,98 +670,70 @@ S_\alpha^{acc}(x,L) = \frac{2(x-1)}{L} \ln{2} ; \text{ where } x = \min{\ell_A, 
 	
 At $V/t = -2$, the $t-V$ model undergoes a first order phase transition from Luttinger Liquid to Phase Separated Solid. The accessible entanglement at this interaction strength vanishes and then suddenly increases and converges to the previously derived limit ($\frac{N-1}{N}\ln{2}$) as the attraction gets stronger. In this section, it will be shown that the accessible entanglement vanishes at the first order phase transition.
 
-At $\frac{V}{t}=-2$ and half-filling ($N=\frac{L}{2}$), the state of the system is an equiprobable superposition of all possible configurations (Appendix~\ref{Appendix:flatState}). There are a total of ${L}\choose{N}$ possible configurations. Thus, the general state can be written as: 
+At $\frac{V}{t}=-2$, the state of the system is an equiprobable superposition of all possible configurations (Appendix~\ref{Appendix:flatState}). Working out the calculation of $S_1^{\rm acc}(\rho_A)$ in matrix form, as it was done for $V/t\to\pm\infty$, turns out to be relatively complicated for this ground state. Nevertheless, reformulating the state in terms of its Schmidt decomposition gives the result almost for free. The Schmidt decomposition of the ground state at the first order phase transition is:
 %
-\begin{equation} 
-|\Psi \rangle = \frac{1}{\sqrt{{L}\choose{N}}} \sum_{i=1}^{{L}\choose{N}} | \phi_{i} \rangle
+\begin{equation}
+\ket{\Psi} = \frac{1}{\sqrt{{{L}\choose{N}}}} \sum_{n=0}^{N} \sqrt{{{\ell}\choose{n}}{{L-\ell}\choose{N-n}}} \ket{n}_A \otimes \ket{N-n}_B
 \end{equation}
 %
-where $|\phi_{i}\rangle$ is the set of all configurations of $N$ fermions on $L$ sites and the pre-factor is a normalization constant. Now that the state at $\frac{V}{t}=-2$ is known, the full and, hence, reduced density matrices can be obtained. Up next, their resulting general structure will be discussed.
+where $\ket{n}_A$ is an equal superposition of all $A$ configurations containing $n$ and likewise for $\ket{N-n}_B$. The square root factor inside the summation counts the number of each of the possible $\ket{n}_A \otimes \ket{N-n}_B$ configurations and the factor outside of the summation is a normalization constant. Each of the configurations, $\ket{n}_A \otimes \ket{N-n}_B$, multiplied by it's corresponding constants, represent projections of the ground state onto spaces of local particle number $n$. Each of these projections are  separable and the contribution of each to $S_1^{\rm acc}(\rho_A)$ is exactly zero. 
 
-For simplicity, let $\frac{1}{\sqrt{{L}\choose{N}}} \equiv C$. For particle sub-sectors of $n_A = 0$ and $n_A = N$, the projected reduced density matrices become:
-%
-\begin{equation}
-\rho_{A_N} = \frac{1}{P_{N}} \begin{pmatrix}
-C & \dots & 0 \\ 
-\vdots & 0 & \vdots \\
-0 & \dots & 0 \\
-\end{pmatrix}
-\end{equation}
-%
-with probability $P_{N} = C$. And, 
-%
-\begin{equation}
-\rho_{A_0} = \frac{1}{P_{0}} \begin{pmatrix}
-0 & \dots & 0 \\ 
-\vdots & 0 & \vdots \\
-0 & \dots & C \\
-\end{pmatrix}
-\end{equation}
-%
-also with probability $P_{0} = C$.
-
-For particle number sub-sectors of $1 \leq n \leq N-1$, the projected reduced density matrices become square matrices of size $N \times N$ with all entries being $NC^2$:
-%
-\begin{equation}
-\rho_{A_n} = \frac{1}{P_{n}} \begin{pmatrix}
-NC^2 & \dots & NC^2 \\ 
-\vdots & NC^2 & \vdots \\
-NC^2 & \dots & NC^2
-\end{pmatrix}
-\end{equation}
-%
-with probabilities $P_{n}=N(NC^2)=N^2C^2$. In summary, the normalized projected reduced density matrices are:
-%
-\begin{equation}
-\rho_{A_N} = \frac{1}{P_{N}} \begin{pmatrix}
-1 & \dots & 0 \\ 
-\vdots & 0 & \vdots \\
-0 & \dots & 0 \\
-\end{pmatrix}, P_{N}=C 
-\end{equation}
-\begin{equation}
- \rho_{A_0} = \frac{1}{P_{N}} \begin{pmatrix}
-0 & \dots & 0 \\ 
-\vdots & 0 & \vdots \\
-0 & \dots & 1 \\
-\end{pmatrix}, P_{0}=C 
-\end{equation}
-\begin{equation}
-\rho_{A_n} = \frac{1}{P_{n}} \begin{pmatrix}
-\frac{1}{N} & \dots & \frac{1}{N} \\ 
-\vdots & \frac{1}{N} & \vdots \\
-\frac{1}{N} & \dots & \frac{1}{N}
-\end{pmatrix}, P_{n}=N^2C^2 
-\end{equation}
-%
-Recall the definition of the accessible von Neumann entropy:
-%
-\begin{equation}
-S_{1}^{acc}(\rho_{A}) = \sum_{n} P_{n}S_1(\rho_{A_n})  \nonumber
-\end{equation}
-%
-where $S_{1}(\rho_{A_n}) = -\Tr{\rho_{A_n} \ln{\rho_{A_n}}}$. Expanding the sum:
+To illustrate the separability of each of the projected states, the example of $N=3$ fermions on a $L=6$ lattice with spatial partitions of size $\ell=3$ will be worked out. The ground state is:
 %
 \begin{align}
-S_{1}^{acc}(\rho_{A}) &= P_{0} \ln{\Tr{(\rho_{A_0}^{\alpha})}} + P_{N} \ln{\Tr{(\rho_{A_N}^{\alpha})}} + \sum_{n=1}^{N-1} P_{n} \ln{\Tr{(\rho_{A_n}^{\alpha})}} \nonumber \\
-&= C \ln{1} + C \ln{1} + N^2C^2 \sum_{n=1}^{N-1} \ln{N(\frac{1}{N})}  \nonumber \\
-&= N^2C^2 \sum_{n=1}^{N-1} \ln{1} \nonumber \\
-S_{1}^{acc}(\rho_{A}) &= 0 
+\ket{\Psi} = \frac{1}{\sqrt{{{6}\choose{3}}}} [ &\sqrt{{{3}\choose{0}}{{3}\choose{3}}} \ket{0}_A \otimes \ket{3}_B + \sqrt{{{3}\choose{1}}{{3}\choose{2}}} \ket{1}_A \otimes \ket{2}_B \nonumber \\
++ &\sqrt{{{3}\choose{2}}{{3}\choose{1}}} \ket{3}_A \otimes \ket{0}_B +\sqrt{{{3}\choose{3}}{{3}\choose{0}}} \ket{3}_A \otimes \ket{0}_B ] 
 \end{align}
 %
-Thus, the accessible entanglement vanishes at the first order phase transition. 
+Each of the terms above is a projection onto a different $n$ subspace. Let $\ket{\Psi_n} \equiv \ket{n}_A \otimes \ket{N-n}_B$ be the projection of the ground state onto the $n$ subspace. Technically, the square root factors are part of these projections, but they have been dropped out since they are not needed to demonstrate the separability $\ket{n}_A \otimes \ket{N-n}_B$. Expanding each projection into the site occupation basis, the projections become:
+%
+\begin{align}
+\ket{\Psi_0} &=  \ket{0}_A \otimes \ket{3}_B = \ket{000}_A\otimes\ket{111}_B \nonumber \\
+&\implies S_1^{\rm acc}(\rho_{A_{0}}) = 0
+\end{align}
+%
+%
+\begin{align}
+\ket{\Psi_1} =  \ket{1}_A \otimes \ket{2}_B &= \ket{100,110} + \ket{100,011} + \ket{100,101} \nonumber \\
+&= \ket{010,110} + \ket{010,011} + \ket{010,101} \nonumber \\
+&= \ket{001,110} + \ket{001,011} + \ket{001,101} \nonumber \\
+&= (\ket{100} + \ket{010} + \ket{001})_A \otimes (\ket{110} + \ket{011} + \ket{101})_B \nonumber \\
+&\implies S_1^{\rm acc}(\rho_{A_{1}}) = 0
+\end{align}
+%
+%
+\begin{align}
+\ket{\Psi_2} =  \ket{2}_A \otimes \ket{1}_B &= \ket{110,100} + \ket{110,010} + \ket{110,001} \nonumber \\
+&= \ket{011,100} + \ket{011,010} + \ket{011,001} \nonumber \\
+&= \ket{101,100} + \ket{101,010} + \ket{101,001} \nonumber \\
+&= (\ket{110} + \ket{011} + \ket{101})_A \otimes (\ket{100} + \ket{010} + \ket{001})_B \nonumber \\
+&\implies S_1^{\rm acc}(\rho_{A_{2}}) = 0
+\end{align}
+%
+%
+%
+\begin{align}
+\ket{\Psi_0} &=  \ket{3}_A \otimes \ket{0}_B = \ket{111}_A\otimes\ket{000}_B \nonumber \\
+&\implies S_1^{\rm acc}(\rho_{A_{3}}) = 0
+\end{align}
+%
+Note that $S_1(\rho_{A_n}) = 0 , \forall\text{ }{n \in \{0,1,2,3\}}$. Thus,
+\begin{equation}
+S_1^{\rm acc}(\rho_A) = \sum_{n=0}^3 P_n S_1(\rho_{A_n}) = 0
+\end{equation}
+%
+The von Neumann accessible entanglement vanishes at the first order phase transition. The above behavior is exhibited for any system size and it is also independent of the partition size.
 
-\section{Comparison between the generalized and the traditional R\'enyi entanglement entropies}
+\section{Comparison between the accessible R\'enyi and von Neumann entanglement entropies}
 
-Recall the generalized form of the R\'enyi Accessible Entanglement Entropy:
+Recall the generalized form of the R\'enyi accessible entanglement entropy:
 %
 \begin{equation}
 S_{\alpha}^{{\rm acc}} (\rho_A) = \frac{\alpha}{1-\alpha}\ln\left[ \sum_{n} P_n \mathrm{e}^{\frac{1-\alpha}{\alpha} S_{\alpha}(\rho_{A_n})}\right]
 \label{eq:S_alpha_acc}
 \end{equation} 
 %
-In the previous section, the accessible entanglement was calculated for $V/t \to -\infty, V/t \to +\infty$ and $V/t = -2$ using the traditional definition of the accessible R\'enyi entropy. Analogous derivations can be done for the generalized entropy Eq.~\eqref{eq:S_alpha_acc}. Here, the results for the generalized and the traditional accessible entanglement measures are summarized (Table \ref{tab:Limits}).
-
+In the previous section, the von Neumann accessible entanglement was calculated for $V/t \to -\infty, V/t \to +\infty$ and $V/t = -2$. Analogous derivations can be done for the accessible R\'enyi entanglement entropy Eq.~\eqref{eq:S_alpha_acc}. Here, the results for the R\'enyi and von Neumann accessible entanglement are summarized %(Table \ref{tab:Limits}).
 %In this section we derive a number of exact and asymptotic results for the accessible entanglement entropy of the $t-V$ model using insights gained from the structure of the ground states depicted in Fig.~\ref{fig:phaseDiagram}. Results for the von Neumann accessible entanglement are summarized in Table
 
 %HI!!!!! ~\ref{tab:Limits}. 
@@ -773,7 +745,7 @@ In the previous section, the accessible entanglement was calculated for $V/t \to
    \setlength\tabcolsep{8pt}
  \begin{tabular}{@{}lll@{}} 
   \toprule
-    Interaction	& $\frac{\alpha}{1-\alpha}\ln\left[ \sum_{n} P_n \mathrm{e}^{\frac{1-\alpha}{\alpha} S_{\alpha}(\rho_{A_n})}\right]$ & $ \sum_{n} P_n S_{\alpha}(\rho_{A_n})$ \\ 
+    Interaction	& $S_{\alpha}^{\rm acc}(\rho_A) = \frac{\alpha}{1-\alpha}\ln\left[ \sum_{n} P_n \mathrm{e}^{\frac{1-\alpha}{\alpha} S_{\alpha}(\rho_{A_n})}\right]$ & $S_1^{\rm acc}(\rho_A) = \sum_{n} P_n S_{1}(\rho_{A_n})$ \\ 
    \midrule
    $V/t \to -\infty$ & $ \frac{\alpha}{1-\alpha} \left[ \frac{2(x-1)}{L} 2^{\frac{1-\alpha}{\alpha}} + 1 - \frac{2(x-1)}{L} \right]$ & $\frac{2(x-1)}{L} \ln{2}$ \\
    $V/t \to +\infty$ & $\ln{2}$ if $N$ even, $0$ if $N$ odd &  $\ln{2}$ if $N$ even, $0$ if $N$ odd \\
@@ -782,11 +754,11 @@ In the previous section, the accessible entanglement was calculated for $V/t \to
     \end{tabular}
 \end{center}
 \caption{\label{tab:Limits} 
-Analytical results for the accessible entanglement in the ground state of the $t-V$ model with $N$ fermions on $L$ sites under a spatial bipartition consisting of $\ell=L/2$ contiguous sites. From left to right, the columns indicate the interaction strength, the value of the generalized R\'enyi accessible entanglement, and the value of the traditional entanglement, respectively. The $x$ in the first row is the minimum value between $ \{ N, \ell, L-\ell, L-N \} $.}
+Analytical results for the accessible entanglement in the ground state of the $t-V$ model with $N$ fermions on $L$ sites under a spatial bipartition consisting of $\ell=L/2$ contiguous sites. From left to right, the columns indicate the interaction strength, the value of the generalized R\'enyi accessible entanglement, and the value of the von Neumann entanglement, respectively. The $x$ in the first row is the minimum value between $ \{ N, \ell, L-\ell, L-N \} $.}
 \end{table}
 %
 
-Analytical results have now been obtained in three regimes of the $t-V$ Model, namely: $V/t \to + \infty$, $V/t \to - \infty$ and $V/t = -2$ for both the traditional and the generalized accessible entanglement. In the next section, numerical results obtained from exact diagonalization are presented.
+Analytical results have now been obtained in three regimes of the $t-V$ Model, namely: $V/t \to + \infty$, $V/t \to - \infty$ and $V/t = -2$ for both the von Neumann and the R\'enyi accessible entanglement. In the next section, numerical results obtained from exact diagonalization are presented.
 
 %%%%%%%%%%%%%%%%%%%
 \iffalse
@@ -823,7 +795,7 @@ Figure \ref{fig:OEE} shows the accessible R\'enyi entanglement entropy values at
 
 Recall that the accessible entanglement should be a monotonically decreasing function of $\alpha$. Figure $\ref{fig:OEE}$ supports this inverse relation since it is seen that $S_{1} \geq S_{2}$ $\forall$ $V/t \in \left( -100,100 \right)$.
 
-Another interesting feature is the peak seen near the continuous phase transition $V/t=2$. Results seem to indicate that the peak is slightly shifting to the left, closer to $V/t=2$ as the number of particles $N$ increases. In an effort to find how the location of this peak scales with particle number, $V/t\vert_{Max}$ was obtained for various system sizes, where $V/t\vert_{Max}$ is the interaction strength at which the accessible entanglement peak occurs. Figure \ref{fig:peakScalingOddN} shows a plot of $V/t\vert_{Max}$ vs $N^{-0.2545}$. The exponent comes from a linear fitting of $\left( V/t\vert_{Max} - 2 \right)$ vs $N$ data. The observed inverse power law scaling is promising as all points fall on a line with $y$ intercept of $V/t\vert_{Max} = 2$, which is the exact value of the continuous phase transition in the asymptotic limit of $N \to \infty$ total particles.
+Another interesting feature is the peak seen near the continuous phase transition $V/t=2$. Results seem to indicate that the peak is slightly shifting to the left, closer to $V/t=2$ as the number of particles $N$ increases. In an effort to find how the location of this peak scales with particle number, $V/t\vert_{Max}$ was obtained for various system sizes, where $V/t\vert_{Max}$ is the interaction strength at which the accessible entanglement peak occurs. Figure \ref{fig:peakScalingOddN} shows a plot of $V/t\vert_{Max}$ vs $N^{-0.2545}$. The exponent comes from a linear fitting of $\left( V/t\vert_{Max} - 2 \right)$ vs $N$ data. The observed inverse power law scaling is promising as all points fall on a line with $y$ intercept of $V/t\vert_{Max} = 2$, which is the exact value of the continuous phase transition in the asymptotic limit of $N \to \infty$ total particles. Nevertheless, most of the system sizes in the data fall roughly in the same order of magnitude. The exact value of the phase transition $V/t = 2$ is obtained in the thermodynamic limit of $N\to\infty$ particles. Thus, to confirm the veracity of a power-law scaling of the peak of entanglement, more data points will be needed. Deviations from the line are noticeable in the largest three points presented. This suggests that there might be sub-leading terms that will hopefully become negligible for large system sizes. Currently, data for larger system sizes is being generated via Density Matrix Renormalization Group (DMRG) that will allow for the simulation of $N\approx100$ fermions.
 
 %%%%%%%%%%
 \begin{figure}[h!]
