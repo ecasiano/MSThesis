@@ -6,16 +6,16 @@ test Eq.~\eqref{eq:t-VHamiltonian}
 
 So called "toy models" are ubiquitous in condensed matter physics. These describe a complex system in simple terms so that attention can be given to an underlying mechanism of such system. The Ising model, in it simplest form, can describe how a system spontaneously becomes a ferromagnet by considering interactions between quantum spins and tuning an external temperature. Similarly, the Hubbard model considers the interaction strength of electrons on a lattice and a hopping rate to describe the transition between conductor and insulator. The fact that the two aforementioned examples mention phase transitions is not mere coincidence. 
 
-Near a phase transition, evidence seems to point out to the fact that the behavior of a system is determine by a small set of parameters, a phenomenon known as universality. The size of a lattice could be one of these parameters, perhaps it could be the number of elements, or maybe even symmetry properties. Different systems having the same value for such universality parameters are said to fall under the same universality class. 
+Near a phase transition, evidence seems to point out to the fact that the behavior of a system is determine by a small set of parameters, a phenomenon known as universality. Different systems having the same value for such universality parameters are said to fall under the same universality class. 
 
-The studies that will be presented in this thesis shall be concerned with a specific model, which shall be referred to as the $t-V$ model. This model, is mapped from the $XXZ$ spin model and describes $N$ itinerant fermions on a 1D lattice of size $L$. These fermions can tunnel to neighboring sites and the rate at which they do so is proportional to a hopping parameter $t$. An interaction potential, $V$, between the fermions is also considered, which could be repulsive ($V > 0$) or attractive ($V < 0$). Periodic and anti-periodic boundary conditions will be assumed for the case of odd and even particles, respectively. Mathematically, this is represented by the following Hamiltonian:
+The studies that will be presented in this thesis shall be concerned with a specific model, which shall be referred to as the $t-V$ model. This model, is equivalent to the $XXZ$ spin model and describes $N$ itinerant spinless fermions on a 1D lattice of size $L$. These fermions can tunnel to neighboring sites and the rate at which they do so is proportional to a hopping parameter $t$. An interaction potential, $V$, between the fermions is also considered, which could be repulsive ($V > 0$) or attractive ($V < 0$). Periodic and anti-periodic boundary conditions will be assumed for the case of odd and even particles, respectively. Mathematically, this is represented by the following Hamiltonian:
 %
 \begin{equation}
 H = -t \sum_{i} \left ( c_{i}^{\dag} c_{i+1} + c_{i+1}^{\dag} c_{i} \right )+ V \sum_{i} n_i n_{i+1}   
 \label{eq:t-VHamiltonian}
 \end{equation}
 %
-where $c_{i}^{\dag}$ ($c_{i}$) creates (annihilates) a fermion on site $i$ and $n_{i}$ counts the number of fermions on site $i$. In the case that there exists a fermion on site $i$ already, then $c_{i}^{\dag} = 0$ in order to satisfy Pauli's Exclusion Principle. The interaction term can then be understood conceptually as adding to the potential energy of the system if there are multiple particles in neighboring sites. Conceptually, the first term may be more difficult to understand in its current representation, due to this operator being non-diagonal. Nevertheless, expressing it in the momentum basis, which is diagonal, will illustrate that how contributions to the kinetic energy will come from all particles with nonzero momentum (which will be all of them unless $t=0$). A detailed mapping of the kinetic energy operator from lattice site to momentum basis can be seen in Appendix \ref{appendix:kineticMapping}.
+where $c_{i}^{\dag}$ ($c_{i}$) creates (annihilates) a fermion on site $i$ and $n_{i}$ counts the number of fermions on site $i$. In the case that there exists a fermion on the site in which the creation operator acts, then $c^{\dag} \ket{1} = \ket{0}$ in order to satisfy Pauli's Exclusion principle. The interaction term can then be understood conceptually as adding to the potential energy of the system if there are multiple particles in neighboring sites. Conceptually, the first term may be more difficult to understand in its current representation, due to this operator being non-diagonal. Nevertheless, expressing it in the momentum basis, where it is diagonal, will illustrate that how contributions to the kinetic energy will come from all particles with nonzero momentum (which will be all of them unless $t=0$). A detailed mapping of the kinetic energy operator from lattice site to momentum basis can be seen in Appendix \ref{appendix:kineticMapping}.
 
 %%%%%%%%%%%%%%%%%%%
 \begin{figure*}[h]
@@ -27,16 +27,16 @@ where $c_{i}^{\dag}$ ($c_{i}$) creates (annihilates) a fermion on site $i$ and $
 \end{figure*}
 %%%%%%%%%%%%%%%%%
 
-Figure \ref{fig:phaseDiagram} shows the phase diagram of the $t-V$ model. For $V/t \ll -2$, the fermions cluster together due to the strong attractive interaction. The state in this regime is an equal superposition of all possible such cluster configurations over all lattice sites. At $V/t = -2$, the system undergoes a second order phase transition into the Tomonaga-Luttinger Liquid (TLL) phase. Here, the state is in a superposition of all possible configurations of the fermions on the lattice. The weights for these configurations are in general different and can only be exactly known at $V/t = 0$ \cite{PhysRevLett.121.150501}. At $V/t = 2$, the system undergoes a continuous phase transition into the charged density wave (CDW) phase. At $V/t \gg 2$, the strong repulsion between particles leads to them forming an alternating pattern of particle-vacancy-particle-vacancy \dots The state in this regime becomes an equal superposition of the only two possible such configurations.
+Figure \ref{fig:phaseDiagram} shows the phase diagram of the $t-V$ model. For $V/t \ll -2$, the fermions cluster together due to the strong attractive interaction. The state in this regime is an equal superposition of all possible such cluster configurations over all lattice sites. At $V/t = -2$, the system undergoes a second order phase transition into the Tomonaga-Luttinger Liquid (TLL) phase. Here, the state is in a superposition of all possible configurations of the fermions on the lattice. The weights for these configurations are in general different and can only be exactly known at $V/t = 0$ \cite{PhysRevLett.121.150501}. At $V/t = 2$, the system undergoes a continuous phase transition into the charged density wave (CDW) phase. At $V/t \gg 2$, the strong repulsion between particles leads to them forming an alternating pattern of particle-vacancy-particle- \dots The state in this regime becomes an equal superposition of the only two possible such configurations.
 
 Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two different colors, blue and red. This is to illustrate that a system can be partitioned into smaller subregions. In this particular example, each partition would be of size 2 lattice sites. In fact, subdividing a system into this smaller subsystems will be necessary for the main phenomenon of interest in this thesis: quantum entanglement. The bulk of this work will consist on quantifying the amount of entanglement of a system via entropy measures. Before getting to explaining entanglement, in the next section, an overview of entropy or information measures will be given.
 
 \section{Information measures}
 \label{sec:informationMeasures}
 
-	The probabilistic nature of quantum mechanics, provides an ideal test bed for entropy measures. In section \ref{sec:t-VIntro}, it was mentioned that knowing something about $A$, will give you information about its entangled pair $B$. The amount of information gained in such measurement can be quantified by the entropy of the system. Recall that, in essence, entropy is a measure directly proportional to the disorder of a system. Thus, doing a measurement on a high entropy state, will give more information than in a highly ordered state, in which the outcome of the measurement is more like to be known a priori. For this reason, these will be referred to as information of this work for the remainder of this work.
+	The probabilistic nature of quantum mechanics, provides an ideal test bed for entropy measures. In section \ref{sec:t-VIntro}, it was mentioned that knowing something about $A$, will give you information about its entangled pair $B$. The amount of information gained in such measurement can be quantified by the entropy of the system. Recall that, in essence, entropy is a measure directly proportional to the disorder of a system. Thus, doing a measurement on a high entropy state, will give more information than in a highly ordered state, in which the outcome of the measurement is more like to be known a priori. For this reason, entropy measures will be referred to as information measures for the remainder of this work.
 	
-	In this section, the information measure from which the ones that will be used to quantify entanglement will be introduced. Then, the actual measures of entanglement will be presented.
+	In this section, the information measure from which the ones that will be used to quantify entanglement stems from, will be introduced. Then, the actual measures of entanglement will be presented.
 	
 	\subsection{Shannon entropy}
 	
@@ -49,14 +49,15 @@ Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two differen
 	%
 	where the sum is carried over all entries in the data set and $p_i$ is the probability of measuring entry $i$. The base $b$ can be chosen arbitrarily depending on the context. The base will be chosen as the number $e$ such that $\log_b \to \ln$ for the remainder of this work. Up next, a common day example will be presented in order to give some intuition about how information gain can be estimated with Eq.~(\ref{eq:shannonEntropy})
 	
-	Consider a regular coin flip. Disregarding all physical effects that can somehow bias the outcome, it is expected that either heads or tails will randomly be with equal probability $1/2$. Then, since there is no bias towards any of the two possible outcomes of the coin flip, the information gain should be at a maximum. The Shannon entropy for this case is:
+	Consider a regular coin flip. Disregarding all physical effects that can somehow bias the outcome, it is expected that either heads or tails will randomly occur with equal probability $1/2$. Then, since there is no bias towards any of the two possible outcomes of the coin flip, the information gain should be at a maximum. The Shannon entropy for this case is:
 	%
 	\begin{align}
 	S &= -\frac{1}{2} \ln{\frac{1}{2}} - \frac{1}{2} \ln{\frac{1}{2}}  \nonumber\\
 	&= \ln{2}  \nonumber \\
 	S &\approx 0.6931 \nonumber \dots
 	\end{align}
-	Now, consider a coin that has been modified in such a way that it is more likely to get one outcome than the other. For the sake of this example, let's say that heads shall occur with probability $2/3$, while tails with $1/3$. Then, since it is two times more likely that heads will occur instead of tails, more certainty about the outcome is known beforehand and thus the information gained decreases. Shannon entropy gives:
+	%
+	In base 2, this would correspond to a whole bit of information gained in the coin measurement. Now, consider a coin that has been modified in such a way that it is more likely to get one outcome than the other. For the sake of this example, let's say that heads shall occur with probability $2/3$, while tails with $1/3$. Then, since it is two times more likely that heads will occur instead of tails, more certainty about the outcome is known beforehand and thus the information gained decreases. Shannon entropy gives:
 	%
 	\begin{align}
 	S &= -\frac{2}{3} \ln{\frac{2}{3}} - \frac{1}{3} \ln{\frac{1}{3}} \nonumber \\
@@ -74,7 +75,7 @@ Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two differen
 	
 	\subsection{von Neumann entropy}
 	
-	In calculating the Shannon entropy, the probabilities of random events occurring are required. In quantum mechanics, the state of a system is in general not exactly known and only the probabilities of measuring a state are known. The probabilities of finding a system in a certain state can be encoded in its density matrix. The density matrix is defined as:	
+	In calculating the Shannon entropy, the probabilities of random events occurring are required. The probabilities of finding a system in a certain state can be encoded in its density matrix. The density matrix is defined as:	
 	%
 	\begin{align}
 	\label{eq:densityMatrix}
@@ -97,7 +98,7 @@ Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two differen
 	%
 	where the sum is carried over all possible states in which subsystem $B$ can be in and $\psi_b$ denotes each of these states. Normalization implies that $\Tr \rho_A = 1$.
 	
-	The von Neumann entropy serves its purpose well, but it relies on having access to the density matrix of the system. Obtaining the density matrix is feasible in one-dimensional systems via exact diagonalization of the ground state Hamiltonian (see Appendix \ref{app:lanczos} for details on exact diagonalization via Lanczos algorithm). But for systems of higher dimensionality, exact diagonalization is out of the picture due to the exorbitant amount of memory required and quantum Monte Carlo (QMC) methods must be employed. In QMC methods, there is no access to the reduced density matrix, but the expectation value of a unitary operator that swaps the $A$ states between two identical copies of a system gives higher powers of the reduced density matrix \cite{Hastings:2010dc}. In other words, $\rho_{A}$ is not accessible but $\rho_{A}^{\alpha}$ can be obtained for $\alpha > 1$. It was also shown experimentally \cite{Islam:2015cm}  that $\rho_A^{\alpha}$ can be obtained by interference of two identical copies of ultra-cold atoms. Thus, a new formulation of the entropy must be introduced that depends on higher powers of $\rho$.
+	The von Neumann entropy serves its purpose well, but it relies on having access to the density matrix of the system. The density matrix can be obtained via exact diagonalization of the ground state Hamiltonian (see Appendix \ref{app:lanczos} for details on Lanczos diagonalization). For large systems though, exact diagonalization is out of the picture due to the exorbitant amount of memory required and quantum Monte Carlo (QMC) methods must be employed. In QMC methods, there is no access to the reduced density matrix, but the expectation value of a unitary operator that swaps the $A$ states between two identical copies of a system gives higher powers of the reduced density matrix \cite{Hastings:2010dc}. In other words, $\rho_{A}$ is not accessible but $\rho_{A}^{\alpha}$ can be obtained for $\alpha > 1$. It was also shown experimentally \cite{Islam:2015cm}  that $\rho_A^{\alpha}$ can be obtained by interference of two identical copies of ultra-cold atoms. Thus, a new formulation of the entropy must be introduced that depends on higher powers of $\rho$.
 	
 	\subsection{R\'enyi entanglement entropy}
 	
@@ -117,21 +118,21 @@ Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two differen
 \section{Quantum entanglement}
 \label{sec:quantumEntanglement}
 
-	A quantum many body system is entangled if its constituents present correlations that cannot be classically described. In other words, assuming subsystems $A$ and $B$ are entangled with one another, knowing something about $A$ automatically gives you some knowledge of $B$. 	Mathematically, a quantum many-body system is entangled if it cannot be factored into a tensor product of the state of subsystems $A$ and $B$. The condition for entanglement is then,
+	A quantum many body system is entangled if its constituents present correlations that cannot be classically described. 	Mathematically, a quantum many-body system is entangled if it cannot be factored into a tensor product of the state of subsystems $A$ and $B$. The condition for entanglement is then,
 %	
 	\begin{equation}
 	\vert\Psi\rangle \neq \vert\Psi_{A}\rangle \otimes \vert\Psi_{B}\rangle
 	\label{eq:entanglementCondition}
 	\end{equation}
 %
-	Since the average information gained about $B$ when measuring $A$ can be quantified via von Neumann and R\'enyi entanglement entropies, these can be used as indication of how entangled the two subsystems are with each other. A system is highly entangled if its state possesses a large entanglement entropy.
+	Assuming subsystems $A$ and $B$ are entangled with one another, knowing something about $A$ automatically gives you some knowledge of $B$. Since the average information gained about $B$ when measuring $A$ can be quantified via von Neumann and R\'enyi entanglement entropies, these can be used as indication of how entangled the two subsystems are with each other. A system is highly entangled if its state possesses a large entanglement entropy.
 	
 	%%%%%%%%%%%%%%%%%%%
 \begin{figure*}[h]
 \begin{center}
 \includegraphics[width=1.0\textwidth]{spatialParticle.pdf}
 \end{center}
-\caption{Schematic of a one-dimensional lattice of $L=7$ sites and $N=3$ particles under two types of bipartitions. The top lattice is bipartitioned into two spatial subregions $A$ (red) and $B$ (blue). The size of subregion is $\ell_A = 4$ sites, while $\ell_B = L - \ell_A = 3$. The bottom lattice is bipartitioned into two subsets of identical particles. Subset $A$ consists of only of $n_A=1$ particle, while $B$ consists of $n_B = N - n = 2$.}
+\caption{Schematic of a one-dimensional lattice of $L=8$ sites and $N=4$ particles under two types of bipartitions. The top lattice is bipartitioned into two spatial subregions $A$ (red) and $B$ (blue). The size of both subregions is $\ell_A = \ell_B = 4$ sites. The bottom lattice is bipartitioned into two subsets of identical particles. Subset $A$ consists of only $n_A=1$ particles, while $B$ consists of $n_B = N - n_A = 3$.}
 \label{fig:spatialParticle}
 \end{figure*}
 	%%%%%%%%%%%%%%%%%%%
@@ -148,10 +149,10 @@ Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two differen
 	\end{equation}
 	%
 	where $\vert\Psi\rangle$ is the first quantized wavefunction of a system of $N$ identical particles and it properly anti-symmetrized or symmetrized for fermions and bosons, respectively.  The entanglement of a system under a particle bipartition allows to measure non-local effects, complementing the study of spatial entanglement. 
-	In measuring spatial entanglement, a system is bipartitioned into a spatial subregion of size $\ell_{A}$ and a complementary region size $L - \ell_A \equiv \ell_B$. Under this type of partition, states are represented in second quantization. In other words, a state $\vert\Psi\rangle = \vert n_1 \rangle \otimes \vert n_2 \rangle \dots \otimes \vert n_N \rangle$ is characterized by the set of occupation numbers on each site. Figure \ref{fig:spatialParticle} illustrates schematically a $1D$ lattice of size $L = 7$ and $N = 3$ under a spatial and then a particle bipartition.
+	In measuring spatial entanglement, a system is bipartitioned into a spatial subregion of size $\ell_{A}$ and a complementary region size $L - \ell_A \equiv \ell_B$. Under this type of partition, states are represented in second quantization. In other words, a state $\vert\Psi\rangle = \vert n_1 \rangle \otimes \vert n_2 \rangle \dots \otimes \vert n_N \rangle$ is characterized by the set of occupation numbers on each site. In the case of fermions, 0 and 1 correspond to a vacant and occupied site, respectively.  Figure \ref{fig:spatialParticle} illustrates schematically a $1D$ lattice of size $L = 8$ and $N = 4$ under a spatial and then a particle bipartition.
 	
 	\subsection{Accessible Entanglement}
-	Whether it's under a particle or spatial bipartition, the goal is to use the entanglement present in a system as a resource. The von Neumann and R\'enyi entropies give a good mathematical understanding of the entanglement of a system. Nevertheless, for physical applications, conservation laws, such as total particle number and spin must be considered. In Ref.~\cite{Wiseman:2003jx}, a new formulation for the entanglement was proposed that takes such conservation laws, or super selection rules (SSR) into account. 
+	Whether it's under a particle or spatial bipartition, the goal is to use the entanglement present in a system as a resource. The von Neumann and R\'enyi entropies provide mathematical quantification of the entanglement of a system. Nevertheless, for physical applications, conservation laws, such as total particle number and spin must be considered. In Ref.~\cite{Wiseman:2003jx}, a new formulation for the entanglement was proposed that takes such conservation laws, or superselection rules (SSR) into account. 
 	
 	For a quantum many-body system subject to physical laws conserving some quantity (particle number, charge, spin, etc.), the set of local operations on the state $\ket{\Psi}$ are limited to those that don't violate the corresponding global superselection rule.  For simplicity, attention will be focused to the case of fixed total particles $N$ and thus we are restricted to only those operators which locally preserve the particle number in $A$.  The effect this has on the amount of entanglement that can be transferred to a qubit register is apparent from the simple example (adapted from Ref.~\cite{Wiseman:2003jx} of one particle confined to two spatial modes $A$ and $B$ corresponding to site occupations.  Then, for the state $\ket{\Psi} = \left(\ket{1}_A \otimes \ket{0}_{B} + \ket{0}_A \otimes \ket{1}_{B} \right)/\sqrt{2}$, Eq.~\eqref{eq:vonNeumannEntropy} gives that $S_1 = \ln 2$. However, this entanglement cannot be transferred to a register prepared in initial state $\ket{0}_R$ via a $\texttt{SWAP}$ gate:
 \begin{align*}
