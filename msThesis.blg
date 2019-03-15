@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: msThesis.aux
+The style file: nsf_new_url.bst
+Database file #1: references.bib
+Warning--I didn't find a database entry for "PhysRevA.78.042326"
+Warning--empty journal in Klich:2008se
+Warning--empty journal in Linke:2017tf
+Warning--empty journal in Lukin:2018wg
+You've used 63 entries,
+            2447 wiz_defined-function locations,
+            1424 strings with 19756 characters,
+and the built_in function-call counts, 21832 in all, are:
+= -- 1415
+> -- 633
+< -- 1
++ -- 237
+- -- 174
+* -- 1396
+:= -- 2576
+add.period$ -- 242
+call.type$ -- 63
+change.case$ -- 62
+chr.to.int$ -- 0
+cite$ -- 129
+duplicate$ -- 2125
+empty$ -- 2089
+format.name$ -- 222
+if$ -- 4848
+int.to.chr$ -- 0
+int.to.str$ -- 63
+missing$ -- 606
+newline$ -- 395
+num.names$ -- 61
+pop$ -- 710
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 565
+stack$ -- 0
+substring$ -- 910
+swap$ -- 1367
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 3
+while$ -- 116
+width$ -- 65
+write$ -- 757
+(There were 4 warnings)
