@@ -1,0 +1,52 @@
+\section{Site to momentum basis mapping of kinetic operator}
+\label{appendix:kineticMapping}
+
+The kinetic energy operator of the fermionic $t-V$ Model is:
+
+\[\hat{T} = -t \sum_{i} c_{i}^{\dagger} c_{i+1} + h.c\]
+
+where $t$ is the hopping amplitude, $c_{i}$ ($c_{i}^{\dagger}$) is the fermionic annihilation (creation) operator on site $i$, $h.c$ stands for "Hermitian Conjugate" and the sum is carried over all lattice sites. This operator describes a fermion hopping between neighboring sites. Nevertheless, it may not be obvious in a physical sense how this expression 'counts' the contribution to the kinetic energy in the model. Here it will be shown that:
+
+\[-t \sum_{i} c_{i}^{\dagger} c_{i+1} + h.c = \sum_{k} \epsilon(k) n_{k} \]
+
+where $\epsilon(k)$ is the dispersion relation of a fermion with momentum $p_{k} = \hbar k$ and $n_{k}$ counts how many fermions have wavenumber $k$. Hopefully, the expression on the right makes conceptually clearer how the kinetic energy operator is actually counting the total kinetic energy of a state. To move from real space to $k-space$, the discrete version of the Fourier Transform will be applied to the fermionic creation and annihilation operators. 
+
+Consider a lattice with $L$ total sites. The Discrete Fourier Transform (DFT) is defined as:
+
+\[ f_{j} = \frac{1}{\sqrt{L}} \sum_{k} f_{k} e^{ikj} \]
+
+The index $j$ has been chosen to represent the lattice sites in order to avoid confusion with the imaginary unit, $i$.
+
+Thus, applying the DFT to the creation and annihilation operators:
+
+\[ c_{j}^{\dagger} = \frac{1}{\sqrt{L}} \sum_{k} e^{-ikj} c_{k}^{\dagger} \] 
+\[c_{j} = \frac{1}{\sqrt{L}} \sum_{k} e^{ikj} c_{k}\]
+
+Now, consider the first term of the kinetic operator (without the $-t$, for now) and substitute these 'transformed' operators:
+
+\[ \begin{aligned}
+\sum_{j} c_{j}^{\dagger} c_{j+1} &= \sum_{j} [\frac{1}{\sqrt{L}} \sum_{k} e^{-ikj} c_{k}^{\dagger} \frac{1}{\sqrt{L}} \sum_{k'} e^{ik'(j+1)} c_{k'} ] \\
+&= \frac{1}{L} \sum_{j} [\sum_{k} \sum_{k'}  c_{k}^{\dagger} c_{k'} e^{i(k'-k)j} e^{ik'}] \\
+&= \sum_{k} \sum_{k'}  c_{k}^{\dagger} c_{k'} e^{ik'} \underbrace{\frac{1}{L} \sum_{j} e^{i(k'-k)j}}_{\stackrel{def}{=} \delta_{kk'}} \\
+&= \sum_{k} \sum_{k'}  c_{k}^{\dagger} c_{k'} e^{ik'} \delta_{kk'} ; \text{ only the k'=k term 'survives'} \\
+\sum_{j} c_{j}^{\dagger} c_{j+1} &= \sum_{k} c_{k}^{\dagger} c_{k} e^{ik} \\
+\end{aligned} \]
+
+The Hermitian Conjugate of this gives the second term in the operator. It is obtained almost for free from the above result:
+
+\[ \sum_{j} c_{j+1}^{\dagger} c_{j} = \sum_{k} c_{k}^{\dagger} c_{k} e^{-ik} \]
+
+Adding the last two lines and multiplying by (minus) the hopping amplitude $t$:
+
+\[ \begin {aligned}
+-t \sum_{j} [ c_{j}^{\dagger} c_{j+1} + c_{j+1}^{\dagger} c_{j} ] &= -t \sum_{k} [c_{k}^{\dagger} c_{k} e^{ik} + c_{k}^{\dagger} c_{k} e^{-ik}] \\
+&= -t \sum_{k} [c_{k}^{\dagger} c_{k} (e^{ik} + e^{-ik})] \\
+&= -t \sum_{k} [c_{k}^{\dagger} c_{k} (2\cos(k))] \\
+&= \sum_{k} [\underbrace{c_{k}^{\dagger} c_{k}}_{n_{k}} \underbrace{(-2t\cos(k))}_{\epsilon(k)}] \\
+\end {aligned} \]
+
+Therefore:
+
+\[ \hat{T} = -t \sum_{j} [ c_{j}^{\dagger} c_{j+1} + c_{j+1}^{\dagger} c_{j} ]  = \sum_{k} \epsilon(k) n_{k} \] Q.E.D
+
+On a side note, the dispersion relation for fermions on a one dimensional lattice with lattice constant $a$ is: $\epsilon(k) = -2t\cos(ka)$, which was retrieved here for $a=1$.
