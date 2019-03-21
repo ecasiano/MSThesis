@@ -7,7 +7,7 @@ In this chapter, the accessible entanglement entropy is presented. In the first 
 \subsection{The \ren Entanglement Entropy}
 \label{sec:accEntanglementIntro}
 
-The amount of entanglement that exists between some partition $A$ and its compliment $B$ of a quantum many-body system in pure state $\ket{\Psi}$ can be quantified via the R\'{e}nyi entanglement entropy which depends on an index $\alpha$ :
+The amount of entanglement that exists between some partition $A$ and its compliment $B$ of a quantum many-body system in pure state $\ket{\Psi}$ can be quantified via the R\'{e}nyi entanglement entropy which depends on an index $\alpha$:
 %
 \begin{equation}
 S_{\alpha} (\rho_A) = \frac{1}{1-\alpha}\ln \Tr\, \rho_A^{\alpha}
@@ -35,7 +35,19 @@ For a quantum many-body system subject to physical laws conserving some quantity
     % &= \frac{1}{\sqrt{2}}\ket{0}_R \otimes \ket{0}_A \otimes
     %     \ket{1}_{B}
 \end{align*}
-The last term is not physically allowed due to the restriction that the number of particles in the system is fixed to be 1. The post-swap result remains in a product state and the amount of transferable entanglement is identically zero.
+The last term is not physically allowed due to the restriction that the number of particles in the system is fixed to be 1. The post-swap result remains in a product state and the amount of transferable entanglement is identically zero. The $\texttt{SWAP}$ gate in the example above takes the register modes and exchanges them with the modes in subsystem $A$ of the resource:
+%
+\begin{equation}
+\texttt{SWAP} \ket{\phi}_R \otimes \ket{\psi}_A = \ket{\psi}_R \otimes \ket{\phi}_A
+\end{equation}
+%
+The $\texttt{SWAP}$ can be defined such that it exchanges resource modes with modes in $B$ instead. Formally, this gate is a product of three controlled-not ($\texttt{CNOT}$) gates:
+%
+\begin{equation}
+\texttt{SWAP} \ket{\phi}_R \otimes \ket{\psi}_A = \texttt{CNOT}_{R,A} \texttt{CNOT}_{A,R} \texttt{CNOT}_{R,A} \ket{\phi}_R \otimes \ket{\psi}_A
+\end{equation}
+%
+where the subscript left to the comma denotes the control mode and the one to the right of the comma, the target. The $\texttt{CNOT}$ acts on qubit modes. That is, each of the modes will be either one of two values, call them 1 and 0. If the control qubit is equal to 1, then the value of the target is 'flipped' to the other possible value. If the control qubit is 0, the target is left unchanged.
 
 \subsection{von Neumann Accessible Entanglement: $\alpha = 1$}
 % ---------------------------------------------------------------------------
@@ -179,7 +191,7 @@ H = -t \sum_{i} \left ( c_{i}^{\dag} c_{i+1} + c_{i+1}^{\dag} c_{i} \right )+ V 
 %
 where $c^{\dag}_i(c_{i})$ creates(annihilates) a fermion on site $i$, $n_i$ counts the number of fermions on site $i$ and $t,V$ are tunable parameters that characterize the tunneling or hopping rate and the interaction strength, respectively. The first sum is carried over all pairs of neighboring lattice sites. It is customary to make $\mathcal{H}$ dimensionless by dividing $t$ throughout and thus having the interaction strength $V/t$ be the only tunable parameter.
 
-There are three phases that occur in the $t-V$ Model. The Phase Separated Solid (PSS) occurs at $V/t \ll -2$. Here, the attractive interaction leads to fermions clustering into large groups of particles that occupy adjacent lattice sites. On the contrary, at $V/t \gg 2$, the repulsive interaction leads to fermions trying to get as far as possible from each other, forming an alternating pattern on fermion-vacancy-fermion-vacancy $\dots$ This phase is known as a Charged Density Wave (CDW). The remaining phase in this model is the Tomonaga Luttinger-Liquid (TLL), which occurs for $-2 < V/t < 2$. Here, the fermions could be in any possible configuration but the probability amplitudes for each of these will depend on the value of the interaction strength. The PSS-TLL transition is a first order transition while the TLL-CDW transition is continuous.
+There are three phases that occur in the $t-V$ Model. The Phase Separated Solid (PSS) occurs at $V/t \ll -2$. Here, the attractive interaction leads to fermions clustering into large groups of particles that occupy adjacent lattice sites. On the contrary, at $V/t \gg 2$, the repulsive interaction leads to fermions trying to get as far as possible from each other, forming an alternating pattern of fermion-vacancy-fermion-vacancy and so on and so forth. This phase is known as a Charged Density Wave (CDW). The remaining phase in this model is the Tomonaga Luttinger-Liquid (TLL), which occurs for $-2 < V/t < 2$. Here, the fermions could be in any possible configuration but the probability amplitudes for each of these will depend on the value of the interaction strength. The PSS-TLL transition is a first order transition while the TLL-CDW transition is continuous.
 
 In this section, analytical values for the operationally accessible von Neumann entropy, $S_{1}^{\rm acc}(\rho_A)$, will be derived in all phases of the $t-V$ Model and also at the first order phase transition. Then, the results for the R\'enyi accessible entanglement entropies, $S_{\alpha}^{\rm acc}(\rho_A)$, will be shown. Derivations will not be done in detail for $S_{\alpha}^{\rm acc}(\rho_A)$ since the calculation steps are essentially identical to those of $S_{1}^{\rm acc}(\rho_A)$.
 
@@ -668,7 +680,7 @@ S_\alpha^{acc}(x,L) = \frac{2(x-1)}{L} \ln{2} ; \text{ where } x = \min{\ell_A, 
 %
 	\subsection{First order phase transition}
 	
-At $V/t = -2$, the $t-V$ model undergoes a first order phase transition from Luttinger Liquid to Phase Separated Solid. The accessible entanglement at this interaction strength vanishes and then suddenly increases and converges to the previously derived limit ($\frac{N-1}{N}\ln{2}$) as the attraction gets stronger. In this section, it will be shown that the accessible entanglement vanishes at the first order phase transition.
+At $V/t = -2$, the $t-V$ model undergoes a first order phase transition from Luttinger liquid to Phase Separated Solid. The accessible entanglement at this interaction strength vanishes and then suddenly increases and converges to the previously derived limit ($\frac{N-1}{N}\ln{2}$) as the attraction gets stronger. In this section, it will be shown that the accessible entanglement vanishes at the first order phase transition.
 
 At $\frac{V}{t}=-2$, the state of the system is an equiprobable superposition of all possible configurations (Appendix~\ref{appendix:flatState}). Working out the calculation of $S_1^{\rm acc}(\rho_A)$ in matrix form, as it was done for $V/t\to\pm\infty$, turns out to be relatively complicated for this ground state. Nevertheless, reformulating the state in terms of its Schmidt decomposition gives the result almost for free. The Schmidt decomposition of the ground state at the first order phase transition is:
 %
@@ -795,7 +807,7 @@ Figure \ref{fig:OEE} shows the accessible R\'enyi entanglement entropy values at
 
 Recall that the accessible entanglement should be a monotonically decreasing function of $\alpha$. Figure $\ref{fig:OEE}$ supports this inverse relation since it is seen that $S_{1} \geq S_{2}$ $\forall$ $V/t \in \left( -100,100 \right)$.
 
-Another interesting feature is the peak seen near the continuous phase transition $V/t=2$. Results seem to indicate that the peak is slightly shifting to the left, closer to $V/t=2$ as the number of particles $N$ increases. In an effort to find how the location of this peak scales with particle number, $V/t\vert_{Max}$ was obtained for various system sizes, where $V/t\vert_{Max}$ is the interaction strength at which the accessible entanglement peak occurs. Figure \ref{fig:peakScalingOddN} shows a plot of $V/t\vert_{Max}$ vs $N^{-0.2545}$. The exponent comes from a linear fitting of $\left( V/t\vert_{Max} - 2 \right)$ vs $N$ data. The observed inverse power law scaling is promising as all points fall on a line with $y$ intercept of $V/t\vert_{Max} = 2$, which is the exact value of the continuous phase transition in the asymptotic limit of $N \to \infty$ total particles. Nevertheless, most of the system sizes in the data fall roughly in the same order of magnitude. The exact value of the phase transition $V/t = 2$ is obtained in the thermodynamic limit of $N\to\infty$ particles. Thus, to confirm the veracity of a power-law scaling of the peak of entanglement, more data points will be needed. Deviations from the line are noticeable in the largest three points presented. This suggests that there might be sub-leading terms that will hopefully become negligible for large system sizes. Currently, data for larger system sizes is being generated via Density Matrix Renormalization Group (DMRG) that will allow for the simulation of $N\approx100$ fermions.
+Another interesting feature is the peak seen near the continuous phase transition $V/t=2$. Results seem to indicate that the peak is slightly shifting to the left, closer to $V/t=2$ as the number of particles $N$ increases. In an effort to find how the location of this peak scales with particle number, $V/t\vert_{Max}$ was obtained for various system sizes, where $V/t\vert_{Max}$ is the interaction strength at which the accessible entanglement peak occurs. Figure \ref{fig:peakScalingOddN} shows a plot of $V/t\vert_{Max}$ vs $N^{-0.2545}$. The exponent comes from a linear fitting of $\left( V/t\vert_{Max} - 2 \right)$ vs $N$ data. The observed inverse power law scaling is promising as all points fall on a line with $y$ intercept of $V/t\vert_{Max} = 2$, which is the exact value of the continuous phase transition in the asymptotic limit of $N \to \infty$ total particles. Nevertheless, most of the system sizes in the data fall roughly in the same order of magnitude. The exact value of the phase transition $V/t = 2$ is obtained in the thermodynamic limit of $N\to\infty$ particles. Thus, to confirm the veracity of a power-law scaling of the peak of entanglement, more data points will be needed. Deviations from the line are noticeable in the largest three points presented. This suggests that there might be sub-leading terms that will hopefully become negligible for large system sizes. Currently, data for larger system sizes is being generated via Density Matrix Renormalization Group (DMRG) that will allow for the simulation of $N\approx100$ fermions \cite{SCHOLLWOCK201196} .
 
 %%%%%%%%%%
 \begin{figure}[h!]

@@ -1,21 +1,27 @@
 \section{The $t-V$ Model}
 \label{sec:t-VIntro}
 
-test Eq.~(\ref{eq:t-VHamiltonian})
-test Eq.~\eqref{eq:t-VHamiltonian}
-
 So called "toy models" are ubiquitous in condensed matter physics. These describe a complex system in simple terms so that attention can be given to an underlying mechanism of such system. The Ising model, in it simplest form, can describe how a system spontaneously becomes a ferromagnet by considering interactions between quantum spins and tuning an external temperature. Similarly, the Hubbard model considers the interaction strength of electrons on a lattice and a hopping rate to describe the transition between conductor and insulator. The fact that the two aforementioned examples mention phase transitions is not mere coincidence. 
 
-Near a phase transition, evidence seems to point out to the fact that the behavior of a system is determine by a small set of parameters, a phenomenon known as universality. Different systems having the same value for such universality parameters are said to fall under the same universality class. 
+Near a phase transition, small set of parameters governs macroscopical physical behavior, a phenomenon known as universality. Different systems having the same value for such universality parameters are said to fall under the same universality class. 
 
-The studies that will be presented in this thesis shall be concerned with a specific model, which shall be referred to as the $t-V$ model. This model, is equivalent to the $XXZ$ spin model and describes $N$ itinerant spinless fermions on a 1D lattice of size $L$. These fermions can tunnel to neighboring sites and the rate at which they do so is proportional to a hopping parameter $t$. An interaction potential, $V$, between the fermions is also considered, which could be repulsive ($V > 0$) or attractive ($V < 0$). Periodic and anti-periodic boundary conditions will be assumed for the case of odd and even particles, respectively. Mathematically, this is represented by the following Hamiltonian:
+The studies that will be presented in this thesis are concerned with a specific model, which shall be referred to as the $t-V$ model. This model, is equivalent to the $XXZ$ spin model and describes $N$ itinerant spinless fermions on a 1D lattice of size $L$. These fermions can tunnel to neighboring sites and the rate at which they do so is proportional to a hopping parameter $t$. An interaction potential, $V$, between the fermions is also considered, which could be repulsive ($V > 0$) or attractive ($V < 0$). Periodic and anti-periodic boundary conditions will be assumed for the case of odd and even particles, respectively. Mathematically, this is represented by the following Hamiltonian:
 %
 \begin{equation}
 H = -t \sum_{i} \left ( c_{i}^{\dag} c_{i+1} + c_{i+1}^{\dag} c_{i} \right )+ V \sum_{i} n_i n_{i+1}   
 \label{eq:t-VHamiltonian}
 \end{equation}
 %
-where $c_{i}^{\dag}$ ($c_{i}$) creates (annihilates) a fermion on site $i$ and $n_{i}$ counts the number of fermions on site $i$. In the case that there exists a fermion on the site in which the creation operator acts, then $c^{\dag} \ket{1} = \ket{0}$ in order to satisfy Pauli's Exclusion principle. The interaction term can then be understood conceptually as adding to the potential energy of the system if there are multiple particles in neighboring sites. Conceptually, the first term may be more difficult to understand in its current representation, due to this operator being non-diagonal. Nevertheless, expressing it in the momentum basis, where it is diagonal, will illustrate that how contributions to the kinetic energy will come from all particles with nonzero momentum (which will be all of them unless $t=0$). A detailed mapping of the kinetic energy operator from lattice site to momentum basis can be seen in Appendix \ref{appendix:kineticMapping}.
+where $c_{i}^{\dag}$ ($c_{i}$) creates (annihilates) a fermion on site $i$ and $n_{i}$ counts the number of fermions on site $i$. Formally, these creation and annihilation operators are defined such that the following anticommutation relations are satisfied:
+%
+\begin{equation}
+\label{eq:commutationRelations}
+\left \{ c_i^{\dag} , c_j^{\dag} \right \} = 0 \text{  }, \text{  }
+\left \{ c_i , c_j\right \} = 0 \text {  } , \text{  }
+\left \{ c_i , c_j^{\dag} \right \}  = \delta_{ij},
+\end{equation}
+%
+where $\delta_{ij}$ is the Kronecker-Delta function. In the case that there exists a fermion on the site in which the creation operator acts, then $c^{\dag} \ket{1} = \ket{0}$ in order to satisfy Pauli's Exclusion principle. The interaction term can then be understood conceptually as adding to the potential energy of the system if there are multiple particles in neighboring sites. Conceptually, the first term may be more difficult to understand in its current representation, due to this operator being non-diagonal. Nevertheless, expressing it in the momentum basis, where it is diagonal, illustrates that how contributions to the kinetic energy come from all particles with nonzero momentum (which will be all of them unless $t=0$). A detailed mapping of the kinetic energy operator from lattice site to momentum basis can be seen in Appendix \ref{appendix:kineticMapping}.
 
 %%%%%%%%%%%%%%%%%%%
 \begin{figure*}[h]
@@ -27,16 +33,16 @@ where $c_{i}^{\dag}$ ($c_{i}$) creates (annihilates) a fermion on site $i$ and $
 \end{figure*}
 %%%%%%%%%%%%%%%%%
 
-Figure \ref{fig:phaseDiagram} shows the phase diagram of the $t-V$ model. For $V/t \ll -2$, the fermions cluster together due to the strong attractive interaction. The state in this regime is an equal superposition of all possible such cluster configurations over all lattice sites. At $V/t = -2$, the system undergoes a second order phase transition into the Tomonaga-Luttinger Liquid (TLL) phase. Here, the state is in a superposition of all possible configurations of the fermions on the lattice. The weights for these configurations are in general different and can only be exactly known at $V/t = 0$ \cite{Barghathi:2018oe}. At $V/t = 2$, the system undergoes a continuous phase transition into the charged density wave (CDW) phase. At $V/t \gg 2$, the strong repulsion between particles leads to them forming an alternating pattern of particle-vacancy-particle- \dots The state in this regime becomes an equal superposition of the only two possible such configurations.
+Figure \ref{fig:phaseDiagram} shows the phase diagram of the $t-V$ model. For $V/t \ll -2$, the fermions cluster together due to the strong attractive interaction. The state in this regime is an equal superposition of all possible such cluster configurations over all lattice sites. At $V/t = -2$, the system undergoes a second order phase transition into the Tomonaga-Luttinger Liquid (TLL) phase. Here, the state is in a superposition of all possible configurations of the fermions on the lattice, with the weights of each being different, in general. At $V/t = 2$, the system undergoes a continuous phase transition into the charged density wave (CDW) phase. At $V/t \gg 2$, the strong repulsion between particles leads to them forming an alternating pattern of particle-vacancy-particle- \dots The state in this regime becomes an equal superposition of the only two possible such configurations.
 
-Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two different colors, blue and red. This is to illustrate that a system can be partitioned into smaller subregions. In this particular example, each partition would be of size 2 lattice sites. In fact, subdividing a system into this smaller subsystems will be necessary for the main phenomenon of interest in this thesis: quantum entanglement. The bulk of this work will consist on quantifying the amount of entanglement of a system via entropy measures. Before getting to explaining entanglement, in the next section, an overview of entropy or information measures will be given.
+Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two different colors, blue and red. This is to illustrate that a system can be partitioned into smaller subregions. In this particular example, each partition would be of size 2 lattice sites. In fact, subdividing a system into this smaller subsystems will be necessary for the main phenomenon of interest in this thesis: quantum entanglement. The bulk of this work will consist of quantifying the amount of entanglement of a system via entropy measures. Before getting to explaining entanglement, in the next section, an overview of entropy or information measures will be given.
 
 \section{Information measures}
 \label{sec:informationMeasures}
 
-	The probabilistic nature of quantum mechanics, provides an ideal test bed for entropy measures. In section \ref{sec:t-VIntro}, it was mentioned that knowing something about $A$, will give you information about its entangled pair $B$. The amount of information gained in such measurement can be quantified by the entropy of the system. Recall that, in essence, entropy is a measure directly proportional to the disorder of a system. Thus, doing a measurement on a high entropy state, will give more information than in a highly ordered state, in which the outcome of the measurement is more like to be known a priori. For this reason, entropy measures will be referred to as information measures for the remainder of this work.
+	The probabilistic nature of quantum mechanics, provides an ideal test bed for entropy measures. In section \ref{sec:t-VIntro}, it was mentioned that knowing something about $A$, will give you information about its entangled pair $B$. The amount of information gained in such measurement can be quantified by the entropy of a subsystem. Recall that, in essence, entropy is related to the disorder of a system. Thus, doing a measurement on a high entropy state, will give more information than in a highly ordered state, in which the outcome of the measurement is more like to be known a priori. For this reason, entropy measures will be referred to as information measures for the remainder of this work.
 	
-	In this section, the information measure from which the ones that will be used to quantify entanglement stems from, will be introduced. Then, the actual measures of entanglement will be presented.
+	In the next section, the information measure used to quantify entanglement, will be introduced. Then, the actual measures of entanglement will be presented.
 	
 	\subsection{Shannon entropy}
 	
@@ -98,7 +104,7 @@ Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two differen
 	%
 	where the sum is carried over all possible states in which subsystem $B$ can be in and $\psi_b$ denotes each of these states. Normalization implies that $\Tr \rho_A = 1$.
 	
-	The von Neumann entropy serves its purpose well, but it relies on having access to the density matrix of the system. The density matrix can be obtained via exact diagonalization of the ground state Hamiltonian (see Appendix \ref{app:lanczos} for details on Lanczos diagonalization). For large systems though, exact diagonalization is out of the picture due to the exorbitant amount of memory required and quantum Monte Carlo (QMC) methods must be employed. In QMC methods, there is no access to the reduced density matrix, but the expectation value of a unitary operator that swaps the $A$ states between two identical copies of a system gives higher powers of the reduced density matrix \cite{Hastings:2010dc}. In other words, $\rho_{A}$ is not accessible but $\rho_{A}^{\alpha}$ can be obtained for $\alpha > 1$. It was also shown experimentally \cite{Islam:2015cm}  that $\rho_A^{\alpha}$ can be obtained by interference of two identical copies of ultra-cold atoms. Thus, a new formulation of the entropy must be introduced that depends on higher powers of $\rho$.
+	The von Neumann requires access to the density matrix of the system. The density matrix can be obtained via exact diagonalization of the ground state Hamiltonian (see Appendix \ref{app:lanczos} for details on Lanczos diagonalization). For large systems though, exact diagonalization is not feasible due to the exorbitant amount of memory required and quantum Monte Carlo (QMC) methods must be employed. In QMC methods, there is no access to the reduced density matrix, but the expectation value of a unitary operator that swaps the $A$ states between two identical copies of a system gives higher powers of the reduced density matrix \cite{Hastings:2010dc}. In other words, $\rho_{A}$ is not accessible but $\rho_{A}^{\alpha}$ can be obtained for $\alpha > 1$. It was also shown experimentally \cite{Islam:2015cm}  that $\rho_A^{\alpha}$ can be obtained by interference of two identical copies of ultra-cold atoms. Thus, a new formulation of the entropy must be introduced that depends on higher powers of $\rho$.
 	
 	\subsection{R\'enyi entanglement entropy}
 	
@@ -164,7 +170,13 @@ Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two differen
     % &= \frac{1}{\sqrt{2}}\ket{0}_R \otimes \ket{0}_A \otimes
     %     \ket{1}_{B}
 \end{align*}
-Notice that the first term post $\texttt{SWAP}$ preserves particle number in the resource, since there is a total of 1 particle in $A$ and $B$. But, last term is not physically allowed since it has no particles at all in $A$ and $B$, thus violating the restriction that total particle number be fixed. The state of the register post-swap will remain in a product state, meaning that the amount of entanglement that can be accessed as a resource is identically zero. In general, it will be seen that the amount of accessible entanglement will be less or equal than the full entanglement of the system.
+The $\texttt{SWAP}$ gate in the example above takes the register modes and exchanges them with the modes in subsystem $A$ of the resource:
+%
+\begin{equation}
+\texttt{SWAP} \ket{\phi}_R \otimes \ket{\psi}_A = \ket{\psi}_R \otimes \ket{\phi}_A
+\end{equation}
+%
+The $\texttt{SWAP}$ can be defined such that it exchanges resource modes with modes in $B$ instead. Notice that the first term post $\texttt{SWAP}$ in the example preserves particle number in the resource, since there is a total of 1 particle in $A$ and $B$. But, the last term is not physically allowed since it has no particles at all in $A$ and $B$, thus violating the restriction that total particle number be fixed. The state of the register post-swap will remain in a product state, meaning that the amount of entanglement that can be accessed as a resource is identically zero. In general, it will be seen that the amount of accessible entanglement will be less or equal than the full entanglement of the system.
 
 Formally, the accessible entanglement is defined as:
 %

@@ -9,14 +9,6 @@
   \begin{quotation}\noindent\textsc{Key:} #1\\
   \textsc{Annotation:}\ #2\end{quotation}}
 
-\bibitem{Barghathi:2018oe}
-H.~Barghathi, C.~M. Herdman, and A.~Del~Maestro.
-\newblock \enquote{{R}\'enyi {G}eneralization of the {A}ccessible
-  {E}ntanglement {E}ntropy.}
-\newblock Phys. Rev. Lett. \textbf{121} (2018).
-\bibAnnoteFile{Barghathi:2018oe}
-\newline\urlprefix\url{http://dx.doi.org/10.1103/PhysRevLett.121.150501}
-
 \bibitem{Hastings:2010dc}
 M.~B. Hastings, I.~Gonz{\'a}lez, A.~B. Kallin, and R.~G. Melko.
 \newblock \enquote{{Measuring Renyi Entanglement Entropy in Quantum Monte~Carlo
@@ -37,6 +29,14 @@ H.~M. Wiseman and J.~A. Vaccaro.
   Two Parties}.}
 \newblock Phys. Rev. Lett. \textbf{91}, 097902 (2003).
 \bibAnnoteFile{Wiseman:2003jx}
+
+\bibitem{Barghathi:2018oe}
+H.~Barghathi, C.~M. Herdman, and A.~Del~Maestro.
+\newblock \enquote{{R}\'enyi {G}eneralization of the {A}ccessible
+  {E}ntanglement {E}ntropy.}
+\newblock Phys. Rev. Lett. \textbf{121} (2018).
+\bibAnnoteFile{Barghathi:2018oe}
+\newline\urlprefix\url{http://dx.doi.org/10.1103/PhysRevLett.121.150501}
 
 \bibitem{Zanardi:2001ec}
 P.~Zanardi.
@@ -432,9 +432,31 @@ S.~Fehr and S.~Berens.
 \newblock IEEE T. Inform. Theory \textbf{60}, 6801 (2014).
 \bibAnnoteFile{FehrBerens2014}
 
+\bibitem{SCHOLLWOCK201196}
+U.~Schollw{\"o}ck.
+\newblock \enquote{The density-matrix renormalization group in the age of
+  matrix product states.}
+\newblock Annals of Physics \textbf{326}, 96  (2011).
+\newblock January 2011 Special Issue.
+\bibAnnoteFile{SCHOLLWOCK201196}
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0003491610001752}
+
+\bibitem{itensor}
+ (2018).
+\newblock {Calculations performed using the ITensor C++ library (version
+  2.1.1), http://itensor.org/.}
+\bibAnnoteFile{itensor}
+
 \bibitem{IBM:QM}
 {IBM, 2019, IBM QuantumExperience,
   \url{https://quantumexperience.ng.bluemix.net/qx}}.
 \bibAnnoteFile{IBM:QM}
+
+\bibitem{Herdman:2016ep}
+C.~M. Herdman, P.~N. Roy, R.~G. Melko, and A.~Del~Maestro.
+\newblock \enquote{{Spatial entanglement entropy in the ground state of the
+  Lieb-Liniger model}.}
+\newblock Phys. Rev. B \textbf{94}, 064524 (2016).
+\bibAnnoteFile{Herdman:2016ep}
 
 \end{thebibliography}
