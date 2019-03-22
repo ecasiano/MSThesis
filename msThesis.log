@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  21 MAR 2019 14:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  22 MAR 2019 00:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2166,7 +2166,7 @@ l.10 \begin{equation}
                       [1
 
 ]
-<Images/phaseDiagramtV.pdf, id=377, 663.95827pt x 161.28148pt>
+<Images/phaseDiagramtV.pdf, id=362, 663.95827pt x 161.28148pt>
 File: Images/phaseDiagramtV.pdf Graphic file (type pdf)
 
 <use Images/phaseDiagramtV.pdf>
@@ -2182,7 +2182,7 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2] [3 <./Images/phaseDiagramtV.pdf>] [4] [5] [6] [7]
-<Images/spatialParticle.pdf, id=435, 669.60031pt x 206.9177pt>
+<Images/spatialParticle.pdf, id=420, 669.60031pt x 206.9177pt>
 File: Images/spatialParticle.pdf Graphic file (type pdf)
 
 <use Images/spatialParticle.pdf>
@@ -2212,7 +2212,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (./Chapters/chapter02.tex [13
 
 ] [14] [15]
-<Chapters/particle_entanglement_boundary_conditions.pdf, id=542, 332.44202pt x 
+<Chapters/particle_entanglement_boundary_conditions.pdf, id=527, 332.44202pt x 
 67.94424pt>
 File: Chapters/particle_entanglement_boundary_conditions.pdf Graphic file (type
  pdf)
@@ -2239,7 +2239,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Warning: Reference `appendixA' on page 23 undefined on input line 437.
 
-<Chapters/EntropiesFigure.pdf, id=668, 307.01836pt x 374.59816pt>
+<Chapters/EntropiesFigure.pdf, id=653, 307.01836pt x 374.59816pt>
 File: Chapters/EntropiesFigure.pdf Graphic file (type pdf)
 
 <use Chapters/EntropiesFigure.pdf>
@@ -2250,7 +2250,7 @@ Package pdftex.def Info: Chapters/EntropiesFigure.pdf used on input line 444.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [23]
-<Chapters/Scaling_of_PPE_In_TLL_phase.pdf, id=687, 302.51619pt x 198.18497pt>
+<Chapters/Scaling_of_PPE_In_TLL_phase.pdf, id=672, 302.51619pt x 198.18497pt>
 File: Chapters/Scaling_of_PPE_In_TLL_phase.pdf Graphic file (type pdf)
 
 <use Chapters/Scaling_of_PPE_In_TLL_phase.pdf>
@@ -2258,7 +2258,7 @@ Package pdftex.def Info: Chapters/Scaling_of_PPE_In_TLL_phase.pdf used on input
  line 502.
 (pdftex.def)             Requested size: 281.66338pt x 184.53085pt.
  [24 <./Chapters/EntropiesFigure.pdf>]
-<Chapters/PPE_interaction_dependence.pdf, id=767, 316.40514pt x 202.62941pt>
+<Chapters/PPE_interaction_dependence.pdf, id=751, 316.40514pt x 202.62941pt>
 File: Chapters/PPE_interaction_dependence.pdf Graphic file (type pdf)
 
 <use Chapters/PPE_interaction_dependence.pdf>
@@ -2273,14 +2273,14 @@ Overfull \hbox (7.16629pt too wide) in paragraph at lines 515--563
 
 [25 <./Chapters/Scaling_of_PPE_In_TLL_phase.pdf>] [26 <./Chapters/PPE_interacti
 on_dependence.pdf>]
-<Chapters/SvsN_choose_N.pdf, id=855, 302.08884pt x 212.64037pt>
+<Chapters/SvsN_choose_N.pdf, id=840, 302.08884pt x 212.64037pt>
 File: Chapters/SvsN_choose_N.pdf Graphic file (type pdf)
 
 <use Chapters/SvsN_choose_N.pdf>
 Package pdftex.def Info: Chapters/SvsN_choose_N.pdf used on input line 578.
 (pdftex.def)             Requested size: 281.66338pt x 198.27913pt.
  [27 <./Chapters/SvsN_choose_N.pdf>]
-<Chapters/PPE_degenerate_state.pdf, id=889, 303.18323pt x 196.91504pt>
+<Chapters/PPE_degenerate_state.pdf, id=874, 303.18323pt x 196.91504pt>
 File: Chapters/PPE_degenerate_state.pdf Graphic file (type pdf)
 
 <use Chapters/PPE_degenerate_state.pdf>
@@ -2424,7 +2424,7 @@ Overfull \hbox (9.75284pt too wide) in paragraph at lines 758--767
  []
 
 
-<Images/operationalEntanglementEntropies_SOP5.pdf, id=1173, 308.35823pt x 356.4
+<Images/operationalEntanglementEntropies_SOP5.pdf, id=1158, 308.35823pt x 356.4
 5938pt>
 File: Images/operationalEntanglementEntropies_SOP5.pdf Graphic file (type pdf)
  <use Images/operationalEntanglementEntropies_SOP5.pdf>
@@ -2432,14 +2432,14 @@ Package pdftex.def Info: Images/operationalEntanglementEntropies_SOP5.pdf used
 on input line 799.
 (pdftex.def)             Requested size: 308.35747pt x 356.4585pt.
  [57] [58 <./Images/operationalEntanglementEntropies_SOP5.pdf>]
-<Images/peakScalingOddN.pdf, id=1254, 307.75404pt x 195.97299pt>
+<Images/peakScalingOddN.pdf, id=1239, 307.75404pt x 195.97299pt>
 File: Images/peakScalingOddN.pdf Graphic file (type pdf)
 
 <use Images/peakScalingOddN.pdf>
 Package pdftex.def Info: Images/peakScalingOddN.pdf used on input line 815.
 (pdftex.def)             Requested size: 384.69159pt x 244.96562pt.
  [59] [60 <./Images/peakScalingOddN.pdf>]
-<Images/deltaS1_N15N16.pdf, id=1293, 299.24704pt x 356.45938pt>
+<Images/deltaS1_N15N16.pdf, id=1278, 299.24704pt x 356.45938pt>
 File: Images/deltaS1_N15N16.pdf Graphic file (type pdf)
 
 <use Images/deltaS1_N15N16.pdf>
@@ -2449,7 +2449,7 @@ Package pdftex.def Info: Images/deltaS1_N15N16.pdf used on input line 845.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Images/higherAlphaDeltaS_N15N16.pdf, id=1295, 307.02486pt x 356.45938pt>
+<Images/higherAlphaDeltaS_N15N16.pdf, id=1280, 307.02486pt x 356.45938pt>
 File: Images/higherAlphaDeltaS_N15N16.pdf Graphic file (type pdf)
 
 <use Images/higherAlphaDeltaS_N15N16.pdf>
@@ -2460,7 +2460,7 @@ Package pdftex.def Info: Images/higherAlphaDeltaS_N15N16.pdf used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[61] <Images/Halpha.pdf, id=1305, 300.17908pt x 359.35478pt>
+[61] <Images/Halpha.pdf, id=1290, 300.17908pt x 359.35478pt>
 File: Images/Halpha.pdf Graphic file (type pdf)
 
 <use Images/Halpha.pdf>
@@ -2471,7 +2471,7 @@ Package pdftex.def Info: Images/Halpha.pdf used on input line 871.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [62 <./Images/deltaS1_N15N16.pdf>] [63 <./Images/higherAlphaDeltaS_N15N16.pdf>]
-<Images/alphaCollapse.pdf, id=1420, 310.17796pt x 355.47325pt>
+<Images/alphaCollapse.pdf, id=1405, 310.17796pt x 355.47325pt>
 File: Images/alphaCollapse.pdf Graphic file (type pdf)
 
 <use Images/alphaCollapse.pdf>
@@ -2482,7 +2482,7 @@ Package pdftex.def Info: Images/alphaCollapse.pdf used on input line 911.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [64 <./Images/Halpha.pdf>]
-<Images/TLLCollapse.pdf, id=1468, 318.11998pt x 355.47325pt>
+<Images/TLLCollapse.pdf, id=1453, 318.11998pt x 355.47325pt>
 File: Images/TLLCollapse.pdf Graphic file (type pdf)
 
 <use Images/TLLCollapse.pdf>
@@ -2502,50 +2502,43 @@ Overfull \hbox (49.19087pt too wide) in paragraph at lines 7--7
 onal
  []
 
-[69]
+[69] [70]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 25.
+(hyperref)                removing `math shift' on input line 24.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 25.
+(hyperref)                removing `math shift' on input line 24.
 
 
-<Images/operationalEntanglementEntropies_SOP5_withPeakCircles.pdf, id=1592, 301
+<Images/operationalEntanglementEntropies_SOP5_withPeakCircles.pdf, id=1581, 301
 .36516pt x 188.41748pt>
 File: Images/operationalEntanglementEntropies_SOP5_withPeakCircles.pdf Graphic 
 file (type pdf)
 
 <use Images/operationalEntanglementEntropies_SOP5_withPeakCircles.pdf>
 Package pdftex.def Info: Images/operationalEntanglementEntropies_SOP5_withPeakC
-ircles.pdf used on input line 30.
+ircles.pdf used on input line 29.
 (pdftex.def)             Requested size: 301.36441pt x 188.417pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: Images/peakScalingOddN.pdf Graphic file (type pdf)
+
 <use Images/peakScalingOddN.pdf>
-Package pdftex.def Info: Images/peakScalingOddN.pdf used on input line 42.
+Package pdftex.def Info: Images/peakScalingOddN.pdf used on input line 41.
 (pdftex.def)             Requested size: 307.75328pt x 195.9725pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[70] [71 <./Images/operationalEntanglementEntropies_SOP5_withPeakCircles.pdf>]
-<Images/fillingFractionDependence.pdf, id=1645, 306.92064pt x 355.126pt>
+[71 <./Images/operationalEntanglementEntropies_SOP5_withPeakCircles.pdf>]
+[72] <Images/fillingFractionDependence.pdf, id=1635, 306.92064pt x 355.126pt>
 File: Images/fillingFractionDependence.pdf Graphic file (type pdf)
 
 <use Images/fillingFractionDependence.pdf>
 Package pdftex.def Info: Images/fillingFractionDependence.pdf used on input lin
-e 60.
+e 59.
 (pdftex.def)             Requested size: 306.91988pt x 355.12514pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [72] [73 <./Images/fillingFractionDependence.pdf>] [74]
+ [73 <./Images/fillingFractionDependence.pdf>]) [74]
 Appendix A.
 (./Chapters/appendix03.tex [75
 
@@ -2558,7 +2551,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--136
 
  []
 
-
+[81]
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
@@ -2568,7 +2561,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
-[81]
+
 Underfull \hbox (badness 10000) in paragraph at lines 141--142
 
  []
@@ -2585,14 +2578,14 @@ Overfull \hbox (8.91814pt too wide) in paragraph at lines 147--148
 numpy.linalg.eigsh(),
  []
 
-<Images/Lanczos/A.pdf, id=1748, 462.52798pt x 346.89601pt>
+[82] <Images/Lanczos/A.pdf, id=1737, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/A.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/A.pdf>
 Package pdftex.def Info: Images/Lanczos/A.pdf used on input line 155.
 (pdftex.def)             Requested size: 281.66338pt x 211.2569pt.
 
-<Images/Lanczos/T_noReortho.pdf, id=1750, 462.52798pt x 346.89601pt>
+<Images/Lanczos/T_noReortho.pdf, id=1739, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/T_noReortho.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/T_noReortho.pdf>
@@ -2600,35 +2593,41 @@ Package pdftex.def Info: Images/Lanczos/T_noReortho.pdf used on input line 165.
 
 (pdftex.def)             Requested size: 281.66338pt x 211.2569pt.
 
-<Images/Lanczos/T_yesReortho.pdf, id=1752, 462.52798pt x 346.89601pt>
+<Images/Lanczos/T_yesReortho.pdf, id=1741, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/T_yesReortho.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/T_yesReortho.pdf>
 Package pdftex.def Info: Images/Lanczos/T_yesReortho.pdf used on input line 176
 .
 (pdftex.def)             Requested size: 281.66338pt x 211.2569pt.
- [82]
+ [83 <./Images/Lanczos/A.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<Images/Lanczos/eigenvaluesComparison.pdf, id=1758, 462.52798pt x 346.89601pt>
+<Images/Lanczos/eigenvaluesComparison.pdf, id=1767, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/eigenvaluesComparison.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/eigenvaluesComparison.pdf>
 Package pdftex.def Info: Images/Lanczos/eigenvaluesComparison.pdf used on input
  line 187.
 (pdftex.def)             Requested size: 281.66338pt x 211.2569pt.
-) [83 <./Images/Lanczos/A.pdf>]
-[84 <./Images/Lanczos/T_noReortho.pdf> <./Images/Lanczos/T_yesReortho.pdf
+) [84 <./Images/Lanczos/T_noReortho.pdf>] [85 <./Images/Lanczos/T_yesReortho.pd
+f> <./Images/Lanczos/eigenvaluesComparison.pdf
 
-pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Images/Lanczos/T_yesReorth
-o.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [85 <./Images/Lanczos/eigenvaluesComparison.pdf>]
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Images/Lanczos/eigenvalues
+Comparison.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
+>]
 Appendix C.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 198.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 198.
+
 (./Chapters/appendix02.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2678,30 +2677,17 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 181.
 
-[90] [91]
-
-LaTeX Warning: Reference `appendixA' on page 92 undefined on input line 290.
-
-[92]) [93]
+[90] [91] [92]) [93]
 Appendix D.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 201.
+
 (./Chapters/appendix04.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
-
 Overfull \hbox (53.56094pt too wide) in paragraph at lines 14--15
 \T1/cmr/m/n/12 and $\OML/cmm/m/it/12 L \OT1/cmr/m/n/12 = 4$ \T1/cmr/m/n/12 ther
 e are six such states: $[] \OMS/cmsy/m/n/12 2 f[] \OML/cmm/m/it/12 ; [] ; [] ; 
@@ -2754,13 +2740,13 @@ ii /
  []
 
 ) [105]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 210.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 210.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
  (./msThesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 210.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 210.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 211.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 211.
 Package rerunfilecheck Info: File `msThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3A749583D72D08AE94A1321C79F7AC11;5166.
+(rerunfilecheck)             Checksum: 0837683CFCFC3837EF85E0B75B2DAE4B;4983.
 
 
 LaTeX Warning: There were undefined references.
@@ -2768,17 +2754,17 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 210.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 211.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 94 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 26293 strings out of 493014
- 491048 string characters out of 6133351
- 546416 words of memory out of 5000000
- 28875 multiletter control sequences out of 15000+600000
+ 26287 strings out of 493014
+ 490906 string characters out of 6133351
+ 546400 words of memory out of 5000000
+ 28872 multiletter control sequences out of 15000+600000
  34334 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,56p,10384b,1557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2815,10 +2801,10 @@ st/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2016/texmf-dist/f
 onts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/cm-super/sftt1200.pfb>
-Output written on msThesis.pdf (110 pages, 2328207 bytes).
+Output written on msThesis.pdf (110 pages, 2328295 bytes).
 PDF statistics:
- 2226 PDF objects out of 2487 (max. 8388607)
- 1825 compressed objects within 19 object streams
- 439 named destinations out of 1000 (max. 500000)
- 646 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2210 PDF objects out of 2487 (max. 8388607)
+ 1809 compressed objects within 19 object streams
+ 436 named destinations out of 1000 (max. 500000)
+ 622 words of extra memory for PDF output out of 10000 (max. 10000000)
 

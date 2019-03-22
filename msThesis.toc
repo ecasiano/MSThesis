@@ -39,28 +39,25 @@
 \contentsline {subsection}{\numberline {4.1.1}Particle entanglement of one-dimensional spinless fermions}{68}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Accessible spatial entanglement entropy of one-dimensional spinless fermions}{69}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Summary}{69}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Future work}{70}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Power law scaling of entanglement peak in the $tV$ model}{70}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.2}Future work}{71}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Power law scaling of entanglement peak in the $tV$ model}{71}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Filling fraction dependence of entanglement}{72}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Accessible entanglement via quantum gates}{72}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Entanglement in the Bose-Hubbard model}{73}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.3}Accessible entanglement via quantum gates}{74}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Entanglement in the Bose-Hubbard model}{74}{subsection.4.2.4}
 \contentsline {chapter}{Appendices}{74}{subsection.4.2.4}
-\contentsline {chapter}{\numberline {A}}{75}{appendix.A}
-\contentsline {section}{\numberline {A.1}Site to momentum basis mapping of kinetic operator}{75}{section.A.1}
-\contentsline {chapter}{\numberline {B}}{78}{appendix.B}
-\contentsline {section}{\numberline {B.1}Lanczos Algorithm}{78}{section.B.1}
-\contentsline {subsection}{\numberline {B.1.1}Introduction}{78}{subsection.B.1.1}
-\contentsline {subsection}{\numberline {B.1.2}Tridiagonalization of the original matrix}{78}{subsection.B.1.2}
-\contentsline {subsection}{\numberline {B.1.3}Algorithm}{81}{subsection.B.1.3}
-\contentsline {subsection}{\numberline {B.1.4}Code}{82}{subsection.B.1.4}
-\contentsline {subsection}{\numberline {B.1.5}Results}{83}{subsection.B.1.5}
-\contentsline {chapter}{\numberline {C}}{86}{appendix.C}
+\contentsline {chapter}{\numberline {A}Site to momentum basis mapping of kinetic operator}{75}{appendix.A}
+\contentsline {chapter}{\numberline {B}Lanczos algorithm}{78}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{78}{section.B.1}
+\contentsline {section}{\numberline {B.2}Tridiagonalization of the original matrix}{79}{section.B.2}
+\contentsline {section}{\numberline {B.3}Algorithm}{81}{section.B.3}
+\contentsline {section}{\numberline {B.4}Code}{83}{section.B.4}
+\contentsline {section}{\numberline {B.5}Results}{83}{section.B.5}
+\contentsline {chapter}{\numberline {C}$n$-particle entanglement}{86}{appendix.C}
 \contentsline {section}{\numberline {C.1}Evaluating the $n$-particle partition entanglement}{86}{section.C.1}
 \contentsline {subsection}{\numberline {C.1.1}Particle bipartition}{87}{subsection.C.1.1}
 \contentsline {subsection}{\numberline {C.1.2}Eigenvalues}{89}{subsection.C.1.2}
 \contentsline {section}{\numberline {C.2}$n$-particle partition entanglement in the $V/t \to \infty $ limit}{90}{section.C.2}
-\contentsline {chapter}{\numberline {D}}{94}{appendix.D}
-\contentsline {section}{\numberline {D.1}Ground state of the $t-V$ model for $V/t = -2$}{94}{section.D.1}
-\contentsline {subsection}{\numberline {D.1.1}Fermion occupation basis}{94}{subsection.D.1.1}
-\contentsline {subsection}{\numberline {D.1.2}The Flat State}{96}{subsection.D.1.2}
+\contentsline {chapter}{\numberline {D}Ground state at $V/t=-2$}{94}{appendix.D}
+\contentsline {section}{\numberline {D.1}Fermion occupation basis}{94}{section.D.1}
+\contentsline {section}{\numberline {D.2}The Flat State}{96}{section.D.2}
 \contentsline {chapter}{References}{97}{section*.4}

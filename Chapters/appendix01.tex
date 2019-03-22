@@ -1,13 +1,13 @@
-\section{Lanczos Algorithm}
+%\section{Lanczos Algorithm}
 \label{app:lanczos}
 
-\subsection{Introduction}
+\section{Introduction}
 
 The Lanczos Algorithm, takes as input a Hermitian Matrix and iteratively builds a similarity transform that makes it tridiagonal. Due to similarity, the solution of the eigenvalue problem of the tridiagonal matrix is the same as that of the original matrix. Nevertheless, some methods can exploit the tridiagonality to find the eigendecomposition more easily. In condensed matter physics, the input matrix is usually a Hamiltonian. The eigenvalues and eigenvectors of the Hamiltonian represent the energies and the associated quantum states of the system. 
 
 In the following section, the Lanczos Algorithm will be derived. Next, some methods for approximating the eigenvalues and eigenvectors will be discussed. Finally, a hopefully simple implementation of the algorithm in Python will be linked and some results will be shown.
 
-\subsection{Tridiagonalization of the original matrix}
+\section{Tridiagonalization of the original matrix}
 
 Let $A$ be a Hermitian matrix of size $n \times n$. An orthonormal transform matrix $Q$ is needed such that:
 %
@@ -123,7 +123,7 @@ where $\beta_{k} \neq 0$ and, since $q_{k+1}$ is an orthonormal vector, $\beta_{
 
 Note that the $\alpha_k$ and $\beta_k$ terms of the three-term recursion relation have been accounted for. As for the $\beta_{k-1}$, a "bottom rung" for the recursion has to be set. The tridiagonal matrix $T$ does not have a $\beta_{k-1}$ term. Thus, for $k=1$, the $\beta_{k-1} q_{k-1}$ term is set to $\beta_{0} q_{0} = 0$. Now the columns of $Q$ can be built by iterating from $k=1$ to $k=n$.
 
-\subsection{Algorithm}
+\section{Algorithm}
 
  1. Set $r_0=q_1$,$\beta_0=1$ and $q_0 = 0$ \\
   2. For k=1,2,3,...,n: \\
@@ -142,11 +142,11 @@ Line $7$: Due to finite precision errors, the set of supposedly mutually orthono
 
 Line $8$: Again, depending on the problem and the desired eigenpairs, the approximation can be done for the current version of the tridiagonal matrix at step $k$, call it $T_k$. Alternatively, it could be done after the for loop has finished and the full tridiagonal matrix has been $T$ built. There is no strict requirement on which iterative method should be used to find the eigendecomposition (QR Method, Power Iteration, Inverse Power Iteration, etc...). 
 
-\subsection{Code}
+\section{Code}
 
 An implementation of the Lanczos Algorithm in Python can be found in: https://github.com/ecasiano/LanczosEigensolvers/blob/master/lanczosEigensolver.py. The code generates a random, sparse, hermitian matrix of specified size, finds a tridiagonal representation via Lanczos and calculates the full eigendecomposition via QR Algorithm or finds the smallest eigenvalue via Inverse Power Iteration. A blackbox function, part of the numpy.linalg package, numpy.linalg.eigsh(), solves the eigenvalue problem for the input matrix so a comparison can be made with the code results.
 
-\subsection{Results}
+\section{Results}
 
 The following colormap represents a sparse and hermitian matrix of dimensions $n \times n$ that was fed to the linked Lanczos code. 
 %
