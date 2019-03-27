@@ -8,20 +8,20 @@ Near a phase transition, small set of parameters governs macroscopical physical 
 The studies that will be presented in this thesis are concerned with a specific model, which shall be referred to as the $t-V$ model. This model, is equivalent to the $XXZ$ spin model and describes $N$ itinerant spinless fermions on a 1D lattice of size $L$. These fermions can tunnel to neighboring sites and the rate at which they do so is proportional to a hopping parameter $t$. An interaction potential, $V$, between the fermions is also considered, which could be repulsive ($V > 0$) or attractive ($V < 0$). Periodic and anti-periodic boundary conditions will be assumed for the case of odd and even particles, respectively. Mathematically, this is represented by the following Hamiltonian:
 %
 \begin{equation}
-H = -t \sum_{i} \left ( c_{i}^{\dag} c_{i+1} + c_{i+1}^{\dag} c_{i} \right )+ V \sum_{i} n_i n_{i+1}   
+H = -t \sum_{i} \left ( c_{i}^{\dag} c_{i+1}^{\phantom{\dag}} + c_{i+1}^{\dag} c_{i}^{\phantom{\dag}} \right )+ V \sum_{i} n_i n_{i+1}   
 \label{eq:t-VHamiltonian}
 \end{equation}
 %
-where $c_{i}^{\dag}$ ($c_{i}$) creates (annihilates) a fermion on site $i$ and $n_{i}$ counts the number of fermions on site $i$. Formally, these creation and annihilation operators are defined such that the following anticommutation relations are satisfied:
+where $c_{i}^{\dag}$ ($c_{i}$) creates (annihilates) a fermion on site $i$ and $n_{i} = c_i^{\dag}c_i^{\phantom{\dag}}$ counts the number of fermions on site $i$. Formally, these creation and annihilation operators are defined such that the following anticommutation relations are satisfied:
 %
 \begin{equation}
 \label{eq:commutationRelations}
 \left \{ c_i^{\dag} , c_j^{\dag} \right \} = 0 \text{  }, \text{  }
 \left \{ c_i , c_j\right \} = 0 \text {  } , \text{  }
-\left \{ c_i , c_j^{\dag} \right \}  = \delta_{ij},
+\left \{ c_i^{\phantom{\dag}} , c_j^{\dag} \right \}  = \delta_{ij},
 \end{equation}
 %
-where $\delta_{ij}$ is the Kronecker-Delta function. In the case that there exists a fermion on the site in which the creation operator acts, then $c^{\dag} \ket{1} = \ket{0}$ in order to satisfy Pauli's Exclusion principle. The interaction term can then be understood conceptually as adding to the potential energy of the system if there are multiple particles in neighboring sites. Conceptually, the first term may be more difficult to understand in its current representation, due to this operator being non-diagonal. Nevertheless, expressing it in the momentum basis, where it is diagonal, illustrates that how contributions to the kinetic energy come from all particles with nonzero momentum (which will be all of them unless $t=0$). A detailed mapping of the kinetic energy operator from lattice site to momentum basis can be seen in Appendix \ref{appendix:kineticMapping}.
+where $\delta_{ij}$ is the Kronecker-Delta function. For example, in the case that there's no fermion on the site in which the creation operator acts, then $c^{\dag} \ket{0} = \ket{1}$. The interaction term can then be understood conceptually as adding to the potential energy of the system if there are multiple particles in neighboring sites. Conceptually, the first term may be more difficult to understand in its current representation, due to this operator being non-diagonal. Nevertheless, expressing it in the momentum basis, where it is diagonal, illustrates that how contributions to the kinetic energy come from all particles with nonzero momentum (which will be all of them unless $t=0$). A detailed mapping of the kinetic energy operator from lattice site to momentum basis can be seen in Appendix \ref{appendix:kineticMapping}.
 
 %%%%%%%%%%%%%%%%%%%
 \begin{figure*}[h]
@@ -33,7 +33,7 @@ where $\delta_{ij}$ is the Kronecker-Delta function. In the case that there exis
 \end{figure*}
 %%%%%%%%%%%%%%%%%
 
-Figure \ref{fig:phaseDiagram} shows the phase diagram of the $t-V$ model. For $V/t \ll -2$, the fermions cluster together due to the strong attractive interaction. The state in this regime is an equal superposition of all possible such cluster configurations over all lattice sites. At $V/t = -2$, the system undergoes a second order phase transition into the Tomonaga-Luttinger Liquid (TLL) phase. Here, the state is in a superposition of all possible configurations of the fermions on the lattice, with the weights of each being different, in general. At $V/t = 2$, the system undergoes a continuous phase transition into the charged density wave (CDW) phase. At $V/t \gg 2$, the strong repulsion between particles leads to them forming an alternating pattern of particle-vacancy-particle- \dots The state in this regime becomes an equal superposition of the only two possible such configurations.
+Figure \ref{fig:phaseDiagram} shows the phase diagram of the $t-V$ model. For $V/t \ll -2$, the fermions cluster together due to the strong attractive interaction. The state in this regime is an equal superposition of all possible such cluster configurations over all lattice sites. At $V/t = -2$, the system undergoes a first order phase transition into the Tomonaga-Luttinger Liquid (TLL) phase. Here, the state is in a superposition of all possible configurations of the fermions on the lattice, with the weights of each being different, in general. At $V/t = 2$, the system undergoes a continuous phase transition into the charged density wave (CDW) phase. At $V/t \gg 2$, the strong repulsion between particles leads to them forming an alternating pattern of particle-vacancy-particle- \dots The state in this regime becomes an equal superposition of the only two possible such configurations.
 
 Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two different colors, blue and red. This is to illustrate that a system can be partitioned into smaller subregions. In this particular example, each partition would be of size 2 lattice sites. In fact, subdividing a system into this smaller subsystems will be necessary for the main phenomenon of interest in this thesis: quantum entanglement. The bulk of this work will consist of quantifying the amount of entanglement of a system via entropy measures. Before getting to explaining entanglement, in the next section, an overview of entropy or information measures will be given.
 
@@ -164,9 +164,7 @@ Notice that in Figure \ref{fig:phaseDiagram} the lattice sites have two differen
 \begin{align*}
     & \texttt{SWAP} \ket{0}_R\otimes\left(\ket{1}_A \otimes
     \ket{0}_{B} + \ket{0}_A \otimes \ket{1}_{B} \right)/\sqrt{2} \\
-    &= \frac{1}{\sqrt{2}}\left( \ket{0}_R \otimes \underbrace{\ket{0}_A \otimes
-        \ket{1}_{B}}_{N=1} + \ket{1}_R \otimes \underbrace{\ket{0}_A \otimes
-    \ket{0}_{B}}_{N\neq1} \right)
+    &= \frac{1}{\sqrt{2}} ( \ket{1}_R \otimes \underbrace{\ket{0}_A \otimes \ket{0}_{B}}_{N\neq1} + \ket{0}_R \otimes \underbrace{\ket{0}_A \otimes \ket{1}_{B}}_{N=1})
     % &= \frac{1}{\sqrt{2}}\ket{0}_R \otimes \ket{0}_A \otimes
     %     \ket{1}_{B}
 \end{align*}

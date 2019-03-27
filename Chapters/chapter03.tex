@@ -176,7 +176,7 @@ S_{\alpha}^{\mathrm{acc}}(\rho_A) = \sum_{n} P_n S(\rho_{A_n})
 \label{eq:accessibleEE}
 \end{equation}
 %
-Where the sum is carried over all possible local particle numbers that Alice may have. In other words, $n=0,1,...,N-n_{B}$.
+Where the sum is carried over all possible local particle numbers that Alice may have.
 
 In the next section, analytical $S_{\alpha}^{\rm acc}(\rho_A)$ values will be derived in various regimes of the $t-V$ Model.
 
@@ -196,7 +196,7 @@ There are three phases that occur in the $t-V$ Model. The Phase Separated Solid 
 In this section, analytical values for the operationally accessible von Neumann entropy, $S_{1}^{\rm acc}(\rho_A)$, will be derived in all phases of the $t-V$ Model and also at the first order phase transition. Then, the results for the R\'enyi accessible entanglement entropies, $S_{\alpha}^{\rm acc}(\rho_A)$, will be shown. Derivations will not be done in detail for $S_{\alpha}^{\rm acc}(\rho_A)$ since the calculation steps are essentially identical to those of $S_{1}^{\rm acc}(\rho_A)$.
 
 	\subsection{Infinitely repulsive interaction}
-		The state in this limit is known as a charged density wave (CDW). An infinitely strong repulsion between the particles in the system, makes them want to be as far away from each other as possible. This results in the particles forming an alternating pattern of filled-vacant-filled-vacant $\dots$ lattice sites. Thus, there are 2 possible configurations: one, that goes as filled-vacant-filled $\dots$ and another that goes as $vacant-filled-vacant$ \dots. Thus, in the occupation number basis, the CDW state is:
+		The state in this limit is known as a charged density wave (CDW). An infinitely strong repulsion between the particles in the system, makes them want to be as far away from each other as possible. This results in the particles forming an alternating pattern of filled-vacant-filled-vacant $\dots$ lattice sites. Thus, there are 2 possible configurations: one, that goes as filled-vacant-filled $\dots$ and another that goes as vacant-filled-vacant $\dots$. Thus, in the occupation number basis, the CDW state is:
 %
 \begin{equation}
 | \Psi \rangle_{CDW} = \frac{1}{\sqrt{2}} [|101010... \rangle + |010101... \rangle ] 
@@ -620,7 +620,7 @@ S_{\alpha}^{\rm acc} (\ell_{B}, L) = (\ell_{B} - 1) \frac{2}{L} \ln{2}
 %
 Case $iii)$ $N < \ell_{A} < \ell_{B}$:
 
-In contrast to $i)$ and $ii)$, now the particles may all be in $A$ or all in $B$. Nevertheless, in such instances, there is only a single possible configuration of the other partition, that in which it's empty. Thus, the projected reduced density matrices $\rho_{A_N}$ and $\rho_{A_0}$ have only one nonzero eigenvalue and, thus, do not contribute to the accessible entanglement since this eigenvalue will reduce to unity after normalization. Barring these two, there are then $N-1$ projected reduced density matrices that do contribute. They all have the same form as the ones of $i)$ and $ii)$, that is, $2x2$ diagonal matrices (after throwing out all unnecessary zeroes) with 2 eigenvalues equal to $\frac{1}{2}$ (after normalizing) and probabilities $P_n = \frac{2}{L}$. Thus:
+In contrast to $i)$ and $ii)$, now the particles may all be in $A$ or all in $B$. Nevertheless, in such instances, there is only a single possible configuration of the other partition, that in which it's empty. Thus, the projected reduced density matrices $\rho_{A_N}$ and $\rho_{A_0}$ have only one nonzero eigenvalue and, thus, do not contribute to the accessible entanglement since this eigenvalue will reduce to unity after normalization. Barring these two, there are then $N-1$ projected reduced density matrices that do contribute. They all have the same form as the ones of $i)$ and $ii)$, that is, $2 \times 2$ diagonal matrices (after throwing out all unnecessary zeroes) with 2 eigenvalues equal to $\frac{1}{2}$ (after normalizing) and probabilities $P_n = \frac{2}{L}$. Thus:
 %
 \begin{equation}
 S_{\alpha}^{\rm acc} (N, L) = (N - 1) \frac{2}{L} \ln{2}
@@ -675,7 +675,7 @@ where $x$ could be  $\ell_A, \ell_B, N$ or $N^c$. But how to determine which of 
 From the above set of inequalities, note that the smallest between the four variables in each case, also happens to be the variable that is substituted for $x$. Thus, in a more compact form, the generalized operationally accessible entanglement at the infinitely attractive regime is:
 %
 \begin{equation}
-S_\alpha^{acc}(x,L) = \frac{2(x-1)}{L} \ln{2} ; \text{ where } x = \min{\ell_A, \ell_B, N, N^c}
+S_\alpha^{acc}(x,L) = \frac{2(x-1)}{L} \ln{2} ; \text{ where } x = \min{\{ \ell_A, \ell_B, N, N^c \} }
 \end{equation}
 %
 	\subsection{First order phase transition}
@@ -694,7 +694,7 @@ To illustrate the separability of each of the projected states, the example of $
 %
 \begin{align}
 \ket{\Psi} = \frac{1}{\sqrt{{{6}\choose{3}}}} [ &\sqrt{{{3}\choose{0}}{{3}\choose{3}}} \ket{0}_A \otimes \ket{3}_B + \sqrt{{{3}\choose{1}}{{3}\choose{2}}} \ket{1}_A \otimes \ket{2}_B \nonumber \\
-+ &\sqrt{{{3}\choose{2}}{{3}\choose{1}}} \ket{3}_A \otimes \ket{0}_B +\sqrt{{{3}\choose{3}}{{3}\choose{0}}} \ket{3}_A \otimes \ket{0}_B ] 
++ &\sqrt{{{3}\choose{2}}{{3}\choose{1}}} \ket{2}_A \otimes \ket{1}_B +\sqrt{{{3}\choose{3}}{{3}\choose{0}}} \ket{3}_A \otimes \ket{0}_B ] 
 \end{align}
 %
 Each of the terms above is a projection onto a different $n$ subspace. Let $\ket{\Psi_n} \equiv \ket{n}_A \otimes \ket{N-n}_B$ be the projection of the ground state onto the $n$ subspace. Technically, the square root factors are part of these projections, but they have been dropped out since they are not needed to demonstrate the separability $\ket{n}_A \otimes \ket{N-n}_B$. Expanding each projection into the site occupation basis, the projections become:
