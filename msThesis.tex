@@ -88,20 +88,26 @@
 %For reference formatting
 \usepackage[numbers,sort&compress]{natbib}
 \bibliographystyle{nsf_new_url}
+
+\setlength{\footskip}{22pt}
  
  %Line spacing
 \usepackage{setspace}
 \doublespace
 
 \begin{document}
+\sloppy
 
 %%%%%%%%%%%%%%%%%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{titlepage}
 	\begin{center}
 		\vspace*{1cm}
-				
+		
+		\begin{singlespace}	
 		\Large
-		\textbf{Quantum Entanglement of One-Dimensional Spinless Fermions}
+		%\textbf{Quantum Entanglement of One-Dimensional Spinless Fermions}
+		QUANTUM ENTANGLEMENT OF ONE-DIMENSIONAL SPINLESS FERMIONS
+		\end{singlespace}
 		
 		\vspace{0.9cm}
 		
@@ -125,19 +131,22 @@
 		\vspace{0.7cm}
 
 		%\vfill
-	
+		
+		\begin{singlespace}
 		In Partial Fullfillment of the Requirements \\
 		for the Degree of Master of Science \\
 		Specializing in Physics	
-			
+		\end{singlespace}
+		
 		\vspace{0.5cm}
 		
-		May 2019
+		May, 2019
 		
 	\end{center}
 	
 	\vspace{0.1cm}
 	
+	\begin{singlespace}
 	\begin{flushright}
 		Defense Date: March 28th, 2019. \\
 		Thesis Examination Commitee:
@@ -145,12 +154,14 @@
 		\vspace{0.15cm}
 		
 		Adrian Del Maestro, Ph.D, Advisor \\
-		Dennis Clougherty, Ph.D \\
 		Christopher Danforth, Ph.D, Chairperson \\
+		Dennis Clougherty, Ph.D \\
 		Cynthia J. Forehand, Ph.D, Dean of the Graduate College
 		
 	
 	\end{flushright}
+	\end{singlespace}
+
 \end{titlepage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -162,7 +173,7 @@
 \chapter*{Abstract}
 \input{Chapters/abstract} 
 
-\chapter*{Acknowledgements}
+\chapter*{Acknowledgments}
 \input{Chapters/acknowledgements}
 
 \pagenumbering{roman} % Roman numerals
@@ -186,6 +197,14 @@
 \chapter{Conclusions and Future Work}
 \input{Chapters/chapter04}
 
+\phantomsection 
+\addcontentsline{toc}{chapter}{References} 
+%\bibliographystyle{apalike} %acm, ieetr, apalike...
+ %\section*{Referencess
+ \singlespacing
+\bibliography{references}
+\doublespacing
+
 \addcontentsline{toc}{chapter}{Appendices}
 \appendix
 
@@ -201,11 +220,5 @@
 \chapter{Ground state at $V/t=-2$}
 \input{Chapters/appendix04}
 
-
-\phantomsection 
-\addcontentsline{toc}{chapter}{References} 
-%\bibliographystyle{apalike} %acm, ieetr, apalike...
- %\section*{References}
-\bibliography{references}
 
 \end{document}

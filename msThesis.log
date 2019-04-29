@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  26 MAR 2019 17:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  29 APR 2019 15:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2005,20 +2005,20 @@ LaTeX Warning: Label `fig:peakScalingOddN' multiply defined.
 )
 \openout1 = `msThesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2040,7 +2040,7 @@ LaTeX Font Info:    ... okay on input line 96.
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
-* \footskip=30.0pt
+* \footskip=22.0pt
 * \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
@@ -2083,7 +2083,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box56
-Package hyperref Info: Link coloring OFF on input line 96.
+Package hyperref Info: Link coloring OFF on input line 98.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -2093,9 +2093,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count177
 )
-LaTeX Info: Redefining \ref on input line 96.
-LaTeX Info: Redefining \pageref on input line 96.
-LaTeX Info: Redefining \nameref on input line 96.
+LaTeX Info: Redefining \ref on input line 98.
+LaTeX Info: Redefining \pageref on input line 98.
+LaTeX Info: Redefining \nameref on input line 98.
 
 (./msThesis.out) (./msThesis.out)
 \@outlinefile=\write4
@@ -2112,12 +2112,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--6
 
 ) [1
 
-] (./Chapters/acknowledgements.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--8
+] (./Chapters/acknowledgements.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 1--178
 
  []
 
-) [2
+[2
 
 ] (./msThesis.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
@@ -2132,9 +2132,8 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [3
 
 ]
-Overfull \hbox (7.65796pt too wide) in paragraph at lines 40--40
- [][] [][]\T1/cmr/m/n/12 Accessible spa-tial en-tan-gle-ment en-tropy of one-di
-mensional 
+Underfull \hbox (badness 10000) in paragraph at lines 40--40
+ [][] [][]\T1/cmr/m/n/12 Accessible spa-tial en-tan-gle-ment en-tropy of one- 
  []
 
 )
@@ -2160,7 +2159,7 @@ l.10 \begin{equation}
                       [1
 
 ]
-<Images/phaseDiagramtV.pdf, id=363, 663.95827pt x 161.28148pt>
+<Images/phaseDiagramtV.pdf, id=365, 663.95827pt x 161.28148pt>
 File: Images/phaseDiagramtV.pdf Graphic file (type pdf)
 
 <use Images/phaseDiagramtV.pdf>
@@ -2176,7 +2175,7 @@ Package amsmath Warning: Foreign command \atopwithdelims;
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [2] [3 <./Images/phaseDiagramtV.pdf>] [4] [5] [6] [7]
-<Images/spatialParticle.pdf, id=421, 669.60031pt x 206.9177pt>
+<Images/spatialParticle.pdf, id=423, 669.60031pt x 206.9177pt>
 File: Images/spatialParticle.pdf Graphic file (type pdf)
 
 <use Images/spatialParticle.pdf>
@@ -2197,16 +2196,16 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 Chapter 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 191.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 180.
+(hyperref)                removing `math shift' on input line 191.
 
 (./Chapters/chapter02.tex [13
 
 ] [14] [15]
-<Chapters/particle_entanglement_boundary_conditions.pdf, id=528, 332.44202pt x 
+<Chapters/particle_entanglement_boundary_conditions.pdf, id=530, 332.44202pt x 
 67.94424pt>
 File: Chapters/particle_entanglement_boundary_conditions.pdf Graphic file (type
  pdf)
@@ -2216,8 +2215,8 @@ Package pdftex.def Info: Chapters/particle_entanglement_boundary_conditions.pdf
 (pdftex.def)             Requested size: 281.66338pt x 57.56624pt.
 
 [16] [17 <./Chapters/particle_entanglement_boundary_conditions.pdf>]
-Overfull \hbox (47.67291pt too wide) in paragraph at lines 192--192
-[]\T1/cmr/bx/n/17.28 One-particle en-tan-gle-ment in fermionic Tomonaga-
+Underfull \hbox (badness 8113) in paragraph at lines 192--192
+[]\T1/cmr/bx/n/17.28 One-particle en-tan-gle-ment in fermionic
  []
 
 [18] [19] [20]
@@ -2229,11 +2228,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 381.
 
-[21] [22]
-
-LaTeX Warning: Reference `appendixA' on page 23 undefined on input line 437.
-
-<Chapters/EntropiesFigure.pdf, id=654, 307.01836pt x 374.59816pt>
+[21] [22] <Chapters/EntropiesFigure.pdf, id=656, 307.01836pt x 374.59816pt>
 File: Chapters/EntropiesFigure.pdf Graphic file (type pdf)
 
 <use Chapters/EntropiesFigure.pdf>
@@ -2244,7 +2239,7 @@ Package pdftex.def Info: Chapters/EntropiesFigure.pdf used on input line 444.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [23]
-<Chapters/Scaling_of_PPE_In_TLL_phase.pdf, id=673, 302.51619pt x 198.18497pt>
+<Chapters/Scaling_of_PPE_In_TLL_phase.pdf, id=675, 302.51619pt x 198.18497pt>
 File: Chapters/Scaling_of_PPE_In_TLL_phase.pdf Graphic file (type pdf)
 
 <use Chapters/Scaling_of_PPE_In_TLL_phase.pdf>
@@ -2252,29 +2247,23 @@ Package pdftex.def Info: Chapters/Scaling_of_PPE_In_TLL_phase.pdf used on input
  line 502.
 (pdftex.def)             Requested size: 281.66338pt x 184.53085pt.
  [24 <./Chapters/EntropiesFigure.pdf>]
-<Chapters/PPE_interaction_dependence.pdf, id=752, 316.40514pt x 202.62941pt>
+<Chapters/PPE_interaction_dependence.pdf, id=754, 316.40514pt x 202.62941pt>
 File: Chapters/PPE_interaction_dependence.pdf Graphic file (type pdf)
 
 <use Chapters/PPE_interaction_dependence.pdf>
 Package pdftex.def Info: Chapters/PPE_interaction_dependence.pdf used on input 
 line 534.
 (pdftex.def)             Requested size: 281.66338pt x 180.39525pt.
-
-Overfull \hbox (7.16629pt too wide) in paragraph at lines 515--563
-[]\T1/cmr/m/n/12 Having un-der-stood the asymp-totic scal-ing of the 1-particle
- par-ti-tion Rényi EE
- []
-
-[25 <./Chapters/Scaling_of_PPE_In_TLL_phase.pdf>] [26 <./Chapters/PPE_interacti
-on_dependence.pdf>]
-<Chapters/SvsN_choose_N.pdf, id=841, 302.08884pt x 212.64037pt>
+ [25 <./Chapters/Scaling_of_PPE_In_TLL_phase.pdf>] [26 <./Chapters/PPE_interact
+ion_dependence.pdf>]
+<Chapters/SvsN_choose_N.pdf, id=843, 302.08884pt x 212.64037pt>
 File: Chapters/SvsN_choose_N.pdf Graphic file (type pdf)
 
 <use Chapters/SvsN_choose_N.pdf>
 Package pdftex.def Info: Chapters/SvsN_choose_N.pdf used on input line 578.
 (pdftex.def)             Requested size: 281.66338pt x 198.27913pt.
  [27 <./Chapters/SvsN_choose_N.pdf>]
-<Chapters/PPE_degenerate_state.pdf, id=875, 303.18323pt x 196.91504pt>
+<Chapters/PPE_degenerate_state.pdf, id=877, 303.18323pt x 196.91504pt>
 File: Chapters/PPE_degenerate_state.pdf Graphic file (type pdf)
 
 <use Chapters/PPE_degenerate_state.pdf>
@@ -2289,11 +2278,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Chapter 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 183.
+(hyperref)                removing `math shift' on input line 194.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 183.
+(hyperref)                removing `math shift' on input line 194.
 
 (./Chapters/chapter03.tex [31
 
@@ -2310,14 +2299,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 52.
 
-[33]
-Overfull \hbox (7.81508pt too wide) in paragraph at lines 86--90
-\T1/cmr/m/n/12 can be de-ter-mined by not-ing that the su-per-s-e-lec-tion rule
- guar-an-tees that $\OT1/cmr/m/n/12 [\OML/cmm/m/it/12 ^^Z[]; []\OT1/cmr/m/n/12 
-] =
- []
-
-[34]
+[33] [34]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 112.
@@ -2334,12 +2316,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 112.
 
-[35]
-Overfull \hbox (6.67407pt too wide) in paragraph at lines 155--155
-[]\T1/cmr/bx/n/14.4 Projecting onto sub-spaces of fixed lo-cal par-ti-cle num-
- []
-
-[36]
+[35] [36]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 183.
@@ -2359,20 +2336,15 @@ Overfull \hbox (15.51013pt too wide) detected at line 356
  []
 
 [44]
-Overfull \hbox (63.75056pt too wide) detected at line 378
-[]\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 	\OMS/cmsy/m/n/12 i[] \OT1/cmr/m/n/12 = [][
-\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 N; \OT1/cmr/m/n/12 0\OMS/cmsy/m/n/12 i \OT1/
-cmr/m/n/12 + \OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 N \OMS/cmsy/m/
-n/12 ^^@ \OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1[]\OMS/cmsy/m/
-n/12 i \OT1/cmr/m/n/12 + \OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 N 
-\OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 2)[]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2[]
-\OMS/cmsy/m/n/12 i \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 ::: \OT1/cmr/m/n/12 + \OM
-S/cmsy/m/n/12 j\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 ; N\OMS/cmsy/m/n/12 i \OT1/cmr
-/m/n/12 + \OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 1[]\OML/cmm/m/it/12 ; \OT1/cmr/m/n/
-12 (\OML/cmm/m/it/12 N \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1)[]\OMS/cmsy/m/n/1
-2 i \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 :::\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 (\O
-ML/cmm/m/it/12 N \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1)[]\OML/cmm/m/it/12 ; \O
-T1/cmr/m/n/12 1[]\OMS/cmsy/m/n/12 i\OT1/cmr/m/n/12 ]
+Underfull \hbox (badness 1454) in paragraph at lines 391--397
+[]$\T1/cmr/m/n/12 . Be-fore pro-ceed-ing, the ba-sis of this ma-trix should be 
+de-scribed.
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 391--397
+\T1/cmr/m/n/12 Columns (from left to right) and rows (from top to bot-tom) are 
+ar-
  []
 
 
@@ -2381,12 +2353,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 391--397
  []
 
 [45] [46]
-Overfull \hbox (0.47743pt too wide) detected at line 469
-[]\OMS/cmsy/m/n/12 P[] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12
- P[] \OT1/cmr/m/n/12 = []
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 469--474
 
  []
@@ -2407,18 +2373,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 581--582
 
  []
 
-[50] [51] [52] [53] [54] [55]
-Overfull \hbox (6.24217pt too wide) in paragraph at lines 739--739
-[]\T1/cmr/bx/n/17.28 Comparison be-tween the ac-ces-si-ble Rényi and
- []
-
-[56]
+[50] [51] [52] [53] [54] [55] [56]
 Overfull \hbox (9.75284pt too wide) in paragraph at lines 758--767
  [] 
  []
 
 
-<Images/operationalEntanglementEntropies_SOP5.pdf, id=1159, 308.35823pt x 356.4
+<Images/operationalEntanglementEntropies_SOP5.pdf, id=1161, 308.35823pt x 356.4
 5938pt>
 File: Images/operationalEntanglementEntropies_SOP5.pdf Graphic file (type pdf)
  <use Images/operationalEntanglementEntropies_SOP5.pdf>
@@ -2426,14 +2387,14 @@ Package pdftex.def Info: Images/operationalEntanglementEntropies_SOP5.pdf used
 on input line 799.
 (pdftex.def)             Requested size: 308.35747pt x 356.4585pt.
  [57] [58 <./Images/operationalEntanglementEntropies_SOP5.pdf>]
-<Images/peakScalingOddN.pdf, id=1240, 307.75404pt x 195.97299pt>
+<Images/peakScalingOddN.pdf, id=1242, 307.75404pt x 195.97299pt>
 File: Images/peakScalingOddN.pdf Graphic file (type pdf)
 
 <use Images/peakScalingOddN.pdf>
 Package pdftex.def Info: Images/peakScalingOddN.pdf used on input line 815.
 (pdftex.def)             Requested size: 384.69159pt x 244.96562pt.
  [59] [60 <./Images/peakScalingOddN.pdf>]
-<Images/deltaS1_N15N16.pdf, id=1279, 299.24704pt x 356.45938pt>
+<Images/deltaS1_N15N16.pdf, id=1281, 299.24704pt x 356.45938pt>
 File: Images/deltaS1_N15N16.pdf Graphic file (type pdf)
 
 <use Images/deltaS1_N15N16.pdf>
@@ -2443,7 +2404,7 @@ Package pdftex.def Info: Images/deltaS1_N15N16.pdf used on input line 845.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Images/higherAlphaDeltaS_N15N16.pdf, id=1281, 307.02486pt x 356.45938pt>
+<Images/higherAlphaDeltaS_N15N16.pdf, id=1283, 307.02486pt x 356.45938pt>
 File: Images/higherAlphaDeltaS_N15N16.pdf Graphic file (type pdf)
 
 <use Images/higherAlphaDeltaS_N15N16.pdf>
@@ -2454,7 +2415,7 @@ Package pdftex.def Info: Images/higherAlphaDeltaS_N15N16.pdf used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[61] <Images/Halpha.pdf, id=1291, 300.17908pt x 359.35478pt>
+[61] <Images/Halpha.pdf, id=1293, 300.17908pt x 359.35478pt>
 File: Images/Halpha.pdf Graphic file (type pdf)
 
 <use Images/Halpha.pdf>
@@ -2465,7 +2426,7 @@ Package pdftex.def Info: Images/Halpha.pdf used on input line 871.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [62 <./Images/deltaS1_N15N16.pdf>] [63 <./Images/higherAlphaDeltaS_N15N16.pdf>]
-<Images/alphaCollapse.pdf, id=1406, 310.17796pt x 355.47325pt>
+<Images/alphaCollapse.pdf, id=1408, 310.17796pt x 355.47325pt>
 File: Images/alphaCollapse.pdf Graphic file (type pdf)
 
 <use Images/alphaCollapse.pdf>
@@ -2476,7 +2437,7 @@ Package pdftex.def Info: Images/alphaCollapse.pdf used on input line 911.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [64 <./Images/Halpha.pdf>]
-<Images/TLLCollapse.pdf, id=1454, 318.11998pt x 355.47325pt>
+<Images/TLLCollapse.pdf, id=1456, 318.11998pt x 355.47325pt>
 File: Images/TLLCollapse.pdf Graphic file (type pdf)
 
 <use Images/TLLCollapse.pdf>
@@ -2490,13 +2451,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Chapter 4.
 (./Chapters/chapter04.tex [68
 
-]
-Overfull \hbox (49.19087pt too wide) in paragraph at lines 7--7
-[]\T1/cmr/bx/n/14.4 Accessible spa-tial en-tan-gle-ment en-tropy of one-dimensi
-onal
- []
-
-[69] [70]
+] [69] [70]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 24.
@@ -2506,7 +2461,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 24.
 
 
-<Images/operationalEntanglementEntropies_SOP5_withPeakCircles.pdf, id=1582, 301
+<Images/operationalEntanglementEntropies_SOP5_withPeakCircles.pdf, id=1584, 301
 .36516pt x 188.41748pt>
 File: Images/operationalEntanglementEntropies_SOP5_withPeakCircles.pdf Graphic 
 file (type pdf)
@@ -2525,27 +2480,65 @@ Package pdftex.def Info: Images/peakScalingOddN.pdf used on input line 41.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [71 <./Images/operationalEntanglementEntropies_SOP5_withPeakCircles.pdf>]
-[72] <Images/fillingFractionDependence.pdf, id=1636, 306.92064pt x 355.126pt>
+[72] <Images/fillingFractionDependence.pdf, id=1638, 306.92064pt x 355.126pt>
 File: Images/fillingFractionDependence.pdf Graphic file (type pdf)
 
 <use Images/fillingFractionDependence.pdf>
 Package pdftex.def Info: Images/fillingFractionDependence.pdf used on input lin
 e 59.
 (pdftex.def)             Requested size: 306.91988pt x 355.12514pt.
- [73 <./Images/fillingFractionDependence.pdf>]) [74]
+ [73 <./Images/fillingFractionDependence.pdf>]) (./msThesis.bbl [74]
+Underfull \hbox (badness 10000) in paragraph at lines 80--88
+[]$\T1/cmtt/m/n/12 https : / / www . worldscientific . com / doi / abs / 10 . 1
+142 /
+ []
+
+[75
+
+] [76]
+Underfull \hbox (badness 2698) in paragraph at lines 250--255
+[]\T1/cmr/m/n/12 T. Grover.  ``En-tan-gle-ment of In-ter-act-ing Fermions in Qu
+an-tum
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--278
+[]$\T1/cmtt/m/n/12 http : / / journals . aps . org / pra / abstract / 10 . 1103
+ / PhysRevA . 93 .
+ []
+
+[77] [78]
+Underfull \hbox (badness 10000) in paragraph at lines 405--412
+[]$\T1/cmtt/m/n/12 http : / / www . sciencedirect . com / science / article / p
+ii /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 421--427
+[]$\T1/cmtt/m/n/12 http : / / www . sciencedirect . com / science / article / p
+ii /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--442
+[]$\T1/cmtt/m/n/12 http : / / www . sciencedirect . com / science / article / p
+ii /
+ []
+
+) [79]
 Appendix A.
-(./Chapters/appendix03.tex [75
+(./Chapters/appendix03.tex [80
 
-] [76]) [77]
+] [81]) [82]
 Appendix B.
-(./Chapters/appendix01.tex [78
+(./Chapters/appendix01.tex [83
 
-] [79] [80]
+] [84] [85]
 Underfull \hbox (badness 10000) in paragraph at lines 128--136
 
  []
 
-[81]
+[86]
 Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
@@ -2566,20 +2559,14 @@ Overfull \hbox (41.42854pt too wide) in paragraph at lines 147--148
 zosEigensolver.py.
  []
 
-
-Overfull \hbox (8.91814pt too wide) in paragraph at lines 147--148
-\T1/cmr/m/n/12 tion. A black-box func-tion, part of the numpy.linalg pack-age, 
-numpy.linalg.eigsh(),
- []
-
-[82] <Images/Lanczos/A.pdf, id=1738, 462.52798pt x 346.89601pt>
+[87] <Images/Lanczos/A.pdf, id=1794, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/A.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/A.pdf>
 Package pdftex.def Info: Images/Lanczos/A.pdf used on input line 155.
 (pdftex.def)             Requested size: 281.66338pt x 211.2569pt.
 
-<Images/Lanczos/T_noReortho.pdf, id=1740, 462.52798pt x 346.89601pt>
+<Images/Lanczos/T_noReortho.pdf, id=1796, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/T_noReortho.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/T_noReortho.pdf>
@@ -2587,26 +2574,26 @@ Package pdftex.def Info: Images/Lanczos/T_noReortho.pdf used on input line 165.
 
 (pdftex.def)             Requested size: 281.66338pt x 211.2569pt.
 
-<Images/Lanczos/T_yesReortho.pdf, id=1742, 462.52798pt x 346.89601pt>
+<Images/Lanczos/T_yesReortho.pdf, id=1798, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/T_yesReortho.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/T_yesReortho.pdf>
 Package pdftex.def Info: Images/Lanczos/T_yesReortho.pdf used on input line 176
 .
 (pdftex.def)             Requested size: 281.66338pt x 211.2569pt.
- [83 <./Images/Lanczos/A.pdf>]
+ [88 <./Images/Lanczos/A.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<Images/Lanczos/eigenvaluesComparison.pdf, id=1768, 462.52798pt x 346.89601pt>
+<Images/Lanczos/eigenvaluesComparison.pdf, id=1824, 462.52798pt x 346.89601pt>
 File: Images/Lanczos/eigenvaluesComparison.pdf Graphic file (type pdf)
 
 <use Images/Lanczos/eigenvaluesComparison.pdf>
 Package pdftex.def Info: Images/Lanczos/eigenvaluesComparison.pdf used on input
  line 187.
 (pdftex.def)             Requested size: 281.66338pt x 211.2569pt.
-) [84 <./Images/Lanczos/T_noReortho.pdf>] [85 <./Images/Lanczos/T_yesReortho.pd
+) [89 <./Images/Lanczos/T_noReortho.pdf>] [90 <./Images/Lanczos/T_yesReortho.pd
 f> <./Images/Lanczos/eigenvaluesComparison.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Images/Lanczos/eigenvalues
@@ -2616,11 +2603,11 @@ gle page
 Appendix C.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 198.
+(hyperref)                removing `math shift' on input line 217.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 198.
+(hyperref)                removing `math shift' on input line 217.
 
 (./Chapters/appendix02.tex
 
@@ -2631,20 +2618,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 2.
 
-[86
+[91
 
-] [87]
-Overfull \hbox (0.36574pt too wide) in paragraph at lines 97--106
-\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 ^^H[]\OMS/cmsy/m/n/12 j[] \OT1/cmr/m/n/12 = \
-OML/cmm/m/it/12 constant$ \T1/cmr/m/n/12 that can be ab-sorbed in $[]$. Thus, w
-e can set $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 ^^H[]\OMS/cmsy/m/n/12 j[] \OT1/cmr
-/m/n/12 =
- []
-
-[88] [89]
-Overfull \hbox (13.78935pt too wide) in paragraph at lines 181--181
+] [92] [93] [94]
+Underfull \hbox (badness 1466) in paragraph at lines 181--181
 []$\OML/cmm/m/it/17.28 n$\T1/cmr/bx/n/17.28 -particle par-ti-tion en-tan-gle-me
-nt in the $\OML/cmm/m/it/17.28 V=t \OMS/cmsy/m/n/17.28 !
+nt in the
  []
 
 
@@ -2671,97 +2650,56 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 181.
 
-[90] [91] [92]) [93]
+[95] [96] [97]) [98]
 Appendix D.
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 201.
+(hyperref)                removing `math shift' on input line 220.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 201.
+(hyperref)                removing `math shift' on input line 220.
 
 (./Chapters/appendix04.tex
-Overfull \hbox (53.56094pt too wide) in paragraph at lines 14--15
-\T1/cmr/m/n/12 and $\OML/cmm/m/it/12 L \OT1/cmr/m/n/12 = 4$ \T1/cmr/m/n/12 ther
-e are six such states: $[] \OMS/cmsy/m/n/12 2 f[] \OML/cmm/m/it/12 ; [] ; [] ; 
-[] ; [] ; []\OMS/cmsy/m/n/12 g$\T1/cmr/m/n/12 . 
+Underfull \hbox (badness 1248) in paragraph at lines 14--15
+\T1/cmr/m/n/12 am-ple, for $\OML/cmm/m/it/12 N \OT1/cmr/m/n/12 = 2$ \T1/cmr/m/n
+/12 and $\OML/cmm/m/it/12 L \OT1/cmr/m/n/12 = 4$ \T1/cmr/m/n/12 there are six s
+uch states: $[] \OMS/cmsy/m/n/12 2
  []
 
-[94
+[99
 
 ]
 LaTeX Font Info:    Try loading font information for U+dsrom on input line 73.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
-[95] [96]) (./msThesis.bbl [97] [98
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 80--88
-[]$\T1/cmtt/m/n/12 https : / / www . worldscientific . com / doi / abs / 10 . 1
-142 /
- []
-
-[99] [100] [101]
-Underfull \hbox (badness 2698) in paragraph at lines 251--256
-[]\T1/cmr/m/n/12 T. Grover.  ``En-tan-gle-ment of In-ter-act-ing Fermions in Qu
-an-tum
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 273--279
-[]$\T1/cmtt/m/n/12 http : / / journals . aps . org / pra / abstract / 10 . 1103
- / PhysRevA . 93 .
- []
-
-[102] [103]
-Underfull \hbox (badness 10000) in paragraph at lines 406--413
-[]$\T1/cmtt/m/n/12 http : / / www . sciencedirect . com / science / article / p
-ii /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 422--428
-[]$\T1/cmtt/m/n/12 http : / / www . sciencedirect . com / science / article / p
-ii /
- []
-
-[104]
-Underfull \hbox (badness 10000) in paragraph at lines 436--443
-[]$\T1/cmtt/m/n/12 http : / / www . sciencedirect . com / science / article / p
-ii /
- []
-
-) [105]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 211.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 211.
+[100] [101]) [102]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
  (./msThesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 211.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 211.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
 Package rerunfilecheck Info: File `msThesis.out' has not changed.
-(rerunfilecheck)             Checksum: 70FF2FA4DFA605974A158138E345224F;4985.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: CA444B56B09527865F2D9A046B116BCE;4979.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 211.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 94 (\begingroup)
+### semi simple group (level 1) entered at line 96 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 26287 strings out of 493014
- 490906 string characters out of 6133351
- 547401 words of memory out of 5000000
+ 26284 strings out of 493014
+ 490882 string characters out of 6133351
+ 547416 words of memory out of 5000000
  28872 multiletter control sequences out of 15000+600000
  34334 words of font info for 108 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,18n,56p,10384b,1557s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,18n,56p,10384b,1532s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm
 -super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
@@ -2793,12 +2731,13 @@ f-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2016/texmf-
 dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2016/texmf-di
 st/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2016/texmf-dist
 /fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/public/cm-super/sftt1200.pfb>
-Output written on msThesis.pdf (110 pages, 2328225 bytes).
+onts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/cm-super/sftt1200.pfb>
+Output written on msThesis.pdf (107 pages, 2331450 bytes).
 PDF statistics:
- 2211 PDF objects out of 2487 (max. 8388607)
- 1810 compressed objects within 19 object streams
- 436 named destinations out of 1000 (max. 500000)
+ 2201 PDF objects out of 2487 (max. 8388607)
+ 1802 compressed objects within 19 object streams
+ 433 named destinations out of 1000 (max. 500000)
  622 words of extra memory for PDF output out of 10000 (max. 10000000)
 

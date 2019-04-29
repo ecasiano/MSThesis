@@ -44,20 +44,20 @@
 \contentsline {subsection}{\numberline {4.2.2}Filling fraction dependence of entanglement}{72}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Accessible entanglement via quantum gates}{74}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Entanglement in the Bose-Hubbard model}{74}{subsection.4.2.4}
-\contentsline {chapter}{Appendices}{74}{subsection.4.2.4}
-\contentsline {chapter}{\numberline {A}Site to momentum basis mapping of kinetic operator}{75}{appendix.A}
-\contentsline {chapter}{\numberline {B}Lanczos algorithm}{78}{appendix.B}
-\contentsline {section}{\numberline {B.1}Introduction}{78}{section.B.1}
-\contentsline {section}{\numberline {B.2}Tridiagonalization of the original matrix}{79}{section.B.2}
-\contentsline {section}{\numberline {B.3}Algorithm}{81}{section.B.3}
-\contentsline {section}{\numberline {B.4}Code}{83}{section.B.4}
-\contentsline {section}{\numberline {B.5}Results}{83}{section.B.5}
-\contentsline {chapter}{\numberline {C}$n$-particle entanglement}{86}{appendix.C}
-\contentsline {section}{\numberline {C.1}Evaluating the $n$-particle partition entanglement}{86}{section.C.1}
-\contentsline {subsection}{\numberline {C.1.1}Particle bipartition}{87}{subsection.C.1.1}
-\contentsline {subsection}{\numberline {C.1.2}Eigenvalues}{89}{subsection.C.1.2}
-\contentsline {section}{\numberline {C.2}$n$-particle partition entanglement in the $V/t \to \infty $ limit}{90}{section.C.2}
-\contentsline {chapter}{\numberline {D}Ground state at $V/t=-2$}{94}{appendix.D}
-\contentsline {section}{\numberline {D.1}Fermion occupation basis}{94}{section.D.1}
-\contentsline {section}{\numberline {D.2}The Flat State}{96}{section.D.2}
-\contentsline {chapter}{References}{97}{section*.4}
+\contentsline {chapter}{References}{74}{section*.4}
+\contentsline {chapter}{Appendices}{79}{chapter*.5}
+\contentsline {chapter}{\numberline {A}Site to momentum basis mapping of kinetic operator}{80}{appendix.A}
+\contentsline {chapter}{\numberline {B}Lanczos algorithm}{83}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{83}{section.B.1}
+\contentsline {section}{\numberline {B.2}Tridiagonalization of the original matrix}{84}{section.B.2}
+\contentsline {section}{\numberline {B.3}Algorithm}{86}{section.B.3}
+\contentsline {section}{\numberline {B.4}Code}{88}{section.B.4}
+\contentsline {section}{\numberline {B.5}Results}{88}{section.B.5}
+\contentsline {chapter}{\numberline {C}$n$-particle entanglement}{91}{appendix.C}
+\contentsline {section}{\numberline {C.1}Evaluating the $n$-particle partition entanglement}{91}{section.C.1}
+\contentsline {subsection}{\numberline {C.1.1}Particle bipartition}{92}{subsection.C.1.1}
+\contentsline {subsection}{\numberline {C.1.2}Eigenvalues}{94}{subsection.C.1.2}
+\contentsline {section}{\numberline {C.2}$n$-particle partition entanglement in the $V/t \to \infty $ limit}{95}{section.C.2}
+\contentsline {chapter}{\numberline {D}Ground state at $V/t=-2$}{99}{appendix.D}
+\contentsline {section}{\numberline {D.1}Fermion occupation basis}{99}{section.D.1}
+\contentsline {section}{\numberline {D.2}The Flat State}{101}{section.D.2}
